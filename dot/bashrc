@@ -1,0 +1,89 @@
+# path
+PATH=$PATH:/Users/paul/env/do
+
+# svn aliases
+export SVN_EDITOR=vim
+export EDITOR=vim
+alias snv='svn'
+alias ss='svn stat'
+alias sup='svn info | grep "Revision"; svn update'
+alias ssd='svn diff -r BASE:HEAD --diff-cmd=/Users/paul/.subversion/git_diff';
+alias sd='svn diff --diff-cmd=/Users/paul/.subversion/git_diff';
+
+# navigation
+function up { path=""; if [ $1 ]; then for i in $(seq 1 $1); do path=$path"../"; done; else path="../"; fi; cd $path; } # previously: alias up='cd ..' ; now alternate usage: $up 2
+alias back='cd -'  # previously: 'cd $OLDPWD'
+alias where='pwd'
+alias whereami='pwd'
+alias which='type -a'
+function cdl { cd $@   &&   ls -halF; } # change to a directory and print out contents
+function swap { str=${PWD##*/}; case $str in *Git) cd "../${str%Git}";; *) cd "../${str}Git";; esac }; # cd between 'folder' and 'folderGit'
+alias sgs='swap;gsr;swap'
+
+# misc
+#alias fix='chmod u+x'
+
+# ls extension
+alias l='ls -halF'
+alias lc='ls -halFG'
+alias lsc='ls -G'
+
+# git aliases
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias branch='git branch'
+alias co='git checkout'
+alias unpushed='git log origin/master..master' #todo: make this a function, either uses $1 or bash_git_branch below, instead of develop
+alias unpulled='git fetch; git log develop..origin/develop'
+alias filelog='git log --stat --oneline'
+alias stash='git stash'
+alias gsr='git svn rebase'
+
+# file opening aliases
+alias tw='open -a TextWrangler'
+alias xc='open -a Xcode'
+alias proj='open *.xcodeproj'
+alias edit='vim'
+alias readme='less *[Rr][Ee][Aa][Dd]*[Mm][Ee]*'
+
+
+### Custom Prompt
+# \[ \] should wrap nonprinting escape characters
+# \[\e[0;32m\]  <this is in color 0;32>  \[\e[m\] 
+function bash_git_branch
+{
+  git branch 2> /dev/null | grep \* | python -c "print '['+raw_input()[2:]+']'" 2> /dev/null
+}  
+# [branch]:folder$
+PS1='\[\e[0;32m\]$(bash_git_branch)\[\e[m\]:\[\e[0;36m\]\W\[\e[m\]\$ '
+ 
+
+# tab completion for git repos folders under workspace
+function _workspaces()
+{
+    local curw
+    COMPREPLY=()
+    curw=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=($(compgen -W '$(ls /Users/paul/workspace)' -- $curw))
+    return 0
+}
+function c()  
+{
+    cd /Users/paul/workspace/$1/
+}
+complete -F _workspaces -o dirnames c
+
+
+# tab completion for git branches
+function _branches()
+{
+    local curw
+    local branches
+    COMPREPLY=()
+    curw=${COMP_WORDS[COMP_CWORD]}
+    branches=$(git for-each-ref --format='%(refname:short)' refs/heads/)
+    COMPREPLY=($(compgen -W '$branches' -- $curw))
+    return 0
+}
+complete -F _branches co

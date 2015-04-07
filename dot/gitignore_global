@@ -1,0 +1,14 @@
+.DS_Store
+._*
+*.o
+*.so
+*.exe
+*.dll
+*~
+
+.svn/
+build/
+*.build/
+xcuserdata/
+
+project.xcworkspace

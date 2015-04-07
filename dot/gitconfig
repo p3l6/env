@@ -1,0 +1,7 @@
+[user]
+	name = Paul Landers
+	email = paul.landers@testplant.com
+[core]
+	excludesfile = /Users/paul/.gitignore_global
+[push]
+	default = simple

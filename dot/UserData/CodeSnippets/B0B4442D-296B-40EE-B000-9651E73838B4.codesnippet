@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tictoc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>static NSDate * _tic_toc_time;
+#define tic _tic_toc_time = [NSDate date];
+#define toclabel(title) NSLog(@"%@: %.3f seconds", @#title, [[NSDate date] timeIntervalSinceDate:_tic_toc_time]);
+#define toc toclabel(toc)
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B0B4442D-296B-40EE-B000-9651E73838B4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>the macros needed to use tic-toc</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Tic Toc Setup</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
