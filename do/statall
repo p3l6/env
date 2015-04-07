@@ -1,0 +1,19 @@
+#! /bin/bash
+
+for d in $( ls -d */ )
+do 
+  if [ -a $d/.svn ]; then
+    echo "$(tput setaf 2)$d$(tput sgr0)"
+    cd $d
+    svn stat;
+    cd ..
+  elif [ -a $d/.git ]; then
+    echo "$(tput setaf 2)$d$(tput sgr0)"
+    cd $d
+    git status
+    cd ..
+  else
+    echo "$(tput setaf 3)$d - not a repository$(tput sgr0)"
+  fi
+done
+ 

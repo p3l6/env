@@ -1,0 +1,2 @@
+#!/bin/bash
+find ~/workspace -iname $@ -not -ipath *pbxbuild* -exec geany {} \;

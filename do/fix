@@ -1,0 +1,9 @@
+#! /bin/bash
+# two-line hack to remove all file attributes, metadata from textediting, etc.
+# Nessesary to get finder to think it is a shell program.
+# I have also found it two reduce the file size by at least half. 
+cat $@ > $@.temporary
+mv $@.temporary $@
+# make it executable
+chmod u+x $@
+
