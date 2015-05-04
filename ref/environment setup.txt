@@ -1,0 +1,32 @@
+clone this repo to ~/env
+run env/dot/setup_dots.sh to create links
+get these xcode extensions
+  https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)
+  https://github.com/supermarin/Alcatraz
+  https://github.com/lucholaf/Auto-Importer-for-Xcode   (Cmd-Shift-H)
+  https://github.com/onevcat/VVDocumenter-Xcode
+  https://github.com/StefanLage/XQuit/
+  - when xcode has an update, the UUID of the new version has to be added to the plists for all these plugins. if you forget to update them before updating xcode, go into ~/Library/Application\ Support/Alcatraz, and git pull them all and rebuild. that should update the plugins in appSupport/Developer/Shared/Xcode/Plug-ins
+get these quick look plugins
+  QLStephen (view any text file)
+  QLColorCode (syntax highlighting in source files)
+get these applications 
+  Go2shell (get the non-app-store version)
+  Flycut
+  TextWrangler (get the non-app-store version)
+  SourceTree (get the non-app-store version)
+  Chrome
+  Mouse Locator
+Try to get a handle on system preferences (some ideas below)
+  General
+    theme: dark
+    scroll bar:jump to spot clicked
+    default browser:chrome
+  Dock 
+    position: left
+  Mission Control
+    o o x x (as overlay) ^up ^down f11 f12
+Terminal preferences, window groups
+Xcode preferences
+  Text editing: line numbers, folding ribbon, no page guide, highlight instances, all completions, indent spaces 4
+  

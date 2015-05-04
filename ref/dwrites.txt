@@ -1,0 +1,22 @@
+add a spacer tile in the dock
+  defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+  
+dock justification (missing in osx 10.10)
+  defaults write com.apple.dock pinning -string 'Start' 'Middle' 'End'
+  
+dims icons of hidden apps on the dock
+  defaults write com.apple.dock showhidden -boolean YES
+
+single app mode hides all apps except the active one
+  defaults write com.apple.dock single-app -boolean true
+  
+show hidden files in finder
+  defaults write com.apple.finder AppleShowAllFiles 1
+  
+  
+  
+
+finding possible defaults. This may or may not work I have no idea.
+  load the executable in lldb, pause (^C) it after it fully loads. Use
+  po [[NSUserDefaults standardUserDefaults] dictionaryRepresentation]
+  po [[NSUserDefaults standardUserDefaults] persistentDomainForName:@"com.apple.Maps"]

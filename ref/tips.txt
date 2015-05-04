@@ -1,0 +1,24 @@
+WINDOWS
+  get printf output on windows
+    in file /c/GNUstep/GNUstep/System/Library/Makefiles/Instance/application.make
+    line 124: ALL_LDFLAGS += -Wl,-subsystem,windows
+    change "windows" to "console"
+    line 124: ALL_LDFLAGS += -Wl,-subsystem,console
+  gnustep builds with no optimizations
+    build_gs.sh:49&55 --enable-debug-by-default
+    alternately, make debug=yes install, when building eggplant (I think)(Actually, this seems more reliable)
+  get freerdp debug on windows
+    add -DCMAKE_BUILD_TYPE:STRING=Debug in the cmake arguments
+
+
+XCODE HACKS
+  custom behaviors
+    you can setup key-bound behaviors in settings to do assorted window adjustments, eg hide debugger
+  Users/paul/Library/Developer/Xcode/UserData is a good folder to migrate, it has the keybindings, snippets, etc.
+  Archive to IPA
+    xcodebuild -exportArchive -archivePath <src>.xcarchive/ -exportPath <dest> -exportFormat ipa -exportProvisioningProfile "<name as listed in xcode>"
+    http://testdroid.com/tech/tipstricks-how-to-archive-and-export-ipa-from-script
+
+ICONS
+  system finder icon locations
+    /System/Library/CoreServices/CoreTypes.bundle/Contents/Resources

@@ -1,0 +1,445 @@
+====
+ACLS
+====
+ls -e; to display acl permissions
+chmod +a "permission string" file; to add an acl, example:
+chmod -R +a "backupexec allow read,readattr,readextattr,readsecurity,file_inherit,directory_inherit" /dumps
+man ls has explanations of the permission strings
+
+
+
+==========
+BASH COLOR
+==========
+for any color:
+\[\e[0;32m\]  <this is in color 0;32>  \[\e[m\] 
+simpler, fewer options, colors [1-7] are: red, green, yellow, blue, purple, light-blue, white
+$(tput setaf [1-7])<this is in color [1-7]>$(tput sgr0) 
+
+
+
+=================
+BASH COMMAND TIPS
+=================
+use 'set -e' to stop execution on the first failure in a script
+echo -ne "updating $pc%\r" use inside a loop to overwrite itself each time. -n no newline, \r carriage return but no newline
+ln -s existing_file new_pointer # existing file path is relative to location of new_pointer, not current working directory. 
+'tar xvzf <filename>' to untar, z:gzipped, x:extract, v:verbose, f:filename
+'last -10' print the last ten logins
+'file' 'stat', information about the type of file and full ls info, respectively
+use && to chain commands on the command line, second will execute only on success of the first
+for i in $(seq 1 7); do; done # simple for loop
+
+
+
+============
+BASH HISTORY
+============
+use ctrl-r to reverse search history semi-interactively
+history 10:      print 10 histroy items
+!<something>:p = print without executing
+
+!!     = last command
+!baz   = last command that starts with baz
+!?baz  = last command containing baz
+!300   = history item 300
+!$     = the last argument of the previous command
+!^     = first arg of prev command
+!:2    = second arg of prev command
+!*     = all arguments of the last command
+
+
+
+==================
+BASH IF CONDITIONS
+==================
+if CONDITIONS; then DO STUFF; fi
+
+    Conditions of form: [ -a FILE ]
+resolves to true if ...
+ -a, -e  FILE exists
+
+resolves to true if FILE exists and it is ...
+ -r  readable, -w writable, -x executable,
+ -O  owned by the effective user ID, -G owned by the effective group ID,
+ -d  a directory,
+ -f  a regular file, 
+ -h, -L  a symbolic link,  
+ -S  a socket
+ -b  a block-special, -c a character-special, -p a named pipe,
+ -N  modified since read
+ 
+resolves to true if FILE exists and it has ...
+ -g  its SGID bit set,-k sticky bit is set,
+ -s  a size greater than zero, 
+ -u  its SUID bit set, 
+
+resolves to true if file descriptor is open and ...
+ -t  refers to a terminal
+
+    Other Conditions
+[ FILE1 -nt FILE2 ] FILE1 is changed more recently than FILE2
+[ FILE1 -ot FILE2 ] FILE1 is older than FILE2
+[ FILE1 -et FILE2 ] Both FILEs refer to the same inode
+ 
+[ -z STRING ] length of string is zero
+[ -n STRING ] or [ STRING ] length of string is non-zero
+[ STRING1 == STRING2 ] true if strings are equal
+[ STRING1 != STRING2 ] false if strings are equal
+[ STRING1 < STRING2 ] true if STRING1 sorts before STRING2
+
+[ A -eq B ] integer comparison, also: -ne, -lt, -le, -gt, -ge
+
+    Combinations ( in precedence order )
+[ !EXPR ] not 
+[ (EXPR) ] order of operations
+[ EX -a EXP ] and
+[ EX -o EXP ] or
+
+    Also
+[ things ] && (do some; stuff)
+[ things ] || (do some; stuff)
+test things && (do some; stuff)
+
+
+
+====================
+BASH SHELL VARIABLES
+====================
+$#   number of command-line arguments given.
+$?   exit value of the last command that was executed.
+$0   the command run by the user ( zeroth argument ).
+$x   x'th argument of the command, eg $1, $2.
+$*   all the arguments ($1 $2 ...). when quoted, single string.
+$@   all the arguments, when quoted, individual strings ("$1" "$2" ...).
+$$   process number for shell or script executing.
+$!   process number of the last background command.
+
+
+
+=====================
+CONSTRUCTORS / COPIES
+=====================
+The copy assignment operator must clean up the data members of the assignment's target (and correctly handle self-assignment)
+The copy constructor assigns values to uninitialized data members.
+ For example:
+  My_Array first;           // initialization by default constructor
+  My_Array second(first);   // initialization by copy constructor
+  My_Array third = first;   // Also initialization by copy constructor
+  second = third;           // assignment by copy assignment operator
+
+
+
+===================
+FORMAT PLACEHOLDERS
+===================
+%[parameter][flags][width][.precision][length]type
+
+[parameter] $n    = the number of the parameter to use. allows using parameters out of order, or multiple times.
+[flags]
++     = always denote the sign of a number.
+space = prefixes non-negative signed numbers with a space ( where a minus would be ).
+-     = left-align the output of this placeholder ( default is right ).
+#     = alternate form. (g,G trailing zeros allowed)(f,F,e,E,g,G always has decimal point)(o,x,X add 0,0x,0X, to beginning).
+0     = use 0 to pad a field when width is defined.
+
+[width] specify minimum number of characters to output.
+[.precision] specify digits to the right of the decimal or number of string characters. 
+[length]
+hh    = expect an int-sized integer promoted from char.
+h     = expect an int-sized integer promoted from short.
+l     = expect a long-sized integer.
+ll    = expect a long long-sized integer.
+L     = expect a long double.
+z     = expect a size_t-sized integer.
+j     = expect a intmax_t-sized integer.
+t     = expect a ptrdiff_t-sized integer.
+
+type
+d,i   = signed decimal number.
+u     = unsigned decimal number.
+f,F   = double normal notation.
+e,E   = double exponent notation.
+g,G   = double in either notation, whichever is more appropriate.
+x,X   = unsigned int in hexidecimal.
+o     = unsigned int in octal.
+s     = null terminated string.
+c     = char.
+p     = void* .
+n     = print nothing, write number of characters written into an integer pointer.
+%     = literal %, no flags accepted.
+
+
+
+============
+GDB COMMANDS
+============
+                RUNNING / SOURCES
+$ gdb <program> [core dump]             start gdb, optional core dump
+$ gdb --args program <args..>           start gdb and pass arguments
+$ gdb --pid <pid>                       start gdb attached to process
+set args <args..>                       set the arguments to be passed on run
+run                                     run the program 
+kill                                    kill the running program
+thread <thread #>                       choose thread to operate on 
+directory                               add directory to list searched for sources
+                BREAKPOINTS / WATCHPOINTS
+break <where> [if <condition> ]         set a new breakpoint
+watch <where> [if <condition> ]         set a new breakpoint
+delete <breakpoint|watchpoint #>        remove a breakpoint or watchpoint
+clear                                   remove all breakpoints
+enable <breakpoint|watchpoint #>
+disable <breakpoint|watchpoint #>            
+                <WHERE>/<CONDITION>
+function_name                           the named function
+line_number                             the line number in current source file
+file:line_number                        the line number in named source
+<condition>                             almost any c expression evaluating to true/false
+condition <breakpoint #> <condition>    set or change condition for breakpoint
+                STEPPING / STACK / MANIPULATION
+step (stepi)                            go to next instruction/line, into functions
+next (nexti)                            go to next instruction/line, skip over functions
+finish                                  continue until current function returns
+continue                                continue normal execution
+backtrace, where                        show call stack
+backtrace full, where full              show call stack with all local variables in each
+thread apply all where                  show call stack for every thread
+frame <frame #>                         select the frame to operate on
+set var <variable_name>=<value>         change content of a variable to value
+return <expression>                     force function to return now, passing value
+handle <signal> <options>               how to handle signals: [no]print, [no]stop, [no]pass ( pass to program )
+                VARIABLES
+print[/format] <what>                   print variable or memory location or register
+display[/format] <what>                 like print, but print after each step
+undisplay <display #>                   
+enable|disable display <display #>
+x[/NumFormatUnit]                       print memory, num, format, unit(b byte, h halfword, w word, g giant word)
+                <FORMAT>/<WHAT>
+a, d, o, u, x, t                        pointer, int, float, oct, unsigned int, hex, binary
+c, s                                    character, c string
+expression                              any c, including functions(must cast return type)
+file_name:variable_name                 content of a static variable in named file
+function::variable_name                 content of variable in function on stack
+{type}address                           content at address, interpreted as type
+$register                               content of a named register( $esp $ebp $eip .. )
+                INFORMATION
+disassemble [<where>]                   show disassembly current function or where
+info args                               args of current stack frame
+info breakpoints                        info about break and watchpoints
+info display                            info about displays
+info locals                             info about local vars
+info signals                            info about how signals are handled
+info threads                            list all threads
+show directories                        list places gdb looks for sources
+whatis <variable_name>                  print type of variable
+list									print out source lines
+
+
+
+========
+GIT MISC
+========
+git diff --color-words
+git stash show -p > file.patch
+git clean --dry-run
+git bisect start; git bisect good a1b54ff3; git bisect bad master; .... bad / good prompts ...; git bisect reset; # find the commit that broke something
+
+
+
+=================
+GIT RELEASE / TAG
+=================
+git tag;                              # to determine most recent existing version tag
+git pull;                             # update develop 
+git checkout master;                  # switch to the master branch
+git merge origin/master;              # [opt] update master if anything was pulled
+git merge develop -m '';              # merge in the current develop branch
+git tag -a v0.1.4 -m 'version 0.1.4'; # replace 0.1.4 with version number
+git push;                             # push master
+git push --tags;                      # push tags
+git checkout develop;                 # remember to go back to develop branch
+git log --oneline v0.1.3..v0.1.4 >> ~/log.txt; # print summary between versions
+git show v1.0.1                       # show sha1 for the tag
+
+
+
+=============
+GIT REVISIONS
+=============
+SHA-1 or short SHA-1 (default first seven characters)
+Branch name
+RefLog shortnames, works for HEAD and branch names. 'git reflog' to see list or 'git reflog show master'
+  HEAD@{5} fifth HEAD ago
+  master@{yesterday}
+HEAD^ parent of HEAD
+d921970^2 second parent of d921970, only useful for merges. does not mean grandparent
+HEAD~ parent of HEAD (equivalent to HEAD^)
+HEAD~2 grandparent of HEAD (equivalent to HEAD^^)
+A..B commits in B that are not in A
+A..  equivalent to A..HEAD
+A...B commits in either but not both, often with --left-right
+
+
+
+=======
+GIT SVN
+=======
+git svn clone <svn url> -s --prefix=origin/
+git svn clone <svn url>/trunk --prefix=origin/ # clone without tags and branches
+git svn fetch # gets new svn commits onto origin/git-svn, can continue a failed clone sometimes
+...use git normally...
+git svn rebase # pulls down, rebases current work on top, creates local commits. instead of pull
+git svn dcommit
+...if using topic branches, rebase them onto master instead of merging. 
+...don't push to git repos, since commits get rewritten when using dcommit
+git svn find-rev r1234
+
+
+
+=======================
+OPERATORS & OVERLOADING
+=======================
+Operator        As a member of T                        Outside of class definition
+a=b             R T::operator =(S b);                   -----
+a+b             R T::operator +(S b);                   R operator +(S a, T b);
+a-b             R T::operator -(S b);                   R operator -(S a, T b);
++a              R T::operator +();                      R operator +(S a);
+-a              R T::operator -();                      R operator -(S a);
+a*b             R T::operator *(S b);                   R operator *(S a, T b);
+a/b             R T::operator /(S b);                   R operator /(S a, T b);
+a%b             R T::operator %(S b);                   R operator %(S a, T b);
+++a             R T::operator ++();                     R operator ++(S a);
+a++             R T::operator ++(int);                  R operator ++(S a, int);
+--a             R T::operator --();                     R operator --(S a);
+a--             R T::operator --(int);                  R operator --(S a, int);
+
+a==b            R T::operator ==(S b);                  R operator ==(S a, T b);
+a!=b (not_eq)   R T::operator !=(S b);                  R operator !=(S a, T b);
+a >b            R T::operator >(S b);                   R operator >(S a, T b);
+a <b            R T::operator <(S b);                   R operator <(S a, T b);
+a>=b            R T::operator >=(S b);                  R operator >=(S a, T b);
+a<=b            R T::operator <=(S b);                  R operator <=(S a, T b);
+
+!a (not)        R T::operator !();                      R operator !(S a);
+a && b (and)    R T::operator &&(S b);                  R operator &&(S a, T b);
+a || b (or)     R T::operator ||(S b);                  R operator ||(S a, T b);
+
+~a (compl)      R T::operator ~();                      R operator ~(S a);
+a&b (bitand)    R T::operator &(S b);                   R operator &(S a, T b);
+a|b (bitor)     R T::operator |(S b);                   R operator |(S a, T b);
+a^b (xor)       R T::operator ^(S b);                   R operator ^(S a, T b);
+a<<b            R T::operator <<(S b);                  R operator <<(S a, T b);
+a>>b            R T::operator >>(S b);                  R operator >>(S a, T b);
+
+a+=b            R T::operator +=(S b);                  R operator +=(S a, T b);
+a-=b            R T::operator -=(S b);                  R operator -=(S a, T b);
+a*=b            R T::operator *=(S b);                  R operator *=(S a, T b);
+a/=b            R T::operator /=(S b);                  R operator /=(S a, T b);
+a%=b            R T::operator %=(S b);                  R operator %=(S a, T b);
+a&=b (and_eq)   R T::operator &=(S b);                  R operator &=(S a, T b);
+a|=b (or_eq)    R T::operator |=(S b);                  R operator |=(S a, T b);
+a^=b (xor_eq)   R T::operator ^=(S b);                  R operator ^=(S a, T b);
+a<<=b           R T::operator <<=(S b);                 R operator <<=(S a, T b);
+a>>=b           R T::operator >>=(S b);                 R operator >>=(S a, T b);
+
+a[b]            R T::operator [](S b);                  -----
+*a              R T::operator *();                      R operator *(S a);
+&a              R T::operator &();                      R operator &(S a);
+a->b            R T::operator ->();                     -----
+a.b             -----                                   -----
+a->*b           R T::operator ->*(S a);                 R operator ->*(S a, T b);
+a.*b            -----                                   -----
+
+a(a1, a2)       R T::operator ()(S a1, U a2, ...);      -----
+a, b            R T::operator ,(S b);                   R operator ,(S a, T b);
+(type)a,type(a) T::operator R();                        -----
+new type        void* T::operator new(size_t x);        void* operator new(size_t x);
+new type[n]     void* T::operator new[](size_t x);      void* operator new[](size_t x);
+delete a        void T::operator delete(void* x);       void operator delete(void* x);
+delete[] a      void T::operator delete[](void* x);     void operator delete[](void* x);
+
+
+
+============================
+MAKEFILE AUTOMATIC VARIABLES
+============================
+targets : prerequisites | order-only prerequisites
+    order-only prerequisites do not trigger a build of this rule when changed
+    makefiles must use tabs, not spaces
+    make runs each line as a subprosses: to cd somewhere; action on sameline
+$@ file name of the target.
+$% target member name, when target is an archive member. empty otherwise.
+$< name of first prerequisite. 
+$? names of all prerequisites that are newer than target.
+$^ names of all prerequisites, no duplicates, no order-only prerequisites.
+$+ like '$^' but duplicates can exist.
+$| names of all order-only prerequisites.
+$* stem of pattern match. should generally avoid except for implicit rules.
+
+
+
+============
+REGEX & GREP
+============
+^       = match the start of a line.
+$       = match the end of a line.
+\       = escape the next character.
+[ ]     = match any one of the enclosed characters, as in [aeiou] or [0-9a-c].
+[^ ]    = match any one character except those enclosed in [ ].
+.       = match a single character of any value, except end of line.
+*       = match zero or more of the preceding character or expression.
+\( \)   = match subexpression contained in parentheses.
+\{x,y\} = match x to y occurrences of the preceding.
+\{x\}   = match exactly x occurrences of the preceding.
+\{x,\}  = match x or more occurrences of the preceding.
+\1      = references group #1.
+
+with egrep ( extended grep )
+?       = match preceding element zero or one time.
++       = match preceding element one or more times.
+|       = match either expression before or after. abc|def matches abc or def.
+
+grep -i : ignore case
+*? +? ?? {x}? = lazy instead of greedy operators.
+
+
+
+=======================
+REGEX CHARACTER CLASSES
+=======================
+[:alnum:]     (a-z, A-Z, and 0-9).
+[:alpha:]     (a-z, A-Z).
+[:blank:]     (spaces or tabs).
+[:cntrl:]     (ASCII 0-31).
+[:digit:]  \d (0-9).
+[:graph:]     (alphanumeric or punctuation)
+[:lower:]     (a-z).
+[:print:]     ([^:cntrl:], [[:graph:][:space:]])
+[:punct:]     (punctuation)
+[:space:]  \s (space, tab, newline, carriage return, form feed, and vertical tab)
+[:upper:]     (A-Z)
+[:word:]   \w (a-z, A-Z, 0-9, _)
+[:xdigit:]    (0-9, a-f, A-F)
+           \t (tab)
+           \n (newline)
+           \r (carriage return)
+           \b (word boundary) 
+           \B (nonword)
+           \x (start of an ASCII hex code, \x20 for example)
+
+
+
+==============
+VIM NAVIGATION
+==============
+hjkl    think of j as an arrow pointing downwards
+gk gj   up/down one display line (line wrapping)
+gg G    go to line (default first/last)
+b  w    back/forward to beginning of word
+ge e    back/forward to end of word
+(  )    back/forward sentence
+{  }    back/forward paragraph
+0  $    beginning/end of line
+^       first non-blank char of line
+
+
