@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>enumerate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSEnumerator * &lt;#what#&gt;Enumerator = [&lt;#source#&gt; objectEnumerator];
+&lt;#Type#&gt; * &lt;#what#&gt; = nil;
+while ((&lt;#what#&gt; = [&lt;#what#&gt;Enumerator nextObject])) {
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>70E43B4E-E96D-4757-8FA6-1BAF2C8759A7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Loop over objects in an array</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Array Enumerator</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

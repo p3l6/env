@@ -420,6 +420,13 @@
 	<dict>
 		<key>Key Bindings</key>
 		<dict>
+			<key></key>
+			<array>
+				<string>moveToBeginningOfDocument:</string>
+				<string>moveToEndOfDocument:</string>
+			</array>
+			<key>$</key>
+			<string>moveToEndOfDocumentAndModifySelection:</string>
 			<key>^~$</key>
 			<string>moveSubWordBackwardAndModifySelection:</string>
 			<key>^~$</key>
