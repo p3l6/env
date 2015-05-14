@@ -135,7 +135,7 @@ FORMAT PLACEHOLDERS
 ===================
 %[parameter][flags][width][.precision][length]type
 
-[parameter] $n    = the number of the parameter to use. allows using parameters out of order, or multiple times.
+[parameter] n$ = n is the number of the parameter to use. allows using parameters out of order, or multiple times. one-based. if using, must use for all placeholders in string.
 [flags]
 +     = always denote the sign of a number.
 space = prefixes non-negative signed numbers with a space ( where a minus would be ).
@@ -242,7 +242,7 @@ GIT MISC
 git diff --color-words
 git stash show -p > file.patch
 git clean --dry-run
-git bisect start; git bisect good a1b54ff3; git bisect bad master; .... bad / good prompts ...; git bisect reset; # find the commit that broke something
+git bisect start; git bisect good a1b54ff3; git bisect bad master; .... git bisect bad/good/skip ...; git bisect reset; # find the commit that broke something
 
 
 
