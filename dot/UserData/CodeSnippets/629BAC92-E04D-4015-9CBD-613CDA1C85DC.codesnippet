@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>retainDebug</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (id)retain {
+    return [super retain];
+}
+- (oneway void)release {
+    [super release];
+}
+- (id)autorelease {
+    return [super autorelease];
+}
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>629BAC92-E04D-4015-9CBD-613CDA1C85DC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>stub methods for retain/release/autorelease</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Retain Cycle Debug Points</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
