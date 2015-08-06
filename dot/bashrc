@@ -6,6 +6,7 @@ export SVN_EDITOR=vim
 export EDITOR=vim
 alias snv='svn'
 alias ss='svn stat'
+alias resolve='svn resolve --accept working'
 alias sup='svn info | grep "Revision"; svn update'
 alias ssd='svn diff -r BASE:HEAD --diff-cmd=/Users/paul/.subversion/git_diff';
 alias sd='svn diff --diff-cmd=/Users/paul/.subversion/git_diff';
