@@ -1,12 +1,11 @@
 clone this repo to ~/env
 run env/dot/setup_dots.sh to create links
 get these xcode extensions
-  https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)
-  https://github.com/supermarin/Alcatraz
-  https://github.com/lucholaf/Auto-Importer-for-Xcode   (Cmd-Shift-H)
+  https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)  
   https://github.com/onevcat/VVDocumenter-Xcode
   https://github.com/StefanLage/XQuit/
-  - when xcode has an update, the UUID of the new version has to be added to the plists for all these plugins. if you forget to update them before updating xcode, go into ~/Library/Application\ Support/Alcatraz, and git pull them all and rebuild. that should update the plugins in appSupport/Developer/Shared/Xcode/Plug-ins
+  note: when xcode has an update, the UUID of the new version has to be added to the plists for all these plugins. to update, git pull them all and rebuild. that should update the plugins in appSupport/Developer/Shared/Xcode/Plug-ins. (assuming the new xcode uuids have been committed to the info.plists)
+  note: found these plugins with the (https://github.com/supermarin/Alcatraz) package manager. It became to cumbersome so I stopped using it. can check periodically there for new plugins though. 
 get these quick look plugins
   QLStephen (view any text file)
   QLColorCode (syntax highlighting in source files)
