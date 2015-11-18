@@ -9,7 +9,9 @@ WINDOWS
     alternately, make debug=yes install, when building eggplant (I think)(Actually, this seems more reliable)
   get freerdp debug on windows
     add -DCMAKE_BUILD_TYPE:STRING=Debug in the cmake arguments
-
+  invalid parameter passed to c runtime function
+    remove ._ files created by accessing FAT filesystems with finder, gnustep can't load these
+     
 
 XCODE HACKS
   custom behaviors
