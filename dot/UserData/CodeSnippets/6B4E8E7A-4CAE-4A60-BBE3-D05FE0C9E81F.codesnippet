@@ -9,8 +9,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)dealloc
-{
+	<string>- (void)dealloc {
     &lt;#statements#&gt;
     [super dealloc];
 }</string>
