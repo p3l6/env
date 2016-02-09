@@ -13,7 +13,8 @@ single app mode hides all apps except the active one
 show hidden files in finder
   defaults write com.apple.finder AppleShowAllFiles 1
   
-  
+disable gatekeeper re-enabling every 30 days
+  sudo defaults write /Library/Preferences/com.apple.security GKAutoRearm -bool NO
   
 
 finding possible defaults. This may or may not work I have no idea.

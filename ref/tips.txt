@@ -11,6 +11,10 @@ WINDOWS
     add -DCMAKE_BUILD_TYPE:STRING=Debug in the cmake arguments
   invalid parameter passed to c runtime function
     remove ._ files created by accessing FAT filesystems with finder, gnustep can't load these
+  enable zombies in gdb
+     set environment NSZombieEnabled=YES
+     break GSLogZombie
+     
      
 
 XCODE HACKS

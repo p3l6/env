@@ -13,9 +13,9 @@ get these applications
   Go2shell (get the non-app-store version)
   Flycut
   TextWrangler (get the non-app-store version)
+  Brackets
   SourceTree (get the non-app-store version)
   Chrome
-  Mouse Locator
 Try to get a handle on system preferences (some ideas below)
   General
     theme: dark

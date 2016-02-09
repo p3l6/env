@@ -3,24 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mydealloc</string>
+	<string>makr</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void) dealloc {
-    &lt;#statements#&gt;
-    [super dealloc];
-}</string>
+	<string>/* MARK: &lt;#makr#&gt; */</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6B4E8E7A-4CAE-4A60-BBE3-D05FE0C9E81F</string>
+	<string>D71B0881-A2FB-4418-AA5A-3A4F28B40CAC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>customized dealloc method</string>
+	<string>a comment thtat shows up in the class map</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Dealloc</string>
+	<string>MAKR comment</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
