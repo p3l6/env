@@ -6,15 +6,16 @@ get these xcode extensions
   https://github.com/StefanLage/XQuit/
   note: when xcode has an update, the UUID of the new version has to be added to the plists for all these plugins. to update, git pull them all and rebuild. that should update the plugins in appSupport/Developer/Shared/Xcode/Plug-ins. (assuming the new xcode uuids have been committed to the info.plists)
   note: found these plugins with the (https://github.com/supermarin/Alcatraz) package manager. It became to cumbersome so I stopped using it. can check periodically there for new plugins though. 
+  edit (with Xcode) the MinimumSDKVersion key value in /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Info.plist
 get these quick look plugins
   QLStephen (view any text file)
   QLColorCode (syntax highlighting in source files)
-get these applications 
-  Go2shell (get the non-app-store version)
-  Flycut
-  TextWrangler (get the non-app-store version)
+get these applications (get the non-app-store version)
+  Go2shell 
+  Flycut 
+  TextWrangler 
   Brackets
-  SourceTree (get the non-app-store version)
+  SourceTree
   Chrome
 Try to get a handle on system preferences (some ideas below)
   General

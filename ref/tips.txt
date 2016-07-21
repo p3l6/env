@@ -28,3 +28,7 @@ XCODE HACKS
 ICONS
   system finder icon locations
     /System/Library/CoreServices/CoreTypes.bundle/Contents/Resources
+
+EMAIL
+  when they update the email footer banner, delete this cache folder in mail:
+    ~/Library/Containers/com.apple.mail/Data/Library/Caches
