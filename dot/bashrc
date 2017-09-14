@@ -88,3 +88,5 @@ function _branches()
     return 0
 }
 complete -F _branches co
+
+eval $(thefuck --alias)

@@ -1,0 +1,2 @@
+#! /bin/bash
+xcodebuild -exportArchive -archivePath "$@" -exportPath ~/Desktop/exportedIpa -exportFormat ipa -exportProvisioningProfile "iOS Gateway provisioning: *"

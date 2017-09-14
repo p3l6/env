@@ -12,9 +12,9 @@ man ls has explanations of the permission strings
 BASH COLOR
 ==========
 for any color:
-\[\e[0;32m\]  <this is in color 0;32>  \[\e[m\] 
+\[\e[0;32m\]  <this is in color 0;32>  \[\e[m\]
 simpler, fewer options, colors [1-7] are: red, green, yellow, blue, purple, light-blue, white
-$(tput setaf [1-7])<this is in color [1-7]>$(tput sgr0) 
+$(tput setaf [1-7])<this is in color [1-7]>$(tput sgr0)
 
 
 
@@ -23,7 +23,7 @@ BASH COMMAND TIPS
 =================
 use 'set -e' to stop execution on the first failure in a script
 echo -ne "updating $pc%\r" use inside a loop to overwrite itself each time. -n no newline, \r carriage return but no newline
-ln -s existing_file new_pointer # existing file path is relative to location of new_pointer, not current working directory. 
+ln -s existing_file new_pointer # existing file path is relative to location of new_pointer, not current working directory.
 'tar xvzf <filename>' to untar, z:gzipped, x:extract, v:verbose, f:filename
 'last -10' print the last ten logins
 'file' 'stat', information about the type of file and full ls info, respectively
@@ -63,16 +63,16 @@ resolves to true if FILE exists and it is ...
  -r  readable, -w writable, -x executable,
  -O  owned by the effective user ID, -G owned by the effective group ID,
  -d  a directory,
- -f  a regular file, 
- -h, -L  a symbolic link,  
+ -f  a regular file,
+ -h, -L  a symbolic link,
  -S  a socket
  -b  a block-special, -c a character-special, -p a named pipe,
  -N  modified since read
- 
+
 resolves to true if FILE exists and it has ...
  -g  its SGID bit set,-k sticky bit is set,
- -s  a size greater than zero, 
- -u  its SUID bit set, 
+ -s  a size greater than zero,
+ -u  its SUID bit set,
 
 resolves to true if file descriptor is open and ...
  -t  refers to a terminal
@@ -81,7 +81,7 @@ resolves to true if file descriptor is open and ...
 [ FILE1 -nt FILE2 ] FILE1 is changed more recently than FILE2
 [ FILE1 -ot FILE2 ] FILE1 is older than FILE2
 [ FILE1 -et FILE2 ] Both FILEs refer to the same inode
- 
+
 [ -z STRING ] length of string is zero
 [ -n STRING ] or [ STRING ] length of string is non-zero
 [ STRING1 == STRING2 ] true if strings are equal
@@ -91,7 +91,7 @@ resolves to true if file descriptor is open and ...
 [ A -eq B ] integer comparison, also: -ne, -lt, -le, -gt, -ge
 
     Combinations ( in precedence order )
-[ !EXPR ] not 
+[ !EXPR ] not
 [ (EXPR) ] order of operations
 [ EX -a EXP ] and
 [ EX -o EXP ] or
@@ -144,7 +144,7 @@ space = prefixes non-negative signed numbers with a space ( where a minus would 
 0     = use 0 to pad a field when width is defined.
 
 [width] specify minimum number of characters to output.
-[.precision] specify digits to the right of the decimal or number of string characters. 
+[.precision] specify digits to the right of the decimal or number of string characters.
 [length]
 hh    = expect an int-sized integer promoted from char.
 h     = expect an int-sized integer promoted from short.
@@ -179,9 +179,9 @@ $ gdb <program> [core dump]             start gdb, optional core dump
 $ gdb --args program <args..>           start gdb and pass arguments
 $ gdb --pid <pid>                       start gdb attached to process
 set args <args..>                       set the arguments to be passed on run
-run                                     run the program 
+run                                     run the program
 kill                                    kill the running program
-thread <thread #>                       choose thread to operate on 
+thread <thread #>                       choose thread to operate on
 directory                               add directory to list searched for sources
                 BREAKPOINTS / WATCHPOINTS
 break <where> [if <condition> ]         set a new breakpoint
@@ -189,7 +189,7 @@ watch <where> [if <condition> ]         set a new breakpoint
 delete <breakpoint|watchpoint #>        remove a breakpoint or watchpoint
 clear                                   remove all breakpoints
 enable <breakpoint|watchpoint #>
-disable <breakpoint|watchpoint #>            
+disable <breakpoint|watchpoint #>
                 <WHERE>/<CONDITION>
 function_name                           the named function
 line_number                             the line number in current source file
@@ -211,7 +211,7 @@ handle <signal> <options>               how to handle signals: [no]print, [no]st
                 VARIABLES
 print[/format] <what>                   print variable or memory location or register
 display[/format] <what>                 like print, but print after each step
-undisplay <display #>                   
+undisplay <display #>
 enable|disable display <display #>
 x[/NumFormatUnit]                       print memory, num, format, unit(b byte, h halfword, w word, g giant word)
                 <FORMAT>/<WHAT>
@@ -250,7 +250,7 @@ git bisect start; git bisect good a1b54ff3; git bisect bad master; .... git bise
 GIT RELEASE / TAG
 =================
 git tag;                              # to determine most recent existing version tag
-git pull;                             # update develop 
+git pull;                             # update develop
 git checkout master;                  # switch to the master branch
 git merge origin/master;              # [opt] update master if anything was pulled
 git merge develop -m '';              # merge in the current develop branch
@@ -290,7 +290,7 @@ git svn fetch # gets new svn commits onto origin/git-svn, can continue a failed 
 ...use git normally...
 git svn rebase # pulls down, rebases current work on top, creates local commits. instead of pull
 git svn dcommit
-...if using topic branches, rebase them onto master instead of merging. 
+...if using topic branches, rebase them onto master instead of merging.
 ...don't push to git repos, since commits get rewritten when using dcommit
 git svn find-rev r1234
 
@@ -369,7 +369,7 @@ targets : prerequisites | order-only prerequisites
     make runs each line as a subprosses: to cd somewhere; action on sameline
 $@ file name of the target.
 $% target member name, when target is an archive member. empty otherwise.
-$< name of first prerequisite. 
+$< name of first prerequisite.
 $? names of all prerequisites that are newer than target.
 $^ names of all prerequisites, no duplicates, no order-only prerequisites.
 $+ like '$^' but duplicates can exist.
@@ -423,7 +423,7 @@ REGEX CHARACTER CLASSES
            \t (tab)
            \n (newline)
            \r (carriage return)
-           \b (word boundary) 
+           \b (word boundary)
            \B (nonword)
            \x (start of an ASCII hex code, \x20 for example)
 
@@ -443,3 +443,10 @@ ge e    back/forward to end of word
 ^       first non-blank char of line
 
 
+
+===========
+ZIP CLEANUP
+===========
+zip -d <Archive.zip> __MACOSX/\*
+zip -d <Archive.zip> \*/.DS_Store
+unzip -l <Archive.zip>
