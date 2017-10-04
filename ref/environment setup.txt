@@ -11,7 +11,8 @@ get these applications (get the non-app-store version)
   Atom
   SourceTree
   Chrome
-  Homebrew: wget trash thefuck
+  Homebrew: wget trash thefuck vim\--with-override-system-vi cask
+    cask: 
 Try to get a handle on system preferences (some ideas below)
   General
     theme: dark

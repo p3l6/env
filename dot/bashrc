@@ -23,6 +23,8 @@ alias sgs='swap;gsr;swap'
 
 # misc
 #alias fix='chmod u+x'
+bind "set completion-ignore-case on"
+bind "set show-all-if-ambiguous on"
 
 # ls extension
 alias l='ls -halF'
