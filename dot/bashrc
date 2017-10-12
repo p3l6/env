@@ -1,7 +1,7 @@
-# path
+## path
 PATH=$PATH:/Users/paul/env/do
 
-# svn aliases
+## svn aliases
 export SVN_EDITOR=vim
 export EDITOR=vim
 alias snv='svn'
@@ -10,59 +10,59 @@ alias resolve='svn resolve --accept working'
 alias sup='svn info | grep "Revision"; svn update'
 alias ssd='svn diff -r BASE:HEAD --diff-cmd=/Users/paul/.subversion/git_diff';
 alias sd='svn diff --diff-cmd=/Users/paul/.subversion/git_diff';
+#function swap { str=${PWD##*/}; case $str in *Git) cd "../${str%Git}";; *) cd "../${str}Git";; esac }; # cd between 'folder' and 'folderGit'
+#alias sgs='swap;gsr;swap'
+#alias gsr='git svn rebase'
 
-# navigation
-function up { path=""; if [ $1 ]; then for i in $(seq 1 $1); do path=$path"../"; done; else path="../"; fi; cd $path; } # previously: alias up='cd ..' ; now alternate usage: $up 2
+## navigation
+function up { path=""; if [ $1 ]; then for i in $(seq 1 $1); do path=$path"../"; done; else path="../"; fi; cd $path; } # usage: $up 2
 alias back='cd -'  # previously: 'cd $OLDPWD'
 alias where='pwd'
 alias whereami='pwd'
 alias which='type -a'
 function cdl { cd $@   &&   ls -halF; } # change to a directory and print out contents
-function swap { str=${PWD##*/}; case $str in *Git) cd "../${str%Git}";; *) cd "../${str}Git";; esac }; # cd between 'folder' and 'folderGit'
-alias sgs='swap;gsr;swap'
 
-# misc
+## bash extensions and misc
 #alias fix='chmod u+x'
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
+export HISTCONTROL=ignoredups
+eval $(thefuck --alias)
 
-# ls extension
+## ls extension
 alias l='ls -halF'
 alias lc='ls -halFG'
 alias lsc='ls -G'
 
-# git aliases
+## git aliases
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
 alias branch='git branch'
 alias co='git checkout'
-alias unpushed='git log origin/master..master' #todo: make this a function, either uses $1 or bash_git_branch below, instead of develop
-alias unpulled='git fetch; git log develop..origin/develop'
+alias unpushed='git log @{upstream}..'
+alias unpulled='git fetch; git log ..@{upstream}'
 alias filelog='git log --stat --oneline'
 alias stash='git stash'
-alias gsr='git svn rebase'
 
-# file opening aliases
-alias tw='open -a TextWrangler'
-alias xc='open -a Xcode'
-alias proj='open *.xcodeproj'
+## file opening aliases
+alias tw='atom' # open -a TextWrangler
+alias proj='open *.xc[ow][do][er][pk]*' # .xcodeproj or .xcworkspace
 alias edit='vim'
 alias readme='less *[Rr][Ee][Aa][Dd]*[Mm][Ee]*'
 
 
-### Custom Prompt
-# \[ \] should wrap nonprinting escape characters
-# \[\e[0;32m\]  <this is in color 0;32>  \[\e[m\] 
+## Custom Prompt
 function bash_git_branch
 {
-  git branch 2> /dev/null | grep \* | python -c "print '['+raw_input()[2:]+']'" 2> /dev/null
-}  
+  # first option branch name, second option is detached head
+  _br=$(git symbolic-ref -q --short HEAD 2> /dev/null || git  rev-parse --short HEAD 2> /dev/null)
+  if [ ! -z $_br ]; then printf "[%s]" $_br; fi
+}
 # [branch]:folder$
 PS1='\[\e[0;32m\]$(bash_git_branch)\[\e[m\]:\[\e[0;36m\]\W\[\e[m\]\$ '
- 
 
-# tab completion for git repos folders under workspace
+## tab completion for git repos folders under workspace
 function _workspaces()
 {
     local curw
@@ -71,14 +71,14 @@ function _workspaces()
     COMPREPLY=($(compgen -W '$(ls /Users/paul/workspace)' -- $curw))
     return 0
 }
-function c()  
+function c()
 {
     cd /Users/paul/workspace/$1/
 }
 complete -F _workspaces -o dirnames c
 
 
-# tab completion for git branches
+## tab completion for git branches
 function _branches()
 {
     local curw
@@ -90,5 +90,3 @@ function _branches()
     return 0
 }
 complete -F _branches co
-
-eval $(thefuck --alias)
