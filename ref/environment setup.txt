@@ -1,27 +1,38 @@
 clone this repo to ~/env
-run env/dot/setup_dots.sh to create links
-get these xcode extensions
-  https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)
+  run env/dot/setup_dots.sh to create links
+
 get these quick look plugins
   QLStephen (view any text file)
   QLColorCode (syntax highlighting in source files)
+
 get these applications (get the non-app-store version)
+  Xcode
   Go2shell
   Flycut
-  Atom
-  SourceTree
-  Chrome
-  Homebrew: wget trash thefuck vim\--with-override-system-vi cask
-    cask: 
-Try to get a handle on system preferences (some ideas below)
+  Homebrew: wget trash thefuck vim--with-override-system-vi cask
+    Cask: atom google-chrome texshop sourcetree
+
+get these xcode extensions
+  https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)
+
+fix some system preferences
   General
     theme: dark
     scroll bar:jump to spot clicked
     default browser:chrome
   Dock
     position: left
+    manually dwrite some spacers and hidden app tiles
   Mission Control
-    o o x x (as overlay) ^up ^down f11 f12
-Terminal preferences, window groups
+    o o x x (as overlay) ^up ^down f10 f12
+
 Xcode preferences
-  Text editing: line numbers, folding ribbon, no page guide, highlight instances, all completions, indent spaces 4
+  Navigation: command-click jumps to definition
+  Text editing:
+    line numbers, no page guide, highlight instances
+    all completions
+    auto-trim trailing whitespace, except whitespace only lines
+    Indentation tab:
+      tab and indent width 4
+      wrap
+      align consecutive //comments, auto indent all
