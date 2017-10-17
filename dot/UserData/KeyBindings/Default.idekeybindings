@@ -30,6 +30,42 @@
 			</dict>
 			<dict>
 				<key>Action</key>
+				<string>GPUDebugger_selectNextItem:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>GPUDebugger.CmdDefinition.GPUCounters.SelectNextItem</string>
+				<key>Group</key>
+				<string>Editor Menu for GPU Counters</string>
+				<key>GroupID</key>
+				<string>GPUDebugger.GPUCounters.EditorMenuDefinition</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Select Next Draw/Encoder</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>GPUDebugger_selectPrevItem:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>GPUDebugger.CmdDefinition.GPUCounters.SelectPrevItem</string>
+				<key>Group</key>
+				<string>Editor Menu for GPU Counters</string>
+				<key>GroupID</key>
+				<string>GPUDebugger.GPUCounters.EditorMenuDefinition</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Select Prev Draw/Encoder</string>
+			</dict>
+			<dict>
+				<key>Action</key>
 				<string>_invokeSourceEditorExtensionCommand:</string>
 				<key>Alternate</key>
 				<string>NO</string>
@@ -528,9 +564,7 @@
 		<dict>
 			<key></key>
 			<array>
-				<string>moveSubWordForward:</string>
 				<string>moveToBeginningOfDocument:</string>
-				<string>moveSubWordBackward:</string>
 				<string>moveToEndOfDocument:</string>
 			</array>
 			<key>$</key>
@@ -541,6 +575,10 @@
 			<string>moveSubWordForwardAndModifySelection:</string>
 			<key>^~</key>
 			<string>deleteSubWordBackward:</string>
+			<key>^~</key>
+			<string>moveSubWordBackward:</string>
+			<key>^~</key>
+			<string>moveSubWordForward:</string>
 			<key>^~</key>
 			<string>deleteSubWordForward:</string>
 			<key>~</key>
