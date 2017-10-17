@@ -1,4 +1,12 @@
-ref/todo ideas.txt
+ref/eggplant_tips.txt
+
 do/newLinux
 do/cleanLogs
+
 dot/UserData/IB Support/Simulator Devices
+dot/UserData/*.xcuserstate
+dot/UserData/Debugger/
+dot/UserData/SearchScopes.xcsclist
+dot/UserData/IDENamedTabStateContexts.plist
+dot/UserData/IDEEditorInteractivityHistory
+dot/UserData/FontAndColorThemes/
