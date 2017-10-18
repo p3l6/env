@@ -1,16 +1,13 @@
 clone this repo to ~/env
   run env/dot/setup_dots.sh to create links
 
-get these quick look plugins
-  QLStephen (view any text file)
-  QLColorCode (syntax highlighting in source files)
-
 get these applications (get the non-app-store version)
   Xcode
-  Go2shell
-  Flycut
-  Homebrew: wget trash thefuck vim--with-override-system-vi cask
-    Cask: atom google-chrome texshop sourcetree
+  Homebrew: wget trash thefuck cask
+            vim --with-override-system-vi
+  Cask: atom google-chrome sourcetree flycut go2shell
+        qlcolorcode qlstephen qlprettypatch
+        texshop
 
 get these xcode extensions
   https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)
