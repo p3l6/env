@@ -1,13 +1,13 @@
 clone this repo to ~/env
   run env/dot/setup_dots.sh to create links
 
-get these applications (get the non-app-store version)
+get these applications
   Xcode
   Homebrew: wget trash thefuck cask
             vim --with-override-system-vi
   Cask: atom google-chrome sourcetree flycut go2shell
         qlcolorcode qlstephen qlprettypatch
-        texshop
+        texshop dropbox
 
 get these xcode extensions
   https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)
