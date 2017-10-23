@@ -1,3 +1,0 @@
-#! /bin/bash
-svn merge -c $@ svn+ssh://svn.testplant.com/usr/local/svn/Eggplant/trunk
-
