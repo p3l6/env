@@ -13,5 +13,6 @@
 	ci = commit
 	co = checkout
 	diffw = diff --word-diff
+	discard = checkout --
   pullr = pull --rebase
   unstage = reset HEAD --
