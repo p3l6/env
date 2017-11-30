@@ -8,7 +8,7 @@ get these applications
   Cask: atom google-chrome sourcetree flycut go2shell
         qlcolorcode qlstephen qlprettypatch
         texshop dropbox
-  Chrome: bitwarden privacy-badger stylish switcheroo
+  Chrome: bitwarden privacy-badger stylish camelizer
 
 get these xcode extensions
   https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)
