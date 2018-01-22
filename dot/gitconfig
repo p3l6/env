@@ -15,5 +15,7 @@
 	cp = cherry-pick
 	diffw = diff --word-diff
 	discard = checkout --
+	search = log --pretty=format:\"%C(yellow)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s\" --date=short -S
+	sync = "!git pull --rebase && git push"
   pullr = pull --rebase
   unstage = reset HEAD --

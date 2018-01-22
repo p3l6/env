@@ -5,7 +5,7 @@ get these applications
   Xcode
   Homebrew: wget trash thefuck cask
             vim --with-override-system-vi
-  Cask: atom google-chrome sourcetree flycut go2shell
+  Cask: atom google-chrome fork flycut go2shell
         qlcolorcode qlstephen qlprettypatch
         texshop dropbox
   Chrome: bitwarden privacy-badger stylish camelizer
