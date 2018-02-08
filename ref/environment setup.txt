@@ -2,9 +2,10 @@ clone this repo to ~/env
   run env/dot/setup_dots.sh to create links
 
 get these applications
-  Xcode
+  Xcode & command line extensions
   Homebrew: wget trash thefuck cask
             vim --with-override-system-vi
+            (tap osx-cross/avr PX4/homebrew-px4) avr-gcc dfu-programmer gcc-arm-none-eabi  avrdude
   Cask: atom google-chrome fork flycut go2shell
         qlcolorcode qlstephen qlprettypatch
         texshop dropbox
@@ -34,3 +35,6 @@ Xcode preferences
       tab and indent width 4
       wrap
       align consecutive //comments, auto indent all
+
+Atom preferences:
+  sync-settings gist: a9b82ee4cdcbd8c128c51c34f4eb41cf

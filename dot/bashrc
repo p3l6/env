@@ -12,8 +12,6 @@ alias sup='svn info | grep "Revision"; svn update'
 ## navigation
 function up { path=""; if [ $1 ]; then for i in $(seq 1 $1); do path=$path"../"; done; else path="../"; fi; cd $path; } # usage: $up 2
 alias back='cd -'  # previously: 'cd $OLDPWD'
-alias where='pwd'
-alias whereami='pwd'
 alias which='type -a'
 function cdl { cd $@   &&   ls -halF; } # change to a directory and print out contents
 
@@ -30,7 +28,6 @@ alias lc='ls -halFG'
 ## git aliases
 alias gs='git status'
 alias ga='git add'
-alias gc='git commit'
 alias branch='git branch'
 alias co='git checkout'
 alias unpushed='git log @{upstream}..'
