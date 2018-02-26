@@ -1,0 +1,33 @@
+#! /bin/bash
+
+if [ -z $1 ]; then
+  echo Usage:
+  echo  "pacsearch [update] <query>"
+  echo  pacsearch update
+  exit 1
+fi
+
+if [ "$1" == "update" ]; then
+  echo -UPDATING CACHE-
+  mkdir -p /tmp/pacsearch
+  curl --silent --show-error repo.msys2.org/msys/x86_64/  > /tmp/pacsearch/msys
+  curl --silent --show-error repo.msys2.org/mingw/x86_64/ > /tmp/pacsearch/mingw
+
+  shift
+  if [ -z $1 ]; then exit 0; fi # update only, no argument 
+fi
+
+if [ ! -e /tmp/pacsearch/msys ]; then
+  echo Missing cache files, run again with update
+  exit 2
+fi
+
+if [ ! -e /tmp/pacsearch/mingw ]; then
+  echo Missing cache files, run again with update
+  exit 2
+fi
+
+echo -MSYS-
+cat /tmp/pacsearch/msys  | sed 's/<[^>]*>//g' | grep $@ | grep -v ".sig" | cut -d " " -f 1
+echo -MINGW64-
+cat /tmp/pacsearch/mingw | sed 's/<[^>]*>//g' | grep $@ | grep -v ".sig" | cut -d " " -f 1
