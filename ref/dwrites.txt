@@ -17,6 +17,16 @@ disable gatekeeper re-enabling every 30 days
   sudo defaults write /Library/Preferences/com.apple.security GKAutoRearm -bool NO
   sudo spctl --master-disable
 
+disable asking to open application from internet
+  defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+shows all file extensions in finder
+  defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+disable the warning when changing a file extension
+  defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+
 finding possible defaults. This may or may not work I have no idea.
   load the executable in lldb, pause (^C) it after it fully loads. Use
   po [[NSUserDefaults standardUserDefaults] dictionaryRepresentation]

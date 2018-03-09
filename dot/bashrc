@@ -24,8 +24,10 @@ eval $(thefuck --alias)
 ## ls extension
 alias l='ls -halF'
 alias lc='ls -halFG'
+alias dush='du -sh'
 
 ## git aliases
+alias g='git'
 alias gs='git status'
 alias ga='git add'
 alias branch='git branch'
