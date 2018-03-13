@@ -1,5 +1,6 @@
 ## path
-PATH=$PATH:/Users/paul/env/do
+PATH=$PATH:$HOME/env/do
+WRKSP=$HOME/var
 
 ## svn aliases
 export SVN_EDITOR=vim
@@ -12,7 +13,6 @@ alias sup='svn info | grep "Revision"; svn update'
 ## navigation
 function up { path=""; if [ $1 ]; then for i in $(seq 1 $1); do path=$path"../"; done; else path="../"; fi; cd $path; } # usage: $up 2
 alias back='cd -'  # previously: 'cd $OLDPWD'
-alias which='type -a'
 function cdl { cd $@   &&   ls -halF; } # change to a directory and print out contents
 
 ## bash extensions and misc
@@ -21,21 +21,23 @@ bind "set show-all-if-ambiguous on"
 export HISTCONTROL=ignoredups
 eval $(thefuck --alias)
 
+## command shortcuts
+alias which='type -a'
+alias dush='du -sh'
+alias ip='ifconfig | grep "inet " | colrm 1 8'
+
 ## ls extension
 alias l='ls -halF'
 alias lc='ls -halFG'
-alias dush='du -sh'
 
 ## git aliases
 alias g='git'
 alias gs='git status'
-alias ga='git add'
 alias branch='git branch'
+alias stash='git stash'
 alias co='git checkout'
 alias unpushed='git log @{upstream}..'
 alias unpulled='git fetch; git log ..@{upstream}'
-alias filelog='git log --stat --oneline'
-alias stash='git stash'
 
 ## file opening aliases
 alias proj='open *.xc[ow][do][er][pk]*' # .xcodeproj or .xcworkspace
@@ -59,12 +61,12 @@ function _workspaces()
     local curw
     COMPREPLY=()
     curw=${COMP_WORDS[COMP_CWORD]}
-    COMPREPLY=($(compgen -W '$(ls /Users/paul/workspace)' -- $curw))
+    COMPREPLY=($(compgen -W '$(ls $WRKSP)' -- $curw))
     return 0
 }
 function c()
 {
-    cd /Users/paul/workspace/$1/
+    cd $WRKSP/$1/
 }
 complete -F _workspaces -o dirnames c
 

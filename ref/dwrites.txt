@@ -20,9 +20,6 @@ disable gatekeeper re-enabling every 30 days
 disable asking to open application from internet
   defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-shows all file extensions in finder
-  defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-
 disable the warning when changing a file extension
   defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
