@@ -1,0 +1,35 @@
+System preferences
+  General
+    theme: dark
+    scroll bar:jump to spot clicked
+    default browser:chrome
+  Desktop
+    add some neat pictures to random when waking up. ~/Pictures/dkb/
+  Dock
+    position: left
+    manually dwrite some spacers and hidden app tiles
+  Mission Control
+    o o x x (as overlay) ^up ^down f10 f12
+  Spotlight
+    no bookmarks, events, mail messages, fonts
+  Trackpad
+    tap to click
+  Sharing
+    set machine name
+
+Xcode preferences
+  Navigation:
+    command-click jumps to definition
+  Text editing:
+    line numbers, no page guide, highlight instances
+    all completions
+    auto-trim trailing whitespace, except whitespace only lines
+    Indentation tab:
+      tab and indent width 4
+      wrap
+      align consecutive //comments, auto indent all
+  Source Control
+    don't fetch server status automatically
+
+Atom preferences:
+  sync-settings gist: a9b82ee4cdcbd8c128c51c34f4eb41cf

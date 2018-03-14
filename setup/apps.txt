@@ -1,0 +1,21 @@
+
+Xcode
+- install command line extensions
+- https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)
+
+Homebrew
+- wget trash thefuck cask
+- vim --with-override-system-vi
++ tap osx-cross/avr; tap PX4/px4
+ - avr-gcc dfu-programmer gcc-arm-none-eabi  avrdude
+
+Casks
+- atom google-chrome fork flycut go2shell bitwarden devdocs
+- qlcolorcode qlstephen qlprettypatch
+- mactex dropbox
+
+Chrome Extensions
+- bitwarden
+- privacy-badger
+- stylish
+- camelizer
