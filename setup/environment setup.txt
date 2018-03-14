@@ -6,7 +6,7 @@ get these applications
   Homebrew: wget trash thefuck cask
             vim --with-override-system-vi
             (tap osx-cross/avr PX4/px4) avr-gcc dfu-programmer gcc-arm-none-eabi  avrdude
-  Cask: atom google-chrome fork flycut go2shell bitwarden
+  Cask: atom google-chrome fork flycut go2shell bitwarden devdocs
         qlcolorcode qlstephen qlprettypatch
         mactex dropbox
   Chrome: bitwarden privacy-badger stylish camelizer

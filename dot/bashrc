@@ -14,6 +14,11 @@ alias sup='svn info | grep "Revision"; svn update'
 function up { path=""; if [ $1 ]; then for i in $(seq 1 $1); do path=$path"../"; done; else path="../"; fi; cd $path; } # usage: $up 2
 alias back='cd -'  # previously: 'cd $OLDPWD'
 function cdl { cd $@   &&   ls -halF; } # change to a directory and print out contents
+alias desk='cd ~/Desktop'
+alias doc='cd ~/Documents'
+alias doc='cd ~/Downloads'
+function var { cd $WRKSP/$@/; }
+
 
 ## bash extensions and misc
 bind "set completion-ignore-case on"
@@ -68,6 +73,7 @@ function c()
 {
     cd $WRKSP/$1/
 }
+complete -F _workspaces -o dirnames var
 complete -F _workspaces -o dirnames c
 
 
