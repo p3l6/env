@@ -16,7 +16,7 @@ alias back='cd -'  # previously: 'cd $OLDPWD'
 function cdl { cd $@   &&   ls -halF; } # change to a directory and print out contents
 alias desk='cd ~/Desktop'
 alias doc='cd ~/Documents'
-alias doc='cd ~/Downloads'
+alias down='cd ~/Downloads'
 function var { cd $WRKSP/$@/; }
 
 
@@ -29,7 +29,7 @@ eval $(thefuck --alias)
 ## command shortcuts
 alias which='type -a'
 alias dush='du -sh'
-alias ip='ifconfig | grep "inet " | colrm 1 8'
+alias ip='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2'
 
 ## ls extension
 alias l='ls -halF'
@@ -69,10 +69,7 @@ function _workspaces()
     COMPREPLY=($(compgen -W '$(ls $WRKSP)' -- $curw))
     return 0
 }
-function c()
-{
-    cd $WRKSP/$1/
-}
+alias c='var'
 complete -F _workspaces -o dirnames var
 complete -F _workspaces -o dirnames c
 
