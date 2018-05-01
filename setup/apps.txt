@@ -19,3 +19,6 @@ Chrome Extensions
 - privacy-badger
 - stylish
 - camelizer
+
+Other
+- Things for Mac
