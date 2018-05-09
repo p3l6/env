@@ -10,4 +10,4 @@ dot/UserData/SearchScopes.xcsclist
 dot/UserData/IDENamedTabStateContexts.plist
 dot/UserData/IDEFindNavigatorScopes.plist
 dot/UserData/IDEEditorInteractivityHistory
-dot/UserData/FontAndColorThemes/
+#dot/UserData/FontAndColorThemes/
