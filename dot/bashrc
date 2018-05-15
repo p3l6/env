@@ -86,3 +86,22 @@ function _branches()
     return 0
 }
 complete -F _branches co
+
+
+# This is a very simple bookmarks/shortcut thing, Bookmarks are hardcoded in a switch case
+# A good enhancement would be storing this in a config file
+function goto() {
+  for bookmark in $@
+  do
+    case "$bookmark" in
+      notes | note ) atom ~/Documents/Notes ;;
+      env ) atom ~/env ;;
+      derived | build ) cd ~/Library/Developer/Xcode/DerivedData/Eggplant*/Build/Products/Development/Eggplant.app ;;
+      today | things ) open -a Things ;;
+      qmk | keyboards ) cd ~/var/Qmk/qmk_firmware; atom keyboards; echo make tada68-paulLayout-bin ;;
+      
+      goto ) echo Please update goto to be more configurable ;;
+      * ) echo Unknown Bookmark: $bookmark;;
+    esac
+  done
+}

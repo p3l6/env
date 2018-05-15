@@ -7,9 +7,9 @@
 [push]
 	default = simple
 [alias]
-  assume = update-index --assume-unchanged
-  unassume = update-index --no-assume-unchanged
-  assumed = "!git ls-files -v | grep ^h | cut -c 3-"
+	assume = update-index --assume-unchanged
+	unassume = update-index --no-assume-unchanged
+	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
 	ci = commit
 	co = checkout
 	cp = cherry-pick
@@ -18,9 +18,9 @@
 	find-ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 	search = log --pretty=format:\"%C(yellow)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s\" --date=short -S
 	sync = "!git pullr && git push"
-  pullr = pull --rebase --autostash
+	pullr = pull --rebase --autostash
 	pushup = push --set-upstream origin
-  unstage = reset HEAD --
+	unstage = reset HEAD --
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
