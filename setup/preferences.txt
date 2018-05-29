@@ -26,6 +26,7 @@ Xcode preferences
     auto-trim trailing whitespace, except whitespace only lines
     Indentation tab:
       tab and indent width 4
+      tab key: indents always
       wrap
       align consecutive //comments, auto indent all
   Source Control

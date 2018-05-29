@@ -1,0 +1,47 @@
+#! /usr/local/bin/python3
+"""
+Required brew packages:
+    python
+    git-standup (to report recent commits from the current directory)
+"""
+
+from subprocess import run
+
+def ask(prompt):
+    answer = None
+    list = []
+    while True:
+        answer = input(prompt)
+        if answer == "":
+            break
+        list.append(answer)
+    return list
+
+def format(emoji, list, emptyListString=None):
+    if emptyListString and not list:
+        print(emptyListString)
+    for str in list:
+        print(emoji, str)
+
+# instructions
+print("This tool can help you generate a standup report.")
+print("Each question will repeat until a blank response is entered.")
+print("Other emoji you may want to use are\n  :question: (for blockers that are questions)\n  :rocket: (for Pull Requests)\n  :small_blue_diamond: (for other notes)")
+print("Here is a summary of your previous day's commits:")
+run(["git", "standup"])
+print("----------")
+
+# inputs
+done    = ask("What have you done?     ")
+working = ask("What are you doing now? ")
+next    = ask("What will you do next?  ")
+blocks  = ask("What is blocking you?   ")
+
+# outputs
+print("----------")
+print("Below is your standup report. Paste it into slack.")
+print("----------")
+format(":white_check_mark:", done)
+format(":on:", working)
+format(":soon:", next)
+format(":no_entry_sign:", blocks, ":small_blue_diamond: No blocks")
