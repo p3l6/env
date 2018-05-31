@@ -1,0 +1,13 @@
+
+use ctrl-r to reverse search history semi-interactively
+history 10:      print 10 histroy items
+!<something>:p = print without executing
+
+!!     = last command
+!baz   = last command that starts with baz
+!?baz  = last command containing baz
+!300   = history item 300
+!$     = the last argument of the previous command
+!^     = first arg of prev command
+!:2    = second arg of prev command
+!*     = all arguments of the last command
