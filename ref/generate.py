@@ -7,7 +7,9 @@ from pygments.formatters.html import HtmlFormatter
 
 tabs = ""
 content = ""
-codeCss = HtmlFormatter().get_style_defs('.codehilite')
+#https://bitbucket.org/birkenfeld/pygments-main/src/7941677dc77d4f2bf0bbd6140ade85a9454b8b80/pygments/styles/xcode.py?at=default&fileviewer=file-view-default
+#http://pygments.org/docs/styles/?highlight=style
+codeCss = HtmlFormatter(style='xcode').get_style_defs('.codehilite')
 extensions=['markdown.extensions.codehilite','markdown.extensions.tables','markdown.extensions.fenced_code']
 extension_configs = {
     'markdown.extensions.codehilite': {
@@ -15,7 +17,7 @@ extension_configs = {
     },
 }
 
-for file in os.listdir(".") :
+for file in sorted(os.listdir(".")) :
     if ".md" in file:
         name = os.path.splitext(file)[0]
         fileText = open(file, 'rt').read()
