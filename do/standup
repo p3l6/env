@@ -5,7 +5,7 @@ Required brew packages:
     git-standup (to report recent commits from the current directory)
 """
 
-from subprocess import run
+import subprocess
 
 def ask(prompt):
     answer = None
@@ -19,16 +19,18 @@ def ask(prompt):
 
 def format(emoji, list, emptyListString=None):
     if emptyListString and not list:
-        print(emptyListString)
+        return "%s\n" % (emptyListString)
+    ret = ""
     for str in list:
-        print(emoji, str)
+        ret += "%s %s\n" % (emoji, str)
+    return ret
 
 # instructions
 print("This tool can help you generate a standup report.")
 print("Each question will repeat until a blank response is entered.")
 print("Other emoji you may want to use are\n  :question: (for blockers that are questions)\n  :rocket: (for Pull Requests)\n  :small_blue_diamond: (for other notes)")
 print("Here is a summary of your previous day's commits:")
-run(["git", "standup"])
+subprocess.run(["git", "standup"])
 print("----------")
 
 # inputs
@@ -38,10 +40,17 @@ next    = ask("What will you do next?  ")
 blocks  = ask("What is blocking you?   ")
 
 # outputs
+output = ""
+output += format(":white_check_mark:", done)
+output += format(":on:", working)
+output += format(":soon:", next)
+output += format(":no_entry_sign:", blocks, ":small_blue_diamond: No blocks")
+
+subprocess.Popen(["pbcopy"], stdin=subprocess.PIPE).communicate(output.encode('utf-8'))
+
 print("----------")
-print("Below is your standup report. Paste it into slack.")
+print("Below is your standup report.
+print("It has been copied to the clipboard, paste it into slack!")
 print("----------")
-format(":white_check_mark:", done)
-format(":on:", working)
-format(":soon:", next)
-format(":no_entry_sign:", blocks, ":small_blue_diamond: No blocks")
+
+print(output)
