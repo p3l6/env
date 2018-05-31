@@ -34,10 +34,23 @@
   background-color: #f6f8fa;
 }
 /* Style other markdown elements */
-.tabcontent code {
+.tabcontent code,
+.tabcontent pre {
   font-family: monospace, monospace;
   font-size: 1em;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.tabcontent pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+
+.tabcontent code {
   padding: 0.2em 0.4em;
   margin: 0;
   font-size: 85%;
@@ -79,7 +92,7 @@
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  animation: fadeEffect .5s; /* Fading effect takes 1 second */
 }
 
 /* Go from zero to full opacity */

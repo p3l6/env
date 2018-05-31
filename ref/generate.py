@@ -9,7 +9,7 @@ tabs = ""
 content = ""
 #https://bitbucket.org/birkenfeld/pygments-main/src/7941677dc77d4f2bf0bbd6140ade85a9454b8b80/pygments/styles/xcode.py?at=default&fileviewer=file-view-default
 #http://pygments.org/docs/styles/?highlight=style
-codeCss = HtmlFormatter(style='xcode').get_style_defs('.codehilite')
+codeCss = HtmlFormatter(style='default').get_style_defs('.codehilite')
 extensions=['markdown.extensions.codehilite','markdown.extensions.tables','markdown.extensions.fenced_code']
 extension_configs = {
     'markdown.extensions.codehilite': {
