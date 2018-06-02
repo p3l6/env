@@ -1,4 +1,36 @@
+### Variables
+Var | Refers to
+---|---
+$#  |  number of command-line arguments given.
+$?  |  exit value of the last command that was executed.
+$0  |  the command run by the user ( zeroth argument ).
+$x  |  x'th argument of the command, eg $1, $2.
+$*  |  all the arguments ($1 $2 ...). when quoted, single string.
+$@  |  all the arguments, when quoted, individual strings ("$1" "$2" ...).
+$$  |  process number for shell or script executing.
+$!  |  process number of the last background command.
 
+### Colors
+
+to get any color:
+`\[\e[0;32m\]  <this is in color 0;32>  \[\e[m\]`
+
+a simpler method with fewer options. works in most terminals.
+
+`$(tput setaf x)<this is in color x>$(tput sgr0)`
+
+Color | x
+--- | ---
+red | 1
+green | 2
+yellow | 3
+blue|4
+purple | 5
+light-blue | 6
+white | 7
+
+### If conditions
+```
 if CONDITIONS; then DO STUFF; fi
 
     Conditions of form: [ -a FILE ]
@@ -46,3 +78,4 @@ resolves to true if file descriptor is open and ...
 [ things ] && (do some; stuff)
 [ things ] || (do some; stuff)
 test things && (do some; stuff)
+```
