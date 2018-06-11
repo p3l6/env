@@ -49,7 +49,7 @@ output += format(":no_entry_sign:", blocks, ":small_blue_diamond: No blocks")
 subprocess.Popen(["pbcopy"], stdin=subprocess.PIPE).communicate(output.encode('utf-8'))
 
 print("----------")
-print("Below is your standup report.
+print("Below is your standup report.")
 print("It has been copied to the clipboard, paste it into slack!")
 print("----------")
 
