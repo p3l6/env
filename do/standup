@@ -45,6 +45,7 @@ output += format(":white_check_mark:", done)
 output += format(":on:", working)
 output += format(":soon:", next)
 output += format(":no_entry_sign:", blocks, ":small_blue_diamond: No blocks")
+output = output[:-1] # remove final newline character
 
 subprocess.Popen(["pbcopy"], stdin=subprocess.PIPE).communicate(output.encode('utf-8'))
 

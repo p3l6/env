@@ -1,0 +1,2 @@
+command script import ~/env/lldb/ignore_specified_objc_exceptions.py
+

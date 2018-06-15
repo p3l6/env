@@ -22,6 +22,7 @@ fi
 
 rm -rf ~/Library/Developer/Xcode/UserData
 $LINK ~/env/dot/UserData ~/Library/Developer/Xcode/UserData
+$LINK ~/env/dot/lldbinit ~/.lldbinit
 
 chflags nohidden ~/Library
 chflags hidden ~/Public ~/Sites
