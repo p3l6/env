@@ -18,8 +18,10 @@ extension_configs = {
 }
 
 for file in sorted(os.listdir(".")) :
-    if ".md" in file:
-        name = os.path.splitext(file)[0]
+    if file.endswith('.md'):
+        name = file[:-3]
+        if name.endswith('.local'):
+            name = name[:-6]
         fileText = open(file, 'rt').read()
         tabs += '    <button class="tablinks" onclick="openCity(event, \'%s\')">%s</button>\n' % (name, name.upper())
         content += """<div id="%s" class="tabcontent">
