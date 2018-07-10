@@ -16,10 +16,11 @@
 	diffw = diff --word-diff
 	discard = checkout --
 	find-ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
-	search = log --pretty=format:\"%C(yellow)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s\" --date=short -S
-	sync = "!git pullr && git push"
+	new = checkout -b
 	pullr = pull --rebase --autostash
 	pushup = push --set-upstream origin
+	search = log --pretty=format:\"%C(yellow)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s\" --date=short -S
+	sync = "!git pullr && git push"
 	unstage = reset HEAD --
 [filter "lfs"]
 	clean = git-lfs clean -- %f
