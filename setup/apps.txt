@@ -17,8 +17,9 @@ Casks
 Chrome Extensions
 - bitwarden
 - privacy-badger
-- stylish
 - camelizer
 
 Other
 - Things for Mac
+- Quiver Notes
+

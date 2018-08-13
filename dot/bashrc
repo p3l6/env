@@ -29,6 +29,7 @@ eval $(thefuck --alias)
 ## command shortcuts
 alias which='type -a'
 alias dush='du -sh'
+function wtf () ( shopt -s dotglob; du -shc * | sort -h; )
 alias ip='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2'
 
 ## ls extension
