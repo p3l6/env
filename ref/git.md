@@ -29,10 +29,20 @@ see what will be cleaned `git clean --dry-run`
 * git bisect start
 * git bisect good a1b54ff3
 * git bisect bad master
-  + git bisect bad
-  + git bisect good
-  + git bisect skip
+    * git bisect bad
+    * git bisect good
+    * git bisect skip
 * git bisect reset
+
+### Squashing topic branches
+
+```
+git checkout develop && git pull
+git checkout topic   && git rebase develop
+# fix conflicts if any...
+git checkout develop && git merge --squash topic
+git commit
+```
 
 ### Git Svn
 
