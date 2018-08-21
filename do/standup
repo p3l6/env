@@ -3,7 +3,12 @@
 Required brew packages:
     python
     git-standup (to report recent commits from the current directory)
+Change WORKSPACE_DIR to the location of your repositories to report on all of them instead of the current directory
 """
+
+### Configuration
+WORKSPACE_DIR = None #'/Users/paul/var'
+### End Configuration
 
 import subprocess
 
@@ -30,7 +35,10 @@ print("This tool can help you generate a standup report.")
 print("Each question will repeat until a blank response is entered.")
 print("Other emoji you may want to use are\n  :question: (for blockers that are questions)\n  :rocket: (for Pull Requests)\n  :small_blue_diamond: (for other notes)")
 print("Here is a summary of your previous day's commits:")
-subprocess.run(["git", "standup"])
+if WORKSPACE_DIR:
+    subprocess.run(["git", "standup"], cwd=WORKSPACE_DIR)
+else:
+    subprocess.run(["git", "standup"])
 print("----------")
 
 # inputs
