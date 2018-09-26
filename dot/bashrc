@@ -14,6 +14,7 @@ alias sup='svn info | grep "Revision"; svn update'
 function up { path=""; if [ $1 ]; then for i in $(seq 1 $1); do path=$path"../"; done; else path="../"; fi; cd $path; } # usage: $up 2
 alias back='cd -'  # previously: 'cd $OLDPWD'
 function cdl { cd $@   &&   ls -halF; } # change to a directory and print out contents
+function mkcd { mkdir $@   &&  cd $@; }
 alias desk='cd ~/Desktop'
 alias doc='cd ~/Documents'
 alias down='cd ~/Downloads'
@@ -70,9 +71,7 @@ function _workspaces()
     COMPREPLY=($(compgen -W '$(ls $WRKSP)' -- $curw))
     return 0
 }
-alias c='var'
 complete -F _workspaces -o dirnames var
-complete -F _workspaces -o dirnames c
 
 
 ## tab completion for git branches
@@ -95,11 +94,11 @@ function goto() {
   for bookmark in $@
   do
     case "$bookmark" in
-      notes | note ) atom ~/Documents/Notes ;;
+      notes | note ) open -a Quiver ;;
       env ) atom ~/env ;;
       derived | build ) cd ~/Library/Developer/Xcode/DerivedData/Eggplant*/Build/Products/Development/Eggplant.app ;;
       today | things ) open -a Things ;;
-      qmk | keyboards ) cd ~/var/Qmk/qmk_firmware; atom keyboards; echo make tada68-paulLayout-bin ;;
+      qmk | keyboards ) cd ~/var/Qmk/qmk_firmware; atom keyboards; echo make tada68:paulLayout:bin ;;
       
       goto ) echo Please update goto to be more configurable ;;
       * ) echo Unknown Bookmark: $bookmark;;

@@ -1,17 +1,17 @@
 System preferences
   General
     theme: dark
+    accent: purple
     scroll bar:jump to spot clicked
-    default browser:chrome
+    default browser:safari
   Desktop
     add some neat pictures to random when waking up. ~/Pictures/dkb/
   Dock
     position: left
-    manually dwrite some spacers and hidden app tiles
   Mission Control
     o o x x (as overlay) ^up ^down f10 f12
   Spotlight
-    no bookmarks, events, mail messages, fonts
+    no: bookmarks, events, mail messages, fonts
   Trackpad
     tap to click
   Sharing

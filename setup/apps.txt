@@ -2,24 +2,25 @@
 Xcode
 - install command line extensions
 - https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)
+- https://github.com/tonsky/FiraCode (font with ligatures)
 
 Homebrew
 - wget trash thefuck cask
 - vim --with-override-system-vi
 + tap osx-cross/avr; tap PX4/px4
  - avr-gcc dfu-programmer gcc-arm-none-eabi  avrdude
+- git git-lfs git-sizer
+- bfg carthage cloc cmake node vapor
 
 Casks
 - atom google-chrome fork flycut go2shell bitwarden devdocs
 - qlcolorcode qlstephen qlprettypatch
-- mactex dropbox
+- mactex dropbox wwdc
 
-Chrome Extensions
+Safari Extensions
 - bitwarden
-- privacy-badger
 - camelizer
 
 Other
 - Things for Mac
 - Quiver Notes
-

@@ -13,8 +13,15 @@ defaults write com.apple.dock showhidden -boolean YES
 # show hidden files in finder
 #defaults write com.apple.finder AppleShowAllFiles 1
 
+# Finder: show all filename extensions
+#defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
 # disable asking to open application from internet
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Avoid creating .DS_Store files on network or USB volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
