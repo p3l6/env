@@ -1,6 +1,6 @@
 [user]
 	name = Paul Landers
-	email = paul.landers@testplant.com
+	email = paul.landers@eggplant.io
 [core]
 	excludesfile = /Users/paul/.gitignore_global
 	whitespace = -blank-at-eol

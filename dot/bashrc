@@ -20,7 +20,6 @@ alias doc='cd ~/Documents'
 alias down='cd ~/Downloads'
 function var { cd $WRKSP/$@/; }
 
-
 ## bash extensions and misc
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
@@ -51,6 +50,24 @@ alias proj='open *.xc[ow][do][er][pk]*' # .xcodeproj or .xcworkspace
 alias edit='vim'
 alias readme='less *[Rr][Ee][Aa][Dd]*[Mm][Ee]*'
 
+## cd to current finder window
+cdf() {
+    target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+    if [ "$target" != "" ]; then
+        cd "$target"; pwd
+    else
+        echo 'No Finder window found' >&2
+    fi
+}
+alias finder='cdf'
+
+## Hacks to enable dark mode on older applications. $enable-dark-mode /Applications/Slack.app
+enable-dark-mode() {
+  defaults write "${1}/Contents/Info.plist" NSRequiresAquaSystemAppearance false
+}
+disable-dark-mode() {
+  defaults delete "${1}/Contents/Info.plist" NSRequiresAquaSystemAppearance
+}
 
 ## Custom Prompt
 function bash_git_branch

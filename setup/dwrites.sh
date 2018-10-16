@@ -1,8 +1,8 @@
 #! /bin/bash
 
 # Add spacer tiles in the dock
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+#defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="small-spacer-tile";}'
 
 # dims icons of hidden apps on the dock
 defaults write com.apple.dock showhidden -boolean YES
