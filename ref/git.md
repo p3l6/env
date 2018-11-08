@@ -24,6 +24,10 @@ export a stash `git stash show -p > file.patch`
 
 see what will be cleaned `git clean --dry-run`
 
+abort a pull-triggered merge `:cq` then `git merge --abort`
+
+delete stale branches (origin/feature, not feature) `git remote prune origin`
+
 #### Git bisect
 
 * git bisect start

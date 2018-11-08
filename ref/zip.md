@@ -1,3 +1,8 @@
+### Zip a folder (including folder name)
+```bash
+zip -r <Archive.zip> folder/
+```
+
 ### Cleanup
 ```bash
 zip -d <Archive.zip> __MACOSX/\*

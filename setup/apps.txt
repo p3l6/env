@@ -13,14 +13,16 @@ Homebrew
 - bfg carthage cloc cmake node vapor
 
 Casks
-- atom google-chrome fork flycut go2shell bitwarden devdocs
+- atom google-chrome fork flycut termhere bitwarden devdocs
 - qlcolorcode qlstephen qlprettypatch
-- mactex dropbox wwdc
+- mactex dropbox wwdc docker rcdefaultapp
 
 Safari Extensions
 - bitwarden
 - camelizer
+- rss menu
 
 Other
 - Things for Mac
 - Quiver Notes
+- Reeder
