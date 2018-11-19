@@ -1,6 +1,7 @@
 [user]
-	name = Paul Landers
-	email = paul.landers@eggplant.io
+  # These values are set in ~/.gitconfig_local
+[include]
+  path = ~/.gitconfig_local
 [core]
 	excludesfile = /Users/paul/.gitignore_global
 	whitespace = -blank-at-eol

@@ -14,6 +14,8 @@ $LINK ~/env/dot/vimrc ~/.vimrc
 $LINK ~/env/dot/gitconfig ~/.gitconfig
 $LINK ~/env/dot/gitignore_global ~/.gitignore_global
 
+printf "[user]\n  name = Paul Landers\n  email = paul@srednal.com\n" > ~/.gitconfig_local
+
 if [ "$MAC" == "NO" ]; then
   exit 0
 fi
