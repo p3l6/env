@@ -14,7 +14,9 @@ $LINK ~/env/dot/vimrc ~/.vimrc
 $LINK ~/env/dot/gitconfig ~/.gitconfig
 $LINK ~/env/dot/gitignore_global ~/.gitignore_global
 
-printf "[user]\n  name = Paul Landers\n  email = paul@srednal.com\n" > ~/.gitconfig_local
+if [ ! -f ~/.gitconfig_local ]; then
+  printf "[user]\n  name = Paul Landers\n  email = paul@srednal.com\n" > ~/.gitconfig_local
+fi
 
 if [ "$MAC" == "NO" ]; then
   exit 0
@@ -32,4 +34,4 @@ chflags hidden ~/Public ~/Sites
 
 mkdir ~/var
 
-open ~/env/dot/profile_export.terminal
+open ~/env/dot/*.terminal
