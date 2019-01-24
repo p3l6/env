@@ -1,0 +1,68 @@
+"*":
+  _dart:
+    _firstRun: true
+    _version: "1.0.1"
+  "atom-toolbar":
+    visible: false
+  "autocomplete-plus":
+    autoActivationDelay: 500
+    fileBlacklist: [
+      "*.md"
+      "*.txt"
+    ]
+    scopeBlacklist: [
+      ".text.plain"
+    ]
+  "autocomplete-python":
+    caseInsensitiveCompletion: false
+    useKite: false
+    useSnippets: "required"
+  autosave:
+    enabled: true
+  core:
+    automaticallyUpdate: false
+    disabledPackages: [
+      "kite"
+      "wrap-guide"
+      "pdf-view"
+      "dart"
+      "intentions"
+      "linter"
+      "linter-ui-default"
+    ]
+    followSymlinks: false
+    projectHome: "/Users/paul/var"
+    telemetryConsent: "no"
+  dart:
+    sdkLocation: "/usr/local/opt/dart/libexec"
+  editor:
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "da31e266-5156-4951-842d-1689fd06cc89"
+  "find-and-replace":
+    projectSearchResultsPaneSplitDirection: "right"
+  latex:
+    opener: "preview"
+  "linter-ui-default":
+    panelHeight: 312
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.tex.latex"
+    ]
+  "split-diff":
+    ignoreWhitespace: true
+  "tree-view":
+    alwaysOpenExisting: true
+    hideIgnoredNames: true
+    sortFoldersBeforeFiles: false
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnlyLines: true
+  zentabs:
+    maximumOpenedTabs: 8
+    neverCloseUnsaved: true
