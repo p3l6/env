@@ -5,6 +5,7 @@ targets : prerequisites | order-only prerequisites
     makefiles must use tabs, not spaces
     make runs each line as a subprocess: to cd somewhere, have the action on same line
     @command: using the at sign will suppress the echo of line prior to executing it
+    %.c in the rule declaration will do a wildcard match, either for the target or prerequisite
 ```
 
 Variable | References
