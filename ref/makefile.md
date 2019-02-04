@@ -18,3 +18,31 @@ $^  |  names of all prerequisites, no duplicates, no order-only prerequisites.
 $+  |  like '$^' but duplicates can exist.
 $\|  |  names of all order-only prerequisites.
 $*  |  stem of pattern match. should generally avoid except for implicit rules.
+
+Sample makefile
+```makefile
+# builds all cpp and java files in directory
+SRC=$(wildcard *.cpp)
+EXEC=$(SRC:.cpp=)
+
+JAVA_SRC=$(wildcard *.java)
+JAVA_CLASS=$(JAVA_SRC:.java=.class)
+
+all:cpp java
+
+cpp:$(EXEC)
+
+java:$(JAVA_CLASS)
+
+#default build thingy for cpp
+%:%.cpp
+	g++ -Wall -o $@ $^
+
+#default build thingy for java
+%.class:%.java
+	javac $^
+
+clean:
+	rm -rf $(EXEC)
+	rm -rf $(JAVA_CLASS)
+```
