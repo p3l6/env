@@ -13,9 +13,13 @@ Homebrew
 - bfg carthage cloc cmake node vapor
 
 Casks
-- atom google-chrome fork flycut termhere bitwarden devdocs
-- qlcolorcode qlstephen qlprettypatch
-- mactex dropbox wwdc docker rcdefaultapp
+- flycut bitwarden rcdefaultapp omnidisksweeper onyx iina
+- atom fork termhere devdocs wwdc
++ (quick look)
+ - qlcolorcode qlstephen qlprettypatch qlswift
++ (optional)
+ - docker google-chrome dropbox
+ - gimp mactex
 
 Safari Extensions
 - bitwarden
@@ -26,3 +30,4 @@ Other
 - Things for Mac
 - Quiver Notes
 - Reeder
+- Check app store purchases for more...
