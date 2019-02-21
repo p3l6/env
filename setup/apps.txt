@@ -10,7 +10,7 @@ Homebrew
 + tap osx-cross/avr; tap PX4/px4
  - avr-gcc dfu-programmer gcc-arm-none-eabi  avrdude
 - git git-lfs git-sizer
-- bfg carthage cloc cmake node vapor
+- bfg carthage cloc cmake node vapor ripgrep
 
 Casks
 - flycut bitwarden rcdefaultapp omnidisksweeper onyx iina
@@ -19,7 +19,7 @@ Casks
  - qlcolorcode qlstephen qlprettypatch qlswift
 + (optional)
  - docker google-chrome dropbox
- - gimp mactex
+ - gimp mactex basictex
 
 Safari Extensions
 - bitwarden
