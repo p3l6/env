@@ -29,7 +29,10 @@ setopt inc_append_history share_history  # adds history incrementally and share 
 setopt hist_ignore_all_dups  # don't record dupes in history
 setopt hist_reduce_blanks
 
+# To determine the key sequences for binding,
+# Type a ctrl-v, then the key sequence. ctrl-v means ignore the next escape sequence, so it prints literally
 bindkey -e
+bindkey "^[[3~" delete-char
 
 # Better history
 # Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys

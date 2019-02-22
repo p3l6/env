@@ -21,3 +21,10 @@ export RPROMPT='%{$fg[red]%}%@%{$reset_color%}'
 #export PROMPT_COMMAND="echo -ne '\033]0;\007';$PROMPT_COMMAND"
 # There was something else about titles for zsh...
 # precmd() { title "zsh" "%m" "%55<...<%~" } See also https://github.com/holman/dotfiles
+
+reset-prompt-and-accept-line() {
+    zle reset-prompt
+    zle accept-line
+}
+zle -N reset-prompt-and-accept-line
+bindkey '^m' reset-prompt-and-accept-line

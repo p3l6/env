@@ -1,5 +1,5 @@
 alias g='git'
-alias gs='git status'
+alias gs='git status -sb'
 alias branch='git branch'
 alias stash='git stash'
 alias co='git checkout'
