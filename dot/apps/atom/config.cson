@@ -33,6 +33,7 @@
     followSymlinks: false
     projectHome: "/Users/paul/var"
     telemetryConsent: "no"
+    titleBar: "custom"
   dart:
     sdkLocation: "/usr/local/opt/dart/libexec"
   editor:
