@@ -1,0 +1,29 @@
+## path
+export PATH=$PATH:$HOME/env/bin
+export WRKSP=$HOME/var
+export ZSH=$HOME/env/dot
+export EDITOR=vim
+
+## load configs
+typeset -U config_files
+config_files=($ZSH/**/*.zsh)
+# load path files first
+for file in ${(M)config_files:#*path.zsh}
+do
+  source $file
+done
+# load everything else
+for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
+do
+  source $file
+done
+# initialize autocomplete here, otherwise functions won't be loaded
+autoload -U compinit
+compinit
+# load completion files last
+for file in ${(M)config_files:#*/completion.zsh}
+do
+  source $file
+done
+
+unset config_files

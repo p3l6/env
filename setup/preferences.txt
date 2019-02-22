@@ -33,5 +33,9 @@ Xcode preferences
     don't fetch server status automatically
 
 Atom
-  Install packages with 'apm stars --install'
-  (Change stars with 'apm [un]star <package>')
+  apm install --packages-file ~/env/apps/atom/packages.txt
+  
+Terminal
+  New windows and tabs open with default working directory
+  add /usr/local/bin/zsh to the bottom of /etc/shells
+  chsh -s /usr/local/bin/zsh
