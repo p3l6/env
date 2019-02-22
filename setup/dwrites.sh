@@ -32,3 +32,6 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # Don't show files on the desktop (still shows in finder)
 #defaults write com.apple.finder CreateDesktop NO
+
+# Enable airdrop over ethernet
+defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
