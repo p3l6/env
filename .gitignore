@@ -4,11 +4,11 @@ ref/www/
 do/newLinux
 do/cleanLogs
 
-dot/apps/UserData/IB Support/Simulator Devices
-dot/apps/UserData/*.xcuserstate
-dot/apps/UserData/Debugger/
-dot/apps/UserData/SearchScopes.xcsclist
-dot/apps/UserData/IDENamedTabStateContexts.plist
-dot/apps/UserData/IDEFindNavigatorScopes.plist
-dot/apps/UserData/IDEEditorInteractivityHistory
+apps/UserData/IB Support/Simulator Devices
+apps/UserData/*.xcuserstate
+apps/UserData/Debugger/
+apps/UserData/SearchScopes.xcsclist
+apps/UserData/IDENamedTabStateContexts.plist
+apps/UserData/IDEFindNavigatorScopes.plist
+apps/UserData/IDEEditorInteractivityHistory
 #dot/UserData/FontAndColorThemes/
