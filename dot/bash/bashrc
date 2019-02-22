@@ -1,5 +1,5 @@
 ## path
-PATH=$PATH:$HOME/env/do
+PATH=$PATH:$HOME/env/bin
 WRKSP=$HOME/var
 
 ## svn aliases
