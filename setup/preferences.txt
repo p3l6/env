@@ -9,7 +9,8 @@ System preferences
   Dock
     position: left
   Mission Control
-    o o x x (as overlay) ^up ^down f10 f12
+    o o x x (dashboard off) ^up ^down f10 --
+    no hot corners
   Spotlight
     no: bookmarks, events, mail messages, fonts
   Trackpad
