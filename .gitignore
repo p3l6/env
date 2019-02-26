@@ -1,14 +1,2 @@
 ref/*.local.md
 ref/www/
-
-do/newLinux
-do/cleanLogs
-
-apps/UserData/IB Support/Simulator Devices
-apps/UserData/*.xcuserstate
-apps/UserData/Debugger/
-apps/UserData/SearchScopes.xcsclist
-apps/UserData/IDENamedTabStateContexts.plist
-apps/UserData/IDEFindNavigatorScopes.plist
-apps/UserData/IDEEditorInteractivityHistory
-#dot/UserData/FontAndColorThemes/
