@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+	<head>
+		<title>Subscriptions - RSS</title>
+	</head>
+	<body>
+		<outline htmlUrl="https://siftrss.com/f/mxAVXdjWJD" title="10 Things" xmlUrl="https://siftrss.com/f/mxAVXdjWJD" type="rss" text="10 Things"/>
+		<outline htmlUrl="http://www.usgo.org/news" title="AGA E-Journal" xmlUrl="http://www.usgo.org/news/feed/" type="rss" text="AGA E-Journal"/>
+		<outline htmlUrl="https://developer.apple.com/news/" title="Apple Developer News" xmlUrl="https://developer.apple.com/news/rss/news.rss" type="rss" text="Apple Developer News"/>
+		<outline htmlUrl="https://blog.atom.io/" title="Atom.io" xmlUrl="http://blog.atom.io/feed.xml" type="rss" text="Atom.io"/>
+		<outline htmlUrl="https://blog.bitwarden.com?source=rss----58e9039786d8---4" title="Bitwarden" xmlUrl="https://blog.bitwarden.com/feed" type="rss" text="Bitwarden"/>
+		<outline htmlUrl="https://blog.codinghorror.com/" title="Coding Horror" xmlUrl="http://feeds.feedburner.com/codinghorror" type="rss" text="Coding Horror"/>
+		<outline htmlUrl="https://craftandcookie.wordpress.com" title="Craft and Cookie Joy" xmlUrl="https://craftandcookie.wordpress.com/feed/" type="rss" text="Craft and Cookie Joy"/>
+		<outline htmlUrl="https://news.dartlang.org/" title="Dart News &amp; Updates" xmlUrl="https://news.dartlang.org/feeds/posts/default" type="rss" text="Dart News &amp; Updates"/>
+		<outline htmlUrl="https://devdocs.io/" title="DevDocs" xmlUrl="https://devdocs.io/feed" type="rss" text="DevDocs"/>
+		<outline htmlUrl="https://dlwoodturning.com" title="DL WoodTurning" xmlUrl="http://dlwoodturning.com/feed/" type="rss" text="DL WoodTurning"/>
+		<outline htmlUrl="https://dolphin-emu.org/blog/" title="Dolphin Emulator" xmlUrl="https://dolphin-emu.org/blog/feeds/" type="rss" text="Dolphin Emulator"/>
+		<outline htmlUrl="http://blog.eggplant.io" title="Eggplant Blog" xmlUrl="http://blog.eggplant.io/rss.xml" type="rss" text="Eggplant Blog"/>
+		<outline htmlUrl="http://www.freerdp.com/" title="FreeRDP" xmlUrl="http://www.freerdp.com/atom.xml" type="rss" text="FreeRDP"/>
+		<outline htmlUrl="https://forkapp.io/blog/" title="Git Fork" xmlUrl="https://git-fork.com/blog/index.xml" type="rss" text="Git Fork"/>
+		<outline htmlUrl="http://emails2rss.appspot.com/rss?id=fa35ba940809e047a20951e0139e93e74c01" title="Gnustep Discuss" xmlUrl="http://emails2rss.appspot.com/rss?id=fa35ba940809e047a20951e0139e93e74c01" type="rss" text="Gnustep Discuss"/>
+		<outline htmlUrl="https://brew.sh/" title="Homebrew" xmlUrl="https://brew.sh/atom.xml" type="rss" text="Homebrew"/>
+		<outline htmlUrl="http://www.nasa.gov/" title="NASA Breaking News" xmlUrl="https://www.nasa.gov/rss/dyn/breaking_news.rss" type="rss" text="NASA Breaking News"/>
+		<outline htmlUrl="http://www.fandango.com/default.aspx?wssaffid=11840&amp;wssac=123" title="New Movies" xmlUrl="http://www.fandango.com/rss/newmovies.rss" type="rss" text="New Movies"/>
+		<outline htmlUrl="http://usa.newonnetflix.info" title="New On Netflix USA" xmlUrl="https://usa.newonnetflix.info/feed.php" type="rss" text="New On Netflix USA"/>
+		<outline htmlUrl="https://nshipster.com/" title="NSHipster" xmlUrl="https://nshipster.com/feed.xml" type="rss" text="NSHipster"/>
+		<outline htmlUrl="https://pipingpress.com" title="Piping Press" xmlUrl="https://pipingpress.com/feed/" type="rss" text="Piping Press"/>
+		<outline htmlUrl="https://pokemongohub.net" title="Pokemon GO Hub" xmlUrl="https://pokemongohub.net/feed/" type="rss" text="Pokemon GO Hub"/>
+		<outline htmlUrl="https://www.spacex.com/news/rss.xml" title="SpaceX" xmlUrl="https://www.spacex.com/news.xml" type="rss" text="SpaceX"/>
+		<outline htmlUrl="https://stardewvalley.net" title="Stardew Valley" xmlUrl="http://stardewvalley.net/feed/" type="rss" text="Stardew Valley"/>
+		<outline htmlUrl="https://www.youtube.com/channel/UCtUbO6rBht0daVIOGML3c8w" title="Summoning Salt" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCtUbO6rBht0daVIOGML3c8w" type="rss" text="Summoning Salt"/>
+		<outline title="Swift.org" xmlUrl="https://swift.org/atom.xml" type="rss" text="Swift.org"/>
+		<outline htmlUrl="https://github.com/vapor/vapor/releases" title="Vapor releases" xmlUrl="https://github.com/vapor/vapor/releases.atom" type="rss" text="Vapor releases"/>
+		<outline htmlUrl="http://www.watt-evans.com/blog" title="Watt-Evans" xmlUrl="http://www.watt-evans.com/blog/feed/" type="rss" text="Watt-Evans"/>
+		<outline title="What If Xkcd?" xmlUrl="https://what-if.xkcd.com/feed.atom" type="rss" text="What If Xkcd?"/>
+		<outline htmlUrl="https://www.merriam-webster.com/word-of-the-day" title="Word of the Day" xmlUrl="https://www.merriam-webster.com/wotd/feed/rss2" type="rss" text="Word of the Day"/>
+		<outline text="Comics" title="Comics">
+			<outline htmlUrl="https://www.comicsrss.com/preview/calvinandhobbes" title="Calvin and Hobbes" xmlUrl="https://www.comicsrss.com/rss/calvinandhobbes.rss" type="rss" text="Calvin and Hobbes"/>
+			<outline htmlUrl="https://www.comicsrss.com/preview/dilbert-classics" title="Dilbert Classics" xmlUrl="https://www.comicsrss.com/rss/dilbert-classics.rss" type="rss" text="Dilbert Classics"/>
+			<outline htmlUrl="https://www.comicsrss.com/preview/foxtrot" title="FoxTrot" xmlUrl="https://www.comicsrss.com/rss/foxtrot.rss" type="rss" text="FoxTrot"/>
+			<outline htmlUrl="https://www.comicsrss.com/preview/getfuzzy" title="Get Fuzzy" xmlUrl="https://www.comicsrss.com/rss/getfuzzy.rss" type="rss" text="Get Fuzzy"/>
+		</outline>
+		<outline text="Comics (Web)" title="Comics (Web)">
+			<outline htmlUrl="http://donthitsave.com" title="Don't Hit Save" xmlUrl="http://donthitsave.com/donthitsavefeed.xml" type="rss" text="Don't Hit Save"/>
+			<outline htmlUrl="https://www.monkeyuser.com" title="MonkeyUser" xmlUrl="https://www.monkeyuser.com/feed.xml" type="rss" text="MonkeyUser"/>
+			<outline htmlUrl="http://www.giantitp.com/Comics.html" title="Order of the Stick" xmlUrl="http://www.giantitp.com/comics/oots.rss" type="rss" text="Order of the Stick"/>
+			<outline htmlUrl="http://www.questionablecontent.net" title="QC RSS" xmlUrl="https://www.questionablecontent.net/QCRSS.xml" type="rss" text="QC RSS"/>
+			<outline htmlUrl="https://xkcd.com/" title="Xkcd" xmlUrl="https://xkcd.com/rss.xml" type="rss" text="Xkcd"/>
+		</outline>
+		<outline text="Keyboards" title="Keyboards">
+			<outline htmlUrl="http://www.40percent.club/" title="40% Keyboards" xmlUrl="http://www.40percent.club/feeds/posts/default" type="rss" text="40% Keyboards"/>
+			<outline htmlUrl="https://matt3o.com" title="Matt3o" xmlUrl="https://matt3o.com/feed/" type="rss" text="Matt3o"/>
+			<outline htmlUrl="https://mitormk.com" title="mito" xmlUrl="https://mitormk.com/feed/" type="rss" text="mito"/>
+		</outline>
+		<outline text="Reddit" title="Reddit">
+			<outline htmlUrl="https://www.reddit.com/user/airz23/submitted/" title="tfts: airz23" xmlUrl="https://www.reddit.com/user/airz23/submitted/.rss" type="rss" text="tfts: airz23"/>
+		</outline>
+	</body>
+</opml>
