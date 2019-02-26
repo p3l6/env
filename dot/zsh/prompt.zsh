@@ -10,7 +10,7 @@ directory_name () {
   # %/     Current working directory.
   # If an integer follows the ‘%’, it specifies a number of trailing components of the current working directory to show;
   # zero means the whole path. A negative integer specifies leading components, i.e. %-1d specifies the first component.
-  echo "%{$fg[cyan]%}%1/%{$reset_color%}"
+  echo "%{$fg[cyan]%}%1~%{$reset_color%}"
 }
 
 # [branch]:folder$

@@ -23,6 +23,7 @@ setopt prompt_subst
 setopt correct
 setopt complete_in_word
 setopt ignore_eof
+setopt auto_list
 
 setopt append_history # adds history
 setopt inc_append_history share_history  # adds history incrementally and share it across sessions
