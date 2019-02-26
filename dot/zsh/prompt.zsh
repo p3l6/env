@@ -18,9 +18,7 @@ export PROMPT='$(git_branch):$(directory_name)$ '
 export RPROMPT='%{$fg[red]%}%@%{$reset_color%}'
 
 # Unset the tab title when displaying a new prompt. ie, clears ssh connection info
-#export PROMPT_COMMAND="echo -ne '\033]0;\007';$PROMPT_COMMAND"
-# There was something else about titles for zsh...
-# precmd() { title "zsh" "%m" "%55<...<%~" } See also https://github.com/holman/dotfiles
+precmd() { print -Pn "\e]2;\a" }
 
 reset-prompt-and-accept-line() {
     zle reset-prompt

@@ -1,8 +1,4 @@
-## path
-export PATH=$PATH:$HOME/env/bin
-export WRKSP=$HOME/var
 export ZSH=$HOME/env/dot
-export EDITOR=vim
 
 ## load configs
 typeset -U config_files
