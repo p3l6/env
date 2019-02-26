@@ -1,0 +1,13 @@
+#!/bin/zsh
+# usage: $up 2
+
+path=""
+if [ $1 ]; then
+  for i in {1..$1}; do
+    path=$path"../";
+  done
+else
+  path="../"
+fi
+
+cd $path
