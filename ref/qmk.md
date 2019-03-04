@@ -20,3 +20,9 @@ avrdude -p atmega32u4 -P /dev/tty.usbmodem1411  -c avr109  -U flash:w:gherkin_eP
 * replace flash.bin file on mounted storage, keep naming the same.
 * remove any files that mac added.
 * eject volume, replug keyboard. (use escape key on keyboard to force eject)
+
+## Build with Docker
+
+Run from inside your root qmk directory. Edit the keymap and keyboard as appropriate. 
+
+docker run -e keymap=paulLayout -e keyboard=tada68 --rm -v $('pwd'):/qmk:rw edasque/qmk_firmware
