@@ -23,6 +23,8 @@ avrdude -p atmega32u4 -P /dev/tty.usbmodem1411  -c avr109  -U flash:w:gherkin_eP
 
 ## Build with Docker
 
-Run from inside your root qmk directory. Edit the keymap and keyboard as appropriate. 
+Run from inside your root qmk directory. Edit the keymap and keyboard as appropriate.
 
+```
 docker run -e keymap=paulLayout -e keyboard=tada68 --rm -v $('pwd'):/qmk:rw edasque/qmk_firmware
+```
