@@ -12,6 +12,7 @@ alias dush='du -sh'
 alias ip='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2'
 alias top='open -a Activity\ Monitor.app'
 alias igrep='egrep -i'
+alias rgi='rg -i'
 alias diff='diff -u'
 
 ## ls extension
