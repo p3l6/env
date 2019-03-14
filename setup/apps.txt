@@ -28,6 +28,6 @@ Safari Extensions
 
 Other
 - Things for Mac
-- Quiver Notes
+- Bear Notes
 - Reeder
 - Check app store purchases for more...
