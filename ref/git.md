@@ -40,7 +40,7 @@ delete stale branches (origin/feature, not feature) `git remote prune origin`
 
 ### Squashing topic branches
 
-```
+```sh
 git checkout develop && git pull
 git checkout topic   && git rebase develop
 # fix conflicts if any...
@@ -50,7 +50,7 @@ git commit
 
 ### Git Svn
 
-```
+```sh
 git svn clone <svn url> -s --prefix=origin/
 git svn clone <svn url>/trunk --prefix=origin/ # clone without tags and branches
 git svn fetch # gets new svn commits onto origin/git-svn, can continue a failed clone sometimes
@@ -64,16 +64,28 @@ git svn find-rev r1234
 
 ### Tagging Releases
 
-```
-git tag;                              # to determine most recent existing version tag
-git pull;                             # update develop
-git checkout master;                  # switch to the master branch
-git merge origin/master;              # [opt] update master if anything was pulled
-git merge develop -m '';              # merge in the current develop branch
-git tag -a v0.1.4 -m 'version 0.1.4'; # replace 0.1.4 with version number
-git push;                             # push master
-git push --tags;                      # push tags
-git checkout develop;                 # remember to go back to develop branch
-git log --oneline v0.1.3..v0.1.4 >> ~/log.txt; # print summary between versions
-git show v1.0.1                       # show sha1 for the tag
+```sh
+# make sure your develop is up to date
+git checkout develop
+git pull
+
+# do the same with production
+git checkout production
+git pull
+
+# merge the changes from develop to production
+git merge develop
+# or specify the SHA of the commit to merge, if older than the current develop branch,
+  git merge 5bbd3ef
+
+# tag the current top of master
+git tag -a v18.1.0 -m 'version 18.2.0' <commit id>
+# the most important thing here is the -a, for annotated tag.
+
+# by default, tags aren't pushed with a standard push
+git push                             # push production
+git push --tags                      # push new tag
+
+# remember to go back to the develop branch for working
+git checkout develop
 ```
