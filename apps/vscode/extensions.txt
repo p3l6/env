@@ -2,3 +2,4 @@ Dart-Code.dart-code
 James-Yu.latex-workshop
 ms-vscode.atom-keybindings
 PeterJausovec.vscode-docker
+zhuangtongfa.Material-theme
