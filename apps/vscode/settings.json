@@ -6,6 +6,16 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
     "editor.fontLigatures": true,
-    "editor.fontFamily": "FiraCode, Menlo, Monaco, 'Courier New', monospace",
-    "explorer.openEditors.visible": 0
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "explorer.openEditors.visible": 0,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.sortOrder": "mixed",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.tree.indent": 16,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#1A1A1A",
+        "statusBar.noFolderBackground": "#212121",
+        "statusBar.debuggingBackground": "#263238"
+    }
 }
