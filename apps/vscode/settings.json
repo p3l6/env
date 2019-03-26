@@ -19,5 +19,6 @@
     //     "statusBar.debuggingBackground": "#263238"
     // },
     "workbench.startupEditor": "welcomePage",
-    "workbench.colorTheme": "One Dark Pro"
+    "workbench.colorTheme": "One Dark Pro",
+    "git.enableSmartCommit": true
 }
