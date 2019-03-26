@@ -3,8 +3,10 @@
 if [ "$(uname)" == "Darwin" ]; then
   # h does not follow a symbolic link in resolving the second argument
   LINK='ln -sih'
+  VSCODE='~/Library/Application\ Support/Code/User'
 else
   LINK='ln -si'
+  VSCODE='~/.config/Code/User'
   MAC='NO'
 fi
 
@@ -16,6 +18,9 @@ $LINK ~/env/dot/vim/vimrc ~/.vimrc
 $LINK ~/env/dot/git/gitconfig ~/.gitconfig
 $LINK ~/env/dot/git/gitignore_global ~/.gitignore_global
 $LINK ~/env/apps/atom ~/.atom
+$LINK ~/env/apps/vscode/settings.json $VSCODE/settings.json
+$LINK ~/env/apps/vscode/keybindings.json $VSCODE/keybindings.json
+$LINK ~/env/apps/vscode/snippets $VSCODE/snippets
 $LINK ~/env/dot/lldb/lldbinit ~/.lldbinit
 
 $LINK ~/env/dot/zsh/zshrc ~/.zshrc
@@ -32,10 +37,6 @@ fi
 
 rm -rf ~/Library/Developer/Xcode/UserData
 $LINK ~/env/apps/UserData ~/Library/Developer/Xcode/UserData
-
-$LINK ~/env/apps/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-$LINK ~/env/apps/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-$LINK ~/env/apps/vscode/snippets ~/Library/Application\ Support/Code/User/snippets
 
 chflags nohidden ~/Library
 chflags hidden ~/Public ~/Sites
