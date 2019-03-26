@@ -36,6 +36,9 @@ Xcode preferences
 Atom
   apm install --packages-file ~/env/apps/atom/packages.txt
   
+VSCode
+  cat ~/env/apps/vscode/extensions.txt | xargs -L 1 code --install-extension
+
 Terminal
   New windows and tabs open with default working directory
   add /usr/local/bin/zsh to the bottom of /etc/shells

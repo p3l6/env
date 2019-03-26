@@ -1,0 +1,11 @@
+{
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "editor.minimap.enabled": false,
+    "files.autoSave": "onWindowChange",
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "FiraCode, Menlo, Monaco, 'Courier New', monospace",
+    "explorer.openEditors.visible": 0
+}

@@ -33,6 +33,10 @@ fi
 rm -rf ~/Library/Developer/Xcode/UserData
 $LINK ~/env/apps/UserData ~/Library/Developer/Xcode/UserData
 
+$LINK ~/env/apps/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+$LINK ~/env/apps/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+$LINK ~/env/apps/vscode/snippets ~/Library/Application\ Support/Code/User/snippets
+
 chflags nohidden ~/Library
 chflags hidden ~/Public ~/Sites
 #chflags hidden ~/Music ~/Movies ~/Pictures

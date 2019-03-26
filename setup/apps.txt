@@ -13,8 +13,8 @@ Homebrew
 - bfg carthage cloc cmake node vapor ripgrep
 
 Casks
-- flycut bitwarden rcdefaultapp omnidisksweeper onyx iina
-- atom fork termhere devdocs wwdc
+- flycut bitwarden rcdefaultapp omnidisksweeper onyx iina itsycal
+- atom visual-studio-code fork termhere devdocs wwdc
 + (quick look)
  - qlcolorcode qlstephen qlprettypatch qlswift
 + (optional)
