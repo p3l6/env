@@ -1,10 +1,13 @@
 ## navigation
 alias back='cd -'
 alias cdf='finder'
+alias dotfiles='cd ~/env'
 function cdl { cd $@   &&   ls -halF; } # change to a directory and print out contents
 function mkcd { mkdir $@   &&  cd $@; }
 
-eval $(thefuck --alias)
+if type thefuck > /dev/null; then
+  eval $(thefuck --alias)
+fi
 
 ## command shortcuts
 alias which='type -a'

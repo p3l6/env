@@ -1,3 +1,4 @@
+alefragnani.project-manager
 Dart-Code.dart-code
 James-Yu.latex-workshop
 ms-vscode.atom-keybindings
