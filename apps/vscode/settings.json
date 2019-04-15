@@ -22,5 +22,6 @@
     "workbench.colorTheme": "One Dark Pro",
     "git.enableSmartCommit": true,
     "diffEditor.renderSideBySide": true,
-    "workbench.activityBar.visible": true
+    "workbench.activityBar.visible": true,
+    "git.rebaseWhenSync": true
 }
