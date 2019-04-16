@@ -9,6 +9,11 @@ if grep -Fq "Nockiro/slack-black-theme" $FILE; then
   exit 0
 fi
 
+killall Slack
+
+# change to a black title bar
+defaults write "/Applications/Slack.app/Contents/Info.plist" NSRequiresAquaSystemAppearance false
+
 cp $FILE $FILE.orig
 
 # Update this string when needed from https://github.com/Nockiro/slack-black-theme
@@ -30,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
       --text: #CCC;
       --background: #2D2D2D;
       --background-elevated: #222;
-      --text-bright: #1A9BFC;
    } `
 
    // Insert a style tag into the wrapper view
@@ -61,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 EOF
 
-killall Slack
 open /Applications/Slack.app
 echo Done! Unpatched file left at
 echo $FILE.orig
