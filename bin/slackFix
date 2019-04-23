@@ -12,7 +12,8 @@ fi
 killall Slack
 
 # change to a black title bar
-defaults write "/Applications/Slack.app/Contents/Info.plist" NSRequiresAquaSystemAppearance false
+# for some reason, this causes the notifications to not work...
+#defaults write "/Applications/Slack.app/Contents/Info.plist" NSRequiresAquaSystemAppearance false
 
 cp $FILE $FILE.orig
 

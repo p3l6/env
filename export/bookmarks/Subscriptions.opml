@@ -10,7 +10,7 @@
 		<outline htmlUrl="https://blog.codinghorror.com/" title="Coding Horror" xmlUrl="http://feeds.feedburner.com/codinghorror" type="rss" text="Coding Horror"/>
 		<outline htmlUrl="https://craftandcookie.wordpress.com" title="Craft and Cookie Joy" xmlUrl="https://craftandcookie.wordpress.com/feed/" type="rss" text="Craft and Cookie Joy"/>
 		<outline htmlUrl="https://dlwoodturning.com" title="DL WoodTurning" xmlUrl="http://dlwoodturning.com/feed/" type="rss" text="DL WoodTurning"/>
-		<outline htmlUrl="http://blog.eggplant.io" title="Eggplant Blog" xmlUrl="http://blog.eggplant.io/rss.xml" type="rss" text="Eggplant Blog"/>
+		<outline htmlUrl="https://blog.eggplant.io" title="Eggplant Blog" xmlUrl="http://blog.eggplant.io/rss.xml" type="rss" text="Eggplant Blog"/>
 		<outline htmlUrl="http://emails2rss.appspot.com/rss?id=fa35ba940809e047a20951e0139e93e74c01" title="Gnustep Discuss" xmlUrl="http://emails2rss.appspot.com/rss?id=fa35ba940809e047a20951e0139e93e74c01" type="rss" text="Gnustep Discuss"/>
 		<outline htmlUrl="http://www.nasa.gov/" title="NASA Breaking News" xmlUrl="https://www.nasa.gov/rss/dyn/breaking_news.rss" type="rss" text="NASA Breaking News"/>
 		<outline htmlUrl="http://www.fandango.com/default.aspx?wssaffid=11840&amp;wssac=123" title="New Movies" xmlUrl="http://www.fandango.com/rss/newmovies.rss" type="rss" text="New Movies"/>
@@ -32,11 +32,12 @@
 			<outline htmlUrl="https://devdocs.io/" title="DevDocs" xmlUrl="https://devdocs.io/feed" type="rss" text="DevDocs"/>
 			<outline htmlUrl="https://dolphin-emu.org/blog/" title="Dolphin Emulator" xmlUrl="https://dolphin-emu.org/blog/feeds/" type="rss" text="Dolphin Emulator"/>
 			<outline htmlUrl="http://www.freerdp.com/" title="FreeRDP" xmlUrl="http://www.freerdp.com/atom.xml" type="rss" text="FreeRDP"/>
-			<outline htmlUrl="https://forkapp.io/blog/" title="Git Fork" xmlUrl="https://git-fork.com/blog/index.xml" type="rss" text="Git Fork"/>
+			<outline htmlUrl="https://fork.dev/blog/" title="Git Fork" xmlUrl="https://git-fork.com/blog/index.xml" type="rss" text="Git Fork"/>
 			<outline htmlUrl="https://brew.sh/" title="Homebrew" xmlUrl="https://brew.sh/atom.xml" type="rss" text="Homebrew"/>
 			<outline htmlUrl="https://stardewvalley.net" title="Stardew Valley" xmlUrl="http://stardewvalley.net/feed/" type="rss" text="Stardew Valley"/>
 			<outline title="Swift.org" xmlUrl="https://swift.org/atom.xml" type="rss" text="Swift.org"/>
 			<outline htmlUrl="https://github.com/vapor/vapor/releases" title="Vapor releases" xmlUrl="https://github.com/vapor/vapor/releases.atom" type="rss" text="Vapor releases"/>
+			<outline htmlUrl="https://code.visualstudio.com/" title="Visual Studio Code" xmlUrl="https://code.visualstudio.com/feed.xml" type="rss" text="Visual Studio Code"/>
 		</outline>
 		<outline text="Comics" title="Comics">
 			<outline htmlUrl="https://www.comicsrss.com/preview/calvinandhobbes" title="Calvin and Hobbes" xmlUrl="https://www.comicsrss.com/rss/calvinandhobbes.rss" type="rss" text="Calvin and Hobbes"/>

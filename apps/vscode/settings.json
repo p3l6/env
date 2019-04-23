@@ -23,5 +23,7 @@
     "git.enableSmartCommit": true,
     "diffEditor.renderSideBySide": true,
     "workbench.activityBar.visible": true,
-    "git.rebaseWhenSync": true
+    "git.rebaseWhenSync": true,
+    "git.confirmSync": false,
+    "extensions.ignoreRecommendations": false
 }
