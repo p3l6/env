@@ -1,0 +1,19 @@
+#! /bin/bash
+
+FOLDERS=$(find ~/var -type d -regex '^[^.]*/\.git')
+FOLDERS="/Users/paul/env/.git $FOLDERS"
+
+for f in $FOLDERS
+do
+  cd $f/..
+  
+  UNPUSHED=$(git log @{u}.. 2>/dev/null)
+  EDITED=$(git status --untracked-files=no --porcelain)
+
+  if [ ! -z "$UNPUSHED" ] || [ ! -z "$EDITED" ]; then
+    echo $(tput setaf 5)$(pwd)$(tput sgr0)
+    git status -sb
+    git log @{u}.. 2>/dev/null
+    echo ----
+  fi
+done
