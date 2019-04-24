@@ -1,7 +1,12 @@
 #! /bin/bash
 
-FOLDERS=$(find ~/var -type d -regex '^[^.]*/\.git')
-FOLDERS="/Users/paul/env/.git $FOLDERS"
+SEARCHPATHS="$HOME/var $HOME/env"
+
+FOLDERS=""
+for path in $SEARCHPATHS
+do
+  FOLDERS="$FOLDERS $(find $path -type d -regex '^[^.]*/\.git')"
+done
 
 for f in $FOLDERS
 do
