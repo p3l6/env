@@ -2,6 +2,7 @@
 alias back='cd -'
 alias cdf='finder'
 alias dotfiles='cd ~/env'
+alias tmp='cd ~/tmp'
 function cdl { cd $@   &&   ls -halF; } # change to a directory and print out contents
 function mkcd { mkdir $@   &&  cd $@; }
 

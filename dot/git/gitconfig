@@ -20,7 +20,7 @@
 	new = checkout -b
 	original = remote set-url origin
 	pullr = pull --rebase --autostash
-	pushup = push --set-upstream origin
+	pushup = push --set-upstream origin HEAD
 	search = log --pretty=format:\"%C(yellow)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s\" --date=short -S
   spotless = clean -dfx
 	sync = "!git pullr && git push"
