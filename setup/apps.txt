@@ -18,7 +18,7 @@ Casks
 + (quick look)
  - qlcolorcode qlstephen qlprettypatch qlswift
 + (optional)
- - docker google-chrome dropbox
+ - docker-toolbox google-chrome dropbox
  - gimp mactex basictex
 
 Safari Extensions

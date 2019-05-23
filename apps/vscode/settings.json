@@ -18,12 +18,15 @@
     //     "statusBar.noFolderBackground": "#212121",
     //     "statusBar.debuggingBackground": "#263238"
     // },
-    "workbench.startupEditor": "welcomePage",
+    "workbench.startupEditor": "newUntitledFile",
     "workbench.colorTheme": "One Dark Pro",
     "git.enableSmartCommit": true,
     "diffEditor.renderSideBySide": true,
     "workbench.activityBar.visible": true,
     "git.rebaseWhenSync": true,
     "git.confirmSync": false,
-    "extensions.ignoreRecommendations": false
+    "extensions.ignoreRecommendations": false,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "explorer.confirmDelete": false,
 }

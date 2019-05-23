@@ -6,8 +6,9 @@ if [ "$(uname)" == "Darwin" ]; then
   VSCODE='~/Library/Application\ Support/Code/User'
 else
   LINK='ln -si'
-  VSCODE='~/.config/Code/User'
+  VSCODE="$HOME/.config/Code/User"
   MAC='NO'
+  mkdir -p $VSCODE
 fi
 
 # TODO add a common extension to all of these, and find them  automatically
