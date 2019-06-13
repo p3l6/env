@@ -3,7 +3,7 @@
 if [ "$(uname)" == "Darwin" ]; then
   # h does not follow a symbolic link in resolving the second argument
   LINK='ln -sih'
-  VSCODE='~/Library/Application\ Support/Code/User'
+  VSCODE="$HOME/Library/Application Support/Code/User"
 else
   LINK='ln -si'
   VSCODE="$HOME/.config/Code/User"
@@ -19,9 +19,9 @@ $LINK ~/env/dot/vim/vimrc ~/.vimrc
 $LINK ~/env/dot/git/gitconfig ~/.gitconfig
 $LINK ~/env/dot/git/gitignore_global ~/.gitignore_global
 $LINK ~/env/apps/atom ~/.atom
-$LINK ~/env/apps/vscode/settings.json $VSCODE/settings.json
-$LINK ~/env/apps/vscode/keybindings.json $VSCODE/keybindings.json
-$LINK ~/env/apps/vscode/snippets $VSCODE/snippets
+$LINK ~/env/apps/vscode/settings.json "$VSCODE/settings.json"
+$LINK ~/env/apps/vscode/keybindings.json "$VSCODE/keybindings.json"
+$LINK ~/env/apps/vscode/snippets "$VSCODE/snippets"
 $LINK ~/env/dot/lldb/lldbinit ~/.lldbinit
 
 $LINK ~/env/dot/zsh/zshrc ~/.zshrc

@@ -31,3 +31,17 @@ Other
 - Bear Notes
 - Reeder
 - Check app store purchases for more...
+
+Games, Misc, Non-essential
+- Battle.net
+- Calibre
+- Enjoyable
+- PandaNet
+- Handbrake
+- Minecraft
+- OpenEmu
+- Paintbrush
+- Steam
+- Synthesia
+- Transmission
+- Wine / VirtualBox
