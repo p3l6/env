@@ -21,6 +21,11 @@ avrdude -p atmega32u4 -P /dev/tty.usbmodem1411  -c avr109  -U flash:w:gherkin_eP
 * remove any files that mac added.
 * eject volume, replug keyboard. (use escape key on keyboard to force eject)
 
+## CA66 INSTALLING
+
+Plug in ca66 while holding ESC
+./bootloadHID playkbtw_ca66_pwxn.hex
+
 ## Build with Docker
 
 Run from inside your root qmk directory. Edit the keymap and keyboard as appropriate.
@@ -28,3 +33,4 @@ Run from inside your root qmk directory. Edit the keymap and keyboard as appropr
 ```
 docker run -e keymap=paulLayout -e keyboard=tada68 --rm -v $('pwd'):/qmk:rw edasque/qmk_firmware
 ```
+

@@ -1,6 +1,5 @@
 {
     "typescript.updateImportsOnFileMove.enabled": "never",
-    "editor.minimap.enabled": false,
     "files.autoSave": "onWindowChange",
     "atomKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
@@ -29,4 +28,6 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
 }
