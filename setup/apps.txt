@@ -16,7 +16,7 @@ Casks
 - flycut bitwarden rcdefaultapp omnidisksweeper onyx iina itsycal
 - atom visual-studio-code fork termhere devdocs wwdc
 + (quick look)
- - qlcolorcode qlstephen qlprettypatch qlswift
+ - qlcolorcode qlstephen qlimagesize qlswift
 + (optional)
  - docker-toolbox google-chrome dropbox
  - gimp mactex basictex

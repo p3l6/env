@@ -6,7 +6,7 @@ alias tmp='cd ~/tmp'
 function cdl { cd $@   &&   ls -halF; } # change to a directory and print out contents
 function mkcd { mkdir $@   &&  cd $@; }
 
-if type thefuck > /dev/null; then
+if type thefuck &> /dev/null; then
   eval $(thefuck --alias)
 fi
 

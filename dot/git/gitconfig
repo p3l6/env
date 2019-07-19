@@ -23,6 +23,7 @@
 	pushup = push --set-upstream origin HEAD
 	search = log --pretty=format:\"%C(yellow)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s\" --date=short -S
   spotless = clean -dfx
+	staged = diff --cached
 	sync = "!git pullr && git push"
 	unstage = reset HEAD --
 [filter "lfs"]
