@@ -1,5 +1,7 @@
 #! /bin/bash
 
+echo 'This script no longer works for slack 4, get the whole repository at \nhttps://github.com/Nockiro/slack-black-theme'
+
 FILE=/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js
 
 if grep -Fq "Nockiro/slack-black-theme" $FILE; then
@@ -10,6 +12,8 @@ if grep -Fq "Nockiro/slack-black-theme" $FILE; then
 fi
 
 killall Slack
+
+set -e
 
 # change to a black title bar
 # for some reason, this causes the notifications to not work...
@@ -36,6 +40,9 @@ document.addEventListener("DOMContentLoaded", function() {
       --text: #CCC;
       --background: #2D2D2D;
       --background-elevated: #222;
+   }
+   .p-channel_sidebar__navigation_bar {
+     display: none;
    } `
 
    // Insert a style tag into the wrapper view
