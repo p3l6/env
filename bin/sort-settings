@@ -1,0 +1,49 @@
+#! /usr/bin/env python3
+
+import os
+
+BASEPATH = os.path.dirname(__file__)+'/../apps/vscode/'
+
+input_file = open(BASEPATH+'settings.json', 'r')
+output_file = open(BASEPATH+'settings.json.sorted', 'w')
+
+sort_list = []
+fixed_list = []
+nest_level = 0
+nest_lines = ''
+
+for line in input_file:
+  fixed = False
+  if line == '{\n' or line == '}\n':
+    fixed = True
+  elif '//' in line:
+    fixed = True
+  elif '{' in line:
+    nest_level += 1
+  elif '}' in line:
+    nest_level -= 1
+    nest_lines += line
+    if nest_level == 0:
+      line = nest_lines
+      nest_lines = ''
+
+  if nest_level > 0:
+    nest_lines += line
+  elif fixed:
+    fixed_list.append(line)
+  else:
+    fixed_list.append('<<sort-me>>')
+    sort_list.append(line)
+
+sort_list = sorted(sort_list)
+
+si = 0
+for i in range(len(fixed_list)):
+  if fixed_list[i] == '<<sort-me>>':
+    fixed_list[i] = sort_list[si]
+    si += 1
+
+output_file.writelines(fixed_list)
+output_file.close()
+input_file.close()
+os.rename(BASEPATH+'settings.json.sorted', BASEPATH+'settings.json')
