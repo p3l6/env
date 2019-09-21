@@ -8,8 +8,9 @@ else
   LINK='ln -si'
   VSCODE="$HOME/.config/Code/User"
   MAC='NO'
-  mkdir -p $VSCODE
 fi
+
+mkdir -p $VSCODE
 
 # TODO add a common extension to all of these, and find them  automatically
 # ie https://github.com/holman/dotfiles/blob/master/zsh/zshrc.symlink
@@ -37,6 +38,7 @@ fi
 # MacOS setup only below this point
 
 rm -rf ~/Library/Developer/Xcode/UserData
+mkdir -p ~/Library/Developer/Xcode/UserData
 $LINK ~/env/apps/UserData ~/Library/Developer/Xcode/UserData
 
 chflags nohidden ~/Library

@@ -10,7 +10,6 @@
 <outline title="Craft and Cookie Joy" xmlUrl="https://craftandcookie.wordpress.com/feed/" text="Craft and Cookie Joy" type="rss" htmlUrl="https://craftandcookie.wordpress.com" />
 <outline title="DL WoodTurning" xmlUrl="http://dlwoodturning.com/feed/" htmlUrl="https://dlwoodturning.com" text="DL WoodTurning" type="rss" />
 <outline text="Eggplant Blog" type="rss" xmlUrl="http://blog.eggplant.io/rss.xml" title="Eggplant Blog" htmlUrl="https://blog.eggplant.io" />
-<outline text="Gnustep Discuss" title="Gnustep Discuss" htmlUrl="http://emails2rss.appspot.com/rss?id=fa35ba940809e047a20951e0139e93e74c01" xmlUrl="http://emails2rss.appspot.com/rss?id=fa35ba940809e047a20951e0139e93e74c01" type="rss" />
 <outline xmlUrl="http://www.watt-evans.com/blog/feed/" text="Lawrence Watt Evans" type="rss" title="Lawrence Watt Evans" htmlUrl="http://www.watt-evans.com/blog" />
 <outline text="NASA Breaking News" xmlUrl="https://www.nasa.gov/rss/dyn/breaking_news.rss" htmlUrl="http://www.nasa.gov/" type="rss" title="NASA Breaking News" />
 <outline type="rss" text="New Movies" title="New Movies" htmlUrl="http://www.fandango.com/default.aspx?wssaffid=11840&amp;wssac=123" xmlUrl="http://www.fandango.com/rss/newmovies.rss" />
@@ -28,15 +27,12 @@
 <outline xmlUrl="https://blog.bitwarden.com/feed" text="Bitwarden" type="rss" htmlUrl="https://blog.bitwarden.com?source=rss----58e9039786d8---4" title="Bitwarden" />
 <outline text="Vapor" htmlUrl="https://github.com/vapor/vapor/releases" xmlUrl="https://github.com/vapor/vapor/releases.atom" type="rss" title="Vapor" />
 <outline text="Homebrew" type="rss" xmlUrl="https://brew.sh/atom.xml" title="Homebrew" htmlUrl="https://brew.sh/" />
-<outline type="rss" text="Atom" title="Atom" htmlUrl="https://blog.atom.io/" xmlUrl="http://blog.atom.io/feed.xml" />
-<outline title="Dart News" htmlUrl="https://news.dartlang.org/" xmlUrl="https://news.dartlang.org/feeds/posts/default" type="rss" text="Dart News" />
 <outline htmlUrl="https://devdocs.io/" xmlUrl="https://devdocs.io/feed" title="DevDocs" text="DevDocs" type="rss" />
 <outline type="rss" title="Stardew Valley" htmlUrl="https://stardewvalley.net" text="Stardew Valley" xmlUrl="http://stardewvalley.net/feed/" />
 <outline htmlUrl="https://blog.bear.app" title="Bear Notes" text="Bear Notes" xmlUrl="https://feeds.bear.app/all" type="rss" />
 <outline htmlUrl="https://code.visualstudio.com/" type="rss" xmlUrl="https://code.visualstudio.com/feed.xml" title="Visual Studio Code" text="Visual Studio Code" />
 <outline title="Swift" type="rss" xmlUrl="https://swift.org/atom.xml" htmlUrl="https://swift.org" text="Swift" />
 <outline type="rss" htmlUrl="https://fork.dev/blog/" title="Fork" xmlUrl="https://git-fork.com/blog/index.xml" text="Fork" />
-<outline xmlUrl="http://www.freerdp.com/atom.xml" title="FreeRDP" text="FreeRDP" type="rss" htmlUrl="http://www.freerdp.com/atom.xml" />
 <outline title="Dolphin Emulator" xmlUrl="https://dolphin-emu.org/blog/feeds/" htmlUrl="https://dolphin-emu.org/blog/" text="Dolphin Emulator" type="rss" />
 </outline>
 <outline title="Comics" text="Comics">

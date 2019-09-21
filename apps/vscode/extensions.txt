@@ -1,6 +1,6 @@
 alefragnani.project-manager
-Dart-Code.dart-code
 James-Yu.latex-workshop
+ms-azuretools.vscode-docker
 ms-vscode.atom-keybindings
 PeterJausovec.vscode-docker
 zhuangtongfa.Material-theme

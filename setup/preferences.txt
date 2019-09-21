@@ -33,9 +33,22 @@ Xcode preferences
   Source Control
     don't fetch server status automatically
 
+Safari
+  Don't open safe files
+  Show website icons in tabsAutofill only contacts
+  Show full website address
+  Show develop in menu bar
+
+Finder
+  Desktop: CDs Servers
+  New windows: Home
+  Folders in tabs
+  Sidebar items: Applications Home Downloads Var, iCloud External CDs Servers
+  Advanced: o o x x x o o current
+
 Atom
   apm install --packages-file ~/env/apps/atom/packages.txt
-  
+
 VSCode
   cat ~/env/apps/vscode/extensions.txt | xargs -L 1 code --install-extension
 
