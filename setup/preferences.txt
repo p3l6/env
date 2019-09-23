@@ -13,6 +13,8 @@ System preferences
     no hot corners
   Spotlight
     no: bookmarks, events, mail messages, fonts
+  Mouse
+    Secondary click
   Trackpad
     tap to click
   Sharing
