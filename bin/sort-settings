@@ -1,5 +1,8 @@
 #! /usr/bin/env python3
 
+print('This command is broken. It doesn\'t factor in commas. And it deleted like 4 settings last time.')
+exit
+
 import os
 
 BASEPATH = os.path.dirname(__file__)+'/../apps/vscode/'
@@ -46,4 +49,5 @@ for i in range(len(fixed_list)):
 output_file.writelines(fixed_list)
 output_file.close()
 input_file.close()
-os.rename(BASEPATH+'settings.json.sorted', BASEPATH+'settings.json')
+os.copy(BASEPATH+'settings.json', BASEPATH+'settings.json.previous')
+#os.rename(BASEPATH+'settings.json.sorted', BASEPATH+'settings.json')

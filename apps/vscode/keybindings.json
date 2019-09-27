@@ -45,5 +45,9 @@
     {
         "key": "ctrl+g",
         "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "alt+cmd+c",
+        "command": "workbench.view.scm"
     }
 ]
