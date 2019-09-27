@@ -1,57 +1,28 @@
 #! /bin/bash
 
-echo 'This script no longer works for slack 4, get the whole repository at \nhttps://github.com/Nockiro/slack-black-theme'
-
-FILE=/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js
-
-if grep -Fq "Nockiro/slack-black-theme" $FILE; then
-  echo Already patched!
-  echo If there are issues, you may need to inspect the file manually:
-  echo $FILE
-  exit 0
-fi
-
-killall Slack
-
 set -e
 
-# change to a black title bar
-# for some reason, this causes the notifications to not work...
-#defaults write "/Applications/Slack.app/Contents/Info.plist" NSRequiresAquaSystemAppearance false
+SLACK_RESOURCES_DIR="/Applications/Slack.app/Contents/Resources"
+SLACK_FILE_PATH_4="${SLACK_RESOURCES_DIR}"/app.asar.unpacked/dist/ssb-interop.bundle.js
 
-cp $FILE $FILE.orig
-
-# Update this string when needed from https://github.com/Nockiro/slack-black-theme
-cat << "EOF" >> $FILE
+sudo npx asar extract "${SLACK_RESOURCES_DIR}"/app.asar "${SLACK_RESOURCES_DIR}"/app.asar.unpacked
+sudo tee -a "${SLACK_FILE_PATH_4}" > /dev/null << "EOF"
 // First make sure the wrapper app is loaded
 document.addEventListener("DOMContentLoaded", function() {
 
    // Then get its webviews
    let webviews = document.querySelectorAll(".TeamView webview");
 
-   // Fetch our CSS in parallel ahead of time
-   const cssPath = 'https://raw.githubusercontent.com/Nockiro/slack-black-theme/master/custom.css';
-   let cssPromise = fetch(cssPath).then(response => response.text());
-
-   let customCustomCSS = `
-   :root {
-      /* Modify these to change your theme colors: */
-      --primary: #09F;
-      --text: #CCC;
-      --background: #2D2D2D;
-      --background-elevated: #222;
-   }
+   let customCSS = `
    .p-channel_sidebar__navigation_bar {
      display: none;
    } `
 
    // Insert a style tag into the wrapper view
-   cssPromise.then(css => {
-      let s = document.createElement('style');
-      s.type = 'text/css';
-      s.innerHTML = css + customCustomCSS;
-      document.head.appendChild(s);
-   });
+   let s = document.createElement('style');
+   s.type = 'text/css';
+   s.innerHTML = customCSS;
+   document.head.appendChild(s);
 
    // Wait for each webview to load
    webviews.forEach(webview => {
@@ -73,6 +44,4 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 EOF
 
-open /Applications/Slack.app
-echo Done! Unpatched file left at
-echo $FILE.orig
+sudo npx asar pack "${SLACK_RESOURCES_DIR}"/app.asar.unpacked "${SLACK_RESOURCES_DIR}"/app.asar
