@@ -1,5 +1,6 @@
 #! /usr/local/bin/python3
 """ pip3 install markdown Pygments """
+""" mkdir www """
 
 import os
 import markdown

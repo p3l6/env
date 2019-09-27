@@ -15,6 +15,7 @@ System preferences
     no: bookmarks, events, mail messages, fonts
   Mouse
     Secondary click
+    Swipe between pages
   Trackpad
     tap to click
   Sharing
