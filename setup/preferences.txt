@@ -20,6 +20,8 @@ System preferences
     tap to click
   Sharing
     set machine name
+  Accessibility
+    Double click speed second from fastest
 
 Xcode preferences
   Navigation:
