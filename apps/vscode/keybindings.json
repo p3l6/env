@@ -49,5 +49,10 @@
     {
         "key": "alt+cmd+c",
         "command": "workbench.view.scm"
+    },
+    {
+        "key": "escape",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
     }
 ]
