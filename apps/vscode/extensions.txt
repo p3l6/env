@@ -1,6 +1,8 @@
+akamud.vscode-theme-onelight
 alefragnani.project-manager
+dbaeumer.vscode-eslint
 James-Yu.latex-workshop
 ms-azuretools.vscode-docker
 ms-python.python
-ms-vscode.atom-keybindings
+stevemoser.xcode-keybindings
 zhuangtongfa.Material-theme
