@@ -4,5 +4,4 @@ dbaeumer.vscode-eslint
 James-Yu.latex-workshop
 ms-azuretools.vscode-docker
 ms-python.python
-stevemoser.xcode-keybindings
 zhuangtongfa.Material-theme
