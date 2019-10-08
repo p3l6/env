@@ -2,6 +2,9 @@
 
 file="$HOME/.hh"
 
+clearedOnce=false
+printedOnce=false
+
 printFile () {
   printPrefix() {
     lines=$(grep "^$1" < $file)
@@ -12,16 +15,24 @@ printFile () {
     fi
   }
 
+  if [ "$printedOnce" = true ]; then return; fi
+
   printPrefix "Planned"
   printPrefix "Today"
   printPrefix "Tomorrow"
   printPrefix "QBI"
+
+  printedOnce=true
 }
 
 clear () {
+  if [ "$clearedOnce" = true ]; then return; fi
+
   sed -i.bak -n 's/Tomorrow/Planned/p'  $file
   echo "Welcome! Here's the plan for today:"
   printFile
+
+  clearedOnce=true
 }
 
 autoClear () {
