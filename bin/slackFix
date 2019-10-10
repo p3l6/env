@@ -45,3 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
 EOF
 
 sudo npx asar pack "${SLACK_RESOURCES_DIR}"/app.asar.unpacked "${SLACK_RESOURCES_DIR}"/app.asar
+
+# strip the attribute saying slack has been damaged
+xattr -cr /Applications/Slack.app
+

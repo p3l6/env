@@ -23,8 +23,10 @@ avrdude -p atmega32u4 -P /dev/tty.usbmodem1411  -c avr109  -U flash:w:gherkin_eP
 
 ## CA66 INSTALLING
 
-Plug in ca66 while holding ESC
+Plug in ca66 while holding ESC, then run
+```
 ./bootloadHID playkbtw_ca66_pwxn.hex
+```
 
 ## Build with Docker
 
