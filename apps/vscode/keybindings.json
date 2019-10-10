@@ -191,5 +191,25 @@
     {
         "key": "ctrl+t",
         "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "f17",
+        "command": "workbench.action.debug.stepOver",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "f18",
+        "command": "workbench.action.debug.stepInto",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "f19",
+        "command": "workbench.action.debug.stepOut",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "f16",
+        "command": "workbench.action.debug.continue",
+        "when": "inDebugMode"
     }
 ]
