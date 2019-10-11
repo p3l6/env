@@ -1,0 +1,12 @@
+{
+	"construct": {
+		"prefix": "con",
+		"body": [
+			"constructor(props) {",
+			"  super(props);",
+			"  $0",
+			"}"
+		],
+		"description": "Constructor with super"
+	}
+}

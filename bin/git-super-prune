@@ -1,0 +1,24 @@
+#! /bin/bash
+
+pruned=$(git remote prune origin | tee /dev/tty | sed -n 's|^ \* \[pruned\] origin/\(.*\)$|\1|p')
+branches=$(git branch | colrm 1 2)
+
+# https://stackoverflow.com/questions/8063228
+function list_include_item {
+  local list="$1"
+  local item="$2"
+  if [[ $list =~ (^|[[:space:]])"$item"($|[[:space:]]) ]] ; then
+    # yes, list include item
+    result=0
+  else
+    result=1
+  fi
+  return $result
+}
+
+for b in $pruned; do
+  if `list_include_item "$branches" "$b"`; then
+    echo Removing Local branch: $b
+    git branch -D "$b"
+  fi
+done
