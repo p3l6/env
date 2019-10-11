@@ -40,7 +40,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.feedback.visible": false,
     "workbench.tree.indent": 12,
-
+    "workbench.list.automaticKeyboardNavigation": false,
 
     "window.title": "${activeEditorShort}${separator}${rootName}${separator}${activeEditorMedium}"
 }

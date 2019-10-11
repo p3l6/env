@@ -211,5 +211,10 @@
         "key": "f16",
         "command": "workbench.action.debug.continue",
         "when": "inDebugMode"
+    },
+    {
+        "key": "f",
+        "command": "list.toggleKeyboardNavigation",
+        "when": "filesExplorerFocus && !inputFocus"
     }
 ]
