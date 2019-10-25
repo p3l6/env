@@ -216,5 +216,15 @@
         "key": "f",
         "command": "list.toggleKeyboardNavigation",
         "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "alt+w",
+        "command": "editor.emmet.action.wrapWithAbbreviation",
+        "when": "editorHasSelection",
+    },
+    {
+        "key": "shift+alt+w",
+        "command": "editor.emmet.action.wrapIndividualLinesWithAbbreviation",
+        "when": "editorHasSelection",
     }
 ]

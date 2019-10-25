@@ -8,7 +8,6 @@
     "editor.minimap.enabled": false,
     "editor.tabSize": 2,
     "editor.trimAutoWhitespace": false,
-    "editor.formatOnPaste": true,
     "editor.lightbulb.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.dragAndDrop": false,
@@ -18,9 +17,10 @@
     "explorer.openEditors.visible": 0,
     "explorer.sortOrder": "mixed",
 
+    "eslint.run": "onSave",
     "extensions.ignoreRecommendations": false,
 
-    "files.autoSave": "onWindowChange",
+    "files.autoSave": "onFocusChange",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
 
@@ -31,7 +31,14 @@
 
     "latex-workshop.view.pdf.viewer": "tab",
     "projectManager.showProjectNameInStatusBar": false,
+
     "typescript.updateImportsOnFileMove.enabled": "never",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": true,

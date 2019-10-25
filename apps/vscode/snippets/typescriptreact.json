@@ -1,12 +1,38 @@
 {
 	"construct": {
-		"prefix": "con",
+		"prefix": "construct",
 		"body": [
-			"constructor(props) {",
-			"  super(props);",
-			"  $0",
-			"}"
+"constructor(props) {",
+"  super(props);",
+"  $0",
+"}"
 		],
 		"description": "Constructor with super"
-	}
+	},
+	"blank component": {
+		"prefix": "component",
+		"body": [
+"import * as React from 'react'",
+"",
+"type $1Props = {}",
+"",
+"export function $1(props: $1Props): JSX.Element {",
+"  const [thing, setThing] = React.useState('initial')",
+"  return (",
+"   <>",
+"     $0",
+"   </>",
+"  )",
+"}"
+		],
+		"description": "A blank react component shell"
+	},
+	"blank state": {
+		"prefix": "statevar",
+		"body": [
+"  const [$1, set$1] = React.useState($2)",
+"  $0"
+		],
+		"description": "A blank react state variable for functions"
+	},
 }
