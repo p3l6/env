@@ -27,8 +27,8 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # Change screenshot directory (create it first if needed)
-#mkdir -p ~/Downloads/Screenshots
-#defaults write com.apple.screencapture location ~/Downloads/Screenshots
+mkdir -p ~/Downloads/Screenshots
+defaults write com.apple.screencapture location ~/Downloads/Screenshots
 
 # Don't show files on the desktop (still shows in finder)
 #defaults write com.apple.finder CreateDesktop NO

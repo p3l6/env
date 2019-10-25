@@ -43,7 +43,7 @@ $LINK ~/env/apps/UserData ~/Library/Developer/Xcode/UserData
 
 chflags nohidden ~/Library
 chflags hidden ~/Public ~/Sites
-#chflags hidden ~/Music ~/Movies ~/Pictures
+chflags hidden ~/Music ~/Movies ~/Pictures
 
 if [ ! -d ~/var ]; then
   mkdir ~/var
