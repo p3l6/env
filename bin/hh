@@ -65,6 +65,8 @@ Other options:
   hh -c         | Manual clear, move anything from 'tomorrow'
                 | to 'planned', and delete the rest. (This should
                 | automatically happen each day.)
+  hh -y         | Print yesterday's file. Useful if it autoclears
+                | before you had a chance to post
   hh --help     | Print this help
   hh -e         | Edit raw data file, for debugging. (Warning: opens vim)
 EOF
@@ -106,6 +108,10 @@ case "$1" in
     ;;
   --help)
     printHelp
+    ;;
+  --yesterday | -y)
+    file=$file.bak
+    printFile
     ;;
   *)
     echo "Today: $*" >> $file

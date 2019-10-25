@@ -35,3 +35,6 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # Enable airdrop over ethernet
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
+
+# Only copy text from terminal, not formatting
+defaults write com.apple.Terminal CopyAttributesProfile com.apple.Terminal.no-attributes

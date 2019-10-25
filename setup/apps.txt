@@ -1,8 +1,6 @@
 
 Xcode
-- install command line extensions
 - https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)
-- https://github.com/tonsky/FiraCode (font with ligatures)
 
 Homebrew
 - zsh wget trash thefuck cask vim cloc ripgrep
@@ -13,17 +11,17 @@ Homebrew
 
 Casks
 - flycut bitwarden rcdefaultapp omnidisksweeper onyx iina itsycal
-- atom visual-studio-code fork termhere devdocs wwdc
+- atom visual-studio-code fork termhere devdocs wwdc font-fira-code
 + (quick look)
  - qlcolorcode qlstephen qlimagesize qlswift
 + (optional)
- - docker google-chrome dropbox
+ - docker google-chrome dropbox slack
  - gimp mactex basictex
 
 Safari Extensions
 - bitwarden
-- camelizer
-- rss menu
+- camelizer ?
+- Reeder subscribe
 
 Other
 - Things for Mac
