@@ -16,7 +16,7 @@ Casks
  - qlcolorcode qlstephen qlimagesize qlswift
 + (optional)
  - docker google-chrome dropbox slack
- - gimp mactex basictex
+ - gimp basictex
 
 Safari Extensions
 - bitwarden

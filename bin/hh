@@ -8,9 +8,9 @@ printedOnce=false
 printFile () {
   printPrefix() {
     lines=$(grep "^$1" < $file)
-    lines=$(sed -n "s/^$1://p" < $file)
+    lines=$(sed -n "s/^$1:/ \*/p" < $file)
     if [ ! -z "$lines" ]; then
-      echo $1
+      echo "$1:"
       echo "$lines"
     fi
   }
