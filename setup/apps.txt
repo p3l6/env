@@ -4,7 +4,7 @@ Xcode
 
 Homebrew
 - zsh wget trash thefuck cask vim cloc ripgrep
-- git git-lfs git-sizer
+- git git-lfs git-sizer diff-so-fancy
 + tap osx-cross/avr; tap PX4/px4
  - avr-gcc dfu-programmer gcc-arm-none-eabi  avrdude
 - bfg carthage cmake node vapor
