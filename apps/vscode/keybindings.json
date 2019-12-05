@@ -166,7 +166,7 @@
     {
         "key": "escape",
         "command": "editor.action.triggerSuggest",
-        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible && !editorHasMultipleSelections"
     },
     {
         "key": "alt+cmd+e",
