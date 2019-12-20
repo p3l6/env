@@ -9,8 +9,8 @@ Homebrew
  - avr-gcc dfu-programmer gcc-arm-none-eabi  avrdude
 - bfg carthage cmake node vapor
 
-Casks
-- flycut bitwarden rcdefaultapp omnidisksweeper onyx iina itsycal
+Homebrew Cask
+- flycut bitwarden omnidisksweeper iina itsycal
 - atom visual-studio-code fork termhere devdocs wwdc font-fira-code
 + (quick look)
  - qlcolorcode qlstephen qlimagesize qlswift
@@ -23,10 +23,11 @@ Safari Extensions
 - camelizer ?
 - Reeder subscribe
 
-Other
+Mac App Store
 - Things for Mac
 - Bear Notes
 - Reeder
+- Magnet
 - Check app store purchases for more...
 
 Games, Misc, Non-essential
@@ -38,6 +39,7 @@ Games, Misc, Non-essential
 - Minecraft
 - OpenEmu
 - Paintbrush
+- Rested
 - Steam
 - Synthesia
 - Transmission

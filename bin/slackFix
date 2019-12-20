@@ -1,5 +1,8 @@
 #! /bin/bash
 
+echo "This command is no longer functional! If you type /slackdevtools into any chat though, you can hack around."
+exit 1
+
 set -e
 
 SLACK_RESOURCES_DIR="/Applications/Slack.app/Contents/Resources"
