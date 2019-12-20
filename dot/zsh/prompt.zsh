@@ -17,8 +17,13 @@ prompt_time() {
   echo "%{$fg[red]%}%@%{$reset_color%}"
 }
 
+prompt_status() {
+  # conditional substring:   %(x.true-text.false-text)
+  echo "%{$fg[red]%}%(?..(%?%))%{$reset_color%}"
+}
+
 # [branch]:folder$
-export PROMPT='$(prompt_git_branch):$(prompt_directory_name)$ '
+export PROMPT='$(prompt_git_branch):$(prompt_directory_name)$(prompt_status)$ '
 export RPROMPT='$(prompt_time)'
 
 # Unset the tab title when displaying a new prompt. ie, clears ssh connection info
