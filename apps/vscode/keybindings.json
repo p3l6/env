@@ -247,4 +247,8 @@
         "command": "scrollPageDown",
         "when": "textInputFocus"
     },
+    {
+        "key": "cmd+y",
+        "command": "workbench.action.keepEditor"
+    }
 ]
