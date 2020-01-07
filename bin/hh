@@ -12,12 +12,15 @@ printFile () {
     if [ ! -z "$lines" ]; then
       echo "$1:"
       echo "$lines"
+      echo ""
     fi
   }
 
   if [ "$printedOnce" = true ]; then return; fi
 
-  printPrefix "Planned"
+  if [ "$1" != "noplans" ]; then
+    printPrefix "Planned"
+  fi
   printPrefix "Today"
   printPrefix "Tomorrow"
   printPrefix "QBI"
@@ -62,6 +65,7 @@ Usage options:
   hh -p <Task>  | Manually add a planned task
 
 Other options:
+  hh --post     | Make shortcut substitutions, and copy RTF to clipboard
   hh -c         | Manual clear, move anything from 'tomorrow'
                 | to 'planned', and delete the rest. (This should
                 | automatically happen each day.)
@@ -106,10 +110,26 @@ case "$1" in
     shift
     echo "Planned: $*" >> $file
     ;;
+  --post)
+    # TODO what about if used with --yesterday
+    # fonts end up tiny for some reason?
+    # maybe add bold to headers
+    printFile noplans | \
+    sed -E "s|PR ?([0-9]+)|[PR]\($HH_PULL_URL\1\)|g" | \
+    tee /dev/tty | \
+    pandoc --from gfm --to html | \
+    textutil -convert rtf -stdin -stdout -format html -fontsize 12 | \
+    pbcopy
+    ;;
   --help)
     printHelp
     ;;
   --yesterday | -y)
+    if [ "$clearedOnce" = true ]; then
+      # autocleared
+      printedOnce=false
+      echo "\nYesterday's report:"
+    fi
     file=$file.bak
     printFile
     ;;
