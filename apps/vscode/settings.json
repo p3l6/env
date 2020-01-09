@@ -51,12 +51,13 @@
     "window.title": "${activeEditorShort}${separator}${rootName}${separator}${activeEditorMedium}",
 
     "workbench.activityBar.visible": true,
-    "workbench.colorTheme": "One Dark Pro",
+    //"workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Atom One Light",
+    "workbench.colorCustomizations": {"terminalCursor.foreground": "#C456FF"},
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.revealIfOpen": true,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.feedback.visible": false,
     "workbench.tree.indent": 12,
     "workbench.list.automaticKeyboardNavigation": false
 }
