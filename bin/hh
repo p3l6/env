@@ -10,7 +10,7 @@ printFile () {
     lines=$(grep "^$1" < $file)
     lines=$(sed -n "s/^$1:/ \*/p" < $file)
     if [ ! -z "$lines" ]; then
-      echo "$1:"
+      echo "**$1:**"
       echo "$lines"
       echo ""
     fi
@@ -120,6 +120,7 @@ case "$1" in
     pandoc --from gfm --to html | \
     textutil -convert rtf -stdin -stdout -format html -fontsize 12 | \
     pbcopy
+    open $HH_GO_URL
     ;;
   --help)
     printHelp
