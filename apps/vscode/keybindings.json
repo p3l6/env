@@ -26,11 +26,11 @@
         "command": "workbench.action.quickOpen"
     },
     {
-        "key": "ctrl+cmd+left",
+        "key": "shift+cmd+9",
         "command": "workbench.action.navigateBack"
     },
     {
-        "key": "ctrl+cmd+right",
+        "key": "shift+cmd+0",
         "command": "workbench.action.navigateForward"
     },
     {
@@ -92,16 +92,6 @@
         "key": "ctrl+cmd+e",
         "command": "editor.action.changeAll",
         "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+up",
-        "command": "editor.action.insertCursorAbove",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+down",
-        "command": "editor.action.insertCursorBelow",
-        "when": "editorTextFocus"
     },
     {
         "key": "cmd+l",
@@ -220,12 +210,12 @@
     {
         "key": "alt+w",
         "command": "editor.emmet.action.wrapWithAbbreviation",
-        "when": "editorHasSelection",
+        "when": "editorHasSelection"
     },
     {
         "key": "shift+alt+w",
         "command": "editor.emmet.action.wrapIndividualLinesWithAbbreviation",
-        "when": "editorHasSelection",
+        "when": "editorHasSelection"
     },
     {
         "key": "pageup",
@@ -250,5 +240,55 @@
     {
         "key": "cmd+y",
         "command": "workbench.action.keepEditor"
+    },
+    {
+        "key": "alt+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "-editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+cmd+up",
+        "command": "-editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+down",
+        "command": "-editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
     }
 ]

@@ -1,7 +1,11 @@
 akamud.vscode-theme-onelight
 alefragnani.project-manager
+ckolkman.vscode-postgres
 dbaeumer.vscode-eslint
+esbenp.prettier-vscode
 James-Yu.latex-workshop
+mrkou47.thrift-syntax-support
 ms-azuretools.vscode-docker
 ms-python.python
+msjsdiag.debugger-for-chrome
 zhuangtongfa.Material-theme

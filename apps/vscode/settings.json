@@ -51,13 +51,24 @@
     "window.title": "${activeEditorShort}${separator}${rootName}${separator}${activeEditorMedium}",
 
     "workbench.activityBar.visible": true,
+
     //"workbench.colorTheme": "One Dark Pro",
     "workbench.colorTheme": "Atom One Light",
+    "workbench.preferredLightColorTheme": "Atom One Light",
+    "workbench.preferredDarkColorTheme": "One Dark Pro",
     "workbench.colorCustomizations": {"terminalCursor.foreground": "#C456FF"},
+
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.revealIfOpen": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": false,
+    "workbench.editor.limit.value": 8,
+    "workbench.editor.tabCloseButton": "left",
+
+    "workbench.list.automaticKeyboardNavigation": false,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 12,
-    "workbench.list.automaticKeyboardNavigation": false
+
+    "markdown.preview.breaks": true
 }
