@@ -13,12 +13,12 @@
 	unassume = update-index --no-assume-unchanged
 	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
 	ci = commit
-	co = checkout
+	co = "!echo Use git switch (sw)"
 	cp = cherry-pick
 	diffw = diff --word-diff
-	discard = checkout --
+	discard = restore --
 	find-ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
-	new = checkout -b
+	new = switch -c
 	original = remote set-url origin
 	pullr = pull --rebase --autostash
 	pushup = push --set-upstream origin HEAD
@@ -29,6 +29,7 @@
 	spotless = clean -dfx
 	staged = diff --cached
 	sync = "!git pullr && git push"
+	sw = switch
 	unstage = reset HEAD --
 [filter "lfs"]
 	clean = git-lfs clean -- %f
