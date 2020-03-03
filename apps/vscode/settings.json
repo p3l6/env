@@ -9,6 +9,7 @@
     "editor.tabSize": 2,
     "editor.trimAutoWhitespace": false,
     "editor.lightbulb.enabled": false,
+    "editor.copyWithSyntaxHighlighting": false,
     "editor.dragAndDrop": false,
 
     "editor.minimap.renderCharacters": false,
@@ -49,6 +50,7 @@
 
     "window.zoomLevel": 0,
     "window.title": "${activeEditorShort}${separator}${rootName}${separator}${activeEditorMedium}",
+    "window.newWindowDimensions": "offset",
 
     "workbench.activityBar.visible": true,
 
