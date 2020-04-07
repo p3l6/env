@@ -15,7 +15,7 @@ Homebrew Cask
 + (quick look)
  - qlcolorcode qlstephen qlimagesize qlswift
 + (optional)
- - docker google-chrome dropbox slack postico
+ - docker google-chrome slack postico
  - gimp basictex
 
 Safari Extensions
