@@ -76,5 +76,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 12,
 
-    "markdown.preview.breaks": true
+    "markdown.preview.breaks": true,
+    "bookmarks.sideBar.expanded": true
 }

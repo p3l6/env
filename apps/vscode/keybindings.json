@@ -290,5 +290,15 @@
         "key": "alt+cmd+down",
         "command": "-editor.action.insertCursorBelow",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "bookmarks.toggle",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+k",
+        "command": "-bookmarks.toggle",
+        "when": "editorTextFocus"
     }
 ]
