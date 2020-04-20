@@ -1,4 +1,3 @@
-alias g='git'
 alias gs='git status -sb'
 alias co='echo Use git switch \(sw\)'
 alias sw='git switch'

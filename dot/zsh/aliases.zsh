@@ -1,9 +1,7 @@
 ## navigation
 alias back='cd -'
-alias cdf='finder'
 alias dotfiles='cd ~/env'
 alias tmp='cd ~/tmp'
-function cdl { cd $@   &&   ls -halF; } # change to a directory and print out contents
 function mkcd { mkdir $@   &&  cd $@; }
 
 if type thefuck &> /dev/null; then
@@ -14,7 +12,6 @@ fi
 alias which='type -a'
 alias dush='du -sh'
 alias ip='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2'
-#alias top='open -a Activity\ Monitor.app'
 alias igrep='egrep -i'
 alias rgi='rg -i'
 alias diff='diff -u'
