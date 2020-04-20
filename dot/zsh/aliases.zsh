@@ -27,4 +27,4 @@ alias lc='ls -halFG'
 alias proj='open *.xc[ow][do][er][pk]*' # .xcodeproj or .xcworkspace
 alias edit='vim'
 alias readme='less *[Rr][Ee][Aa][Dd]*[Mm][Ee]*'
-alias env-edit="code $WRKSP"
+alias env-edit="code $DOTFILES"

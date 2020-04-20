@@ -1,8 +1,8 @@
 # Find all functions
-fpath=($ZSH/functions $fpath)
-autoload -U $ZSH/functions/*(:t)
+fpath=($DOTFILES/dot/functions $fpath)
+autoload -U $DOTFILES/dot/functions/*(:t)
 #add each topic folder to fpath so that they can add functions and completion scripts
-for topic_folder ($ZSH/*) if [ -d $topic_folder ]; then  fpath=($topic_folder $fpath); fi;
+for topic_folder ($DOTFILES/dot/*) if [ -d $topic_folder ]; then  fpath=($topic_folder $fpath); fi;
 #add homebrew's site functions for completion
 if test -f '$(brew --prefix)/share/zsh/site-functions/'
 then

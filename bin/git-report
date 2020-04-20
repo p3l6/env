@@ -1,6 +1,6 @@
 #! /bin/bash
 
-SEARCHPATHS="$HOME/var $HOME/env"
+SEARCHPATHS="$WRKSP $DOTFILES"
 
 FOLDERS=""
 for path in $SEARCHPATHS
@@ -11,7 +11,7 @@ done
 for f in $FOLDERS
 do
   cd $f/..
-  
+
   UNPUSHED=$(git log @{u}.. 2>/dev/null)
   EDITED=$(git status --untracked-files=no --porcelain)
 

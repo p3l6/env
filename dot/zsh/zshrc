@@ -1,8 +1,8 @@
-export ZSH=$HOME/env/dot
+export DOTFILES=$HOME/env
 
 ## load configs
 typeset -U config_files
-config_files=($ZSH/**/*.zsh)
+config_files=($DOTFILES/dot/**/*.zsh)
 # load path files first
 for file in ${(M)config_files:#*path.zsh}
 do
