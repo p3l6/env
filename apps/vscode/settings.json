@@ -55,8 +55,8 @@
     "window.newWindowDimensions": "offset",
 
     "workbench.activityBar.visible": true,
-    //"workbench.colorTheme": "One Dark Pro",
-    "workbench.colorTheme": "Atom One Light",
+    "workbench.colorTheme": "One Dark Pro",
+    // "workbench.colorTheme": "Atom One Light",
     "workbench.preferredLightColorTheme": "Atom One Light",
     "workbench.preferredDarkColorTheme": "One Dark Pro",
     "workbench.colorCustomizations": {
