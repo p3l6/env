@@ -1,4 +1,5 @@
 {
+    "bookmarks.sideBar.expanded": true,
     "breadcrumbs.filePath": "off",
 
     "diffEditor.renderSideBySide": false,
@@ -38,7 +39,13 @@
     "githubPullRequests.fileListLayout": "flat",
 
     "latex-workshop.view.pdf.viewer": "tab",
+    "markdown.preview.breaks": true,
     "projectManager.showProjectNameInStatusBar": false,
+
+    "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
+    "search.searchOnTypeDebouncePeriod": 1000,
+    "search.smartCase": true,
+
     "terminal.integrated.cursorStyle": "underline",
     "timeline.showView": true,
 
@@ -74,8 +81,5 @@
 
     "workbench.list.automaticKeyboardNavigation": false,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.indent": 12,
-
-    "markdown.preview.breaks": true,
-    "bookmarks.sideBar.expanded": true
+    "workbench.tree.indent": 12
 }
