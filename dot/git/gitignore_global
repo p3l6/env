@@ -12,3 +12,5 @@ build/
 xcuserdata/
 
 project.xcworkspace
+
+node_modules
