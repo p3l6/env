@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0"><head><title>RSS</title></head><body>
+
+<outline type="rss"
+  text="Summoning Salt"
+  xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCtUbO6rBht0daVIOGML3c8w"
+  htmlUrl="https://www.youtube.com/channel/UCtUbO6rBht0daVIOGML3c8w"
+/>
+<outline type="rss"
+  text="Nick Shabazz"
+  xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCM_f7DAr6zzIHHYggsq8CrA"
+  htmlUrl="https://www.youtube.com/channel/UCM_f7DAr6zzIHHYggsq8CrA"
+/>
+
+</body></opml>

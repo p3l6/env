@@ -1,0 +1,17 @@
+These feeds are broken up as folders would be
+
+This is to take advantage of inoreader.com's OPML subscription feature, which does not support folders
+
+Feeds can be updated here and then inoreader will pick up the changes
+
+inoreader account can be linked with reeder4 for actual viewing
+
+when adding a new folder:
+1. go to the import/export/backup settings on inoreader
+2. add a new opml subscription
+3. use this url `https://raw.githubusercontent.com/pwxn/env/master/export/rss/<file>.opml`
+4. select new folder, use same name as file
+5. use full syncronization
+6. don't notify when updated
+
+The assorted folder is feeds that dont fit into any particular folder. (misc, other)
