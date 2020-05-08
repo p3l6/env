@@ -61,3 +61,6 @@ Terminal
   New windows and tabs open with default working directory
   add /usr/local/bin/zsh to the bottom of /etc/shells
   chsh -s /usr/local/bin/zsh
+  add to Profile->Keyboard:
+    opt+bksp  \027
+    opt+del   \033d
