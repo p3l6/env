@@ -18,10 +18,6 @@
         "command": "workbench.action.previousEditor"
     },
     {
-        "key": "cmd+shift+y",
-        "command": "workbench.action.togglePanel"
-    },
-    {
         "key": "cmd+shift+o",
         "command": "workbench.action.quickOpen"
     },
@@ -174,12 +170,7 @@
         "when": "editorHasDocumentSelectionFormattingProvider && editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+t",
-        "command": "-editor.action.transposeLetters",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+t",
+        "key": "cmd+shift+y",
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
