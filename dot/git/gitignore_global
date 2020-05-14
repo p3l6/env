@@ -14,3 +14,5 @@ xcuserdata/
 project.xcworkspace
 
 node_modules
+
+**/.vscode/bookmarks.json

@@ -292,17 +292,17 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "cmd+\\",
+        // Another advantage of setting this is that it disables chords
+        "key": "cmd+k",
         "command": "bookmarks.toggle",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+cmd+k",
-        "command": "-bookmarks.toggle",
         "when": "editorTextFocus"
     },
     {
         "key": "ctrl+cmd+f",
         "command": "search.action.openNewEditor"
+    },
+    {
+        "key": "alt+cmd+k",
+        "command": "bookmarksExplorer.focus"
     }
 ]

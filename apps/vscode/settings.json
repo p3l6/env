@@ -1,5 +1,8 @@
 {
     "bookmarks.sideBar.expanded": true,
+    "bookmarks.navigateThroughAllFiles": true,
+    "bookmarks.saveBookmarksInProject": true,
+
     "breadcrumbs.filePath": "off",
 
     "diffEditor.renderSideBySide": false,
