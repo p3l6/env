@@ -293,6 +293,22 @@
         "command": "search.action.openNewEditor"
     },
     {
+        "key": "shift+cmd+k",
+        "command": "workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "shift+cmd+,",
+        "command": "workbench.action.openSettingsJson"
+    },
+    {
+        "key": "alt+cmd+\\",
+        "command": "workbench.action.splitEditorOrthogonal"
+    },
+    {
+        "key": "cmd+k cmd+\\",
+        "command": "-workbench.action.splitEditorOrthogonal"
+    },
+    {
         "key": "alt+cmd+k",
         "command": "bookmarksExplorer.focus"
     }

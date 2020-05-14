@@ -10,6 +10,9 @@
     "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
 
+    "editor.find.globalFindClipboard": true,
+    "editor.find.seedSearchStringFromSelection": false,
+
     "editor.tabSize": 2,
     "editor.trimAutoWhitespace": false,
     "editor.lightbulb.enabled": false,
@@ -26,7 +29,7 @@
     "explorer.openEditors.visible": 0,
     "explorer.sortOrder": "mixed",
 
-    "eslint.run": "onSave",
+    "eslint.run": "onType",
     "extensions.ignoreRecommendations": false,
     "extensions.closeExtensionDetailsOnViewChange": true,
 
@@ -45,8 +48,9 @@
     "markdown.preview.breaks": true,
     "projectManager.showProjectNameInStatusBar": false,
 
+    "search.globalFindClipboard": true,
     "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
-    "search.searchOnTypeDebouncePeriod": 1000,
+    "search.searchOnTypeDebouncePeriod": 500,
     "search.smartCase": true,
 
     "terminal.integrated.cursorStyle": "underline",
@@ -79,7 +83,7 @@
     "workbench.editor.revealIfOpen": true,
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": false,
-    "workbench.editor.limit.value": 8,
+    "workbench.editor.limit.value": 10,
     "workbench.editor.tabCloseButton": "left",
 
     "workbench.list.automaticKeyboardNavigation": false,
