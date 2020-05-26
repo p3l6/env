@@ -284,9 +284,15 @@
     },
     {
         // Another advantage of setting this is that it disables chords
+        // Toggle labeled only works when the selection is active, otherwise it makes a prompt
+        "key": "cmd+k",
+        "command": "bookmarks.toggleLabeled",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    {
         "key": "cmd+k",
         "command": "bookmarks.toggle",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && !editorHasSelection"
     },
     {
         "key": "ctrl+cmd+f",

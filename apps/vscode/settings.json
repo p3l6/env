@@ -2,6 +2,7 @@
     "bookmarks.sideBar.expanded": true,
     "bookmarks.navigateThroughAllFiles": true,
     "bookmarks.saveBookmarksInProject": true,
+    "bookmarks.label.suggestion": "useWhenSelected",
 
     "breadcrumbs.filePath": "off",
 
