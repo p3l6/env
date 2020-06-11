@@ -3,7 +3,7 @@
 
 <outline type="rss" text="Fork" xmlUrl="https://git-fork.com/blog/index.xml" htmlUrl="https://fork.dev/blog/" />
 <outline type="rss" text="Dart News" xmlUrl="https://news.dartlang.org/feeds/posts/default" htmlUrl="https://news.dartlang.org/" />
-<outline type="rss" text="Bitwarden" xmlUrl="https://blog.bitwarden.com/feed.xml" htmlUrl="https://blog.bitwarden.com" />
+<outline type="rss" text="Bitwarden" xmlUrl="https://bitwarden.com/blog/feed.xml" htmlUrl="https://blog.bitwarden.com" />
 <outline type="rss" text="Visual Studio Code" xmlUrl="https://code.visualstudio.com/feed.xml" htmlUrl="https://code.visualstudio.com/" />
 <outline type="rss" text="Bear" xmlUrl="https://feeds.bear.app/all" htmlUrl="https://blog.bear.app" />
 <outline type="rss" text="DevDocs" xmlUrl="https://devdocs.io/feed" htmlUrl="https://devdocs.io/" />
