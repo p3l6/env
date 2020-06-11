@@ -1,0 +1,7 @@
+#! /bin/bash
+
+repo=$(git remote get-url origin | sed -E 's/.*:(.*)\.git/\1/')
+branch=$(git symbolic-ref -q --short HEAD)
+
+echo https://github.com/$repo/pull/new/$branch
+open https://github.com/$repo/pull/new/$branch
