@@ -317,5 +317,10 @@
     {
         "key": "alt+cmd+k",
         "command": "bookmarksExplorer.focus"
+    },
+    {
+        "key": "shift+cmd+/",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
     }
 ]
