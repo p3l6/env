@@ -3,6 +3,7 @@ alefragnani.Bookmarks
 alefragnani.project-manager
 ckolkman.vscode-postgres
 dbaeumer.vscode-eslint
+denoland.vscode-deno
 esbenp.prettier-vscode
 James-Yu.latex-workshop
 mrkou47.thrift-syntax-support

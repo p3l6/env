@@ -6,6 +6,7 @@
 
     "breadcrumbs.filePath": "off",
 
+    "deno.enable": false,
     "diffEditor.renderSideBySide": false,
 
     "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
