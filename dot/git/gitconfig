@@ -9,11 +9,12 @@
 [push]
 	default = simple
 [alias]
+	amend-content = commit --amend --no-edit
+	amend-message = commit --amend --no-verify
 	assume = update-index --assume-unchanged
 	unassume = update-index --no-assume-unchanged
 	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
 	ci = commit
-	co = "!echo Use git switch (sw)"
 	cp = cherry-pick
 	diffw = diff --word-diff
 	discard = restore --
@@ -30,7 +31,7 @@
 	staged = diff --cached
 	sync = "!git pullr && git push"
 	sw = switch
-	unstage = restore --staged 
+	unstage = restore --staged
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
