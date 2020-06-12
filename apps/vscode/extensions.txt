@@ -10,4 +10,5 @@ mrkou47.thrift-syntax-support
 ms-azuretools.vscode-docker
 ms-python.python
 msjsdiag.debugger-for-chrome
-zhuangtongfa.Material-theme
+sysoev.vscode-open-in-github
+zhuangtongfa.material-theme

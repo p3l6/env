@@ -43,11 +43,10 @@
     "git.enableSmartCommit": true,
     "git.enableStatusBarSync": false,
     "git.rebaseWhenSync": true,
-    "githubPullRequests.defaultDeletionMethod.selectLocalBranch": false,
-    "githubPullRequests.fileListLayout": "flat",
 
     "latex-workshop.view.pdf.viewer": "tab",
     "markdown.preview.breaks": true,
+    "openInGitHub.excludeCurrentRevision": true,
     "projectManager.showProjectNameInStatusBar": false,
 
     "search.globalFindClipboard": true,
@@ -56,7 +55,6 @@
     "search.smartCase": true,
 
     "terminal.integrated.cursorStyle": "underline",
-    "timeline.showView": true,
 
     "typescript.updateImportsOnFileMove.enabled": "never",
     "[typescript]": {
