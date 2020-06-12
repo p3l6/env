@@ -18,6 +18,9 @@ System preferences
     Swipe between pages
   Trackpad
     tap to click
+  Keyboard
+    Text
+      Don't use smart quotes and dashes
   Sharing
     set machine name
   Accessibility
