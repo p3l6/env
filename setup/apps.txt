@@ -11,7 +11,7 @@ Homebrew
 
 Homebrew Cask
 - flycut bitwarden omnidisksweeper iina itsycal
-- atom visual-studio-code fork termhere devdocs wwdc font-fira-code
+- atom visual-studio-code fork termhere devdocs font-fira-code
 + (quick look)
  - qlcolorcode qlstephen qlimagesize qlswift
 + (optional)
