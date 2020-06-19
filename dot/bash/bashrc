@@ -1,5 +1,6 @@
 ## path
 PATH=$PATH:$HOME/env/bin
+PATH="$HOME/.cargo/bin:$PATH"
 WRKSP=$HOME/var
 
 ## svn aliases
@@ -123,7 +124,7 @@ function goto() {
       derived | build ) cd ~/Library/Developer/Xcode/DerivedData/Eggplant*/Build/Products/Development/Eggplant.app ;;
       today | things ) open -a Things ;;
       qmk | keyboards ) cd ~/var/Qmk/qmk_firmware; atom keyboards; echo make tada68:paulLayout:bin ;;
-      
+
       goto ) echo Please update goto to be more configurable ;;
       * ) echo Unknown Bookmark: $bookmark;;
     esac

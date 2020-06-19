@@ -6,6 +6,7 @@
 
     "breadcrumbs.filePath": "off",
 
+    "debug.javascript.codelens.npmScripts": "never",
     "deno.enable": false,
     "diffEditor.renderSideBySide": false,
 
@@ -65,7 +66,12 @@
     "openInGitHub.excludeCurrentRevision": true,
     "projectManager.showProjectNameInStatusBar": false,
 
-    "search.globalFindClipboard": true,
+    "rust-client.rustupPath": "~/.cargo/bin/rustup",
+    "[rust]": {
+        "editor.codeLens": false
+    },
+
+    "search.globalFindClipboard": false,
     "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
     "search.searchOnTypeDebouncePeriod": 500,
     "search.smartCase": true,
