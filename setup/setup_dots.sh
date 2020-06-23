@@ -20,9 +20,9 @@ $LINK ~/env/dot/vim/vimrc ~/.vimrc
 $LINK ~/env/dot/git/gitconfig ~/.gitconfig
 $LINK ~/env/dot/git/gitignore_global ~/.gitignore_global
 $LINK ~/env/apps/atom ~/.atom
-$LINK ~/env/apps/vscode/settings.json "$VSCODE/settings.json"
-$LINK ~/env/apps/vscode/keybindings.json "$VSCODE/keybindings.json"
-$LINK ~/env/apps/vscode/snippets "$VSCODE/snippets"
+$LINK ~/env/apps/vscode/settings.json "${VSCODE}/settings.json"
+$LINK ~/env/apps/vscode/keybindings.json "${VSCODE}/keybindings.json"
+$LINK ~/env/apps/vscode/snippets "${VSCODE}/snippets"
 $LINK ~/env/dot/lldb/lldbinit ~/.lldbinit
 
 $LINK ~/env/dot/zsh/zshrc ~/.zshrc
@@ -42,7 +42,7 @@ mkdir -p ~/Library/Developer/Xcode/UserData
 $LINK ~/env/apps/UserData ~/Library/Developer/Xcode/UserData
 
 chflags nohidden ~/Library
-chflags hidden ~/Public ~/Sites
+chflags hidden ~/Public
 chflags hidden ~/Music ~/Movies ~/Pictures
 
 if [ ! -d ~/var ]; then
