@@ -3,7 +3,7 @@ Xcode
 - https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)
 
 Homebrew
-- zsh wget trash thefuck cask vim cloc ripgrep
+- zsh wget trash thefuck vim cloc ripgrep
 - git git-lfs git-sizer diff-so-fancy
 + tap osx-cross/avr; tap PX4/px4
  - avr-gcc dfu-programmer gcc-arm-none-eabi  avrdude
@@ -11,12 +11,18 @@ Homebrew
 
 Homebrew Cask
 - flycut bitwarden omnidisksweeper iina itsycal
-- atom visual-studio-code fork termhere devdocs font-fira-code
+- visual-studio-code fork termhere devdocs
++ tap homebrew/cask-fonts
+ - font-fira-code
 + (quick look)
  - qlcolorcode qlstephen qlimagesize qlswift
 + (optional)
  - docker google-chrome slack postico
  - gimp basictex
++ (other)
+ - battle-net && /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app/Contents/MacOS/Battle.net-Setup
+ - calibre gopanda transmission handbrake steam minecraft synthesia
+
 
 Safari Extensions
 - bitwarden
@@ -28,19 +34,11 @@ Mac App Store
 - Bear Notes
 - Reeder
 - Magnet
+- Rested
 - Check app store purchases for more...
 
 Games, Misc, Non-essential
-- Battle.net
-- Calibre
 - Enjoyable
-- PandaNet
-- Handbrake
-- Minecraft
 - OpenEmu
 - Paintbrush
-- Rested
-- Steam
-- Synthesia
-- Transmission
 - Wine / VirtualBox
