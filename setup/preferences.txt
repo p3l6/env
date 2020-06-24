@@ -29,6 +29,8 @@ System preferences
     set machine name
   Accessibility
     Double click speed second from fastest
+  Bluetooth
+    Show in menu bar
 
 Xcode preferences
   Navigation:
@@ -73,3 +75,19 @@ Terminal
     opt+bksp  \027
     opt+del   \033d
   Menu > View > Hide Marks
+
+Flycut
+  o x x x | remove duplicates
+
+Itsycal
+  launch at login
+  use outline icon
+
+Magnet
+  remove all shortcuts
+  launch at login
+
+Mail
+  Viewing
+    Move discards to Archive
+    Show most recent message at the top
