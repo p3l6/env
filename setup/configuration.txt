@@ -1,0 +1,158 @@
+# New Mac setup steps
+
+ 1. Create a user account
+ 2. Do system updates
+ 3. Get Xcode and homebrew
+ 4. Run ssh-keygen, add it to github
+ 5. Clone this repo
+ 6. Comment out hidden-flags lines in setup dots, if desired
+ 7. Comment out lines in dwrites, if desired
+ 8. Run setup_dots.sh
+ 9. Run dwrites.sh; killall Dock
+10. Install stuff, as listed below
+11. Set preferences, as listed below
+12. Push changes for any problems encountered to repo
+
+
+┌ Stuff to install ┐
+├──────────────────┘
+├─┬─ From App store
+│ ├─┬─ Xcode
+│ │ └─── https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)
+│ ├─── Things for Mac
+│ ├─── Bear Notes
+│ ├─── Reeder
+│ ├─── Magnet
+│ ├─── Rested
+│ └─── (Check app store purchases for more...)
+├─┬─ From Other
+│ ├─── Enjoyable
+│ ├─── OpenEmu
+│ ├─── Paintbrush
+│ ├─── VirtualBox
+│ └─── Wine
+└─┬─ From Homebrew
+  ├─┬─ Tap
+  │ ├─── osx-cross/avr (for qmk)
+  │ ├─── PX4/px4 (for qmk)
+  │ └─── homebrew/cask-fonts
+  ├─┬─ Install
+  │ ├─── zsh wget trash thefuck vim cloc ripgrep
+  │ ├─── git git-lfs git-sizer diff-so-fancy
+  │ ├─── avr-gcc dfu-programmer gcc-arm-none-eabi avrdude
+  │ └─── bfg carthage cmake node vapor deno
+  └─┬─ Cask Install
+    ├─── (utils) flycut bitwarden omnidisksweeper iina itsycal
+    ├─── (coding) visual-studio-code fork termhere devdocs docker
+    ├─── (fonts) font-fira-code
+    ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
+    ├─── (maybe) google-chrome slack postico
+    ├─── (maybe) gimp basictex
+    ├─── (maybe) calibre transmission handbrake
+    ├─── (games) gopanda steam minecraft synthesia
+    └─── (games) battle-net && /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app/Contents/MacOS/Battle.net-Setup
+
+
+┌ Preferences ┐
+├─────────────┘
+├─┬─ Atom
+│ └─── $ apm install --packages-file ~/env/apps/atom/packages.txt
+├─┬─ Finder
+│ ├─── Desktop: CDs Servers
+│ ├─── New windows: Home
+│ ├─── Folders in tabs
+│ ├─── Sidebar items: Applications Home Downloads Var iCloud External-CDs Servers
+│ ├─── Advanced: o o x x x o o current
+│ └─┬─ Cmd+j settings
+│   ├─── always open in list view
+│   ├─── browse in list view
+│   └─── show library folder
+├─┬─ Flycut
+│ └─── o x x x | remove duplicates
+├─┬─ Itsycal
+│ ├─── launch at login
+│ └─── use outline icon
+├─┬─ Magnet
+│ ├─── remove all shortcuts
+│ └─── launch at login
+├─┬─ Mail
+│ └─┬─ Viewing
+│   ├─── Move discards to Archive
+│   └─── Show most recent message at the top
+├─┬─ Safari
+│ ├─┬─ General
+│ │ └───  Don't open safe files
+│ ├─┬─ Tabs
+│ │ └───  Show website icons in tabs
+│ ├─┬─ AutoFill
+│ │ └───  Autofill only contacts
+│ └─┬─ Advanced:
+│   ├─── Show full website address
+│   └─── Show develop in menu bar
+├─┬─ Terminal
+│ ├─┬─ Enable homebrew's zsh
+│ │ ├─── $ sudo echo /usr/local/bin/zsh >> /etc/shells
+│ │ └─── $ chsh -s /usr/local/bin/zsh
+│ ├─── New windows and tabs open with default working directory
+│ ├─┬─ Add to Profile->Keyboard:
+│ │ ├─── opt+bksp  \027
+│ │ └─── opt+del   \033d
+│ └─── Menu > View > Hide Marks
+├─┬─ VSCode
+│ └─── $ cat ~/env/apps/vscode/extensions.txt | xargs -L 1 code --install-extension
+├─┬─ Xcode
+│ ├─┬─ Navigation
+│ │ └─── command-click jumps to definition
+│ ├─┬─ Text editing
+│ │ ├─┬─ Display
+│ │ │ ├─── line numbers
+│ │ │ └─── folding ribbon
+│ │ ├─┬─ Editing
+│ │ │ ├─── all completions
+│ │ │ └─── auto-trim trailing whitespace, except whitespace only lines
+│ │ └─┬─ Indentation
+│ │   ├─── tab and indent width 4
+│ │   ├─── tab key: indents always
+│ │   ├─── align consecutive // comments
+│ │   └─── auto indent all
+│ └─┬─ Source Control
+│   └───  don't fetch server status automatically
+└─┬─ System Preferences
+  ├─┬─ General
+  │ ├─── theme: dark
+  │ ├─── accent: purple
+  │ ├─── scroll bar: jump to spot clicked
+  │ └─── default browser: safari
+  ├─┬─ Desktop
+  │ ├─── add folder ~/Desktop/Wallpaper/
+  │ └─── random when waking up
+  ├─┬─ Dock
+  │ ├─── position: left
+  │ ├─── automatically show and hide the dock
+  │ └─── don't show recent applications in dock
+  ├─┬─ Mission Control
+  │ ├─── o o x x ^up ^down f10
+  │ └─── no hot corners
+  ├─┬─ Spotlight
+  │ └─── no: bookmarks, events, mail messages, fonts
+  ├─┬─ Accessibility
+  │ ├─── use scroll gesture with ctrl to zoom
+  │ └─── double click speed second from fastest
+  ├─┬─ Bluetooth
+  │ └─── show in menu bar
+  ├─┬─ Keyboard
+  │ ├─┬─ Text
+  │ │ └─── don't use smart quotes and dashes
+  │ └─┬─ Input sources
+  │   └─── don't show in menu bar
+  ├─┬─ Trackpad
+  │ └─── tap to click
+  ├─┬─ Mouse
+  │ ├─── secondary click
+  │ └─── swipe between pages
+  └─┬─ Sharing
+    └─── set the machine name
+
+Dock layout suggestions:
+Finder Reeder Safari __ Mail Messages Things Bear __ VSCode Xcode Terminal __ Calendar Maps Music
+Finder Reeder Safari __ Mail Slack Things Bear __ VSCode Terminal Fork
