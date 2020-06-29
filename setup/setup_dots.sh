@@ -48,5 +48,3 @@ chflags hidden ~/Music ~/Movies ~/Pictures
 if [ ! -d ~/var ]; then
   mkdir ~/var
 fi
-
-open ~/env/export/terminal/*

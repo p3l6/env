@@ -43,12 +43,12 @@
   │ └─── bfg carthage cmake node vapor deno
   └─┬─ Cask Install
     ├─── (utils) flycut bitwarden omnidisksweeper iina itsycal
-    ├─── (coding) visual-studio-code fork termhere devdocs docker
+    ├─── (coding) visual-studio-code fork termhere devdocs docker sf-symbols
     ├─── (fonts) font-fira-code
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
     ├─── (maybe) google-chrome slack postico
     ├─── (maybe) gimp basictex
-    ├─── (maybe) calibre transmission handbrake
+    ├─── (maybe) calibre transmission handbrake spotmenu
     ├─── (games) gopanda steam minecraft synthesia
     └─── (games) battle-net && /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app/Contents/MacOS/Battle.net-Setup
 
@@ -90,6 +90,7 @@
 │   ├─── Show full website address
 │   └─── Show develop in menu bar
 ├─┬─ Terminal
+│ ├─── Import profiles from export/terminal
 │ ├─┬─ Enable homebrew's zsh
 │ │ ├─── $ sudo echo /usr/local/bin/zsh >> /etc/shells
 │ │ └─── $ chsh -s /usr/local/bin/zsh
