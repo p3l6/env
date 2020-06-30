@@ -27,6 +27,7 @@
 │ └─── (Check app store purchases for more...)
 ├─┬─ From Other
 │ ├─── Enjoyable
+│ ├─── KensingtonWorks
 │ ├─── OpenEmu
 │ ├─── Paintbrush
 │ ├─── VirtualBox
@@ -42,7 +43,7 @@
   │ ├─── avr-gcc dfu-programmer gcc-arm-none-eabi avrdude
   │ └─── bfg carthage cmake node vapor deno
   └─┬─ Cask Install
-    ├─── (utils) flycut bitwarden omnidisksweeper iina itsycal
+    ├─── (utils) flycut bitwarden omnidisksweeper iina itsycal smooze
     ├─── (coding) visual-studio-code fork termhere devdocs docker sf-symbols
     ├─── (fonts) font-fira-code
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
@@ -72,6 +73,8 @@
 ├─┬─ Itsycal
 │ ├─── launch at login
 │ └─── use outline icon
+├─┬─ KensingtonWorks
+│ └─── Import profile from export/kensington
 ├─┬─ Magnet
 │ ├─── remove all shortcuts
 │ └─── launch at login
@@ -89,6 +92,13 @@
 │ └─┬─ Advanced:
 │   ├─── Show full website address
 │   └─── Show develop in menu bar
+├─┬─ Smooze
+│ ├─── Vertical lines: 0.5
+│ ├─── Horizontal lines: 0.5
+│ ├─── o o o x x x
+│ ├─── Animate: ExpoOut
+│ ├─── Acceleration: 0.5
+│ └─── Duration: 200
 ├─┬─ Terminal
 │ ├─── Import profiles from export/terminal
 │ ├─┬─ Enable homebrew's zsh
@@ -122,6 +132,7 @@
   ├─┬─ General
   │ ├─── theme: dark
   │ ├─── accent: purple
+  │ ├─── show scroll bars: when scrolling
   │ ├─── scroll bar: jump to spot clicked
   │ └─── default browser: safari
   ├─┬─ Desktop
