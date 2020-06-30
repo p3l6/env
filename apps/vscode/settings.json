@@ -29,7 +29,6 @@
 
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "explorer.openEditors.visible": 0,
     "explorer.sortOrder": "mixed",
 
     "eslint.run": "onType",
@@ -103,6 +102,7 @@
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.revealIfOpen": true,
+    "workbench.editor.showTabs": false,
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": false,
     "workbench.editor.limit.value": 10,
