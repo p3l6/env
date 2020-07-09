@@ -44,7 +44,7 @@
   │ └─── bfg carthage cmake node vapor deno
   └─┬─ Cask Install
     ├─── (utils) flycut bitwarden omnidisksweeper iina itsycal smooze
-    ├─── (coding) visual-studio-code fork termhere devdocs docker sf-symbols
+    ├─── (coding) visual-studio-code fork termhere devdocs docker sf-symbols boop
     ├─── (fonts) font-fira-code
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
     ├─── (maybe) google-chrome slack postico
@@ -58,6 +58,8 @@
 ├─────────────┘
 ├─┬─ Atom
 │ └─── $ apm install --packages-file ~/env/apps/atom/packages.txt
+├─┬─ Boop
+│ └─── Scripts folder: ~/env/apps/boop
 ├─┬─ Finder
 │ ├─── Desktop: CDs Servers
 │ ├─── New windows: Home
