@@ -12,6 +12,11 @@
   htmlUrl="https://www.youtube.com/channel/UCM_f7DAr6zzIHHYggsq8CrA"
 />
 <outline type="rss"
+  text="Knife Banter"
+  xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCZIIkzJ6XQiNeJkha6Ais5g"
+  htmlUrl="https://www.youtube.com/channel/UCZIIkzJ6XQiNeJkha6Ais5g"
+/>
+<outline type="rss"
   text="Wake and District"
   xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCfVG09CFS-RWB26s1exEJEA"
   htmlUrl="https://www.youtube.com/channel/UCfVG09CFS-RWB26s1exEJEA"

@@ -72,12 +72,14 @@
 
     "search.globalFindClipboard": false,
     "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
+    "search.searchEditor.defaultNumberOfContextLines": 0,
     "search.searchOnTypeDebouncePeriod": 500,
     "search.smartCase": true,
 
     "terminal.integrated.cursorStyle": "underline",
 
     "typescript.updateImportsOnFileMove.enabled": "never",
+    // "typescript.tsserver.experimental.enableProjectDiagnostics": true,
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
