@@ -322,5 +322,10 @@
         "key": "shift+cmd+/",
         "command": "editor.action.showHover",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "escape",
+        "command": "closeReferenceSearch",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
     }
 ]

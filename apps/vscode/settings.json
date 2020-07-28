@@ -22,6 +22,7 @@
     "editor.copyWithSyntaxHighlighting": false,
     "editor.dragAndDrop": false,
     "editor.definitionLinkOpensInPeek": true,
+    "editor.stablePeek": true,
 
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",
