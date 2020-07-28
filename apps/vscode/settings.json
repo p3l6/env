@@ -13,8 +13,8 @@
     "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
 
-    "editor.find.globalFindClipboard": true,
-    "editor.find.seedSearchStringFromSelection": false,
+    "editor.find.seedSearchStringFromSelection": true,
+    "editor.emptySelectionClipboard": false,
 
     "editor.tabSize": 2,
     "editor.trimAutoWhitespace": false,
@@ -65,6 +65,7 @@
     "markdown.preview.breaks": true,
     "openInGitHub.excludeCurrentRevision": true,
     "projectManager.showProjectNameInStatusBar": false,
+    "python.showStartPage": false,
 
     "rust-client.rustupPath": "~/.cargo/bin/rustup",
     "[rust]": {
@@ -72,7 +73,7 @@
     },
 
     "search.globalFindClipboard": false,
-    "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
+    "search.searchEditor.doubleClickBehaviour": "selectWord",
     "search.searchEditor.defaultNumberOfContextLines": 0,
     "search.searchOnTypeDebouncePeriod": 500,
     "search.smartCase": true,

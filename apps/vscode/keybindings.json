@@ -2,7 +2,7 @@
 [
     // BEGIN import from vscode-xcode-keybindings
     {
-        "key": "cmd+e",
+        "key": "shift+cmd+e",
         "command": "editor.action.addSelectionToNextFindMatch"
     },
     {
