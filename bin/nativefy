@@ -1,0 +1,12 @@
+#! /bin/bash
+# Docs: https://github.com/jiahaog/nativefier/blob/master/docs/api.md
+
+DEST=~/Applications/native
+mkdir -p $DEST
+
+## Asana
+nativefier \
+  --name "Asana" \
+  --internal-urls ".*(asana|accounts\.google).*" \
+  --fast-quit \
+  "https://asana.com" $DEST

@@ -41,7 +41,7 @@
   │ ├─── zsh wget trash thefuck vim cloc ripgrep
   │ ├─── git git-lfs git-sizer diff-so-fancy
   │ ├─── avr-gcc dfu-programmer gcc-arm-none-eabi avrdude
-  │ └─── bfg carthage cmake node vapor deno
+  │ └─── bfg carthage cmake node vapor deno nativefier
   └─┬─ Cask Install
     ├─── (utils) flycut bitwarden omnidisksweeper iina itsycal smooze
     ├─── (coding) visual-studio-code fork termhere devdocs docker sf-symbols boop
