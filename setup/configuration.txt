@@ -21,6 +21,7 @@
 │ │ └─── https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)
 │ ├─── Things for Mac
 │ ├─── Bear Notes
+│ ├─── Daisy Disk
 │ ├─── Reeder
 │ ├─── Magnet
 │ ├─── Rested
@@ -43,7 +44,7 @@
   │ ├─── avr-gcc dfu-programmer gcc-arm-none-eabi avrdude
   │ └─── bfg carthage cmake node vapor deno nativefier
   └─┬─ Cask Install
-    ├─── (utils) flycut bitwarden omnidisksweeper iina itsycal smooze
+    ├─── (utils) flycut bitwarden iina itsycal smooze
     ├─── (coding) visual-studio-code fork termhere devdocs docker sf-symbols boop
     ├─── (fonts) font-fira-code
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift

@@ -26,6 +26,7 @@
 	prune-origin = remote prune origin
 	prune-local = "!git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D"
 	prune-all = "!git prune-origin && git prune-local"
+	recent-files = diff --name-only master...
 	search = log --pretty=format:\"%C(yellow)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s\" --date=short -S
 	spotless = clean -dfx
 	staged = diff --cached
