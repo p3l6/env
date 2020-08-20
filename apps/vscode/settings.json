@@ -31,6 +31,7 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.sortOrder": "mixed",
+    "explorer.openEditors.visible": 40, // aka "A lot"
 
     "eslint.run": "onType",
     "extensions.ignoreRecommendations": false,
@@ -107,9 +108,7 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.revealIfOpen": true,
     "workbench.editor.showTabs": false,
-    "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": false,
-    "workbench.editor.limit.value": 10,
     "workbench.editor.tabCloseButton": "left",
 
     "workbench.list.automaticKeyboardNavigation": false,
