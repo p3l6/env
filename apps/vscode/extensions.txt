@@ -3,6 +3,7 @@ alefragnani.Bookmarks
 alefragnani.project-manager
 ckolkman.vscode-postgres
 dbaeumer.vscode-eslint
+deerawan.vscode-dash
 denoland.vscode-deno
 eamodio.gitlens
 esbenp.prettier-vscode

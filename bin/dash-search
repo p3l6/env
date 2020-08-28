@@ -1,0 +1,4 @@
+#! /bin/bash
+
+# open dash://{lang}:{query}
+open dash://$1

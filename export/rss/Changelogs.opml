@@ -11,5 +11,6 @@
 <outline type="rss" text="Swift" xmlUrl="https://swift.org/atom.xml" htmlUrl="https://swift.org" />
 <outline type="rss" text="Stardew Valley" xmlUrl="http://stardewvalley.net/feed/" htmlUrl="https://stardewvalley.net" />
 <outline type="rss" text="Homebrew" xmlUrl="https://brew.sh/atom.xml" htmlUrl="https://brew.sh/" />
+<outline type="rss" text="Dash" xmlUrl="https://blog.kapeli.com/atom.xml" htmlUrl="https://blog.kapeli.com/" />
 
 </body></opml>

@@ -45,12 +45,12 @@
   │ └─── bfg carthage cmake node vapor deno nativefier
   └─┬─ Cask Install
     ├─── (utils) flycut bitwarden iina itsycal smooze
-    ├─── (coding) visual-studio-code fork termhere devdocs docker sf-symbols boop
+    ├─── (coding) visual-studio-code fork termhere dash docker sf-symbols boop
     ├─── (fonts) font-fira-code
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
     ├─── (maybe) google-chrome slack postico
     ├─── (maybe) gimp basictex
-    ├─── (maybe) calibre transmission handbrake spotmenu
+    ├─── (maybe) calibre transmission handbrake
     ├─── (games) gopanda steam minecraft synthesia
     └─── (games) battle-net && /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app/Contents/MacOS/Battle.net-Setup
 
@@ -61,6 +61,8 @@
 │ └─── $ apm install --packages-file ~/env/apps/atom/packages.txt
 ├─┬─ Boop
 │ └─── Scripts folder: ~/env/apps/boop
+├─┬─ Dash
+│ └─── Settings and Snippets Sync
 ├─┬─ Finder
 │ ├─── Desktop: CDs Servers
 │ ├─── New windows: Home
@@ -170,4 +172,4 @@
 
 Dock layout suggestions:
 Finder Reeder Safari __ Mail Messages Things Bear __ VSCode Xcode Terminal __ Calendar Maps Music
-Finder Reeder Safari __ Mail Slack Things Bear __ VSCode Terminal Fork
+Finder Reeder Safari __ Slack Things Bear __ VSCode Terminal Fork
