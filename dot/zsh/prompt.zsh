@@ -38,8 +38,12 @@ LAST_COMMAND_DURATION=0
 LAST_PROMPT_TIME=$EPOCHSECONDS
 prompt_exec_time() {
   if ((LAST_COMMAND_DURATION > 0)); then
-    # TODO split out mins
-    echo "took $LAST_COMMAND_DURATION sec "
+    local info='took '
+    if ((LAST_COMMAND_DURATION > 60)); then
+      info+="$((LAST_COMMAND_DURATION / 60)) min "
+    fi
+    info+="$((LAST_COMMAND_DURATION % 60)) sec "
+    echo "$info"
   fi
 }
 
@@ -82,4 +86,5 @@ reset-prompt-and-accept-line() {
 zle -N reset-prompt-and-accept-line
 bindkey '^m' reset-prompt-and-accept-line
 
-# TODO modify other prompts? 2,3,4,spelling ? http://zsh.sourceforge.net/Doc/Release/Parameters.html
+PROMPT2='%F{magenta}%_>%f '
+SPROMPT="%F{red}spellcheck:%f correct '%R' to '%r' [n%F{green}y%F{red}a%fe]%F{magenta}?%f "
