@@ -14,6 +14,7 @@ mkdir -p $VSCODE
 
 # TODO add a common extension to all of these, and find them  automatically
 # ie https://github.com/holman/dotfiles/blob/master/zsh/zshrc.symlink
+# OR helper function that checks $2 filetype is already a link; if not deletes and links.
 $LINK ~/env/dot/bash/bash_profile ~/.bash_profile
 $LINK ~/env/dot/bash/bashrc ~/.bashrc
 $LINK ~/env/dot/vim/vimrc ~/.vimrc

@@ -21,7 +21,8 @@ setopt hist_reduce_blanks
 # To determine the key sequences for binding,
 # Type a ctrl-v, then the key sequence. ctrl-v means ignore the next escape sequence, so it prints literally
 bindkey -e
-bindkey "^[[3~" delete-char
+bindkey "^[[3~" delete-char     # delete
+bindkey "^[[3;3~" delete-word   # alt+delete
 
 # Better history
 # Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
