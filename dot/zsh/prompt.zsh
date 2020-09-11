@@ -25,11 +25,16 @@ prompt_git_info() {
   local deleted=$(grep   -c '^. .D' <<< "$gs")
   local untracked=$(grep -c '^?' <<< "$gs")
 
+  local ahead=$(grep  '^. branch.ab' <<< "$gs" | sed -E 's/.*\+([0-9]*).*/\1/')
+  local behind=$(grep '^. branch.ab' <<< "$gs" | sed -E 's/.*\-([0-9]*).*/\1/')
+
   local info="%F{green}[$branch%f"
   (( staged )) && info+="%F{green}+$staged%f"
   (( deleted )) && info+="%F{red}-$deleted%f"
   (( modified )) && info+="%F{yellow}!$modified%f"
   (( untracked )) && info+="%F{yellow}?$untracked%f"
+  (( ahead )) && info+="%F{green}(ahead $ahead)%f"
+  (( behind )) && info+="%F{green}(behind $behind)%f"
 
   echo "$info%F{green}]%f"
 }
@@ -75,16 +80,14 @@ precmd() {
   print -Pn "\e]2;%1/\a"
 }
 
-reset-prompt-and-accept-line() {
+zle-line-finish() {
   PROMPT=$LOGGED_PROPMT
   RPROMPT=''
   LAST_PROMPT_TIME=$EPOCHSECONDS
 
-  zle reset-prompt
-  zle accept-line
+  zle .reset-prompt
 }
-zle -N reset-prompt-and-accept-line
-bindkey '^m' reset-prompt-and-accept-line
+zle -N zle-line-finish
 
 PROMPT2='%F{magenta}%_>%f '
 SPROMPT="%F{red}spellcheck:%f correct '%R' to '%r' [n%F{green}y%F{red}a%fe]%F{magenta}?%f "
