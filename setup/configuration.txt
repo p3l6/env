@@ -97,12 +97,19 @@
 │   ├─── Show full website address
 │   └─── Show develop in menu bar
 ├─┬─ Smooze
-│ ├─── Vertical lines: 0.5
-│ ├─── Horizontal lines: 0.5
-│ ├─── o o o x x x
-│ ├─── Animate: ExpoOut
-│ ├─── Acceleration: 0.5
-│ └─── Duration: 200
+│ ├─┬─ Scrolling
+│ │ ├─── Vertical lines: 0.5
+│ │ ├─── Horizontal lines: 0.5
+│ │ ├─── o o o x x x
+│ │ ├─── Animate: ExpoOut
+│ │ ├─── Acceleration: 0.5
+│ │ └─── Duration: 200
+│ ├─┬─ Buttons
+│ │ └─── Side 3: Back
+│ └─┬─ Other
+│   ├─── Hide menu bar icon
+│   ├─── Launch at login
+│   └─── Cursor Acceleration: 1.2
 ├─┬─ Terminal
 │ ├─── Import profiles from export/terminal
 │ ├─┬─ Enable homebrew's zsh
