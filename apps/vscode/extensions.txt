@@ -1,7 +1,6 @@
 akamud.vscode-theme-onelight
 alefragnani.Bookmarks
 alefragnani.project-manager
-ckolkman.vscode-postgres
 dbaeumer.vscode-eslint
 deerawan.vscode-dash
 denoland.vscode-deno
