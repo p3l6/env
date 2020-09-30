@@ -22,6 +22,7 @@
 	new = switch -c
 	original = remote set-url origin
 	pullr = pull --rebase --autostash
+	pushpr = "!git pushup && git pr new"
 	pushup = push --set-upstream origin HEAD
 	prune-origin = remote prune origin
 	prune-local = "!git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D"
