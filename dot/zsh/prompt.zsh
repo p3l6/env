@@ -67,7 +67,7 @@ prompt_char()      { echo "%F{magenta}$ %f" }
 UPPER_PROMPT='$(prompt_dir_name) $(prompt_git_info) $(prompt_path)'
 LOWER_PROMPT='$(prompt_exit_code)$(prompt_bg_jobs)$(prompt_char)'
 RIGHT_PROMPT='$(prompt_exec_time)$(prompt_time)'
-LOGGED_PROPMT='$(prompt_dir_name) $(prompt_time) $(prompt_char)'
+LOGGED_PROMPT='$(prompt_dir_name) $(prompt_time) $(prompt_char)'
 
 precmd() {
   local NEWLINE=$'\n'
@@ -81,7 +81,7 @@ precmd() {
 }
 
 zle-line-finish() {
-  PROMPT=$LOGGED_PROPMT
+  PROMPT=$LOGGED_PROMPT
   RPROMPT=''
   LAST_PROMPT_TIME=$EPOCHSECONDS
 
