@@ -41,9 +41,9 @@
   │ ├─── zsh wget trash thefuck vim cloc ripgrep
   │ ├─── git git-lfs git-sizer diff-so-fancy
   │ ├─── avr-gcc dfu-programmer gcc-arm-none-eabi avrdude
-  │ └─── bfg carthage cmake node vapor deno nativefier
+  │ └─── bfg carthage cmake node vapor deno
   └─┬─ Cask Install
-    ├─── (utils) flycut bitwarden iina itsycal smooze
+    ├─── (utils) maccy bitwarden iina itsycal smooze
     ├─── (coding) visual-studio-code fork termhere dash docker sf-symbols boop
     ├─── (fonts) font-fira-code
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
@@ -72,13 +72,16 @@
 │   ├─── always open in list view
 │   ├─── browse in list view
 │   └─── show library folder
-├─┬─ Flycut
-│ └─── o x x x | remove duplicates
 ├─┬─ Itsycal
 │ ├─── launch at login
 │ └─── use outline icon
-├─┬─ KensingtonWorks
-│ └─── Import profile from export/kensington
+├─┬─ Maccy
+│ ├─── Hotkey: shift cmd v
+│ ├─── x x o x x o
+│ ├─── Show at: screen center
+│ ├─── Menu size: 20
+│ ├─── x x o x
+│ └─── Avoid taking focus
 ├─┬─ Magnet
 │ ├─── remove all shortcuts
 │ └─── launch at login
