@@ -21,5 +21,10 @@
   xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCfVG09CFS-RWB26s1exEJEA"
   htmlUrl="https://www.youtube.com/channel/UCfVG09CFS-RWB26s1exEJEA"
 />
+<outline type="rss"
+  text="Report of the Week"
+  xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCeR0n8d3ShTn_yrMhpwyE1Q"
+  htmlUrl="https://www.youtube.com/channel/UCeR0n8d3ShTn_yrMhpwyE1Q"
+/>
 
 </body></opml>
