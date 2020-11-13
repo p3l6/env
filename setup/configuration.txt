@@ -80,7 +80,7 @@
 │ ├─── x x o x x o
 │ ├─── Show at: screen center
 │ ├─── Menu size: 20
-│ ├─── x x o x
+│ ├─── x o x o x
 │ └─── Avoid taking focus
 ├─┬─ Magnet
 │ ├─── remove all shortcuts
@@ -171,6 +171,8 @@
   ├─┬─ Keyboard
   │ ├─┬─ Text
   │ │ └─── don't use smart quotes and dashes
+  │ ├─┬─ Shortcuts
+  │ │ └─── Mission Control > Show Notification Center ^f10
   │ └─┬─ Input sources
   │   └─── don't show in menu bar
   ├─┬─ Trackpad
