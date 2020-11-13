@@ -23,6 +23,9 @@
     "editor.dragAndDrop": false,
     "editor.definitionLinkOpensInPeek": true,
     "editor.stablePeek": true,
+    "editor.suggest.showStatusBar": true,
+    "editor.suggest.insertMode": "replace",
+
 
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",
@@ -62,6 +65,12 @@
     "gitlens.views.repositories.enabled": false,
     "gitlens.views.search.enabled": false,
 
+    "html.autoClosingTags": false,
+    "javascript.autoClosingTags": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
     "latex-workshop.view.pdf.viewer": "tab",
     "markdown.preview.breaks": true,
     "openInGitHub.excludeCurrentRevision": true,
@@ -83,6 +92,7 @@
 
     "typescript.updateImportsOnFileMove.enabled": "never",
     // "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+    "typescript.autoClosingTags": false,
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },

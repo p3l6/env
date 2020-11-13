@@ -327,5 +327,15 @@
         "key": "escape",
         "command": "closeReferenceSearch",
         "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+    {
+        "key": "alt+enter",
+        "command": "acceptAlternativeSelectedSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus && textInputFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-acceptAlternativeSelectedSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus && textInputFocus"
     }
 ]
