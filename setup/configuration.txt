@@ -44,7 +44,7 @@
   │ └─── bfg carthage cmake node vapor deno
   └─┬─ Cask Install
     ├─── (utils) maccy bitwarden iina itsycal smooze
-    ├─── (coding) visual-studio-code fork termhere dash docker sf-symbols boop
+    ├─── (coding) visual-studio-code fork dash docker sf-symbols boop
     ├─── (fonts) font-fira-code
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
     ├─── (maybe) google-chrome slack postico
@@ -145,17 +145,19 @@
 └─┬─ System Preferences
   ├─┬─ General
   │ ├─── theme: dark
-  │ ├─── accent: purple
+  │ ├─── accent: multi
   │ ├─── show scroll bars: when scrolling
   │ ├─── scroll bar: jump to spot clicked
   │ └─── default browser: safari
   ├─┬─ Desktop
   │ ├─── add folder ~/Desktop/Wallpaper/
   │ └─── random when waking up
-  ├─┬─ Dock
+  ├─┬─ Dock & Menu Bar
   │ ├─── position: left
   │ ├─── automatically show and hide the dock
-  │ └─── don't show recent applications in dock
+  │ ├─── don't show recent applications in dock
+  │ ├─── don't show date in menu bar
+  │ └─── don't show spotlight in menu bar
   ├─┬─ Mission Control
   │ ├─── o o x x ^up ^down f10
   │ └─── no hot corners
