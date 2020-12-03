@@ -5,6 +5,7 @@
     "bookmarks.label.suggestion": "useWhenSelected",
 
     "breadcrumbs.filePath": "off",
+    "cSpell.enabled": false,
 
     "debug.javascript.codelens.npmScripts": "never",
     "deno.enable": false,
@@ -25,7 +26,6 @@
     "editor.stablePeek": true,
     "editor.suggest.showStatusBar": true,
     "editor.suggest.insertMode": "replace",
-
 
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",
