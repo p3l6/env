@@ -41,6 +41,8 @@ fi
 rm -rf ~/Library/Developer/Xcode/UserData
 mkdir -p ~/Library/Developer/Xcode/UserData
 $LINK ~/env/apps/UserData ~/Library/Developer/Xcode/UserData
+mkdir -p ~/.config
+$LINK ~/env/apps/karabiner ~/.config/karabiner
 
 chflags nohidden ~/Library
 chflags hidden ~/Public

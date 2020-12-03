@@ -43,7 +43,7 @@
   │ ├─── avr-gcc dfu-programmer gcc-arm-none-eabi avrdude
   │ └─── bfg carthage cmake node vapor deno
   └─┬─ Cask Install
-    ├─── (utils) maccy bitwarden iina itsycal smooze
+    ├─── (utils) maccy bitwarden iina itsycal smooze karabiner-elements
     ├─── (coding) visual-studio-code fork dash docker sf-symbols boop
     ├─── (fonts) font-fira-code
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
