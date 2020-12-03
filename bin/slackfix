@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Two things here
+# 1. remove sidebar avatars
+# 2. reverse colors on compose button
+
+pbcopy <<"EOF"
+function addStyle (styleString) {
+  const style = document.createElement('style');
+  style.textContent = styleString;
+  document.head.append(style);
+}
+
+addStyle(`
+  .p-channel_sidebar__presence_icon.p-channel_sidebar__presence_icon--on-avatar {
+    transform: scale(1.5) translateX(-6px) translateY(-5px);
+  }
+
+  .p-channel_sidebar__mpim_counter {
+    transform: scale(1.2) translateX(-4px) translateY(-4px);
+  }
+
+  span.p-channel_sidebar__mpim_avatars_mpim1.c-avatar {
+    opacity: 0;
+  }
+
+  .p-channel_sidebar__channel span.c-avatar {
+    opacity: 0;
+  }
+
+  .p-channel_sidebar__user_avatar--hide-presence .p-channel_sidebar__presence_icon--on-avatar {
+    display: block;
+    transform: scale(1.5) translateX(-3.5px) translateY(-9px);
+  }
+
+  .p-channel_sidebar__compose_button {
+    background-color: #1A1D21 !important;
+    color: #D8DCE8 !important;
+    fill: #D8DCE8 !important;
+  }
+
+`);
+EOF
+
+echo "Copied stuff to clipboard!"
+echo "run /slackdevtools in any chat, paste in dev console"
+echo "also, you can change the font with /slackfont <font-name>, like system-ui or skia"
