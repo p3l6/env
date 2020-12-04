@@ -57,7 +57,16 @@
 ┌ Preferences ┐
 ├─────────────┘
 ├─┬─ Alfred
-│ └─── sync directory: ~/env/apps/alfred
+│ ├─┬─ Workflows:
+│ │ ├─── https://culturedcode.com/things/support/articles/2803574/
+│ │ ├─── https://github.com/chrisbro/alfred-bear
+│ │ ├─── https://github.com/deanishe/alfred-convert
+│ │ ├─── https://github.com/BaksiLi/AlfredWorkflows/tree/master/Index/DarkOrLight
+│ │ ├─── Dash, from preferences
+│ │ ├─── http://www.packal.org/workflow/toggle-hidden-files
+│ │ ├─── https://github.com/ngreenstein/alfred-process-killer
+│ │ └─── https://github.com/BenziAhamed/Menu-Bar-Search
+│ └─── Sync directory: ~/env/apps/alfred
 ├─┬─ Atom
 │ └─── $ apm install --packages-file ~/env/apps/atom/packages.txt
 ├─┬─ Boop
