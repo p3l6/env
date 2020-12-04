@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "static NSMutableDictionary * _times = nil;\nstatic NSMutableDictionary * _starts = nil;\nNSMutableDictionary * times() {\n    if (!_times) _times = [[NSMutableDictionary alloc] init];\n    return _times;\n} \nNSMutableDictionary * starts() {\n    if (!_starts) _starts = [[NSMutableDictionary alloc] init];\n    return _starts;\n} \n\nvoid restartTiming() {\n    _times = nil;\n    _starts = nil;\n}\n\nvoid startSection(NSString *name) {\n     [starts() setObject:[NSDate date] forKey:name];\n}\n\nvoid endSection(NSString *name) {\n     NSTimeInterval time = [[times() objectForKey:name] doubleValue];\n      time +=  [[starts() objectForKey:name] timeIntervalUntilNow];\n     [times() setObject:@(time) forKey:name];\n}\n\nvoid finishTiming() {\n    NSTimeInterval total = 0;\n    for (NSString * name in times().allKeys) {\n        NSTimeInterval time = [[times() objectForKey:name] doubleValue];\n        NSLog(@\"%@ || %f seconds\", name, time);\n        total += time;\n    }\n    NSLog(@\"total || %f\", total);\n}",
+    "uid" : "474BD804-E8A4-4E0D-AE43-2D0AB337FBD3",
+    "name" : "objc performance",
+    "keyword" : "objc-perf"
+  }
+}

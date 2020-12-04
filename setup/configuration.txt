@@ -43,7 +43,7 @@
   │ ├─── avr-gcc dfu-programmer gcc-arm-none-eabi avrdude
   │ └─── bfg carthage cmake node vapor deno
   └─┬─ Cask Install
-    ├─── (utils) maccy bitwarden iina itsycal smooze karabiner-elements
+    ├─── (utils) alfred bitwarden iina itsycal smooze karabiner-elements
     ├─── (coding) visual-studio-code fork dash docker sf-symbols boop
     ├─── (fonts) font-fira-code
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
@@ -56,6 +56,8 @@
 
 ┌ Preferences ┐
 ├─────────────┘
+├─┬─ Alfred
+│ └─── sync directory: ~/env/apps/alfred
 ├─┬─ Atom
 │ └─── $ apm install --packages-file ~/env/apps/atom/packages.txt
 ├─┬─ Boop
@@ -75,13 +77,6 @@
 ├─┬─ Itsycal
 │ ├─── launch at login
 │ └─── use outline icon
-├─┬─ Maccy
-│ ├─── Hotkey: shift cmd v
-│ ├─── x x o x x o
-│ ├─── Show at: screen center
-│ ├─── Menu size: 20
-│ ├─── x o x o x
-│ └─── Avoid taking focus
 ├─┬─ Magnet
 │ ├─── remove all shortcuts
 │ └─── launch at login
@@ -172,6 +167,7 @@
   │ ├─┬─ Text
   │ │ └─── don't use smart quotes and dashes
   │ ├─┬─ Shortcuts
+  │ │ ├─── Spotlight > cmd + opt + space (alfred overrides) (disable finder search window)
   │ │ └─── Mission Control > Show Notification Center ^f10
   │ └─┬─ Input sources
   │   └─── don't show in menu bar

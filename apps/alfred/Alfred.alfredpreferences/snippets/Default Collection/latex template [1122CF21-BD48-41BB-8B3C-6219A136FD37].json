@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "\\documentclass[11pt]{article}\n\\usepackage{geometry}\n\\geometry{letterpaper}\n%\\geometry{landscape}\n%\\usepackage[parfill]{parskip}\n\\usepackage{graphicx}\n\\usepackage{amssymb}\n\\usepackage{epstopdf}\n% \\DeclareGraphicsRule{.tif}{pnf}{.png} %{’convert #1 ’dirname #1’\/’basename #1 .tif’ .png}\n\n\\title{Brief Article}\n\\author{The Author}\n%\\date{}\n\n\\begin{document}\n\\maketitle\n%\\section{}\n%\\subsection{}\n\n\\end{document}",
+    "ignoredynamicplaceholders" : true,
+    "uid" : "1122CF21-BD48-41BB-8B3C-6219A136FD37",
+    "name" : "latex template",
+    "keyword" : "latex-template"
+  }
+}

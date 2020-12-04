@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "[dialog performSelectorOnMainThread:@selector(runModal:) withObject:[view window] waitUntilDone:TRUE];\nBOOL ok = dialog.modalCode;\nif (ok)",
+    "uid" : "1246DAD2-20DE-4320-B9EF-7E991BAEFC96",
+    "name" : "objc modal wait",
+    "keyword" : "objc-modal-wait"
+  }
+}

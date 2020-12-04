@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "DIR=\"$( cd \"$( dirname \"${BASH_SOURCE[0]}\" )\" >\/dev\/null 2>&1 && pwd )\"",
+    "uid" : "AB5A0C94-C2CC-4DF5-B8E2-8401BED5107B",
+    "name" : "bash dir",
+    "keyword" : "bash-dir"
+  }
+}

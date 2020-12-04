@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "function delay(ms: number) {\n  return new Promise(resolve => setTimeout(resolve, ms))\n}",
+    "uid" : "7FB6798B-3B7C-47EE-8DB1-D57125AA992C",
+    "name" : "typescript sleep",
+    "keyword" : "ts-sleep"
+  }
+}

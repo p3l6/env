@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# builds all cpp and java files in directory\nSRC=$(wildcard *.cpp)\nEXEC=$(SRC:.cpp=)\n\nJAVA_SRC=$(wildcard *.java)\nJAVA_CLASS=$(JAVA_SRC:.java=.class)\n\nall:cpp java\n\ncpp:$(EXEC)\n\njava:$(JAVA_CLASS)\n\n#default build thingy for cpp\n%:%.cpp\n\tg++ -Wall -o $@ $^\n\n#default build thingy for java\n%.class:%.java\n\tjavac $^\n\nclean:\n\trm -rf $(EXEC)\n\trm -rf $(JAVA_CLASS)",
+    "uid" : "F38D579A-FF68-4700-AD58-8560C372C1CF",
+    "name" : "makefile template",
+    "keyword" : "makefile-template"
+  }
+}

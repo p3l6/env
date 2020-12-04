@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "# Show usage and exit if no arguments.\n if [ \"$#\" = 0 ]; then \n   usage\n fi\n\n # Parse options.\n while :; do\n   case $1 in\n     --help)\n       usage\n       ;;\n     --someFlag)\n       someFlag=1\n       ;;\n     *) break\n   esac\n   shift\n done\n\n # Get the content from FILENAME or stdin.\n content=\"$(cat \"${1:-\/dev\/stdin}\")\"",
+    "uid" : "19690F79-8F6F-43AE-A978-1668A9562720",
+    "name" : "bash script file args",
+    "keyword" : "bash-script-file-args"
+  }
+}

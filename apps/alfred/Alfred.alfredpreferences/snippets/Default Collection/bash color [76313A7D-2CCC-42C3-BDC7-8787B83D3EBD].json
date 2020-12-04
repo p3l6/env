@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "$(tput setaf 1){cursor}$(tput sgr0)",
+    "uid" : "76313A7D-2CCC-42C3-BDC7-8787B83D3EBD",
+    "name" : "bash color",
+    "keyword" : "bash-color"
+  }
+}

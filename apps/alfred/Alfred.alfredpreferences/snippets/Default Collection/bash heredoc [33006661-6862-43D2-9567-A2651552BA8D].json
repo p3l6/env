@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "_command_ <<EOF\n{cursor}\nEOF",
+    "uid" : "33006661-6862-43D2-9567-A2651552BA8D",
+    "name" : "bash heredoc",
+    "keyword" : "bash-heredoc"
+  }
+}

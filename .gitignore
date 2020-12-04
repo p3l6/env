@@ -5,3 +5,6 @@ dot/local
 bin/local
 
 apps/karabiner/automatic_backups
+
+apps/alfred/Alfred.alfredpreferences/**/local
+apps/alfred/Alfred.alfredpreferences/remote

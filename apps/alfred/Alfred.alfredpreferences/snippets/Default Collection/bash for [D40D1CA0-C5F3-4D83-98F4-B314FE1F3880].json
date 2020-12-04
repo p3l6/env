@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "for i in $(seq 1 7); do\n  {cursor}\ndone",
+    "uid" : "D40D1CA0-C5F3-4D83-98F4-B314FE1F3880",
+    "name" : "bash for",
+    "keyword" : "bash-for"
+  }
+}

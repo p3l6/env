@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "#! \/bin\/bash\n\n# How to bootstrap an automation script:\n#  Start with asking the user to complete all tasks\/steps.\n#  Gradually replace steps with actual automation, as nessesary\n\necho -n \"--> Please do step 1 \"\nread\n\necho -n \"--> Please do step 2 \"\nread\n\necho “Finished”",
+    "uid" : "C8D62A03-F505-4AFE-8105-AFBAE52FB8AE",
+    "name" : "bash automation script",
+    "keyword" : "bash-automation"
+  }
+}
