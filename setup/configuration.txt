@@ -23,7 +23,6 @@
 │ ├─── Bear Notes
 │ ├─── Daisy Disk
 │ ├─── Reeder
-│ ├─── Magnet
 │ ├─── Rested
 │ └─── (Check app store purchases for more...)
 ├─┬─ From Other
@@ -57,15 +56,19 @@
 ┌ Preferences ┐
 ├─────────────┘
 ├─┬─ Alfred
-│ ├─┬─ Workflows:
-│ │ ├─── https://culturedcode.com/things/support/articles/2803574/
+│ ├─┬─ Add Workflows:
 │ │ ├─── https://github.com/chrisbro/alfred-bear
 │ │ ├─── https://github.com/deanishe/alfred-convert
 │ │ ├─── https://github.com/BaksiLi/AlfredWorkflows/tree/master/Index/DarkOrLight
 │ │ ├─── Dash, from preferences
+│ │ ├─── https://github.com/pwxn/div
+│ │ ├─── Fork, duplicate vscode but change keyword and script
 │ │ ├─── http://www.packal.org/workflow/toggle-hidden-files
+│ │ ├─── http://www.packal.org/workflow/homebrew-and-cask-alfred
 │ │ ├─── https://github.com/ngreenstein/alfred-process-killer
-│ │ └─── https://github.com/BenziAhamed/Menu-Bar-Search
+│ │ ├─── https://github.com/BenziAhamed/Menu-Bar-Search
+│ │ ├─── https://github.com/nightgrey/alfred-open-vsc-project (add ~/env, etc to top of listDirectories.py)
+│ │ └─── http://www.packal.org/workflow/timer-0
 │ └─── Sync directory: ~/env/apps/alfred
 ├─┬─ Atom
 │ └─── $ apm install --packages-file ~/env/apps/atom/packages.txt
@@ -86,9 +89,6 @@
 ├─┬─ Itsycal
 │ ├─── launch at login
 │ └─── use outline icon
-├─┬─ Magnet
-│ ├─── remove all shortcuts
-│ └─── launch at login
 ├─┬─ Mail
 │ └─┬─ Viewing
 │   ├─── Move discards to Archive

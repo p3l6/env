@@ -2,6 +2,8 @@
 <opml version="2.0"><head><title>RSS</title></head><body>
 
 <outline type="rss" text="Alfred" xmlUrl="https://www.alfredapp.com/blog/feed.xml" htmlUrl="https://www.alfredapp.com/blog/" />
+<outline type="rss" text="Packal Workflows" xmlUrl="http://www.packal.org/new-workflows.xml" htmlUrl="http://www.packal.org/" />
+
 <outline type="rss" text="Fork" xmlUrl="https://git-fork.com/blog/index.xml" htmlUrl="https://fork.dev/blog/" />
 <outline type="rss" text="Dart News" xmlUrl="https://news.dartlang.org/feeds/posts/default" htmlUrl="https://news.dartlang.org/" />
 <outline type="rss" text="Bitwarden" xmlUrl="https://bitwarden.com/blog/feed.xml" htmlUrl="https://blog.bitwarden.com" />
