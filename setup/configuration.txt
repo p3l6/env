@@ -69,6 +69,8 @@
 │ │ ├─── https://github.com/BenziAhamed/Menu-Bar-Search
 │ │ ├─── https://github.com/nightgrey/alfred-open-vsc-project (add ~/env, etc to top of listDirectories.py)
 │ │ └─── http://www.packal.org/workflow/timer-0
+│ ├─── Hotkey: Cmd + Space
+│ ├─── Clipboard history: On
 │ └─── Sync directory: ~/env/apps/alfred
 ├─┬─ Atom
 │ └─── $ apm install --packages-file ~/env/apps/atom/packages.txt
