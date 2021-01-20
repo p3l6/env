@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>defaultBundleId</key>
+	<string>dev.pwxn.alfred.</string>
+	<key>defaultCreatedBy</key>
+	<string>pwxn</string>
+	<key>defaultWebsite</key>
+	<string>https://github.com/pwxn/env/tree/master/apps/alfred</string>
+</dict>
+</plist>

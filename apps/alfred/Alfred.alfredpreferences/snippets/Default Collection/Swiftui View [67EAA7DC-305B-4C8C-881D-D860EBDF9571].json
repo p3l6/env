@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "struct {cursor}: View {\n\n    var body: some View {\n        {random:Apple,Banana,Pear,Grape,Orange}()\n    }\n}",
+    "uid" : "67EAA7DC-305B-4C8C-881D-D860EBDF9571",
+    "name" : "Swiftui View",
+    "keyword" : "view"
+  }
+}
