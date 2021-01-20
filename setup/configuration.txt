@@ -23,7 +23,6 @@
 │ ├─── Bear Notes
 │ ├─── Daisy Disk
 │ ├─── Reeder
-│ ├─── Rested
 │ └─── (Check app store purchases for more...)
 ├─┬─ From Other
 │ ├─── Enjoyable
