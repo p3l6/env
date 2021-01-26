@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0"><head><title>RSS</title></head><body>
+
+
+<outline text="Assorted">
+  <outline type="rss" text="10 Things" xmlUrl="https://siftrss.com/f/mxAVXdjWJD" htmlUrl="https://siftrss.com/f/mxAVXdjWJD" />
+  <outline type="rss" text="American Go E-Journal" xmlUrl="http://www.usgo.org/news/feed/" htmlUrl="https://www.usgo.org/news" />
+  <outline type="rss" text="Apple Developer" xmlUrl="https://developer.apple.com/news/rss/news.rss" htmlUrl="https://developer.apple.com/news/" />
+  <outline type="rss" text="Apple Newsroom" xmlUrl="https://www.apple.com/newsroom/rss-feed.rss" htmlUrl="" />
+  <outline type="rss" text="Coding Horror" xmlUrl="http://feeds.feedburner.com/codinghorror" htmlUrl="https://blog.codinghorror.com/" />
+  <outline type="rss" text="Craft and Cookie Joy" xmlUrl="https://craftandcookie.wordpress.com/feed/" htmlUrl="https://craftandcookie.wordpress.com/" />
+  <outline type="rss" text="DL WoodTurning" xmlUrl="http://dlwoodturning.com/feed/" htmlUrl="https://dlwoodturning.com/" />
+  <outline type="rss" text="Eggplant Blog" xmlUrl="http://blog.eggplant.io/rss.xml" htmlUrl="https://blog.eggplantsoftware.com/" />
+  <outline type="rss" text="New Movies" xmlUrl="http://www.fandango.com/rss/newmovies.rss" htmlUrl="https://www.fandango.com/default.aspx?wssaffid=11840&amp;wssac=123" />
+  <outline type="rss" text="New On Netflix USA" xmlUrl="https://usa.newonnetflix.info/feed.php" htmlUrl="https://usa.newonnetflix.info/" />
+  <outline type="rss" text="NSHipster" xmlUrl="https://nshipster.com/feed.xml" htmlUrl="https://nshipster.com/" />
+  <outline type="rss" text="Pwxn.dev" xmlUrl="http://pwxn.dev/feed.xml" htmlUrl="https://pwxn.dev/" />
+  <outline type="rss" text="Spacex.com" xmlUrl="https://www.spacex.com/news.xml" htmlUrl="https://www.spacex.com/news" />
+  <outline type="rss" text="Watt Evans" xmlUrl="http://www.watt-evans.com/blog/feed/" htmlUrl="http://www.watt-evans.com/blog" />
+  <outline type="rss" text="Word of the day" xmlUrl="https://www.merriam-webster.com/wotd/feed/rss2" htmlUrl="https://www.merriam-webster.com/word-of-the-day" />
+  <outline type="rss" text="Xkcd: What If?" xmlUrl="https://what-if.xkcd.com/feed.atom" htmlUrl="" />
+</outline>
+
+
+<outline text="Bagpipes">
+  <outline type="rss" text="Pipes|drums" xmlUrl="https://www.pipesdrums.com/feed/" htmlUrl="https://www.pipesdrums.com/" />
+  <outline type="rss" text="Piping Press" xmlUrl="https://pipingpress.com/feed/" htmlUrl="https://pipingpress.com/" />
+</outline>
+
+
+<outline text="Changelogs">
+  <outline type="rss" text="Alfred" xmlUrl="https://www.alfredapp.com/blog/feed.xml" htmlUrl="https://www.alfredapp.com/blog/" />
+  <outline type="rss" text="Bear" xmlUrl="https://feeds.bear.app/all" htmlUrl="https://blog.bear.app/" />
+  <outline type="rss" text="Bitwarden" xmlUrl="https://bitwarden.com/blog/feed.xml" htmlUrl="https://bitwarden.com/" />
+  <outline type="rss" text="Dart News" xmlUrl="https://news.dartlang.org/feeds/posts/default" htmlUrl="https://news.dartlang.org/" />
+  <outline type="rss" text="Dash" xmlUrl="https://blog.kapeli.com/atom.xml" htmlUrl="https://blog.kapeli.com/" />
+  <outline type="rss" text="Dolphin emu" xmlUrl="https://dolphin-emu.org/blog/feeds/" htmlUrl="https://dolphin-emu.org/blog/" />
+  <outline type="rss" text="Fork" xmlUrl="https://git-fork.com/blog/index.xml" htmlUrl="https://fork.dev/blog/" />
+  <outline type="rss" text="Homebrew" xmlUrl="https://brew.sh/atom.xml" htmlUrl="https://brew.sh/" />
+  <outline type="rss" text="NetNewsWire" xmlUrl="https://nnw.ranchero.com/feed.json" htmlUrl="https://nnw.ranchero.com/" />
+  <outline type="rss" text="Packal Workflows" xmlUrl="http://www.packal.org/new-workflows.xml" htmlUrl="http://www.packal.org/" />
+  <outline type="rss" text="Stardew Valley" xmlUrl="http://stardewvalley.net/feed/" htmlUrl="https://stardewvalley.net/" />
+  <outline type="rss" text="Swift" xmlUrl="https://swift.org/atom.xml" htmlUrl="" />
+  <outline type="rss" text="Things" xmlUrl="https://culturedcode.com/things/blog/feed/rss.xml" htmlUrl="https://culturedcode.com/things/blog/" />
+  <outline type="rss" text="Visual Studio Code" xmlUrl="https://code.visualstudio.com/feed.xml" htmlUrl="https://code.visualstudio.com/" />
+</outline>
+
+
+<outline text="Comics">
+  <outline type="rss" text="Calvin and Hobbes" xmlUrl="https://www.comicsrss.com/rss/calvinandhobbes.rss" htmlUrl="https://www.comicsrss.com/preview/calvinandhobbes" />
+  <outline type="rss" text="FoxTrot" xmlUrl="https://www.comicsrss.com/rss/foxtrot.rss" htmlUrl="https://www.comicsrss.com/preview/foxtrot" />
+</outline>
+
+
+<outline text="ComicsWeb">
+  <outline type="rss" text="Don't Hit Save" xmlUrl="http://donthitsave.com/donthitsavefeed.xml" htmlUrl="https://donthitsave.com/" />
+  <outline type="rss" text="MonkeyUser" xmlUrl="https://www.monkeyuser.com/feed.xml" htmlUrl="https://www.monkeyuser.com/" />
+  <outline type="rss" text="Order of the Stick" xmlUrl="http://www.giantitp.com/comics/oots.rss" htmlUrl="http://www.giantitp.com/Comics.html" />
+  <outline type="rss" text="QC RSS" xmlUrl="https://www.questionablecontent.net/QCRSS.xml" htmlUrl="http://www.questionablecontent.net/" />
+  <outline type="rss" text="Xkcd" xmlUrl="https://xkcd.com/rss.xml" htmlUrl="https://xkcd.com/" />
+</outline>
+
+
+<outline text="Keyboards">
+  <outline type="rss" text="40% Keyboards" xmlUrl="http://www.40percent.club/feeds/posts/default" htmlUrl="https://www.40percent.club/" />
+  <outline type="rss" text="Matt3o" xmlUrl="https://matt3o.com/feed/" htmlUrl="https://matt3o.com/" />
+  <outline type="rss" text="MiTo" xmlUrl="https://mitormk.com/feed/" htmlUrl="https://mitormk.com/" />
+</outline>
+
+
+<outline text="Reddit">
+  <outline type="rss" text="Airz23" xmlUrl="https://www.reddit.com/user/airz23/submitted/.rss" htmlUrl="https://www.reddit.com/user/airz23/submitted/" />
+</outline>
+
+
+<outline text="Youtube">
+  <outline type="rss"
+    text="Best edc"
+    xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCK5R1BsMtGd4DtI5uGQRHIg"
+    htmlUrl="https://www.youtube.com/channel/UCK5R1BsMtGd4DtI5uGQRHIg"
+  />
+  <outline type="rss"
+    text="Knife Banter"
+    xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCZIIkzJ6XQiNeJkha6Ais5g"
+    htmlUrl="https://www.youtube.com/channel/UCZIIkzJ6XQiNeJkha6Ais5g"
+  />
+  <outline type="rss"
+    text="Matt Willis"
+    xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC9V98_TxHeGNoa9wxbUkeeg"
+    htmlUrl="https://www.youtube.com/channel/UC9V98_TxHeGNoa9wxbUkeeg"
+  />
+  <outline type="rss"
+    text="Nick Shabazz"
+    xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCM_f7DAr6zzIHHYggsq8CrA"
+    htmlUrl="https://www.youtube.com/channel/UCM_f7DAr6zzIHHYggsq8CrA"
+  />
+  <outline type="rss"
+    text="Report of the Week"
+    xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCeR0n8d3ShTn_yrMhpwyE1Q"
+    htmlUrl="https://www.youtube.com/channel/UCeR0n8d3ShTn_yrMhpwyE1Q"
+  />
+  <outline type="rss"
+    text="Summoning Salt"
+    xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCtUbO6rBht0daVIOGML3c8w"
+    htmlUrl="https://www.youtube.com/channel/UCtUbO6rBht0daVIOGML3c8w"
+  />
+  <outline type="rss"
+    text="Wake and District"
+    xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCfVG09CFS-RWB26s1exEJEA"
+    htmlUrl="https://www.youtube.com/channel/UCfVG09CFS-RWB26s1exEJEA"
+  />
+</outline>
+
+
+</body></opml>

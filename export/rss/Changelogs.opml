@@ -2,18 +2,18 @@
 <opml version="2.0"><head><title>RSS</title></head><body>
 
 <outline type="rss" text="Alfred" xmlUrl="https://www.alfredapp.com/blog/feed.xml" htmlUrl="https://www.alfredapp.com/blog/" />
-<outline type="rss" text="Packal Workflows" xmlUrl="http://www.packal.org/new-workflows.xml" htmlUrl="http://www.packal.org/" />
-
-<outline type="rss" text="Fork" xmlUrl="https://git-fork.com/blog/index.xml" htmlUrl="https://fork.dev/blog/" />
+<outline type="rss" text="Bear" xmlUrl="https://feeds.bear.app/all" htmlUrl="https://blog.bear.app/" />
+<outline type="rss" text="Bitwarden" xmlUrl="https://bitwarden.com/blog/feed.xml" htmlUrl="https://bitwarden.com/" />
 <outline type="rss" text="Dart News" xmlUrl="https://news.dartlang.org/feeds/posts/default" htmlUrl="https://news.dartlang.org/" />
-<outline type="rss" text="Bitwarden" xmlUrl="https://bitwarden.com/blog/feed.xml" htmlUrl="https://blog.bitwarden.com" />
-<outline type="rss" text="Visual Studio Code" xmlUrl="https://code.visualstudio.com/feed.xml" htmlUrl="https://code.visualstudio.com/" />
-<outline type="rss" text="Bear" xmlUrl="https://feeds.bear.app/all" htmlUrl="https://blog.bear.app" />
-<outline type="rss" text="Things" xmlUrl="https://culturedcode.com/things/blog/feed/rss.xml" htmlUrl="https://culturedcode.com/things/blog/" />
-<outline type="rss" text="Dolphin emu" xmlUrl="https://dolphin-emu.org/blog/feeds/" htmlUrl="https://dolphin-emu.org/blog/" />
-<outline type="rss" text="Swift" xmlUrl="https://swift.org/atom.xml" htmlUrl="https://swift.org" />
-<outline type="rss" text="Stardew Valley" xmlUrl="http://stardewvalley.net/feed/" htmlUrl="https://stardewvalley.net" />
-<outline type="rss" text="Homebrew" xmlUrl="https://brew.sh/atom.xml" htmlUrl="https://brew.sh/" />
 <outline type="rss" text="Dash" xmlUrl="https://blog.kapeli.com/atom.xml" htmlUrl="https://blog.kapeli.com/" />
+<outline type="rss" text="Dolphin emu" xmlUrl="https://dolphin-emu.org/blog/feeds/" htmlUrl="https://dolphin-emu.org/blog/" />
+<outline type="rss" text="Fork" xmlUrl="https://git-fork.com/blog/index.xml" htmlUrl="https://fork.dev/blog/" />
+<outline type="rss" text="Homebrew" xmlUrl="https://brew.sh/atom.xml" htmlUrl="https://brew.sh/" />
+<outline type="rss" text="NetNewsWire" xmlUrl="https://nnw.ranchero.com/feed.json" htmlUrl="https://nnw.ranchero.com/" />
+<outline type="rss" text="Packal Workflows" xmlUrl="http://www.packal.org/new-workflows.xml" htmlUrl="http://www.packal.org/" />
+<outline type="rss" text="Stardew Valley" xmlUrl="http://stardewvalley.net/feed/" htmlUrl="https://stardewvalley.net/" />
+<outline type="rss" text="Swift" xmlUrl="https://swift.org/atom.xml" htmlUrl="" />
+<outline type="rss" text="Things" xmlUrl="https://culturedcode.com/things/blog/feed/rss.xml" htmlUrl="https://culturedcode.com/things/blog/" />
+<outline type="rss" text="Visual Studio Code" xmlUrl="https://code.visualstudio.com/feed.xml" htmlUrl="https://code.visualstudio.com/" />
 
 </body></opml>

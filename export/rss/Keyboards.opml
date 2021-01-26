@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0"><head><title>RSS</title></head><body>
 
-<outline type="rss" text="40% Keyboards" xmlUrl="http://www.40percent.club/feeds/posts/default" htmlUrl="http://www.40percent.club/" />
-<outline type="rss" text="Matt3o" xmlUrl="https://matt3o.com/feed/" htmlUrl="https://matt3o.com" />
-<outline type="rss" text="MiTo" xmlUrl="https://mitormk.com/feed/" htmlUrl="https://mitormk.com" />
+<outline type="rss" text="40% Keyboards" xmlUrl="http://www.40percent.club/feeds/posts/default" htmlUrl="https://www.40percent.club/" />
+<outline type="rss" text="Matt3o" xmlUrl="https://matt3o.com/feed/" htmlUrl="https://matt3o.com/" />
+<outline type="rss" text="MiTo" xmlUrl="https://mitormk.com/feed/" htmlUrl="https://mitormk.com/" />
 
 </body></opml>
