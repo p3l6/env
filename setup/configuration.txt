@@ -22,7 +22,6 @@
 │ ├─── Things for Mac
 │ ├─── Bear Notes
 │ ├─── Daisy Disk
-│ ├─── Reeder
 │ └─── (Check app store purchases for more...)
 ├─┬─ From Other
 │ ├─── Enjoyable
@@ -41,7 +40,7 @@
   │ ├─── avr-gcc dfu-programmer gcc-arm-none-eabi avrdude
   │ └─── bfg carthage cmake node vapor deno
   └─┬─ Cask Install
-    ├─── (utils) alfred bitwarden iina itsycal smooze karabiner-elements
+    ├─── (utils) alfred bitwarden iina itsycal karabiner-elements netnewswire smooze
     ├─── (coding) visual-studio-code fork dash docker sf-symbols boop
     ├─── (fonts) font-fira-code
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
@@ -190,5 +189,5 @@
     └─── set the machine name
 
 Dock layout suggestions:
-Finder Reeder Safari __ Mail Messages Things Bear __ VSCode Xcode Terminal __ Calendar Maps Music
-Finder Reeder Safari __ Slack Things Bear __ VSCode Terminal Fork
+Finder Safari __ Mail Messages Things Bear __ VSCode Xcode Terminal __ Calendar Maps Music
+Finder Safari __ Slack Things Bear __ VSCode Terminal Fork
