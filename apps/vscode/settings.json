@@ -101,10 +101,13 @@
         //  "minimap.background": "#FFFFFF55"
     },
 
-    "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.revealIfOpen": true,
-    "workbench.editor.showTabs": false,
+
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.decorations.colors": true,
+    "workbench.editor.decorations.badges": true,
+    "workbench.editor.wrapTabs": true,
     "workbench.editor.limit.perEditorGroup": false,
     "workbench.editor.tabCloseButton": "left",
 
