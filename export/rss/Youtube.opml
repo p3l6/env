@@ -12,6 +12,16 @@
   htmlUrl="https://www.youtube.com/channel/UCZIIkzJ6XQiNeJkha6Ais5g"
 />
 <outline type="rss"
+  text="Kyle Howie"
+  xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC4mfmYiBvi87jWDi2O-h-7A"
+  htmlUrl="https://www.youtube.com/channel/UC4mfmYiBvi87jWDi2O-h-7A"
+/>
+<outline type="rss"
+  text="Lincoln Hilton"
+  xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCJWpVqJleak7ncgGWqJlxLw"
+  htmlUrl="https://www.youtube.com/channel/UCJWpVqJleak7ncgGWqJlxLw"
+/>
+<outline type="rss"
   text="Matt Willis"
   xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC9V98_TxHeGNoa9wxbUkeeg"
   htmlUrl="https://www.youtube.com/channel/UC9V98_TxHeGNoa9wxbUkeeg"

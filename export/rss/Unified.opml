@@ -11,7 +11,6 @@
   <outline type="rss" text="Craft and Cookie Joy" xmlUrl="https://craftandcookie.wordpress.com/feed/" htmlUrl="https://craftandcookie.wordpress.com/" />
   <outline type="rss" text="DL WoodTurning" xmlUrl="http://dlwoodturning.com/feed/" htmlUrl="https://dlwoodturning.com/" />
   <outline type="rss" text="Eggplant Blog" xmlUrl="http://blog.eggplant.io/rss.xml" htmlUrl="https://blog.eggplantsoftware.com/" />
-  <outline type="rss" text="New Movies" xmlUrl="http://www.fandango.com/rss/newmovies.rss" htmlUrl="https://www.fandango.com/default.aspx?wssaffid=11840&amp;wssac=123" />
   <outline type="rss" text="New On Netflix USA" xmlUrl="https://usa.newonnetflix.info/feed.php" htmlUrl="https://usa.newonnetflix.info/" />
   <outline type="rss" text="NSHipster" xmlUrl="https://nshipster.com/feed.xml" htmlUrl="https://nshipster.com/" />
   <outline type="rss" text="Pwxn.dev" xmlUrl="http://pwxn.dev/feed.xml" htmlUrl="https://pwxn.dev/" />
@@ -33,13 +32,13 @@
   <outline type="rss" text="Bear" xmlUrl="https://feeds.bear.app/all" htmlUrl="https://blog.bear.app/" />
   <outline type="rss" text="Bitwarden" xmlUrl="https://bitwarden.com/blog/feed.xml" htmlUrl="https://bitwarden.com/" />
   <outline type="rss" text="Dart News" xmlUrl="https://news.dartlang.org/feeds/posts/default" htmlUrl="https://news.dartlang.org/" />
-  <outline type="rss" text="Dash" xmlUrl="https://blog.kapeli.com/atom.xml" htmlUrl="https://blog.kapeli.com/" />
+  <outline type="rss" text="Dash" xmlUrl="https://blog.kapeli.com/atom.xml" htmlUrl="" />
   <outline type="rss" text="Dolphin emu" xmlUrl="https://dolphin-emu.org/blog/feeds/" htmlUrl="https://dolphin-emu.org/blog/" />
   <outline type="rss" text="Fork" xmlUrl="https://git-fork.com/blog/index.xml" htmlUrl="https://fork.dev/blog/" />
   <outline type="rss" text="Homebrew" xmlUrl="https://brew.sh/atom.xml" htmlUrl="https://brew.sh/" />
   <outline type="rss" text="NetNewsWire" xmlUrl="https://nnw.ranchero.com/feed.json" htmlUrl="https://nnw.ranchero.com/" />
-  <outline type="rss" text="Packal Workflows" xmlUrl="http://www.packal.org/new-workflows.xml" htmlUrl="http://www.packal.org/" />
-  <outline type="rss" text="Stardew Valley" xmlUrl="http://stardewvalley.net/feed/" htmlUrl="https://stardewvalley.net/" />
+  <outline type="rss" text="Packal Workflows" xmlUrl="http://www.packal.org/new-workflows.xml" htmlUrl="http://www.packal.org/new-workflows.xml" />
+  <outline type="rss" text="Stardew Valley" xmlUrl="https://www.stardewvalley.net/feed/" htmlUrl="https://www.stardewvalley.net/" />
   <outline type="rss" text="Swift" xmlUrl="https://swift.org/atom.xml" htmlUrl="" />
   <outline type="rss" text="Things" xmlUrl="https://culturedcode.com/things/blog/feed/rss.xml" htmlUrl="https://culturedcode.com/things/blog/" />
   <outline type="rss" text="Visual Studio Code" xmlUrl="https://code.visualstudio.com/feed.xml" htmlUrl="https://code.visualstudio.com/" />
@@ -83,6 +82,16 @@
     text="Knife Banter"
     xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCZIIkzJ6XQiNeJkha6Ais5g"
     htmlUrl="https://www.youtube.com/channel/UCZIIkzJ6XQiNeJkha6Ais5g"
+  />
+  <outline type="rss"
+    text="Kyle Howie"
+    xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC4mfmYiBvi87jWDi2O-h-7A"
+    htmlUrl="https://www.youtube.com/channel/UC4mfmYiBvi87jWDi2O-h-7A"
+  />
+  <outline type="rss"
+    text="Lincoln Hilton"
+    xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCJWpVqJleak7ncgGWqJlxLw"
+    htmlUrl="https://www.youtube.com/channel/UCJWpVqJleak7ncgGWqJlxLw"
   />
   <outline type="rss"
     text="Matt Willis"
