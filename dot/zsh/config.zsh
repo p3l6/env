@@ -12,6 +12,7 @@ setopt correct
 setopt complete_in_word
 setopt ignore_eof
 setopt auto_list
+unsetopt flow_control # disables start/stop characters: ^S ^Q, to allow push-line binding to work
 
 setopt append_history # adds history
 setopt inc_append_history share_history  # adds history incrementally and share it across sessions
@@ -20,6 +21,7 @@ setopt hist_reduce_blanks
 
 # To determine the key sequences for binding,
 # Type a ctrl-v, then the key sequence. ctrl-v means ignore the next escape sequence, so it prints literally
+# `bindkey [sequence]` by itself will display all current bindings, or for a specific sequence if provided
 bindkey -e
 bindkey "^[[3~" delete-char     # delete
 bindkey "^[[3;3~" delete-word   # alt+delete
