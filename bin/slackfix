@@ -1,8 +1,27 @@
 #!/bin/bash
 
-# Two things here
-# 1. remove sidebar avatars
-# 2. reverse colors on compose button
+# Things here
+# *  reverse colors on compose button
+# *  zoom out the sidebar, to compensate for zooming in browser
+# *  set font to system font, san fransisco
+
+# *  make sidebar look like cards:
+# .p-channel_sidebar__section_heading:not(.p-channel_sidebar__section-heading--pages-drawer) {
+#   border-top: 2px solid darkgray;
+#   border-left: 2px solid darkgray;
+#   border-right: 2px solid darkgray;
+#   border-top-left-radius: 10px;
+#   border-top-right-radius: 10px;
+#   width: 90%;
+#   margin-left: 5% !important;
+# }
+# .p-channel_sidebar__channel--selected {
+#   border-radius: 15px;
+#   width: 90%;
+# }
+# .p-channel_sidebar__section_heading--unreads {
+#   border-color: aquamarine !important;
+# }
 
 pbcopy <<"EOF"
 function addStyle (styleString) {
@@ -12,33 +31,27 @@ function addStyle (styleString) {
 }
 
 addStyle(`
-  .p-channel_sidebar__presence_icon.p-channel_sidebar__presence_icon--on-avatar {
-    transform: scale(1.5) translateX(-6px) translateY(-5px);
-  }
+html, body, * {
+    font-family: 'system-ui';
+}
 
-  .p-channel_sidebar__mpim_counter {
-    transform: scale(1.2) translateX(-4px) translateY(-4px);
-  }
+.p-channel_sidebar__compose_button {
+  background-color: #1A1D21 !important;
+  color: #D8DCE8 !important;
+  fill: #D8DCE8 !important;
+}
 
-  span.p-channel_sidebar__mpim_avatars_mpim1.c-avatar {
-    opacity: 0;
-  }
+.p-channel_sidebar__channel {
+  padding-left: 0px;
+}
 
-  .p-channel_sidebar__channel span.c-avatar {
-    opacity: 0;
-  }
+.p-channel_sidebar__list {
+  zoom: 85%;
+}
 
-  .p-channel_sidebar__user_avatar--hide-presence .p-channel_sidebar__presence_icon--on-avatar {
-    display: block;
-    transform: scale(1.5) translateX(-3.5px) translateY(-9px);
-  }
-
-  .p-channel_sidebar__compose_button {
-    background-color: #1A1D21 !important;
-    color: #D8DCE8 !important;
-    fill: #D8DCE8 !important;
-  }
-
+#addMoreChannels, #addMoreDM, #addMoreApps {
+  display: none;
+}
 `);
 EOF
 

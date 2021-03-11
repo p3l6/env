@@ -341,5 +341,13 @@
     {
         "key": "ctrl+q",
         "command": "-workbench.action.quickOpenView"
+    },
+    {
+        "key": "shift+cmd+1",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+    {
+        "key": "shift+cmd+2",
+        "command": "search.action.collapseSearchResults"
     }
 ]

@@ -44,6 +44,7 @@
     ├─── (coding) visual-studio-code fork dash docker sf-symbols boop
     ├─── (fonts) font-fira-code
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
+    │      (after install) xattr -d -r com.apple.quarantine ~/Library/QuickLook && qlmanage -r
     ├─── (maybe) google-chrome slack postico
     ├─── (maybe) gimp basictex
     ├─── (maybe) calibre transmission handbrake
