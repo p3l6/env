@@ -22,6 +22,7 @@
 
 
 <outline text="Bagpipes">
+  <outline type="rss" text="Bagpipe news" xmlUrl="https://bagpipe.news/feed/" htmlUrl="https://bagpipe.news/" />
   <outline type="rss" text="Pipes|drums" xmlUrl="https://www.pipesdrums.com/feed/" htmlUrl="https://www.pipesdrums.com/" />
   <outline type="rss" text="Piping Press" xmlUrl="https://pipingpress.com/feed/" htmlUrl="https://pipingpress.com/" />
 </outline>
@@ -102,6 +103,11 @@
     text="Nick Shabazz"
     xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCM_f7DAr6zzIHHYggsq8CrA"
     htmlUrl="https://www.youtube.com/channel/UCM_f7DAr6zzIHHYggsq8CrA"
+  />
+  <outline type="rss"
+    text="Paul Landers"
+    xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCK8GTbH5JHt8V7dFlUZxS3g"
+    htmlUrl="https://www.youtube.com/channel/UCK8GTbH5JHt8V7dFlUZxS3g"
   />
   <outline type="rss"
     text="Report of the Week"

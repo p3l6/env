@@ -4,6 +4,7 @@
     "bookmarks.saveBookmarksInProject": true,
     "bookmarks.label.suggestion": "useWhenSelected",
 
+    "bracket-pair-colorizer-2.unmatchedScopeColor": "Brown",
     "breadcrumbs.filePath": "off",
     "cSpell.enabled": false,
 
@@ -37,6 +38,7 @@
     "explorer.openEditors.visible": 40, // aka "A lot"
 
     "eslint.run": "onType",
+    "eslint.rules.customizations": [ { "rule": "*", "severity": "info" } ],
     "extensions.ignoreRecommendations": false,
     "extensions.closeExtensionDetailsOnViewChange": true,
 
@@ -55,6 +57,9 @@
     "html.autoClosingTags": false,
     "javascript.autoClosingTags": false,
     "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
@@ -101,6 +106,14 @@
         //  "minimap.background": "#FFFFFF55"
     },
 
+    // Remove this once jupyter stops putting it back.
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.revealIfOpen": true,
 
@@ -110,6 +123,7 @@
     "workbench.editor.wrapTabs": true,
     "workbench.editor.limit.perEditorGroup": false,
     "workbench.editor.tabCloseButton": "left",
+    "workbench.editor.untitled.hint": "hidden",
 
     "workbench.list.automaticKeyboardNavigation": false,
     "workbench.startupEditor": "newUntitledFile",

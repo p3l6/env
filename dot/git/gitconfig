@@ -16,6 +16,7 @@
 	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
 	ci = commit
 	cp = cherry-pick
+	default = !"git rev-parse --abbrev-ref origin/HEAD | cut -d "/" -f 2"
 	diffw = diff --word-diff
 	discard = restore --
 	find-ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
@@ -27,11 +28,11 @@
 	prune-origin = remote prune origin
 	prune-local = "!git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D"
 	prune-all = "!git prune-origin && git prune-local"
-	recent-files = diff --name-only master...
 	search = log --pretty=format:\"%C(yellow)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s\" --date=short -S
 	spotless = clean -dfx
 	staged = diff --cached
 	sync = "!git pullr && git push"
+	syncbase = "!git pullother $(git default) && git merge $(git default) && git push"
 	sw = switch
 	unstage = restore --staged
 [filter "lfs"]

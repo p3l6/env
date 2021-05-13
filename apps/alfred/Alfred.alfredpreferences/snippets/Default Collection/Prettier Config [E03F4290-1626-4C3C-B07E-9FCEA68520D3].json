@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{\n  \"endOfLine\": \"lf\",\n  \"trailingComma\": \"es5\",\n  \"tabWidth\": 2,\n  \"arrowParens\": \"avoid\",\n  \"semi\": false,\n  \"singleQuote\": true\n}\n",
+    "uid" : "E03F4290-1626-4C3C-B07E-9FCEA68520D3",
+    "name" : "Prettier Config",
+    "keyword" : "prettierrc"
+  }
+}

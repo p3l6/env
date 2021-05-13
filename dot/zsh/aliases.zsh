@@ -14,6 +14,8 @@ alias dush='du -sh'
 alias ip='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2'
 alias igrep='egrep -i'
 alias rgi='rg -i'
+alias rgall='rg --no-ignore'
+alias rgiall='rg -i --no-ignore'
 alias diff='diff -u'
 
 ## ls extension
