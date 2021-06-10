@@ -25,8 +25,12 @@
     "editor.dragAndDrop": false,
     "editor.definitionLinkOpensInPeek": true,
     "editor.stablePeek": true,
+    "editor.fastScrollSensitivity": 1,
+
     "editor.suggest.showStatusBar": true,
     "editor.suggest.insertMode": "replace",
+    "editor.suggest.preview": true,
+    "editor.suggest.showDeprecated": false,
 
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",
@@ -34,6 +38,7 @@
 
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    "explorer.incrementalNaming": "smart",
     "explorer.sortOrder": "mixed",
     "explorer.openEditors.visible": 40, // aka "A lot"
 
@@ -81,6 +86,7 @@
     "search.smartCase": true,
 
     "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.fastScrollSensitivity": 1,
 
     "typescript.updateImportsOnFileMove.enabled": "never",
     // "typescript.tsserver.experimental.enableProjectDiagnostics": true,
@@ -97,25 +103,25 @@
     "window.newWindowDimensions": "offset",
 
     "workbench.activityBar.visible": true,
+    "workbench.sideBar.location": "right",
     "workbench.colorTheme": "One Dark Pro",
     // "workbench.colorTheme": "Atom One Light",
     "workbench.preferredLightColorTheme": "Atom One Light",
     "workbench.preferredDarkColorTheme": "One Dark Pro",
     "workbench.colorCustomizations": {
-        "terminalCursor.foreground": "#C456FF"
+        "terminalCursor.foreground": "#C456FF",
+        "minimap.findMatchHighlight": "#C456FF"
         //  "minimap.background": "#FFFFFF55"
     },
 
     // Remove this once jupyter stops putting it back.
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
 
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.revealIfOpen": true,
+    "workbench.editor.openPositioning": "last",
 
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.decorations.colors": true,
