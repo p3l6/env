@@ -15,7 +15,7 @@
     "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
 
-    "editor.find.seedSearchStringFromSelection": true,
+    "editor.find.seedSearchStringFromSelection": "selection",
     "editor.emptySelectionClipboard": false,
 
     "editor.tabSize": 2,
@@ -112,11 +112,6 @@
         "terminalCursor.foreground": "#C456FF",
         "minimap.findMatchHighlight": "#C456FF"
         //  "minimap.background": "#FFFFFF55"
-    },
-
-    // Remove this once jupyter stops putting it back.
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
     },
 
     "workbench.editor.enablePreviewFromQuickOpen": false,
