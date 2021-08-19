@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "- (void) dealloc {\n    {cursor}\n    [super dealloc];\n}\n",
+    "uid" : "29F9D78C-AE4F-4278-A6C7-0896AB9EFEDB",
+    "name" : "objc dealloc",
+    "keyword" : "dealloc"
+  }
+}

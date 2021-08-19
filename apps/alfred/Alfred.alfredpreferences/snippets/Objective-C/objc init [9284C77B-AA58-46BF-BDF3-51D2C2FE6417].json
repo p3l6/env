@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "- (id) init {\n    if ( ! (self = [super init]) ) return nil;\n    \n    {cursor}\n    \n    return self;\n}",
+    "uid" : "9284C77B-AA58-46BF-BDF3-51D2C2FE6417",
+    "name" : "objc init",
+    "keyword" : "init"
+  }
+}

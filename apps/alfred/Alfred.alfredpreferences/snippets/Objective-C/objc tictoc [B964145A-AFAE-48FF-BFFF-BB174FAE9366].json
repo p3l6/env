@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "static NSDate * _tic_toc_time;\n#define tic _tic_toc_time = [NSDate date];\n#define toclabel(title) NSLog(@\"%@: %.3f seconds\", @#title, [[NSDate date] timeIntervalSinceDate:_tic_toc_time]);\n#define toc toclabel(toc)",
+    "uid" : "B964145A-AFAE-48FF-BFFF-BB174FAE9366",
+    "name" : "objc tictoc",
+    "keyword" : "tictoc"
+  }
+}

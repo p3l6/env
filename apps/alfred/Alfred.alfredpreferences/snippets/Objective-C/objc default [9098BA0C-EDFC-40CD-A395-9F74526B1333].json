@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "[[NSUserDefaults standardUserDefaults] boolForKey:@\"{random:apple,banana,pear,grape,orange}\"]",
+    "uid" : "9098BA0C-EDFC-40CD-A395-9F74526B1333",
+    "name" : "objc default",
+    "keyword" : "default"
+  }
+}

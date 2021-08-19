@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "static long long counter = 0;\nstatic NSDate * lastLog = nil;\nif (!(++counter % 100)){\n    if ( lastLog ) NSLog(@\"times per second: %f\", (double) counter \/ [lastLog timeIntervalUntilNow]);\n    counter =0;\n    [lastLog release];\n    lastLog = [[NSDate alloc] init];\n}",
+    "uid" : "7876C82C-6130-4C00-AD22-4244D31D81E3",
+    "name" : "objc per second",
+    "keyword" : "per-sec"
+  }
+}

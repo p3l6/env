@@ -3,6 +3,6 @@
     "snippet" : "void SNLognb(NSString *format, ...)\n{\n    va_list args;\n    va_start (args, format);\n    NSString *string;\n    string = [[NSString alloc] initWithFormat: format  arguments: args];\n    va_end (args);\n    printf (\"%s\", [string cString]);\n    [string release];\n}\n\nvoid SNLog(NSString *format, ...)\n{\n    va_list args;\n    va_start (args, format);\n    NSString *string;\n    string = [[NSString alloc] initWithFormat: format  arguments: args];\n    va_end (args);\n    printf (\"%s\\n\", [string cString]);\n    [string release];\n}",
     "uid" : "13C15B7C-B0EF-4CBC-9C22-0B1163F5AE19",
     "name" : "objc log without breaks",
-    "keyword" : "objc-logb"
+    "keyword" : "logb"
   }
 }

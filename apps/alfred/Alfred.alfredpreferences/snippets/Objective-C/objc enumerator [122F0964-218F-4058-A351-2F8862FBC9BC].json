@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "NSEnumerator * <#what#>Enumerator = [<#source#> objectEnumerator];\n<#Type#> * <#what#> = nil;\nwhile ((<#what#> = [<#what#>Enumerator nextObject])) {\n    \n}",
+    "uid" : "122F0964-218F-4058-A351-2F8862FBC9BC",
+    "name" : "objc enumerator",
+    "keyword" : "enumerate"
+  }
+}
