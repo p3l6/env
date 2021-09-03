@@ -16,6 +16,7 @@ alias igrep='egrep -i'
 alias rgi='rg -i'
 alias rgall='rg --no-ignore'
 alias rgiall='rg -i --no-ignore'
+alias fdall='fd --no-ignore --hidden'
 alias diff='diff -u'
 
 ## ls extension

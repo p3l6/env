@@ -36,11 +36,12 @@
   │ └─── homebrew/cask-fonts
   ├─┬─ Install
   │ ├─── zsh wget trash thefuck vim cloc ripgrep
+  │ ├─── bat choose-rust fd sd tldr
   │ ├─── git git-lfs git-sizer diff-so-fancy
   │ ├─── avr-gcc dfu-programmer gcc-arm-none-eabi avrdude
   │ └─── bfg carthage cmake node vapor deno
   └─┬─ Cask Install
-    ├─── (utils) alfred bitwarden iina itsycal karabiner-elements netnewswire smooze
+    ├─── (utils) alfred bartender bitwarden iina itsycal karabiner-elements netnewswire smooze
     ├─── (coding) visual-studio-code fork dash docker sf-symbols
     ├─── (fonts) font-fira-code
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
@@ -144,6 +145,7 @@
 │ │   ├─── align consecutive // comments
 │ │   └─── auto indent all
 │ └─┬─ Source Control
+│   ├───  don't automatically add and remove files
 │   └───  don't fetch server status automatically
 └─┬─ System Preferences
   ├─┬─ General
