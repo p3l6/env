@@ -26,6 +26,7 @@
     "editor.definitionLinkOpensInPeek": true,
     "editor.stablePeek": true,
     "editor.fastScrollSensitivity": 1,
+    "editor.bracketPairColorization.enabled": true,
 
     "editor.suggest.showStatusBar": true,
     "editor.suggest.insertMode": "replace",
@@ -69,7 +70,12 @@
     },
 
     "latex-workshop.view.pdf.viewer": "tab",
+
     "markdown.preview.breaks": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+
     "openInGitHub.excludeCurrentRevision": true,
     "projectManager.showProjectNameInStatusBar": false,
     "python.showStartPage": false,

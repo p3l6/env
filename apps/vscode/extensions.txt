@@ -1,6 +1,5 @@
 akamud.vscode-theme-onelight
 BazelBuild.vscode-bazel
-CoenraadS.bracket-pair-colorizer-2
 dbaeumer.vscode-eslint
 deerawan.vscode-dash
 denoland.vscode-deno
