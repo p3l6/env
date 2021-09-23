@@ -25,6 +25,9 @@ setopt hist_reduce_blanks
 bindkey -e
 bindkey "^[[3~" delete-char     # delete
 bindkey "^[[3;3~" delete-word   # alt+delete
+# List of characters (in addition to alphanumeric) that do not break up words for navigation and delete
+# Specifically, this is the default list, without /
+WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
 # Better history
 # Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
