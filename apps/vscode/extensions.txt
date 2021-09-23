@@ -4,15 +4,16 @@ dbaeumer.vscode-eslint
 deerawan.vscode-dash
 denoland.vscode-deno
 esbenp.prettier-vscode
+GitHub.remotehub
 humao.rest-client
 James-Yu.latex-workshop
 meganrogge.template-string-converter
 mrkou47.thrift-syntax-support
 ms-python.python
 ms-python.vscode-pylance
-ms-toolsai.jupyter
 ms-vscode-remote.remote-containers
 msjsdiag.debugger-for-chrome
+msjsdiag.vscode-react-native
 rust-lang.rust
 streetsidesoftware.code-spell-checker
 sysoev.vscode-open-in-github

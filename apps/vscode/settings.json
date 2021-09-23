@@ -95,8 +95,11 @@
     "terminal.integrated.fastScrollSensitivity": 1,
 
     "typescript.updateImportsOnFileMove.enabled": "never",
-    // "typescript.tsserver.experimental.enableProjectDiagnostics": true,
     "typescript.autoClosingTags": false,
+    "typescript.inlayHints.parameterNames.enabled": "all",
+    "typescript.inlayHints.variableTypes.enabled": true,
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
