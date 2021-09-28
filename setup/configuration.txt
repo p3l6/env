@@ -42,8 +42,8 @@
   │ └─── bfg carthage cmake node vapor deno
   └─┬─ Cask Install
     ├─── (utils) alfred bartender bitwarden iina itsycal karabiner-elements netnewswire smooze
-    ├─── (coding) visual-studio-code fork dash docker sf-symbols
-    ├─── (fonts) font-fira-code
+    ├─── (coding) visual-studio-code iterm2 fork dash docker sf-symbols
+    ├─── (fonts) font-fira-code font-sf-mono
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
     │      (after install) xattr -d -r com.apple.quarantine ~/Library/QuickLook && qlmanage -r
     ├─── (maybe) google-chrome slack postico
@@ -86,6 +86,8 @@
 │   ├─── always open in list view
 │   ├─── browse in list view
 │   └─── show library folder
+├─┬─ iTerm
+│ └─── Use settings folder: ~/env/apps/iterm/
 ├─┬─ Itsycal
 │ ├─── launch at login
 │ └─── use outline icon

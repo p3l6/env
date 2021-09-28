@@ -77,7 +77,7 @@ precmd() {
   RPROMPT=$RIGHT_PROMPT
 
   # Unset the tab title when displaying a new prompt. ie, clears ssh connection info
-  print -Pn "\e]2;%1/\a"
+  print -Pn "\e]1;%1/\a"
 }
 
 zle-line-finish() {

@@ -1,0 +1,5 @@
+#!/bin/zsh
+# send iTerm system Notification
+# usage$ notify Script has finished
+
+echo "\e]9;$*\007"
