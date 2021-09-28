@@ -87,7 +87,7 @@
 │   ├─── browse in list view
 │   └─── show library folder
 ├─┬─ iTerm
-│ └─── Use settings folder: ~/env/apps/iterm/
+│ └─── Use settings folder: ~/env/apps/iterm/ ; update manually; quit (to apply) ; update automatically
 ├─┬─ Itsycal
 │ ├─── launch at login
 │ └─── use outline icon
