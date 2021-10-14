@@ -26,7 +26,9 @@
     "editor.definitionLinkOpensInPeek": true,
     "editor.stablePeek": true,
     "editor.fastScrollSensitivity": 1,
+
     "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
 
     "editor.suggest.showStatusBar": true,
     "editor.suggest.insertMode": "replace",
@@ -110,17 +112,17 @@
     "window.zoomLevel": 0,
     "window.title": "${activeEditorShort}${separator}${rootName}${separator}${activeEditorMedium}",
     "window.newWindowDimensions": "offset",
+    "window.autoDetectColorScheme": true,
 
     "workbench.activityBar.visible": true,
     "workbench.sideBar.location": "right",
     "workbench.colorTheme": "One Dark Pro",
-    // "workbench.colorTheme": "Atom One Light",
     "workbench.preferredLightColorTheme": "Atom One Light",
     "workbench.preferredDarkColorTheme": "One Dark Pro",
     "workbench.colorCustomizations": {
         "terminalCursor.foreground": "#C456FF",
-        "minimap.findMatchHighlight": "#C456FF"
-        //  "minimap.background": "#FFFFFF55"
+        "minimap.findMatchHighlight": "#C456FF",
+        "minimap.foregroundOpacity": "#FFFFFF99",
     },
 
     "workbench.editor.enablePreviewFromQuickOpen": false,

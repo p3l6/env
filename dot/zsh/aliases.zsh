@@ -12,12 +12,14 @@ fi
 alias which='type -a'
 alias dush='du -sh'
 alias ip='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2'
+alias diff='diff -u'
+
+## search shortcuts
 alias igrep='egrep -i'
 alias rgi='rg -i'
-alias rgall='rg --no-ignore'
-alias rgiall='rg -i --no-ignore'
+alias rgall='rg --no-ignore --hidden'
+alias rgiall='rg -i --no-ignore --hidden'
 alias fdall='fd --no-ignore --hidden'
-alias diff='diff -u'
 
 ## ls extension
 alias l='ls -halF'
