@@ -9,32 +9,41 @@
 [push]
 	default = simple
 [alias]
+	# Shell commands (that is, with an exclamation) always execute at the repo root; not the current directory!
+
+	# Workflow shortcuts
+	new = switch -c
+	sw = switch
+	staged = diff --cached
+	unstage = restore --staged
+	discard = restore --
+	pullr = pull --rebase --autostash
+	pushup = push --set-upstream origin HEAD
+	pushpr = ! git pushup && git pr new
+	sync = ! git pullr && git push
+	syncbase = ! git pullother $(git default) && git merge $(git default) && git push
+	abandon = ! git restore -- . && git clean -df && git switch $(git default)
+
+	# Tricky situtations
+	dist-clean = clean -dfx
+	assume = update-index --assume-unchanged
+	assumed = ! git ls-files -v | grep ^h | cut -c 3-
+	unassume = update-index --no-assume-unchanged
+
+	# Commands that are too easy to forget
+	default = ! git rev-parse --abbrev-ref origin/HEAD | cut -d "/" -f 2
+	find-ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
+	search = log --pretty=format:\"%C(yellow)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s\" --date=short -S
 	amend-content = commit --amend --no-edit
 	amend-message = commit --amend --no-verify
-	assume = update-index --assume-unchanged
-	unassume = update-index --no-assume-unchanged
-	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
-	ci = commit
-	cp = cherry-pick
-	default = !"git rev-parse --abbrev-ref origin/HEAD | cut -d "/" -f 2"
-	diffw = diff --word-diff
-	discard = restore --
-	find-ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
-	new = switch -c
-	original = remote set-url origin
-	pullr = pull --rebase --autostash
-	pushpr = "!git pushup && git pr new"
-	pushup = push --set-upstream origin HEAD
+	prune-all = ! git prune-origin && git prune-local
+	prune-local = ! git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D
 	prune-origin = remote prune origin
-	prune-local = "!git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D"
-	prune-all = "!git prune-origin && git prune-local"
-	search = log --pretty=format:\"%C(yellow)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s\" --date=short -S
-	spotless = clean -dfx
-	staged = diff --cached
-	sync = "!git pullr && git push"
-	syncbase = "!git pullother $(git default) && git merge $(git default) && git push"
-	sw = switch
-	unstage = restore --staged
+
+	# Abbreviations
+	cp = cherry-pick
+	original = remote set-url origin
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

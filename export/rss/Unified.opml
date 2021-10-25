@@ -32,7 +32,6 @@
 <outline text="Changelogs">
   <outline type="rss" text="Alfred" xmlUrl="https://www.alfredapp.com/blog/feed.xml" htmlUrl="https://www.alfredapp.com/blog/" />
   <outline type="rss" text="Bear" xmlUrl="https://feeds.bear.app/all" htmlUrl="https://blog.bear.app/" />
-  <outline type="rss" text="Bitwarden" xmlUrl="https://bitwarden.com/blog/feed.xml" htmlUrl="https://bitwarden.com/" />
   <outline type="rss" text="Dart News" xmlUrl="https://news.dartlang.org/feeds/posts/default" htmlUrl="https://news.dartlang.org/" />
   <outline type="rss" text="Dash" xmlUrl="https://blog.kapeli.com/atom.xml" htmlUrl="" />
   <outline type="rss" text="Deno" xmlUrl="https://deno.com/feed" htmlUrl="http://deno.com/blog" />
