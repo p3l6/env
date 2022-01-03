@@ -1,0 +1,58 @@
+#! /bin/bash
+
+# Rebases the current branch onto the main branch
+# Useful in cases when the root of the current branch has been squashed and merged already
+# Also could be used if the current branch doesn't actually depend on the root branch
+
+# Adapted from [Git rebase docs](https://git-scm.com/docs/git-rebase)
+
+# This example of the `—onto` option is to rebase part of a branch. If we have the following situation:
+#
+#                             H---I---J topicB
+#                            /
+#                   E---F---G  topicA
+#                  /
+#     A---B---C---D---EFG’  master
+#
+# then the command
+# $ git rebase --onto master topicA topicB
+# would result in:
+#
+#                    E---F---G  topicA
+#                  /      H'--I'--J'  topicB
+#                 |     /
+#     A---B---C---D---EFG’  master
+#
+
+helpText() {
+  cat <<EOF
+                        H---I---J current branch
+                       /
+              E---F---G  unwanted root branch
+             /
+A---B---C---D---EFG’  default branch
+
+Please specify the previous root branch name:
+$ git unfork unwanted-root-branch
+EOF
+}
+
+if [ $# -ne 1 ]; then
+  helpText
+  exit 1
+fi
+
+if [ $(git symbolic-ref -q --short HEAD 2> /dev/null) == $1 ]; then
+  echo Please do not specify the current branch!
+  helpText
+  exit 2
+fi
+
+if [ $(git symbolic-ref -q --short HEAD 2> /dev/null) == $(git default) ]; then
+  echo This command would have no effect from the default branch!
+  helpText
+  echo But first, check out the desired branch!
+  exit 3
+fi
+
+git rebase --onto $(git default) $1 $(git symbolic-ref -q --short HEAD)
