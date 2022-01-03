@@ -9,3 +9,4 @@ apps/karabiner/automatic_backups
 apps/alfred/Alfred.alfredpreferences/**/local
 apps/alfred/Alfred.alfredpreferences/remote
 apps/alfred/Alfred.alfredpreferences/workflows
+apps/alfred/Alfred.alfredpreferences/preferences/features/1password

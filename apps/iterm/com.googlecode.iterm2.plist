@@ -1098,6 +1098,8 @@
 	<integer>0</integer>
 	<key>TabsHaveCloseButton</key>
 	<true/>
+	<key>TimeBetweenTips</key>
+	<real>604800</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -2187,6 +2189,8 @@
 	<false/>
 	<key>WordCharacters</key>
 	<string>-+\~_.</string>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>7</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

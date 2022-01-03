@@ -10,7 +10,6 @@
 <outline type="rss" text="Fork" xmlUrl="https://git-fork.com/blog/index.xml" htmlUrl="https://fork.dev/blog/" />
 <outline type="rss" text="Homebrew" xmlUrl="https://brew.sh/atom.xml" htmlUrl="https://brew.sh/" />
 <outline type="rss" text="NetNewsWire" xmlUrl="https://nnw.ranchero.com/feed.json" htmlUrl="https://nnw.ranchero.com/" />
-<outline type="rss" text="Packal Workflows" xmlUrl="http://www.packal.org/new-workflows.xml" htmlUrl="http://www.packal.org/new-workflows.xml" />
 <outline type="rss" text="Stardew Valley" xmlUrl="https://www.stardewvalley.net/feed/" htmlUrl="https://www.stardewvalley.net/" />
 <outline type="rss" text="Swift" xmlUrl="https://swift.org/atom.xml" htmlUrl="" />
 <outline type="rss" text="Things" xmlUrl="https://culturedcode.com/things/blog/feed/rss.xml" htmlUrl="https://culturedcode.com/things/blog/" />
