@@ -1,10 +1,4 @@
 {
-    "bookmarks.sideBar.expanded": true,
-    "bookmarks.navigateThroughAllFiles": true,
-    "bookmarks.saveBookmarksInProject": true,
-    "bookmarks.label.suggestion": "useWhenSelected",
-
-    "bracket-pair-colorizer-2.unmatchedScopeColor": "Brown",
     "breadcrumbs.filePath": "off",
     "cSpell.enabled": false,
 
@@ -64,10 +58,8 @@
 
     "html.autoClosingTags": false,
     "javascript.autoClosingTags": false,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
+
+    "[javascript][json][typescript][typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
@@ -102,12 +94,6 @@
     "typescript.inlayHints.variableTypes.enabled": true,
     "typescript.inlayHints.parameterTypes.enabled": true,
     "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
 
     "window.zoomLevel": 0,
     "window.title": "${activeEditorShort}${separator}${rootName}${separator}${activeEditorMedium}",
@@ -123,6 +109,7 @@
         "terminalCursor.foreground": "#C456FF",
         "minimap.findMatchHighlight": "#C456FF",
         "minimap.foregroundOpacity": "#FFFFFF99",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#A52A2A"
     },
 
     "workbench.editor.enablePreviewFromQuickOpen": false,
