@@ -37,6 +37,11 @@
   htmlUrl="https://www.youtube.com/channel/UCK8GTbH5JHt8V7dFlUZxS3g"
 />
 <outline type="rss"
+  text="Paul Sellers"
+  xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCc3EpWncNq5QL0QhwUNQb7w"
+  htmlUrl="https://www.youtube.com/channel/UCc3EpWncNq5QL0QhwUNQb7w"
+/>
+<outline type="rss"
   text="Report of the Week"
   xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCeR0n8d3ShTn_yrMhpwyE1Q"
   htmlUrl="https://www.youtube.com/channel/UCeR0n8d3ShTn_yrMhpwyE1Q"
