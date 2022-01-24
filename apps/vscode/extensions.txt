@@ -1,7 +1,7 @@
 akamud.vscode-theme-onelight
 BazelBuild.vscode-bazel
+BriteSnow.vscode-toggle-quotes
 dbaeumer.vscode-eslint
-deerawan.vscode-dash
 denoland.vscode-deno
 esbenp.prettier-vscode
 GitHub.remotehub

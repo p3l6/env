@@ -42,7 +42,7 @@
   │ └─── bfg carthage cmake node vapor deno
   └─┬─ Cask Install
     ├─── (utils) alfred bartender bitwarden iina itsycal karabiner-elements netnewswire smooze
-    ├─── (coding) visual-studio-code iterm2 fork dash docker sf-symbols
+    ├─── (coding) visual-studio-code iterm2 fork docker sf-symbols
     ├─── (fonts) font-fira-code font-sf-mono
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
     │      (after install) xattr -d -r com.apple.quarantine ~/Library/QuickLook && qlmanage -r
@@ -60,7 +60,6 @@
 │ │ ├─── https://github.com/chrisbro/alfred-bear
 │ │ ├─── https://github.com/deanishe/alfred-convert
 │ │ ├─── https://github.com/BaksiLi/AlfredWorkflows/tree/master/Index/DarkOrLight
-│ │ ├─── Dash, from preferences
 │ │ ├─── https://github.com/pwxn/div
 │ │ ├─── Fork, duplicate vscode but change keyword and script
 │ │ ├─── http://www.packal.org/workflow/toggle-hidden-files
@@ -72,10 +71,6 @@
 │ ├─── Hotkey: Cmd + Space
 │ ├─── Clipboard history: On
 │ └─── Sync directory: ~/env/apps/alfred
-├─┬─ Atom
-│ └─── $ apm install --packages-file ~/env/apps/atom/packages.txt
-├─┬─ Dash
-│ └─── Settings and Snippets Sync
 ├─┬─ Finder
 │ ├─── Desktop: CDs Servers
 │ ├─── New windows: Home

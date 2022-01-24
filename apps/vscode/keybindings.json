@@ -333,5 +333,10 @@
     {
         "key": "shift+cmd+2",
         "command": "search.action.collapseSearchResults"
+    },
+    {
+        "key": "tab",
+        "command": "editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible"
     }
 ]

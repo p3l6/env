@@ -23,6 +23,8 @@
 	sync = ! git pullr && git push
 	syncbase = ! git pullother $(git default) && git merge $(git default) && git push
 	abandon = ! git restore -- . && git clean -df && git switch $(git default)
+	working = ! git diff --name-only $(git merge-base $(git default) HEAD)
+	working-code = ! git working | tee /dev/tty | xargs code
 
 	# Tricky situtations
 	dist-clean = clean -dfx
