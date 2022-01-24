@@ -1,6 +1,6 @@
 {
   "alfredsnippet" : {
-    "snippet" : "function addStyle (styleString) {\n  const style = document.createElement('style');\n  style.textContent = styleString;\n  document.head.append(style);\n}\n\naddStyle(`\nhtml, body, * {\n    font-family: 'system-ui';\n}\n\n.p-channel_sidebar__compose_button {\n  background-color: #1A1D21 !important;\n  color: #D8DCE8 !important;\n  fill: #D8DCE8 !important;\n}\n\n.p-channel_sidebar__channel {\n  padding-left: 0px;\n}\n\n.p-channel_sidebar__list {\n  zoom: 85%;\n}\n\n#addMoreChannels, #addMoreDM, #addMoreApps {\n  display: none;\n}\n`);\n",
+    "snippet" : "function addStyle (styleString) {\n  const style = document.createElement('style');\n  style.textContent = styleString;\n  document.head.append(style);\n}\n\naddStyle(`\nhtml, body, * {\n    font-family: 'system-ui';\n}\n\n.p-channel_sidebar__compose_button {\n  background: none !important;\n  color: #D8DCE8 !important;\n}\n\n.p-channel_sidebar__channel {\n  padding-left: 0px;\n}\n\n.p-channel_sidebar__list {\n  zoom: 85%;\n}\n\n.c-mention_badge {\n  position: absolute;\n  margin-left: 0px;\n  left: 22px;\n}\n\n#addMoreChannels, #addMoreDM, #addMoreApps {\n  display: none;\n}\n\n.p-clips_coachmark, .c-wysiwyg_container__footer_divider {\n  display: none;\n}\n\n`);\n",
     "uid" : "1CD7D21B-750B-4028-9734-491C0F5D1B96",
     "name" : "Slack style",
     "keyword" : "slackfix"
