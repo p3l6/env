@@ -1,9 +1,0 @@
-Sublime-Style-Column-Selection
-atom-beautify
-language-diff
-language-docker
-language-jenkinsfile
-language-latex
-latex
-split-diff
-zentabs
