@@ -31,14 +31,12 @@
 │ └─── Wine
 └─┬─ From Homebrew
   ├─┬─ Tap
-  │ ├─── osx-cross/avr (for qmk)
-  │ ├─── PX4/px4 (for qmk)
   │ └─── homebrew/cask-fonts
   ├─┬─ Install
   │ ├─── zsh wget trash thefuck vim cloc ripgrep
   │ ├─── bat choose-rust fd sd tldr
   │ ├─── git git-lfs git-sizer diff-so-fancy
-  │ ├─── avr-gcc dfu-programmer gcc-arm-none-eabi avrdude
+  │ ├─── qmk/qmk/qmk
   │ └─── bfg carthage cmake node vapor deno
   └─┬─ Cask Install
     ├─── (utils) alfred bartender bitwarden iina itsycal karabiner-elements netnewswire smooze
