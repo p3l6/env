@@ -4,7 +4,7 @@
  2. Do system updates
  3. Get Xcode and homebrew
  4. Run ssh-keygen, add it to github
- 5. Clone this repo
+ 5. Clone this repo as ~/var/env
  6. Comment out hidden-flags lines in setup dots, if desired
  7. Comment out lines in dwrites, if desired
  8. Run setup_dots.sh
@@ -70,7 +70,7 @@
 │ │ └─── http://www.packal.org/workflow/timer-0
 │ ├─── Hotkey: Cmd + Space
 │ ├─── Clipboard history: On
-│ └─── Sync directory: ~/env/apps/alfred
+│ └─── Sync directory: ~/var/env/apps/alfred
 ├─┬─ Finder
 │ ├─── Desktop: CDs Servers
 │ ├─── New windows: Home
@@ -82,7 +82,7 @@
 │   ├─── browse in list view
 │   └─── show library folder
 ├─┬─ iTerm
-│ └─── Use settings folder: ~/env/apps/iterm/ ; update manually; quit (to apply) ; update automatically
+│ └─── Use settings folder: ~/var/env/apps/iterm/ ; update manually; quit (to apply) ; update automatically
 ├─┬─ Itsycal
 │ ├─── launch at login
 │ └─── use outline icon
@@ -125,7 +125,7 @@
 │ │ └─── opt+del   \033d
 │ └─── Menu > View > Hide Marks
 ├─┬─ VSCode
-│ └─── $ cat ~/env/apps/vscode/extensions.txt | xargs -L 1 code --install-extension
+│ └─── $ cat ~/var/env/apps/vscode/extensions.txt | xargs -L 1 code --install-extension
 ├─┬─ Xcode
 │ ├─┬─ Navigation
 │ │ └─── command-click jumps to definition
@@ -185,7 +185,3 @@
   │ └─── swipe between pages
   └─┬─ Sharing
     └─── set the machine name
-
-Dock layout suggestions:
-Finder Safari __ Mail Messages Things Bear __ VSCode Xcode Terminal __ Calendar Maps Music
-Finder Safari __ Slack Things Bear __ VSCode Terminal Fork

@@ -1,4 +1,4 @@
-export DOTFILES=$HOME/env
+export DOTFILES=$HOME/var/env
 
 # load configs
 typeset -U config_files

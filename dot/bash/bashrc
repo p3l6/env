@@ -1,5 +1,5 @@
 ## path
-PATH=$PATH:$HOME/env/bin
+PATH=$PATH:$HOME/var/env/bin
 PATH="$HOME/.cargo/bin:$PATH"
 WRKSP=$HOME/var
 
@@ -120,7 +120,7 @@ function goto() {
   do
     case "$bookmark" in
       notes | note ) open -a Quiver ;;
-      env ) atom ~/env ;;
+      env ) atom ~/var/env ;;
       derived | build ) cd ~/Library/Developer/Xcode/DerivedData/Eggplant*/Build/Products/Development/Eggplant.app ;;
       today | things ) open -a Things ;;
       qmk | keyboards ) cd ~/var/Qmk/qmk_firmware; atom keyboards; echo make tada68:paulLayout:bin ;;

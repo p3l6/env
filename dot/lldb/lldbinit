@@ -1,1 +1,1 @@
-command script import ~/env/dot/lldb/ignore_specified_objc_exceptions.py
+command script import ~/var/env/dot/lldb/ignore_specified_objc_exceptions.py

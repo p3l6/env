@@ -1,6 +1,6 @@
 ## navigation
 alias back='cd -'
-alias dotfiles='cd ~/env'
+alias dotfiles='cd ~/var/env'
 alias tmp='cd ~/tmp'
 function mkcd { mkdir $@   &&  cd $@; }
 
