@@ -18,6 +18,7 @@
     "editor.copyWithSyntaxHighlighting": false,
     "editor.dragAndDrop": false,
     "editor.definitionLinkOpensInPeek": true,
+    "editor.semanticHighlighting.enabled": true,
     "editor.stablePeek": true,
     "editor.fastScrollSensitivity": 1,
 
@@ -55,6 +56,7 @@
 
     "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
     "gitblame.infoMessageFormat": "[${commit.hash_short}] ${commit.summary}",
+    "gitblame.statusBarMessageClickAction": "Open tool URL",
 
     "html.autoClosingTags": false,
     "javascript.autoClosingTags": false,
@@ -64,15 +66,15 @@
     },
 
     "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoBuild.run": "never",
 
     "markdown.preview.breaks": true,
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
 
-    "openInGitHub.excludeCurrentRevision": true,
-    "projectManager.showProjectNameInStatusBar": false,
-    "python.showStartPage": false,
+    "openInGitHub.useLocalBranch": false,
+    "openInGitHub.remote.branch": "main",
 
     "rust-client.rustupPath": "~/.cargo/bin/rustup",
     "[rust]": {
@@ -109,7 +111,7 @@
         "terminalCursor.foreground": "#C456FF",
         "minimap.findMatchHighlight": "#C456FF",
         "minimap.foregroundOpacity": "#FFFFFF99",
-        "editorBracketHighlight.unexpectedBracket.foreground": "#A52A2A"
+        "editorBracketHighlight.unexpectedBracket.foreground": "#A52A2A",
     },
 
     "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -123,6 +125,7 @@
     "workbench.editor.limit.perEditorGroup": false,
     "workbench.editor.tabCloseButton": "left",
     "workbench.editor.untitled.hint": "hidden",
+    "workbench.editor.historyBasedLanguageDetection": true,
 
     "workbench.list.automaticKeyboardNavigation": false,
     "workbench.startupEditor": "newUntitledFile",
