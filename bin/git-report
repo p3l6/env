@@ -1,11 +1,13 @@
 #! /bin/bash
 
-SEARCHPATHS="$WRKSP $DOTFILES"
+SEARCHPATHS="$WRKSP"
 
 FOLDERS=""
 for path in $SEARCHPATHS
 do
-  FOLDERS="$FOLDERS $(find $path -type d -regex '^[^.]*/\.git')"
+  # Max Depth: WRKSP > Category > Proj > .git
+  #             0       1          2      3
+  FOLDERS="$FOLDERS $(find $path -maxdepth 3 -type d -regex '^[^.]*/\.git')"
 done
 
 for f in $FOLDERS

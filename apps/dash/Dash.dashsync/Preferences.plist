@@ -7,7 +7,7 @@
 		<key>installed</key>
 		<dict/>
 		<key>uninstalled</key>
-		<dict />
+		<dict/>
 	</dict>
 	<key>DHClojureRepo</key>
 	<dict>
@@ -28,7 +28,7 @@
 		<key>installed</key>
 		<dict/>
 		<key>uninstalled</key>
-		<dict />
+		<dict/>
 	</dict>
 	<key>DHGoRepo</key>
 	<dict>
@@ -163,7 +163,7 @@
 			</dict>
 		</dict>
 		<key>uninstalled</key>
-		<dict />
+		<dict/>
 	</dict>
 	<key>bookmarks</key>
 	<array>

@@ -11,11 +11,11 @@
     },
     {
         "key": "shift+cmd+]",
-        "command": "workbench.action.nextEditor"
+        "command": "workbench.action.nextEditorInGroup"
     },
     {
         "key": "shift+cmd+[",
-        "command": "workbench.action.previousEditor"
+        "command": "workbench.action.previousEditorInGroup"
     },
     {
         "key": "cmd+shift+o",
@@ -152,7 +152,7 @@
     {
         "key": "escape",
         "command": "editor.action.triggerSuggest",
-        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible && !editorHasMultipleSelections"
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorHasMultipleSelections && !editorReadonly && !suggestWidgetVisible && !parameterHintsVisible"
     },
     {
         "key": "alt+cmd+e",
@@ -338,5 +338,36 @@
         "key": "tab",
         "command": "editor.action.indentLines",
         "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    {
+        "key": "shift+alt+cmd+[",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+shift+cmd+[",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+shift+cmd+]",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "shift+alt+cmd+]",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "shift+alt+cmd+e",
+        "command": "editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "down",
+        "command": "-showNextParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "up",
+        "command": "-showPrevParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
     }
 ]

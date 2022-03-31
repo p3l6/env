@@ -53,6 +53,9 @@
 
 ┌ Preferences ┐
 ├─────────────┘
+├─┬─ 1Password
+│ ├─── Global shortcut: Cmd + Ctrl + \
+│ └─── Enable spotlight
 ├─┬─ Alfred
 │ ├─┬─ Add Workflows:
 │ │ ├─── https://github.com/chrisbro/alfred-bear
@@ -67,6 +70,10 @@
 │ ├─── Hotkey: Cmd + Space
 │ ├─── Clipboard history: On
 │ └─── Sync directory: ~/var/env/apps/alfred
+├─┬─ Bear
+│ ├─── Markdown mode
+│ ├─── Bear > Web content preferences > tags: !
+│ └─── Global shortcut: open main window: Shift + Cmd + \
 ├─┬─ Dash
 │ └─── Sync directory ~/var/env/apps/dash
 ├─┬─ Finder

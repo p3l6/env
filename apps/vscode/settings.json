@@ -92,10 +92,12 @@
 
     "typescript.updateImportsOnFileMove.enabled": "never",
     "typescript.autoClosingTags": false,
-    "typescript.inlayHints.parameterNames.enabled": "all",
-    "typescript.inlayHints.variableTypes.enabled": true,
+    "typescript.inlayHints.parameterNames.enabled": "literals",
+    "typescript.inlayHints.variableTypes.enabled": false,
     "typescript.inlayHints.parameterTypes.enabled": true,
     "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.enumMemberValues.enabled": true,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
 
     "window.zoomLevel": 0,
     "window.title": "${activeEditorShort}${separator}${rootName}${separator}${activeEditorMedium}",
@@ -111,7 +113,7 @@
         "terminalCursor.foreground": "#C456FF",
         "minimap.findMatchHighlight": "#C456FF",
         "minimap.foregroundOpacity": "#FFFFFF99",
-        "editorBracketHighlight.unexpectedBracket.foreground": "#A52A2A",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#A52A2A"
     },
 
     "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -122,6 +124,18 @@
     "workbench.editor.decorations.colors": true,
     "workbench.editor.decorations.badges": true,
     "workbench.editor.wrapTabs": true,
+    "workbench.editor.autoLockGroups": {
+        "default": true,
+        "workbench.input.interactive": false,
+        "interactive": false,
+        "workbench.editorinputs.searchEditorInput": true,
+        "imagePreview.previewEditor": true,
+        "vscode.markdown.preview.editor": true,
+        "latex-workshop-pdf-hook": true,
+        "terminalEditor": true,
+        "jupyter-notebook": false,
+        "mainThreadWebview-markdown.preview": true
+    },
     "workbench.editor.limit.perEditorGroup": false,
     "workbench.editor.tabCloseButton": "left",
     "workbench.editor.untitled.hint": "hidden",

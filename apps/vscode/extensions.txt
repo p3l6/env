@@ -4,6 +4,7 @@ BriteSnow.vscode-toggle-quotes
 dbaeumer.vscode-eslint
 denoland.vscode-deno
 esbenp.prettier-vscode
+fabiospampinato.vscode-open-in-github
 GitHub.remotehub
 humao.rest-client
 James-Yu.latex-workshop
@@ -12,10 +13,8 @@ mrkou47.thrift-syntax-support
 ms-python.python
 ms-python.vscode-pylance
 ms-vscode-remote.remote-containers
-msjsdiag.debugger-for-chrome
 msjsdiag.vscode-react-native
 rust-lang.rust
 streetsidesoftware.code-spell-checker
-sysoev.vscode-open-in-github
 waderyan.gitblame
 zhuangtongfa.material-theme

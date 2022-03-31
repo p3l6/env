@@ -16,9 +16,6 @@ alias diff='diff -u'
 
 ## search shortcuts
 alias igrep='egrep -i'
-alias rgi='rg -i'
-alias rgall='rg --no-ignore --hidden'
-alias rgiall='rg -i --no-ignore --hidden'
 alias fdall='fd --no-ignore --hidden'
 
 ## ls extension
