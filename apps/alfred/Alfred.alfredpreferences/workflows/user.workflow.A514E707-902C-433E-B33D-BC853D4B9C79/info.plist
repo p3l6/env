@@ -202,7 +202,7 @@
 		<key>6262E61A-70A6-4256-BC3F-FCA1EF21155E</key>
 		<dict>
 			<key>note</key>
-			<string>Open chosen path in Fork</string>
+			<string>Open chosen path in vsCode</string>
 			<key>xpos</key>
 			<integer>335</integer>
 			<key>ypos</key>
