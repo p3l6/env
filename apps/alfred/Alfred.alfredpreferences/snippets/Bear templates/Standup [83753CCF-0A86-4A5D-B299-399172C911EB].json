@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "## {date:d MMM}\n**Completed**:\n✅\n✅✅✅✅✅\n\n**Up Next**:\n➡️\n➡️➡️➡️➡️➡️\n\n**Blockers | Distractions**:\n(none)\n⁉️\n",
+    "uid" : "83753CCF-0A86-4A5D-B299-399172C911EB",
+    "name" : "Standup",
+    "keyword" : "standup"
+  }
+}
