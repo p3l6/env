@@ -71,7 +71,7 @@
 				<key>runningsubtext</key>
 				<string>...</string>
 				<key>script</key>
-				<string>python ./codeFolders.py "${WORKSPACE}"</string>
+				<string>python3 ./codeFolders.py "${WORKSPACE}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -166,7 +166,7 @@
 				<key>runningsubtext</key>
 				<string>...</string>
 				<key>script</key>
-				<string>python ./codeFolders.py "${WORKSPACE}"</string>
+				<string>python3 ./codeFolders.py "${WORKSPACE}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
