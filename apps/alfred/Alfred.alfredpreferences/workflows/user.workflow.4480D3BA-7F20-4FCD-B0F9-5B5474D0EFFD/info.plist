@@ -6,6 +6,19 @@
 	<string>dev.pwxn.alfred.sprints</string>
 	<key>connections</key>
 	<dict>
+		<key>08F0FB92-B150-4F94-83CB-BE2522FA1BCE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DDA7A2AC-4E8C-4141-826A-B72D04834D02</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>133B94A3-8442-4B45-AA7C-729C933C1D4B</key>
 		<array>
 			<dict>
@@ -70,6 +83,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>FDE05AB8-6F4F-4FAE-8DAE-221B377DDE9B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8C632A6D-2FA7-416D-8B91-55C8DFFC558F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>08F0FB92-B150-4F94-83CB-BE2522FA1BCE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -324,50 +350,6 @@ ___
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>v</string>
-				<key>keycode</key>
-				<integer>-1</integer>
-				<key>keymod</key>
-				<integer>1048576</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>31D8C598-07A4-42AB-8AD3-B70992B3AE46</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>mdClipboardToRichClipboard.swift</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>BD1FB12F-7962-4DAA-AFC1-2576CB9628FA</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -387,25 +369,6 @@ ___
 			<string>DDA7A2AC-4E8C-4141-826A-B72D04834D02</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>slack://channel?team={var:slackTeam}&amp;id={var:slackStandupChannel}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>CE9A0705-238B-4763-8E36-BC4D266D6F71</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -455,6 +418,109 @@ ___
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Post Standup</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>8C632A6D-2FA7-416D-8B91-55C8DFFC558F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>08F0FB92-B150-4F94-83CB-BE2522FA1BCE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>v</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1048576</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>31D8C598-07A4-42AB-8AD3-B70992B3AE46</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>mdClipboardToRichClipboard.swift</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BD1FB12F-7962-4DAA-AFC1-2576CB9628FA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>slack://channel?team={var:slackTeam}&amp;id={var:slackStandupChannel}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>CE9A0705-238B-4763-8E36-BC4D266D6F71</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>seconds</key>
 				<string>1</string>
 			</dict>
@@ -476,6 +542,13 @@ Slack team id
 Slack channel id for standups</string>
 	<key>uidata</key>
 	<dict>
+		<key>08F0FB92-B150-4F94-83CB-BE2522FA1BCE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>205</integer>
+			<key>ypos</key>
+			<integer>425</integer>
+		</dict>
 		<key>133B94A3-8442-4B45-AA7C-729C933C1D4B</key>
 		<dict>
 			<key>xpos</key>
@@ -486,25 +559,25 @@ Slack channel id for standups</string>
 		<key>31D8C598-07A4-42AB-8AD3-B70992B3AE46</key>
 		<dict>
 			<key>xpos</key>
-			<integer>800</integer>
+			<integer>635</integer>
 			<key>ypos</key>
-			<integer>315</integer>
+			<integer>590</integer>
 		</dict>
 		<key>554FABD5-FB71-4126-89DB-BD2DD823B285</key>
 		<dict>
 			<key>xpos</key>
-			<integer>740</integer>
+			<integer>575</integer>
 			<key>ypos</key>
-			<integer>345</integer>
+			<integer>620</integer>
 		</dict>
 		<key>6D51F234-55BF-4E90-ACCE-4AE1635DCC93</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>330</integer>
+			<integer>555</integer>
 			<key>ypos</key>
-			<integer>345</integer>
+			<integer>395</integer>
 		</dict>
 		<key>816A05E4-EDF8-4DEF-B70F-1CEEC035315A</key>
 		<dict>
@@ -513,23 +586,28 @@ Slack channel id for standups</string>
 			<key>ypos</key>
 			<integer>95</integer>
 		</dict>
+		<key>8C632A6D-2FA7-416D-8B91-55C8DFFC558F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>425</integer>
+		</dict>
 		<key>9E57616F-0646-485C-8DE6-35A06D951760</key>
 		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
 			<key>xpos</key>
-			<integer>385</integer>
+			<integer>610</integer>
 			<key>ypos</key>
-			<integer>345</integer>
+			<integer>395</integer>
 		</dict>
 		<key>BD1FB12F-7962-4DAA-AFC1-2576CB9628FA</key>
 		<dict>
 			<key>note</key>
 			<string>Convert clipboard from md to rtf</string>
 			<key>xpos</key>
-			<integer>445</integer>
+			<integer>280</integer>
 			<key>ypos</key>
-			<integer>315</integer>
+			<integer>590</integer>
 		</dict>
 		<key>C2135CDF-25C0-4451-A747-34CB2DBB1DFC</key>
 		<dict>
@@ -543,9 +621,9 @@ Slack channel id for standups</string>
 			<key>note</key>
 			<string>Open standup channel</string>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>435</integer>
 			<key>ypos</key>
-			<integer>315</integer>
+			<integer>590</integer>
 		</dict>
 		<key>D1CD2C04-D8E8-4C82-94A4-DBE823E98CBD</key>
 		<dict>
@@ -572,9 +650,9 @@ Slack channel id for standups</string>
 			<key>note</key>
 			<string>Load from variables.txt</string>
 			<key>xpos</key>
-			<integer>185</integer>
+			<integer>410</integer>
 			<key>ypos</key>
-			<integer>315</integer>
+			<integer>365</integer>
 		</dict>
 		<key>FDE05AB8-6F4F-4FAE-8DAE-221B377DDE9B</key>
 		<dict>
