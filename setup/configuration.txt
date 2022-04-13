@@ -72,7 +72,7 @@
 │ └─── Sync directory: ~/var/env/apps/alfred
 ├─┬─ Bear
 │ ├─── Markdown mode
-│ ├─── Bear > Web content preferences > tags: !
+│ ├─── Bear > Web content preferences > no images; tags: !
 │ └─── Global shortcut: open main window: Shift + Cmd + \
 ├─┬─ Dash
 │ └─── Sync directory ~/var/env/apps/dash
