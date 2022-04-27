@@ -7,7 +7,7 @@
   htmlUrl="https://www.youtube.com/channel/UCK5R1BsMtGd4DtI5uGQRHIg"
 />
 <outline type="rss"
-  text="Knife Banter"
+  text="Blade HQ"
   xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCZIIkzJ6XQiNeJkha6Ais5g"
   htmlUrl="https://www.youtube.com/channel/UCZIIkzJ6XQiNeJkha6Ais5g"
 />
@@ -33,8 +33,8 @@
 />
 <outline type="rss"
   text="Paul Landers"
-  xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCK8GTbH5JHt8V7dFlUZxS3g"
-  htmlUrl="https://www.youtube.com/channel/UCK8GTbH5JHt8V7dFlUZxS3g"
+  xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC4Uk1sxF33fLMlO_WM175rA"
+  htmlUrl="https://www.youtube.com/channel/UC4Uk1sxF33fLMlO_WM175rA"
 />
 <outline type="rss"
   text="Paul Sellers"
@@ -50,6 +50,11 @@
   text="Summoning Salt"
   xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCtUbO6rBht0daVIOGML3c8w"
   htmlUrl="https://www.youtube.com/channel/UCtUbO6rBht0daVIOGML3c8w"
+/>
+<outline type="rss"
+  text="Tom7"
+  xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC3azLjQuz9s5qk76KEXaTvA"
+  htmlUrl="https://www.youtube.com/channel/UC3azLjQuz9s5qk76KEXaTvA"
 />
 <outline type="rss"
   text="Wake and District"
