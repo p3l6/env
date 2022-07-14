@@ -180,6 +180,7 @@
   │ │ └─── don't use smart quotes and dashes
   │ ├─┬─ Shortcuts
   │ │ ├─── Spotlight > cmd + opt + space (alfred overrides) (disable finder search window)
+  │ │ ├─── App Shortcuts > Safari > cmd + b : Show Start Page
   │ │ └─── Mission Control > Show Notification Center ^f10
   │ └─┬─ Input sources
   │   └─── don't show in menu bar
