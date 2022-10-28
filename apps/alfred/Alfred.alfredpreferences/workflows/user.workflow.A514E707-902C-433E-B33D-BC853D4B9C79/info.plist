@@ -195,36 +195,38 @@
 		<key>4E2A053B-800C-4893-B757-3357534E8936</key>
 		<dict>
 			<key>xpos</key>
-			<integer>65</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>120</integer>
+			<real>65</real>
 		</dict>
 		<key>6262E61A-70A6-4256-BC3F-FCA1EF21155E</key>
 		<dict>
 			<key>note</key>
 			<string>Open chosen path in vsCode</string>
 			<key>xpos</key>
-			<integer>335</integer>
+			<real>320</real>
 			<key>ypos</key>
-			<integer>290</integer>
+			<real>235</real>
 		</dict>
 		<key>CB35D3D1-C6AF-4355-9054-58CB56B2557A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>65</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>290</integer>
+			<real>235</real>
 		</dict>
 		<key>D761D470-EC97-447A-AAE5-EEE69F3B283B</key>
 		<dict>
 			<key>note</key>
 			<string>Open chosen path in Fork</string>
 			<key>xpos</key>
-			<integer>335</integer>
+			<real>320</real>
 			<key>ypos</key>
-			<integer>120</integer>
+			<real>65</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>WORKSPACE</key>

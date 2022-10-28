@@ -93,7 +93,7 @@
 			<key>Deno</key>
 			<dict>
 				<key>date</key>
-				<date>2022-04-10T02:09:30Z</date>
+				<date>2022-10-18T13:00:59Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -204,6 +204,8 @@
 	<dict>
 		<key>keywords</key>
 		<dict>
+			<key>~/Library/Application Support/Dash/DocSets/JavaScript/JavaScript.docset</key>
+			<string>js:</string>
 			<key>~/Library/Application Support/Dash/DocSets/Man_Pages/Man Pages.docset</key>
 			<string>man:</string>
 			<key>~/Library/Application Support/Dash/DocSets/Markdown/Markdown.docset</key>

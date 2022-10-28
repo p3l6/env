@@ -195,9 +195,9 @@ sys.stdout.write(b64_message)</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>base64encode.py</string>
 				<key>type</key>
-				<integer>3</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -249,7 +249,7 @@ sys.stdout.write(message)</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>3</integer>
+				<integer>9</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -369,7 +369,7 @@ print(result)</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>3</integer>
+				<integer>9</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -456,7 +456,7 @@ print("(%d, %d, %d)" % (red, green, blue))</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>3</integer>
+				<integer>9</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -494,95 +494,97 @@ print("(%d, %d, %d)" % (red, green, blue))</string>
 		<key>0D07E1E7-B1FA-4CB6-8161-7C26DC599E53</key>
 		<dict>
 			<key>xpos</key>
-			<integer>25</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>265</integer>
+			<real>265</real>
 		</dict>
 		<key>122AD814-F4CB-4130-A995-2773C72183FE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>25</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>30</integer>
+			<real>30</real>
 		</dict>
 		<key>2A7ECAD5-3ADE-46EF-A961-D6BB2BA934D6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>265</integer>
+			<real>265</real>
 			<key>ypos</key>
-			<integer>30</integer>
+			<real>30</real>
 		</dict>
 		<key>767D37DD-1601-4CA7-A214-026CD753AA62</key>
 		<dict>
 			<key>xpos</key>
-			<integer>265</integer>
+			<real>265</real>
 			<key>ypos</key>
-			<integer>265</integer>
+			<real>265</real>
 		</dict>
 		<key>89891F92-78D9-4217-A323-921C893F7C5E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>265</integer>
+			<real>265</real>
 			<key>ypos</key>
-			<integer>625</integer>
+			<real>625</real>
 		</dict>
 		<key>8ED5C13C-43D1-4053-AAE8-F6A5286535CD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>265</integer>
+			<real>265</real>
 			<key>ypos</key>
-			<integer>145</integer>
+			<real>145</real>
 		</dict>
 		<key>95DFD9AA-3431-4F81-A9E3-F0469D42FF93</key>
 		<dict>
 			<key>xpos</key>
-			<integer>25</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>385</integer>
+			<real>385</real>
 		</dict>
 		<key>B7A83C7E-FA4B-435F-990E-AA04ABD4E426</key>
 		<dict>
 			<key>xpos</key>
-			<integer>30</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>505</integer>
+			<real>505</real>
 		</dict>
 		<key>CB41339B-95A6-4284-993C-118848B18C89</key>
 		<dict>
 			<key>xpos</key>
-			<integer>745</integer>
+			<real>745</real>
 			<key>ypos</key>
-			<integer>305</integer>
+			<real>305</real>
 		</dict>
 		<key>CB8B5C10-1B5D-49AF-A119-FFC13A48812D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>30</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>625</integer>
+			<real>625</real>
 		</dict>
 		<key>D1CF8D7B-6772-4D9F-8E96-206A593AE28A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>265</integer>
+			<real>265</real>
 			<key>ypos</key>
-			<integer>385</integer>
+			<real>385</real>
 		</dict>
 		<key>E8170517-FFFE-47F3-AD16-1EA1F1882C15</key>
 		<dict>
 			<key>xpos</key>
-			<integer>345</integer>
+			<real>345</real>
 			<key>ypos</key>
-			<integer>535</integer>
+			<real>535</real>
 		</dict>
 		<key>F36DB581-AE45-48FC-8188-5825FFD69663</key>
 		<dict>
 			<key>xpos</key>
-			<integer>25</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>145</integer>
+			<real>145</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>

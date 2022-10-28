@@ -134,12 +134,14 @@
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>bear://x-callback-url/create?title={var:title}&amp;tags={var:tags}&amp;open_note=no&amp;show_window=no&amp;text={query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -194,6 +196,8 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
 				<key>triggerid</key>
 				<string>newbearnote</string>
 			</dict>
@@ -212,46 +216,48 @@
 		<key>0AA18188-5FB5-40C4-A464-80D6043EBADA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>325</integer>
+			<real>260</real>
 			<key>ypos</key>
-			<integer>275</integer>
+			<real>215</real>
 		</dict>
 		<key>0DA7FAF3-88C1-40E0-8774-6E6283A22309</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<real>435</real>
 			<key>ypos</key>
-			<integer>240</integer>
+			<real>180</real>
 		</dict>
 		<key>736AFDEB-0C05-4C25-AB3D-3F4D7EB91E45</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>65</real>
 			<key>ypos</key>
-			<integer>375</integer>
+			<real>315</real>
 		</dict>
 		<key>A0E6C7CF-AA90-4B80-8C0F-BE308FB4F17E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>320</integer>
+			<real>255</real>
 			<key>ypos</key>
-			<integer>145</integer>
+			<real>85</real>
 		</dict>
 		<key>BA602A5B-B780-4ED6-A105-55762CF24A26</key>
 		<dict>
 			<key>xpos</key>
-			<integer>125</integer>
+			<real>60</real>
 			<key>ypos</key>
-			<integer>115</integer>
+			<real>55</real>
 		</dict>
 		<key>BBFFE97A-6BA0-48EB-94E9-626FCCFF3B51</key>
 		<dict>
 			<key>xpos</key>
-			<integer>125</integer>
+			<real>60</real>
 			<key>ypos</key>
-			<integer>245</integer>
+			<real>185</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>webaddress</key>
 	<string>https://github.com/pwxn/env/tree/master/apps/alfred</string>
 </dict>

@@ -369,5 +369,23 @@
         "key": "up",
         "command": "-showPrevParameterHint",
         "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "end",
+        "command": "scrollEditorBottom"
+    },
+    {
+        "key": "home",
+        "command": "scrollEditorTop"
+    },
+    {
+        "key": "home",
+        "command": "-cursorHome",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "end",
+        "command": "-cursorEnd",
+        "when": "textInputFocus"
     }
 ]

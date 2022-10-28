@@ -39,7 +39,7 @@
   │ ├─── qmk/qmk/qmk
   │ └─── bfg carthage cmake node vapor deno
   └─┬─ Cask Install
-    ├─── (utils) alfred bartender bitwarden iina itsycal netnewswire smooze
+    ├─── (utils) alfred bartender bitwarden iina itsycal mouse-fix netnewswire
     ├─── (coding) visual-studio-code iterm2 fork dash docker sf-symbols
     ├─── (fonts) font-fira-code font-sf-mono
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
@@ -105,20 +105,14 @@
 │ └─┬─ Advanced:
 │   ├─── Show full website address
 │   └─── Show develop in menu bar
-├─┬─ Smooze
+├─┬─ Mac Mouse Fix
+│ ├─── Show in menu bar
 │ ├─┬─ Scrolling
-│ │ ├─── Vertical lines: 0.5
-│ │ ├─── Horizontal lines: 0.5
-│ │ ├─── o o o x x x
-│ │ ├─── Animate: ExpoOut
-│ │ ├─── Acceleration: 0.5
-│ │ └─── Duration: 200
-│ ├─┬─ Buttons
-│ │ └─── Side 3: Back
-│ └─┬─ Other
-│   ├─── Hide menu bar icon
-│   ├─── Launch at login
-│   └─── Cursor Acceleration: 1.2
+│ │ └─── Always on precise scrolling
+│ └─┬─ Buttons
+│   ├─── Button 4 Click: Back
+│   ├─── Button 4 Double Click: Forward
+│   └─── Button 4 Click and Drag: Scroll & Navigate
 ├─┬─ Terminal
 │ ├─── Import profiles from export/terminal
 │ ├─┬─ Enable homebrew's zsh

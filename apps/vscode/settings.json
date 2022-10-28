@@ -21,6 +21,8 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.stablePeek": true,
     "editor.fastScrollSensitivity": 1,
+    "editor.stickyScroll.enabled": true,
+    "editor.inlayHints.enabled": "onUnlessPressed",
 
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,
@@ -76,7 +78,6 @@
     "openInGitHub.useLocalBranch": false,
     "openInGitHub.remote.branch": "main",
 
-    "rust-client.rustupPath": "~/.cargo/bin/rustup",
     "[rust]": {
         "editor.codeLens": false
     },
@@ -103,6 +104,7 @@
     "window.title": "${activeEditorShort}${separator}${rootName}${separator}${activeEditorMedium}",
     "window.newWindowDimensions": "offset",
     "window.autoDetectColorScheme": true,
+    "window.confirmBeforeClose": "keyboardOnly",
 
     "workbench.activityBar.visible": true,
     "workbench.sideBar.location": "right",
@@ -113,7 +115,51 @@
         "terminalCursor.foreground": "#C456FF",
         "minimap.findMatchHighlight": "#C456FF",
         "minimap.foregroundOpacity": "#FFFFFF99",
-        "editorBracketHighlight.unexpectedBracket.foreground": "#A52A2A"
+        "editorBracketHighlight.unexpectedBracket.foreground": "#A52A2A",
+
+
+        // section and tab borders from the default high contrast theme
+        // src/vs/workbench/common/theme.ts
+        // src/vs/platform/theme/common/colorRegistry.ts
+        "contrastBorder": "#6FC3DF",
+        "contrastActiveBorder": "#F38518",
+        "focusBorder": "#F38518",
+
+        "peekView.border": "#6FC3DF",
+        "tab.border": "#6FC3DF",
+        "tab.lastPinnedBorder": "#6FC3DF",
+
+        "tab.activeBorder": "#00000000" ,
+        "tab.unfocusedActiveBorder": "#00000000" ,
+        "tab.activeBorderTop": "#00000000" ,
+        "tab.unfocusedActiveBorderTop": "#00000000" ,
+        "tab.activeModifiedBorder": "#00000000" ,
+        "statusBar.focusBorder": "#00000000" ,
+
+        "activityBar.inactiveForeground": "#666666", // 0xff * 0.4
+
+        "activityBar.activeBorder": "#6FC3DF" ,
+        "activityBar.foreground": "#6FC3DF" ,
+        "editorGroupHeader.border": "#6FC3DF" ,
+        "editorGroupHeader.tabsBorder": "#6FC3DF" ,
+        "editorGroup.border": "#6FC3DF" ,
+        "editorGroup.dropIntoPromptBorder": "#6FC3DF" ,
+        "sideBySideEditor.verticalBorder": "#6FC3DF" ,
+        "sideBySideEditor.horizontalBorder": "#6FC3DF" ,
+        "panel.border": "#6FC3DF" ,
+        "panelTitle.activeBorder": "#6FC3DF" ,
+        "panel.dropBorder": "#6FC3DF" ,
+        "panelSectionHeader.border": "#6FC3DF" ,
+        "panelSection.border": "#6FC3DF" ,
+        "statusBar.border": "#6FC3DF" ,
+        "statusBar.noFolderBorder": "#6FC3DF" ,
+        "activityBar.border": "#6FC3DF" ,
+        "sideBar.border": "#6FC3DF" ,
+        "sideBarSectionHeader.border": "#6FC3DF" ,
+        "titleBar.border": "#6FC3DF" ,
+        "notificationCenter.border": "#6FC3DF" ,
+
+
     },
 
     "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -126,7 +172,6 @@
     "workbench.editor.wrapTabs": true,
     "workbench.editor.autoLockGroups": {
         "default": true,
-        "workbench.input.interactive": false,
         "interactive": false,
         "workbench.editorinputs.searchEditorInput": true,
         "imagePreview.previewEditor": true,
@@ -141,7 +186,6 @@
     "workbench.editor.untitled.hint": "hidden",
     "workbench.editor.historyBasedLanguageDetection": true,
 
-    "workbench.list.automaticKeyboardNavigation": false,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 12
 }

@@ -8,5 +8,7 @@
 	<string>pwxn</string>
 	<key>defaultWebsite</key>
 	<string>https://github.com/pwxn/env/tree/master/apps/alfred</string>
+	<key>showCanvasHints</key>
+	<false/>
 </dict>
 </plist>

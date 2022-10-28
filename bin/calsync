@@ -1,0 +1,8 @@
+#! /bin/bash
+
+# This works around a bug syncing to outlook calendars with Calendar.app.
+# Specifically, calendar will give up recieving updates every few days.
+# https://discussions.apple.com/thread/253787531
+
+launchctl stop com.apple.CalendarAgent
+launchctl start com.apple.CalendarAgent

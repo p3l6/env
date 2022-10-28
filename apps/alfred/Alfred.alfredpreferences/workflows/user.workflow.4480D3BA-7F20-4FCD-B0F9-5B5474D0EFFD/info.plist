@@ -70,26 +70,6 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>D1CD2C04-D8E8-4C82-94A4-DBE823E98CBD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>FDE05AB8-6F4F-4FAE-8DAE-221B377DDE9B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 		<key>8C632A6D-2FA7-416D-8B91-55C8DFFC558F</key>
 		<array>
@@ -218,13 +198,13 @@ ___
 - [ ] 
 ___
 ## Outcomes
-### Findings and Learnings
-### Decisions
+### Decisions, Discoveries, Developments
 ### Demo plans
+### Retrospective
 ___
-## Retrospective
-### Personal process
-### For team</string>
+## Standups
+
+</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
@@ -375,6 +355,10 @@ ___
 			<dict>
 				<key>delimiter</key>
 				<string>,</string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
+				<integer>0</integer>
 				<key>trimarguments</key>
 				<true/>
 				<key>variableprefix</key>
@@ -418,6 +402,25 @@ ___
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>08F0FB92-B150-4F94-83CB-BE2522FA1BCE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsfiles</key>
 				<false/>
 				<key>acceptsmulti</key>
@@ -435,25 +438,6 @@ ___
 			<string>8C632A6D-2FA7-416D-8B91-55C8DFFC558F</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>08F0FB92-B150-4F94-83CB-BE2522FA1BCE</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -504,12 +488,14 @@ ___
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>slack://channel?team={var:slackTeam}&amp;id={var:slackStandupChannel}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -545,103 +531,103 @@ Slack channel id for standups</string>
 		<key>08F0FB92-B150-4F94-83CB-BE2522FA1BCE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>205</integer>
+			<real>205</real>
 			<key>ypos</key>
-			<integer>425</integer>
+			<real>425</real>
 		</dict>
 		<key>133B94A3-8442-4B45-AA7C-729C933C1D4B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>30</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>315</integer>
+			<real>315</real>
 		</dict>
 		<key>31D8C598-07A4-42AB-8AD3-B70992B3AE46</key>
 		<dict>
 			<key>xpos</key>
-			<integer>635</integer>
+			<real>635</real>
 			<key>ypos</key>
-			<integer>590</integer>
+			<real>590</real>
 		</dict>
 		<key>554FABD5-FB71-4126-89DB-BD2DD823B285</key>
 		<dict>
 			<key>xpos</key>
-			<integer>575</integer>
+			<real>575</real>
 			<key>ypos</key>
-			<integer>620</integer>
+			<real>620</real>
 		</dict>
 		<key>6D51F234-55BF-4E90-ACCE-4AE1635DCC93</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>555</integer>
+			<real>555</real>
 			<key>ypos</key>
-			<integer>395</integer>
+			<real>395</real>
 		</dict>
 		<key>816A05E4-EDF8-4DEF-B70F-1CEEC035315A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>30</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>95</integer>
+			<real>95</real>
 		</dict>
 		<key>8C632A6D-2FA7-416D-8B91-55C8DFFC558F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>35</integer>
+			<real>35</real>
 			<key>ypos</key>
-			<integer>425</integer>
+			<real>425</real>
 		</dict>
 		<key>9E57616F-0646-485C-8DE6-35A06D951760</key>
 		<dict>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>395</integer>
+			<real>395</real>
 		</dict>
 		<key>BD1FB12F-7962-4DAA-AFC1-2576CB9628FA</key>
 		<dict>
 			<key>note</key>
 			<string>Convert clipboard from md to rtf</string>
 			<key>xpos</key>
-			<integer>280</integer>
+			<real>280</real>
 			<key>ypos</key>
-			<integer>590</integer>
+			<real>590</real>
 		</dict>
 		<key>C2135CDF-25C0-4451-A747-34CB2DBB1DFC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>450</integer>
+			<real>450</real>
 			<key>ypos</key>
-			<integer>95</integer>
+			<real>95</real>
 		</dict>
 		<key>CE9A0705-238B-4763-8E36-BC4D266D6F71</key>
 		<dict>
 			<key>note</key>
 			<string>Open standup channel</string>
 			<key>xpos</key>
-			<integer>435</integer>
+			<real>435</real>
 			<key>ypos</key>
-			<integer>590</integer>
+			<real>590</real>
 		</dict>
 		<key>D1CD2C04-D8E8-4C82-94A4-DBE823E98CBD</key>
 		<dict>
 			<key>note</key>
 			<string>Standups</string>
 			<key>xpos</key>
-			<integer>285</integer>
+			<real>285</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>D8522DD0-DBCC-4DD5-91DE-4D37FE2F92C3</key>
 		<dict>
 			<key>note</key>
 			<string>Summary</string>
 			<key>xpos</key>
-			<integer>285</integer>
+			<real>285</real>
 			<key>ypos</key>
-			<integer>45</integer>
+			<real>45</real>
 		</dict>
 		<key>DDA7A2AC-4E8C-4141-826A-B72D04834D02</key>
 		<dict>
@@ -650,20 +636,22 @@ Slack channel id for standups</string>
 			<key>note</key>
 			<string>Load from variables.txt</string>
 			<key>xpos</key>
-			<integer>410</integer>
+			<real>410</real>
 			<key>ypos</key>
-			<integer>365</integer>
+			<real>365</real>
 		</dict>
 		<key>FDE05AB8-6F4F-4FAE-8DAE-221B377DDE9B</key>
 		<dict>
 			<key>note</key>
 			<string>Scratch</string>
 			<key>xpos</key>
-			<integer>285</integer>
+			<real>285</real>
 			<key>ypos</key>
-			<integer>215</integer>
+			<real>215</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>

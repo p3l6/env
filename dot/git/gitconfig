@@ -22,7 +22,7 @@
 	pushpr = ! git pushup && git pr new
 	sync = ! git pullr && git push
 	syncbase = ! git pullother $(git default) && git merge $(git default) && git push
-	abandon = ! git restore -- . && git clean -df && git switch $(git default)
+	abandon = ! git stash push -u -m "abandoned" && git switch $(git default)
 	working = ! git diff --name-only $(git merge-base $(git default) HEAD)
 	working-code = ! git working | tee /dev/tty | xargs code
 
@@ -45,6 +45,9 @@
 	# Abbreviations
 	cp = cherry-pick
 	original = remote set-url origin
+
+	# Overrides diff-so-fancy for a sharable diff
+	patch = !git --no-pager diff
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
