@@ -112,6 +112,7 @@
 │ └─┬─ Buttons
 │   ├─── Button 4 Click: Back
 │   ├─── Button 4 Double Click: Forward
+│   ├─── Button 4 Click and Scroll: Horizontal Scroll
 │   └─── Button 4 Click and Drag: Scroll & Navigate
 ├─┬─ Terminal
 │ ├─── Import profiles from export/terminal

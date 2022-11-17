@@ -102,6 +102,7 @@
 
     "window.zoomLevel": 0,
     "window.title": "${activeEditorShort}${separator}${rootName}${separator}${activeEditorMedium}",
+    "window.commandCenter": true,
     "window.newWindowDimensions": "offset",
     "window.autoDetectColorScheme": true,
     "window.confirmBeforeClose": "keyboardOnly",
