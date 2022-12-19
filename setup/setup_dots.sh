@@ -11,6 +11,10 @@ if [ "$(uname)" == "Darwin" ]; then
   # h does not follow a symbolic link in resolving the second argument
   LINK='ln -sih'
   VSCODE="$HOME/Library/Application Support/Code/User"
+elif [ $CODESPACES ]; then
+  LINK='ln -si'
+  VSCODE="$HOME/.vscode-remote/data/Machine"
+  MAC='NO'
 else
   LINK='ln -si'
   VSCODE="$HOME/.config/Code/User"
