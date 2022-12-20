@@ -28,13 +28,14 @@
     "editor.guides.bracketPairs": true,
 
     "editor.suggest.showStatusBar": true,
-    "editor.suggest.insertMode": "replace",
     "editor.suggest.preview": true,
     "editor.suggest.showDeprecated": false,
 
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",
-    "editor.minimap.maxColumn": 100,
+    "editor.minimap.maxColumn": 50,
+    "editor.overviewRulerBorder": false,
+    "editor.scrollbar.verticalScrollbarSize": 6,
 
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -78,10 +79,6 @@
     "openInGitHub.useLocalBranch": false,
     "openInGitHub.remote.branch": "main",
 
-    "[rust]": {
-        "editor.codeLens": false
-    },
-
     "search.globalFindClipboard": false,
     "search.searchEditor.doubleClickBehaviour": "selectWord",
     "search.searchEditor.defaultNumberOfContextLines": 0,
@@ -99,8 +96,6 @@
     "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
     "typescript.inlayHints.enumMemberValues.enabled": true,
     "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-
-    "window.zoomLevel": 0,
     "window.title": "${activeEditorShort}${separator}${rootName}${separator}${activeEditorMedium}",
     "window.commandCenter": true,
     "window.newWindowDimensions": "offset",

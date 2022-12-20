@@ -197,7 +197,7 @@ sys.stdout.write(b64_message)</string>
 				<key>scriptfile</key>
 				<string>base64encode.py</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>9</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>

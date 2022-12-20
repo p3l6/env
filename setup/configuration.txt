@@ -25,7 +25,6 @@
 │ └─── (Check app store purchases for more...)
 ├─┬─ From Other
 │ ├─── Enjoyable
-│ ├─── OpenEmu
 │ ├─── Paintbrush
 │ ├─── VirtualBox
 │ └─── Wine
@@ -37,6 +36,7 @@
   │ ├─── bat choose-rust fd sd tldr
   │ ├─── git git-lfs git-sizer diff-so-fancy
   │ ├─── qmk/qmk/qmk
+  │ ├─── 1password/tap/1password-cli
   │ └─── bfg carthage cmake node vapor deno
   └─┬─ Cask Install
     ├─── (utils) alfred bartender bitwarden iina itsycal mouse-fix netnewswire
@@ -47,7 +47,7 @@
     ├─── (maybe) google-chrome slack postico
     ├─── (maybe) gimp basictex
     ├─── (maybe) calibre transmission handbrake
-    ├─── (games) gopanda steam minecraft synthesia
+    ├─── (games) gopanda steam minecraft openemu synthesia
     └─── (games) battle-net && /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app/Contents/MacOS/Battle.net-Setup
 
 
@@ -55,7 +55,8 @@
 ├─────────────┘
 ├─┬─ 1Password
 │ ├─── Global shortcut: Cmd + Ctrl + \
-│ └─── Enable spotlight
+│ ├─── Hold option to reveal
+│ └─── Enable cli
 ├─┬─ Alfred
 │ ├─┬─ Add Workflows:
 │ │ ├─── https://github.com/chrisbro/alfred-bear
