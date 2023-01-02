@@ -18,7 +18,7 @@
 ├──────────────────┘
 ├─┬─ From App store
 │ ├─┬─ Xcode
-│ │ └─── https://github.com/pwxn/XcodeKit (duplicate or delete a line in editor)
+│ │ └─── https://github.com/p3l6/XcodeKit (duplicate or delete a line in editor)
 │ ├─── Things for Mac
 │ ├─── Bear Notes
 │ ├─── Daisy Disk
@@ -63,7 +63,7 @@
 │ │ ├─── https://github.com/deanishe/alfred-convert
 │ │ ├─── https://github.com/BaksiLi/AlfredWorkflows/tree/master/Index/DarkOrLight
 │ │ ├─── Dash, from preferences
-│ │ ├─── https://github.com/pwxn/div
+│ │ ├─── https://github.com/p3l6/div
 │ │ ├─── http://www.packal.org/workflow/toggle-hidden-files
 │ │ ├─── http://www.packal.org/workflow/homebrew-and-cask-alfred
 │ │ ├─── https://github.com/ngreenstein/alfred-process-killer
