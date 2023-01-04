@@ -69,6 +69,8 @@ LOWER_PROMPT='$(prompt_exit_code)$(prompt_bg_jobs)$(prompt_char)'
 RIGHT_PROMPT='$(prompt_exec_time)$(prompt_time)'
 LOGGED_PROMPT='$(prompt_dir_name) $(prompt_time) $(prompt_char)'
 
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+
 precmd() {
   local NEWLINE=$'\n'
   # Reset prompts modified when accepting line
@@ -88,6 +90,10 @@ zle-line-finish() {
   zle .reset-prompt
 }
 zle -N zle-line-finish
+
+else
+PROMPT="${UPPER_PROMPT} ${RIGHT_PROMPT} ${LOWER_PROMPT}"
+fi
 
 PROMPT2='%F{magenta}%_>%f '
 SPROMPT="%F{red}spellcheck:%f correct '%R' to '%r' [n%F{green}y%F{red}a%fe]%F{magenta}?%f "
