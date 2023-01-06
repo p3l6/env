@@ -10,8 +10,9 @@
  8. Run setup_dots.sh
  9. Run dwrites.sh; killall Dock
 10. Install stuff, as listed below
-11. Set preferences, as listed below
-12. Push changes for any problems encountered to repo
+11. Run `duti setup/duti.conf`
+12. Set preferences, as listed below
+13. Push changes for any problems encountered to repo
 
 
 ┌ Stuff to install ┐
@@ -32,7 +33,7 @@
   ├─┬─ Tap
   │ └─── homebrew/cask-fonts
   ├─┬─ Install
-  │ ├─── zsh wget trash thefuck vim cloc ripgrep
+  │ ├─── zsh wget trash thefuck vim cloc ripgrep duti
   │ ├─── bat choose-rust fd sd tldr
   │ ├─── git git-lfs git-sizer diff-so-fancy
   │ ├─── qmk/qmk/qmk
