@@ -50,7 +50,7 @@ fi
 # MacOS setup only below this point
 
 rm -rf ~/Library/Developer/Xcode/UserData
-mkdir -p ~/Library/Developer/Xcode/UserData
+mkdir -p ~/Library/Developer/Xcode
 $LINK ~/var/env/apps/xcode/UserData ~/Library/Developer/Xcode/UserData
 
 chflags nohidden ~/Library

@@ -19,7 +19,7 @@
 ├──────────────────┘
 ├─┬─ From App store
 │ ├─┬─ Xcode
-│ │ └─── https://github.com/p3l6/XcodeKit (duplicate or delete a line in editor)
+│ │ └─── https://github.com/p3l6/XLineTool (duplicate or delete a line in editor)
 │ ├─── Things for Mac
 │ ├─── Bear Notes
 │ ├─── Daisy Disk
@@ -39,9 +39,9 @@
   │ ├─── qmk/qmk/qmk
   │ ├─── 1password/tap/1password-cli
   │ └─── bfg carthage cmake node vapor deno
-  └─┬─ Cask Install
-    ├─── (utils) alfred bartender bitwarden iina itsycal mouse-fix netnewswire
-    ├─── (coding) visual-studio-code iterm2 fork dash docker sf-symbols
+  └─┬─ Install --cask
+    ├─── (utils) alfred bartender 1password iina itsycal mouse-fix netnewswire
+    ├─── (coding) visual-studio-code fork dash docker sf-symbols warp
     ├─── (fonts) font-fira-code font-sf-mono
     ├─── (quick look) qlcolorcode qlstephen qlimagesize qlswift
     │      (after install) xattr -d -r com.apple.quarantine ~/Library/QuickLook && qlmanage -r
@@ -60,18 +60,18 @@
 │ └─── Enable cli
 ├─┬─ Alfred
 │ ├─┬─ Add Workflows:
-│ │ ├─── https://github.com/chrisbro/alfred-bear
-│ │ ├─── https://github.com/deanishe/alfred-convert
 │ │ ├─── https://github.com/BaksiLi/AlfredWorkflows/tree/master/Index/DarkOrLight
 │ │ ├─── Dash, from preferences
 │ │ ├─── https://github.com/p3l6/div
 │ │ ├─── http://www.packal.org/workflow/toggle-hidden-files
-│ │ ├─── http://www.packal.org/workflow/homebrew-and-cask-alfred
-│ │ ├─── https://github.com/ngreenstein/alfred-process-killer
 │ │ └─── https://github.com/BenziAhamed/Menu-Bar-Search
 │ ├─── Hotkey: Cmd + Space
 │ ├─── Clipboard history: On
+│ ├─── Appearance > Options > Hide hat on alfred window
 │ └─── Sync directory: ~/var/env/apps/alfred
+├─┬─ Bartender
+│ ├─── dont use bartender bar for hidden items
+│ └─── menu bar icon: not visible
 ├─┬─ Bear
 │ ├─── Markdown mode
 │ ├─── Bear > Web content preferences > no images; tags: !
@@ -101,7 +101,7 @@
 │ ├─┬─ General
 │ │ └───  Don't open safe files
 │ ├─┬─ Tabs
-│ │ └───  Show website icons in tabs
+│ │ └─── Compact
 │ ├─┬─ AutoFill
 │ │ └───  Autofill only contacts
 │ └─┬─ Advanced:
@@ -146,32 +146,40 @@
 │ └─┬─ Source Control
 │   ├───  don't automatically add and remove files
 │   └───  don't fetch server status automatically
+├─┬─ Warp
+│ ├─┬─ Appearance
+│ │ ├─── theme: Warp Blue
+│ │ └─── dont blink cursor
+│ └─┬─ Features
+│   ├─── dont copy on select
+│   ├─── open file links: vscode
+│   └─── use notifications
 └─┬─ System Preferences
-  ├─┬─ General
+  ├─┬─ Appearance
   │ ├─── theme: dark
   │ ├─── accent: multi
   │ ├─── show scroll bars: when scrolling
   │ ├─── scroll bar: jump to spot clicked
   │ └─── default browser: safari
-  ├─┬─ Desktop
-  │ ├─── add folder ~/Desktop/Wallpaper/
-  │ └─── random when waking up
-  ├─┬─ Dock & Menu Bar
-  │ ├─── position: left
-  │ ├─── automatically show and hide the dock
-  │ ├─── don't show recent applications in dock
-  │ ├─── don't show date in menu bar
-  │ └─── don't show spotlight in menu bar
-  ├─┬─ Mission Control
-  │ ├─── o o x x ^up ^down f10
-  │ └─── no hot corners
-  ├─┬─ Spotlight
-  │ └─── no: bookmarks, events, mail messages, fonts
   ├─┬─ Accessibility
   │ ├─── use scroll gesture with ctrl to zoom
   │ └─── double click speed second from fastest
-  ├─┬─ Bluetooth
-  │ └─── show in menu bar
+  ├─┬─ Control Center
+  │ ├───show bluetooth in menu bar
+  │ ├───don't show spotlight in menu bar
+  │ └───show date: never
+  ├─┬─ Spotlight
+  │ └─── no: bookmarks, events, mail messages, fonts
+  ├─┬─ Desktop & Dock
+  │ ├─── position: left
+  │ ├─── automatically show and hide the dock
+  │ ├─── don't show recent applications in dock
+  ├─┬─ Wallpaper
+  │ ├─── add folder ~/Desktop/Wallpaper/
+  │ └─── random when waking up
+  ├─┬─ Mission Control
+  │ ├─── o o x x ^up ^down f10
+  │ └─── no hot corners
   ├─┬─ Keyboard
   │ ├─┬─ Text
   │ │ └─── don't use smart quotes and dashes

@@ -6,6 +6,19 @@
 	<string>dev.pwxn.alfred.code-open</string>
 	<key>connections</key>
 	<dict>
+		<key>3D526F4F-809E-4DC7-9418-1CE356D99EDF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8F9E589D-A4A1-4EC1-98E7-9EFB47A1C87F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4E2A053B-800C-4893-B757-3357534E8936</key>
 		<array>
 			<dict>
@@ -187,11 +200,90 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>xcode</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>...</string>
+				<key>script</key>
+				<string>python3 ./codeFolders.py "${WORKSPACE}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>./</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Open project with vscode</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>3D526F4F-809E-4DC7-9418-1CE356D99EDF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open $1/*.xc[ow][do][er][pk]*</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8F9E589D-A4A1-4EC1-98E7-9EFB47A1C87F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>WORKSPACE is a folder where you keep all your projects.</string>
 	<key>uidata</key>
 	<dict>
+		<key>3D526F4F-809E-4DC7-9418-1CE356D99EDF</key>
+		<dict>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>410</real>
+		</dict>
 		<key>4E2A053B-800C-4893-B757-3357534E8936</key>
 		<dict>
 			<key>xpos</key>
@@ -207,6 +299,15 @@
 			<real>320</real>
 			<key>ypos</key>
 			<real>235</real>
+		</dict>
+		<key>8F9E589D-A4A1-4EC1-98E7-9EFB47A1C87F</key>
+		<dict>
+			<key>note</key>
+			<string>Open chosen path in vsCode</string>
+			<key>xpos</key>
+			<real>320</real>
+			<key>ypos</key>
+			<real>410</real>
 		</dict>
 		<key>CB35D3D1-C6AF-4355-9054-58CB56B2557A</key>
 		<dict>
