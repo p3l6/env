@@ -401,6 +401,32 @@
 				</dict>
 			</array>
 		</dict>
+		<dict>
+			<key>docsets</key>
+			<array>
+				<string>~/Library/Application Support/Dash/DocSets/Apple_API_Reference/Apple_API_Reference.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/Man_Pages/Man Pages.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/Markdown/Markdown.docset</string>
+				<string>~/Library/Application Support/Dash/User Contributed/Zsh/Zsh.docset</string>
+			</array>
+			<key>name</key>
+			<string>Mac</string>
+			<key>searchSnippets</key>
+			<false/>
+			<key>triggers</key>
+			<array>
+				<dict>
+					<key>description</key>
+					<string>"mac:" is typed in the main search field</string>
+					<key>image</key>
+					<string>searchKeywordIcon</string>
+					<key>isKeywordTrigger</key>
+					<true/>
+					<key>keyword</key>
+					<string>mac:</string>
+				</dict>
+			</array>
+		</dict>
 	</array>
 	<key>searchAndFocusKey</key>
 	<dict>

@@ -145,7 +145,8 @@
 │ │   └─── auto indent all
 │ └─┬─ Source Control
 │   ├───  don't automatically add and remove files
-│   └───  don't fetch server status automatically
+│   ├───  don't fetch server status automatically
+│   └───  local revision on left
 ├─┬─ Warp
 │ ├─┬─ Appearance
 │ │ ├─── theme: Warp Blue
