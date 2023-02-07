@@ -9,11 +9,11 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/* MARK: &lt;#makr#&gt; */</string>
+	<string>// MARK: &lt;#makr#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>D71B0881-A2FB-4418-AA5A-3A4F28B40CAC</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>a comment thtat shows up in the class map</string>
 	<key>IDECodeSnippetTitle</key>

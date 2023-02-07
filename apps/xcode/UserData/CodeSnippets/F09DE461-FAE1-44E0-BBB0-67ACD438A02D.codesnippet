@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mark</string>
+	<string>todo </string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: &lt;#mark#&gt;</string>
+	<string>// TODO: &lt;#todo#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>3B9FD30A-56D8-43F9-97A0-1B7A6AC3A289</string>
+	<string>F09DE461-FAE1-44E0-BBB0-67ACD438A02D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>a comment that shows up in the class map</string>
+	<string>A todo comment</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MARK comment</string>
+	<string>todo</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
