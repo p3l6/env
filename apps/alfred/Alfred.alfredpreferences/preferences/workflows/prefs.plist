@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>defaultBundleId</key>
-	<string>dev.pwxn.alfred.</string>
+	<string>dev.p3l6.alfred.</string>
 	<key>defaultCreatedBy</key>
-	<string>pwxn</string>
+	<string>p3l6</string>
 	<key>defaultWebsite</key>
 	<string>https://github.com/p3l6/env/tree/master/apps/alfred</string>
 	<key>showCanvasHints</key>

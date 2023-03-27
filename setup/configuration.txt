@@ -154,6 +154,7 @@
 │ └─┬─ Features
 │   ├─── dont copy on select
 │   ├─── open file links: vscode
+│   ├─── working directory for new sessions: home
 │   └─── use notifications
 └─┬─ System Preferences
   ├─┬─ Appearance

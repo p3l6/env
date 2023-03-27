@@ -208,6 +208,14 @@
 	<array>
 		<dict>
 			<key>path</key>
+			<string>https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Finder.html#//apple_ref/doc/uid/TP40014214-CH15</string>
+			<key>platformImagePath</key>
+			<string>Web</string>
+			<key>title</key>
+			<string>App Extension Programming Guide: Finder Sync</string>
+		</dict>
+		<dict>
+			<key>path</key>
 			<string>https://explainshell.com/</string>
 			<key>platformImagePath</key>
 			<string>Web</string>
@@ -405,9 +413,6 @@
 			<key>docsets</key>
 			<array>
 				<string>~/Library/Application Support/Dash/DocSets/Apple_API_Reference/Apple_API_Reference.docset</string>
-				<string>~/Library/Application Support/Dash/DocSets/Man_Pages/Man Pages.docset</string>
-				<string>~/Library/Application Support/Dash/DocSets/Markdown/Markdown.docset</string>
-				<string>~/Library/Application Support/Dash/User Contributed/Zsh/Zsh.docset</string>
 			</array>
 			<key>name</key>
 			<string>Mac</string>
