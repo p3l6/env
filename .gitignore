@@ -8,5 +8,10 @@ apps/karabiner/automatic_backups
 
 apps/alfred/Alfred.alfredpreferences/**/local
 apps/alfred/Alfred.alfredpreferences/remote
-apps/alfred/Alfred.alfredpreferences/workflows
 apps/alfred/Alfred.alfredpreferences/preferences/features/1password
+
+apps/alfred/Alfred.alfredpreferences/workflows/*
+!apps/alfred/Alfred.alfredpreferences/workflows/user.workflow.A514E707-902C-433E-B33D-BC853D4B9C79
+!apps/alfred/Alfred.alfredpreferences/workflows/user.workflow.4480D3BA-7F20-4FCD-B0F9-5B5474D0EFFD
+!apps/alfred/Alfred.alfredpreferences/workflows/user.workflow.8D25A22D-24D2-412F-BA0F-69D55B505938
+!apps/alfred/Alfred.alfredpreferences/workflows/user.workflow.ED275F45-44A5-4D29-A99F-BFC50F838270

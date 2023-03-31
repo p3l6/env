@@ -60,11 +60,11 @@
 │ └─── Enable cli
 ├─┬─ Alfred
 │ ├─┬─ Add Workflows:
-│ │ ├─── https://github.com/BaksiLi/AlfredWorkflows/tree/master/Index/DarkOrLight
+│ │ ├─── https://alfred.app/workflows/alfredapp/switch-appearance/
 │ │ ├─── Dash, from preferences
 │ │ ├─── https://github.com/p3l6/div
 │ │ ├─── http://www.packal.org/workflow/toggle-hidden-files
-│ │ └─── https://github.com/BenziAhamed/Menu-Bar-Search
+│ │ └─── https://alfred.app/workflows/benziahamed/menu-bar-search/
 │ ├─── Hotkey: Cmd + Space
 │ ├─── Clipboard history: On
 │ ├─── Appearance > Options > Hide hat on alfred window

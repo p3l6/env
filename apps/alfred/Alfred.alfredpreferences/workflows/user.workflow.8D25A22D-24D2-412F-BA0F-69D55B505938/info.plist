@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>dev.pwxn.alfred.universalactions.text</string>
+	<string>dev.p3l6.alfred.universalactions.text</string>
 	<key>category</key>
-	<string>Tools</string>
+	<string>Committed</string>
 	<key>connections</key>
 	<dict>
 		<key>0D07E1E7-B1FA-4CB6-8161-7C26DC599E53</key>
@@ -166,7 +166,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>pwxn</string>
+	<string>Paul Landers</string>
 	<key>description</key>
 	<string>Text tranformation actions</string>
 	<key>disabled</key>
@@ -590,6 +590,6 @@ print("(%d, %d, %d)" % (red, green, blue))</string>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>
-	<string>https://pwxn.dev</string>
+	<string>https://github.com/p3l6/env/tree/master/apps/alfred</string>
 </dict>
 </plist>

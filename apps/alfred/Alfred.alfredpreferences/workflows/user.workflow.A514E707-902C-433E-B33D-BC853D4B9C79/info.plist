@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>dev.pwxn.alfred.code-open</string>
+	<string>dev.p3l6.alfred.code-open</string>
+	<key>category</key>
+	<string>Committed</string>
 	<key>connections</key>
 	<dict>
-		<key>3D526F4F-809E-4DC7-9418-1CE356D99EDF</key>
+		<key>60892BF6-1798-4C0F-894D-61C044194F1C</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8F9E589D-A4A1-4EC1-98E7-9EFB47A1C87F</string>
+				<string>6262E61A-70A6-4256-BC3F-FCA1EF21155E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -19,11 +21,24 @@
 				<false/>
 			</dict>
 		</array>
-		<key>4E2A053B-800C-4893-B757-3357534E8936</key>
+		<key>7D02D72D-68D1-475D-8C8C-8079CE3EB578</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D761D470-EC97-447A-AAE5-EEE69F3B283B</string>
+				<string>6262E61A-70A6-4256-BC3F-FCA1EF21155E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>91D8B383-43AE-4CB6-AAAD-78AAFBA21344</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6262E61A-70A6-4256-BC3F-FCA1EF21155E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -47,7 +62,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>pwxn</string>
+	<string>Paul Landers</string>
 	<key>description</key>
 	<string>Quickly open development projects in tools</string>
 	<key>disabled</key>
@@ -59,84 +74,12 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>fork</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>...</string>
-				<key>script</key>
-				<string>python3 ./codeFolders.py "${WORKSPACE}"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>./</string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Open project</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>4E2A053B-800C-4893-B757-3357534E8936</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/bin/env fork $1</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D761D470-EC97-447A-AAE5-EEE69F3B283B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/bin/env code $1</string>
+				<string>open -a "$1" $2</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -167,7 +110,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>code</string>
+				<string>var</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -187,7 +130,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Open project with vscode</string>
+				<string>Open dev project</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -197,6 +140,104 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>CB35D3D1-C6AF-4355-9054-58CB56B2557A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>fork</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>...</string>
+				<key>script</key>
+				<string>python3 ./codeFolders.py "${WORKSPACE}" "Fork.app"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>./</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Open git repository</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>60892BF6-1798-4C0F-894D-61C044194F1C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>code</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>...</string>
+				<key>script</key>
+				<string>python3 ./codeFolders.py "${WORKSPACE}" "Visual Studio Code.app"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>./</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Open folder in vscode</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>91D8B383-43AE-4CB6-AAAD-78AAFBA21344</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -228,7 +269,7 @@
 				<key>runningsubtext</key>
 				<string>...</string>
 				<key>script</key>
-				<string>python3 ./codeFolders.py "${WORKSPACE}"</string>
+				<string>python3 ./codeFolders.py "${WORKSPACE}" "Xcode.app"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -236,7 +277,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Open project with vscode</string>
+				<string>Open folder in xcode</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -245,85 +286,49 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>3D526F4F-809E-4DC7-9418-1CE356D99EDF</string>
+			<string>7D02D72D-68D1-475D-8C8C-8079CE3EB578</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>open $1/*.xc[ow][do][er][pk]*</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>8F9E589D-A4A1-4EC1-98E7-9EFB47A1C87F</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string>WORKSPACE is a folder where you keep all your projects.</string>
 	<key>uidata</key>
 	<dict>
-		<key>3D526F4F-809E-4DC7-9418-1CE356D99EDF</key>
+		<key>60892BF6-1798-4C0F-894D-61C044194F1C</key>
 		<dict>
 			<key>xpos</key>
-			<real>50</real>
+			<real>35</real>
 			<key>ypos</key>
-			<real>410</real>
-		</dict>
-		<key>4E2A053B-800C-4893-B757-3357534E8936</key>
-		<dict>
-			<key>xpos</key>
-			<real>50</real>
-			<key>ypos</key>
-			<real>65</real>
+			<real>140</real>
 		</dict>
 		<key>6262E61A-70A6-4256-BC3F-FCA1EF21155E</key>
 		<dict>
-			<key>note</key>
-			<string>Open chosen path in vsCode</string>
 			<key>xpos</key>
-			<real>320</real>
+			<real>275</real>
 			<key>ypos</key>
-			<real>235</real>
+			<real>25</real>
 		</dict>
-		<key>8F9E589D-A4A1-4EC1-98E7-9EFB47A1C87F</key>
+		<key>7D02D72D-68D1-475D-8C8C-8079CE3EB578</key>
 		<dict>
-			<key>note</key>
-			<string>Open chosen path in vsCode</string>
 			<key>xpos</key>
-			<real>320</real>
+			<real>35</real>
 			<key>ypos</key>
-			<real>410</real>
+			<real>370</real>
+		</dict>
+		<key>91D8B383-43AE-4CB6-AAAD-78AAFBA21344</key>
+		<dict>
+			<key>xpos</key>
+			<real>35</real>
+			<key>ypos</key>
+			<real>255</real>
 		</dict>
 		<key>CB35D3D1-C6AF-4355-9054-58CB56B2557A</key>
 		<dict>
 			<key>xpos</key>
-			<real>50</real>
+			<real>35</real>
 			<key>ypos</key>
-			<real>235</real>
-		</dict>
-		<key>D761D470-EC97-447A-AAE5-EEE69F3B283B</key>
-		<dict>
-			<key>note</key>
-			<string>Open chosen path in Fork</string>
-			<key>xpos</key>
-			<real>320</real>
-			<key>ypos</key>
-			<real>65</real>
+			<real>25</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -336,6 +341,6 @@
 	<key>version</key>
 	<string>1.0.0</string>
 	<key>webaddress</key>
-	<string>https://github.com/pwxn/env/tree/master/apps/alfred</string>
+	<string>https://github.com/p3l6/env/tree/master/apps/alfred</string>
 </dict>
 </plist>

@@ -2,10 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>categories</key>
+	<array>
+		<string>Committed</string>
+		<string>Gallery</string>
+	</array>
 	<key>defaultBundleId</key>
 	<string>dev.p3l6.alfred.</string>
 	<key>defaultCreatedBy</key>
-	<string>p3l6</string>
+	<string>Paul Landers</string>
 	<key>defaultWebsite</key>
 	<string>https://github.com/p3l6/env/tree/master/apps/alfred</string>
 	<key>showCanvasHints</key>

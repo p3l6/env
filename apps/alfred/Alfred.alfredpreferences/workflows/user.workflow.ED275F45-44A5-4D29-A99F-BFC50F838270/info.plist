@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>dev.pwxn.alfred.bear</string>
+	<string>dev.p3l6.alfred.bear</string>
+	<key>category</key>
+	<string>Committed</string>
 	<key>connections</key>
 	<dict>
 		<key>0AA18188-5FB5-40C4-A464-80D6043EBADA</key>
@@ -75,9 +77,9 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>pwxn</string>
+	<string>Paul Landers</string>
 	<key>description</key>
-	<string>bear shortcuts</string>
+	<string>Bear shortcuts</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -259,6 +261,6 @@
 	<key>userconfigurationconfig</key>
 	<array/>
 	<key>webaddress</key>
-	<string>https://github.com/pwxn/env/tree/master/apps/alfred</string>
+	<string>https://github.com/p3l6/env/tree/master/apps/alfred</string>
 </dict>
 </plist>

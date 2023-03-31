@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>dev.pwxn.alfred.sprints</string>
+	<string>dev.p3l6.alfred.sprints</string>
+	<key>category</key>
+	<string>Committed</string>
 	<key>connections</key>
 	<dict>
 		<key>08F0FB92-B150-4F94-83CB-BE2522FA1BCE</key>
@@ -177,7 +179,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>pwxn</string>
+	<string>Paul Landers</string>
 	<key>description</key>
 	<string>Workflows for managing sprint cadences</string>
 	<key>disabled</key>
@@ -655,6 +657,6 @@ Slack channel id for standups</string>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>
-	<string>https://github.com/pwxn/env/tree/master/apps/alfred</string>
+	<string>https://github.com/p3l6/env/tree/master/apps/alfred</string>
 </dict>
 </plist>
