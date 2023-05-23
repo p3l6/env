@@ -39,6 +39,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>FE322EDB-9805-4E09-8AEE-A8C20BA9F452</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>you</string>
+			<key>spaces</key>
+			<string>+</string>
+			<key>text</key>
+			<string>Search You.com for '{query}'</string>
+			<key>url</key>
+			<string>https://you.com/search?q={query}&amp;tbm=youcode</string>
+		</dict>
 	</dict>
 	<key>onlyShowEnabledInPrefs</key>
 	<true/>

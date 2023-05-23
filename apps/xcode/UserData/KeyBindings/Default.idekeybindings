@@ -865,6 +865,8 @@
 			<string>moveToEndOfDocumentAndModifySelection:</string>
 			<key>@d</key>
 			<string>deleteLine:</string>
+			<key>^$@E</key>
+			<string>selectWord:</string>
 			<key>^~$</key>
 			<string>moveSubWordBackwardAndModifySelection:</string>
 			<key>^~$</key>

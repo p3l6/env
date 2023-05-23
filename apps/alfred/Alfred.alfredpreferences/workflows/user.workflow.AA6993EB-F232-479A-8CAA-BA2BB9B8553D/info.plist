@@ -473,7 +473,7 @@ fi</string>
 				<key>fixedorder</key>
 				<false/>
 				<key>items</key>
-				<string>[{"title":"Pullr","arg":"pullr"},{"title":"Goto PR","arg":"pr"},{"title":"Push","arg":"push"},{"title":"Push &amp; create PR","arg":"pushpr"},{"title":"Pull other branch","arg":"pullother BRANCH"},{"title":"Pull","arg":"pull"},{"title":"Switch","arg":"switch BRANCH"},{"title":"New branch","arg":"new ARBITRARY"}]</string>
+				<string>[{"title":"Pullr","arg":"pullr"},{"title":"Goto PR","arg":"pr"},{"title":"Push","arg":"push"},{"title":"Push &amp; create PR","arg":"pushpr"},{"title":"Pull other branch","arg":"pullother BRANCH"},{"title":"Pull","arg":"pull"},{"title":"Switch","arg":"switch BRANCH"},{"title":"New branch","arg":"new ARBITRARY"},{"title":"Prune all","arg":"prune-all","subtitle":"Remove local branches if remote branch was deleted"},{"title":"Abandon","arg":"abandon","subtitle":"Switch back to default branch, stashing any changes"}]</string>
 				<key>keyword</key>
 				<string>git</string>
 				<key>matchmode</key>
