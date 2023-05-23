@@ -40,7 +40,7 @@ $LINK ~/var/env/dot/lldb/lldbinit ~/.lldbinit
 $LINK ~/var/env/dot/zsh/zshrc ~/.zshrc
 
 if [ ! -f ~/.gitconfig_local ]; then
-  printf "[user]\n  name = Paul Landers\n  email = paul@srednal.com\n" > ~/.gitconfig_local
+  printf "[user]\n  name = Paul Landers\n  email = paul@thelanders.family\n" > ~/.gitconfig_local
 fi
 
 if [ "$MAC" == "NO" ]; then

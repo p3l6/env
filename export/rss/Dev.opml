@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<opml version="2.0"><head><title>RSS</title></head><body>
-
-<outline type="rss" text="Apple Developer" xmlUrl="https://developer.apple.com/news/rss/news.rss" htmlUrl="https://developer.apple.com/news/" />
-<outline type="rss" text="Coding Horror" xmlUrl="http://feeds.feedburner.com/codinghorror" htmlUrl="https://blog.codinghorror.com/" />
-<outline type="rss" text="NSHipster" xmlUrl="https://nshipster.com/feed.xml" htmlUrl="https://nshipster.com/" />
-
-</body></opml>

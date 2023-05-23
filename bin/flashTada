@@ -8,7 +8,7 @@ if [ -z $1 ]; then
 fi
 
 FIL=$1
-VOL="/Volumes/TADA68  "
+VOL="/Volumes/TADA68\ \ "
 if [ ! -z $2 ]; then
   VOL=$2
 fi
