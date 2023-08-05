@@ -50,7 +50,7 @@ for top_entry in top_level_folders:
   for child_entry in os.scandir(top_entry.path):
     if allowVscode and os.path.splitext(child_entry.name)[1] == '.code-workspace':
       items.append(vscode_item(child_entry.name, child_entry.path))
-    elif allowXcode and (os.path.splitext(child_entry.name)[1] == '.xcodeproj' or os.path.splitext(child_entry.name)[1] == '.xcworkspace'):
+    elif allowXcode and (os.path.splitext(child_entry.name)[1] == '.xcodeproj' or os.path.splitext(child_entry.name)[1] == '.xcworkspace' or child_entry.name == 'Package.swift'):
       items.append(xcode_item(top_entry.name, child_entry.path))
       items.append(xcode_item(child_entry.name, child_entry.path))
     elif allowFork and child_entry.name == '.git':
