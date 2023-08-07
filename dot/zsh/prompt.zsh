@@ -92,7 +92,8 @@ zle-line-finish() {
 zle -N zle-line-finish
 
 else
-PROMPT="${UPPER_PROMPT} ${RIGHT_PROMPT} ${LOWER_PROMPT}"
+PROMPT="${LOWER_PROMPT}${UPPER_PROMPT}"
+RPROMPT=$RIGHT_PROMPT
 fi
 
 PROMPT2='%F{magenta}%_>%f '

@@ -34,6 +34,8 @@ A---B---C---D---EFG’  default branch
 
 Please specify the previous root branch name:
 $ git unfork unwanted-root-branch
+
+note for similar operations: git rebase --onto (default) (unwanted) (current)
 EOF
 }
 
