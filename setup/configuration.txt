@@ -33,7 +33,7 @@
   ├─┬─ Tap
   │ └─── homebrew/cask-fonts
   ├─┬─ Install
-  │ ├─── zsh wget trash thefuck vim cloc ripgrep duti
+  │ ├─── zsh wget trash thefuck vim cloc ripgrep duti nano nanorc
   │ ├─── bat choose-rust fd sd tldr
   │ ├─── git git-lfs git-sizer diff-so-fancy
   │ ├─── qmk/qmk/qmk

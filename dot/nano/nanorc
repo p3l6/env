@@ -1,0 +1,18 @@
+include "/opt/homebrew/share/nanorc/*.nanorc"
+
+set autoindent
+set linenumbers
+set tabsize 4
+set tabstospaces
+set mouse
+
+set titlecolor magenta,normal
+set functioncolor magenta
+set keycolor cyan,normal
+set numbercolor yellow,normal
+
+bind ^F whereis all
+bind ^/ comment all
+bind ^Z undo all
+bind ^Y copy all
+

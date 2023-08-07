@@ -29,6 +29,7 @@ mkdir -p $VSCODE
 $LINK ~/var/env/dot/bash/bash_profile ~/.bash_profile
 $LINK ~/var/env/dot/bash/bashrc ~/.bashrc
 $LINK ~/var/env/dot/vim/vimrc ~/.vimrc
+$LINK ~/var/env/dot/nano/nanorc ~/.nanorc
 $LINK ~/var/env/dot/git/gitconfig ~/.gitconfig
 $LINK ~/var/env/dot/git/gitignore_global ~/.gitignore_global
 $LINK ~/var/env/apps/warp/ ~/.warp
