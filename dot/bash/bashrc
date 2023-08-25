@@ -25,7 +25,6 @@ function var { cd $WRKSP/$@/; }
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 export HISTCONTROL=ignoredups
-eval $(thefuck --alias)
 
 ## command shortcuts
 alias which='type -a'

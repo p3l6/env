@@ -4,10 +4,6 @@ alias dotfiles='cd ~/var/env'
 alias tmp='cd ~/tmp'
 function mkcd { mkdir $@   &&  cd $@; }
 
-if type thefuck &> /dev/null; then
-  eval $(thefuck --alias)
-fi
-
 ## command shortcuts
 alias which='type -a'
 alias dush='du -sh'

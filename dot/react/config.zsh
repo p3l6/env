@@ -1,2 +1,3 @@
 # Prevent react from automatically opening browser tabs
-export BROWSER=NONE
+# Interferes with `gh` cli opening pages
+# export BROWSER=NONE
