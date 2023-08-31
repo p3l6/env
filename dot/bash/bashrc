@@ -51,7 +51,7 @@ alias status='git status'
 alias commit='git commit'
 
 ## file opening aliases
-alias proj='open *.xc[ow][do][er][pk]*' # .xcodeproj or .xcworkspace
+alias proj='x .'
 alias edit='vim'
 alias readme='less *[Rr][Ee][Aa][Dd]*[Mm][Ee]*'
 

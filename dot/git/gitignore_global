@@ -16,3 +16,6 @@ project.xcworkspace
 node_modules
 
 **/.vscode/bookmarks.json
+
+# These are created with the 'x' script
+**/.xcode/*.xcworkspace

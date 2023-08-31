@@ -1,0 +1,77 @@
+#!/bin/zsh
+
+setopt extendedglob
+
+# TODO: change edit alias to this? or nano.
+
+# Show usage and exit
+if [[ "$1" = "-h" ]] ; then
+  cat <<EOF
+===== ===== ========= ======
+Xcode magic workspace opener
+===== ===== ========= ======
+
+Specify any number of paths as arguments:
+- Files will be opened in individual windows
+- Folders will be opened as projects
+  | If the folder already contains an xcode project, that will be opened.
+  | Otherwise, a new workspace will be created for you with the folder added.
+  | There will only be one folder per workspace, if multiple folders are
+  | specified, multiple windows will be opened.
+
+Without any arguments, the current working directory will be opened
+EOF
+exit 0
+fi
+
+openItem() {
+  A=$(realpath $1)
+  basename=$(basename $A)
+
+  if [[ -f $A ]] ; then
+    echo Opening file: $1
+    open -a Xcode.app $1
+
+  elif [[ -d $A ]] ; then
+    if [[ -n $A/*.xcodeproj(#qN) ]] ; then
+      echo Opening project in: $1
+      open -a Xcode.app $A/*.xcodeproj
+    elif [[ -n $A/*.xcworkspace(#qN) ]] ; then
+      echo Opening workspace in: $1
+      open -a Xcode.app $A/*.xcworkspace
+    elif [[ -f $A/Package.swift ]] ; then
+      echo Opening package in: $1
+      open -a Xcode.app $A/Package.swift
+    elif [[ -d $A/.xcode/$basename.xcworkspace ]] ; then
+      echo Opening folder: $1
+      open -a Xcode.app $A/.xcode/$basename.xcworkspace
+    else
+      echo Wrapping: $basename as $A/.xcode/$basename.xcworkspace
+      mkdir -p $A/.xcode/$basename.xcworkspace/
+      cat <<EOF > $A/.xcode/$basename.xcworkspace/contents.xcworkspacedata
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:$A">
+   </FileRef>
+</Workspace>
+EOF
+      echo Opening folder: $1
+      open -a Xcode.app $A/.xcode/$basename.xcworkspace
+    fi
+
+  else
+    echo Not a file or folder: $1
+  fi
+}
+
+for arg in "$@" ; do
+  openItem $arg
+done
+
+if [[ "$#" = 0 ]] ; then
+  echo 'An arg of $PWD implied when args are omitted'
+  echo Use -h for more help
+  openItem $PWD
+fi
