@@ -68,9 +68,6 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
-    "latex-workshop.view.pdf.viewer": "tab",
-    "latex-workshop.latex.autoBuild.run": "never",
-
     "markdown.preview.breaks": true,
     "[markdown]": {
         "files.trimTrailingWhitespace": false
@@ -102,60 +99,18 @@
     "window.autoDetectColorScheme": true,
     "window.confirmBeforeClose": "keyboardOnly",
 
-    "workbench.activityBar.visible": true,
-    "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "One Dark Pro",
-    "workbench.preferredLightColorTheme": "Atom One Light",
-    "workbench.preferredDarkColorTheme": "One Dark Pro",
+    "workbench.activityBar.location": "top",
+    "workbench.editor.showIcons": false,
+    "workbench.iconTheme": "macos-modern-big-sur-icon-theme",
+    "workbench.productIconTheme": "macos-modern",
+    "workbench.colorTheme": "MacOS Modern Light - Xcode Default",
+    "workbench.preferredLightColorTheme": "MacOS Modern Light - Xcode Default",
+    "workbench.preferredDarkColorTheme": "MacOS Modern Dark - Ventura Xcode",
     "workbench.colorCustomizations": {
         "terminalCursor.foreground": "#C456FF",
         "minimap.findMatchHighlight": "#C456FF",
         "minimap.foregroundOpacity": "#FFFFFF99",
         "editorBracketHighlight.unexpectedBracket.foreground": "#A52A2A",
-
-
-        // section and tab borders from the default high contrast theme
-        // src/vs/workbench/common/theme.ts
-        // src/vs/platform/theme/common/colorRegistry.ts
-        "contrastBorder": "#6FC3DF",
-        "contrastActiveBorder": "#F38518",
-        "focusBorder": "#F38518",
-
-        "peekView.border": "#6FC3DF",
-        "tab.border": "#6FC3DF",
-        "tab.lastPinnedBorder": "#6FC3DF",
-
-        "tab.activeBorder": "#00000000" ,
-        "tab.unfocusedActiveBorder": "#00000000" ,
-        "tab.activeBorderTop": "#00000000" ,
-        "tab.unfocusedActiveBorderTop": "#00000000" ,
-        "tab.activeModifiedBorder": "#00000000" ,
-        "statusBar.focusBorder": "#00000000" ,
-
-        "activityBar.inactiveForeground": "#666666", // 0xff * 0.4
-
-        "activityBar.activeBorder": "#6FC3DF" ,
-        "activityBar.foreground": "#6FC3DF" ,
-        "editorGroupHeader.border": "#6FC3DF" ,
-        "editorGroupHeader.tabsBorder": "#6FC3DF" ,
-        "editorGroup.border": "#6FC3DF" ,
-        "editorGroup.dropIntoPromptBorder": "#6FC3DF" ,
-        "sideBySideEditor.verticalBorder": "#6FC3DF" ,
-        "sideBySideEditor.horizontalBorder": "#6FC3DF" ,
-        "panel.border": "#6FC3DF" ,
-        "panelTitle.activeBorder": "#6FC3DF" ,
-        "panel.dropBorder": "#6FC3DF" ,
-        "panelSectionHeader.border": "#6FC3DF" ,
-        "panelSection.border": "#6FC3DF" ,
-        "statusBar.border": "#6FC3DF" ,
-        "statusBar.noFolderBorder": "#6FC3DF" ,
-        "activityBar.border": "#6FC3DF" ,
-        "sideBar.border": "#6FC3DF" ,
-        "sideBarSectionHeader.border": "#6FC3DF" ,
-        "titleBar.border": "#6FC3DF" ,
-        "notificationCenter.border": "#6FC3DF" ,
-
-
     },
 
     "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -168,18 +123,14 @@
     "workbench.editor.wrapTabs": true,
     "workbench.editor.autoLockGroups": {
         "default": true,
-        "interactive": false,
         "workbench.editorinputs.searchEditorInput": true,
         "imagePreview.previewEditor": true,
-        "vscode.markdown.preview.editor": true,
-        "latex-workshop-pdf-hook": true,
         "terminalEditor": true,
         "jupyter-notebook": false,
         "mainThreadWebview-markdown.preview": true
     },
     "workbench.editor.limit.perEditorGroup": false,
     "workbench.editor.tabCloseButton": "left",
-    "workbench.editor.untitled.hint": "hidden",
     "workbench.editor.historyBasedLanguageDetection": true,
 
     "workbench.startupEditor": "newUntitledFile",

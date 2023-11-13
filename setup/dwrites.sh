@@ -30,7 +30,7 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 mkdir -p ~/Downloads/Screenshots
 defaults write com.apple.screencapture location ~/Downloads/Screenshots
 
-# Don't show files on the desktop (still shows in finder)
+# Don't show files on the desktop (still shows in finder) (also disables widgets)
 #defaults write com.apple.finder CreateDesktop NO
 
 # Enable airdrop over ethernet
