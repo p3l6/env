@@ -19,7 +19,7 @@ def xcode_item(name, path):
   return {
     "uid": "xc"+path, "type": "file:skipcheck",
     "title": name, "subtitle": path,
-    "arg": ["Xcode.app", path], "autocomplete": name,
+    "arg": ["x", path], "autocomplete": name,
     "icon": { "path": "./xcode.tiff" }
   }
 
@@ -47,12 +47,10 @@ items = []
 
 for top_entry in top_level_folders:
   if allowVscode: items.append(vscode_item(top_entry.name, top_entry.path))
+  if allowXcode: items.append(xcode_item(top_entry.name, top_entry.path))
   for child_entry in os.scandir(top_entry.path):
     if allowVscode and os.path.splitext(child_entry.name)[1] == '.code-workspace':
       items.append(vscode_item(child_entry.name, child_entry.path))
-    elif allowXcode and (os.path.splitext(child_entry.name)[1] == '.xcodeproj' or os.path.splitext(child_entry.name)[1] == '.xcworkspace' or child_entry.name == 'Package.swift'):
-      items.append(xcode_item(top_entry.name, child_entry.path))
-      items.append(xcode_item(child_entry.name, child_entry.path))
     elif allowFork and child_entry.name == '.git':
       items.append(fork_item(top_entry.name, top_entry.path))
 

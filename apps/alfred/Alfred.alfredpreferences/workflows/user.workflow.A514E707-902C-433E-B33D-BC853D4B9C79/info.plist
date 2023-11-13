@@ -79,7 +79,12 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>open -a "$1" $2</string>
+				<string>case $1 in
+  Fork.app) open -a "Fork.app" $2 ;;
+  Xcode.app) open -a "Xcode.app" $2 ;;
+  "Visual Studio Code.app") open -a "Visual Studio Code.app" $2 ;;
+  x) ~/var/env/bin/x $2 ;;
+esac</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -126,7 +131,7 @@
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>./</string>
+				<string></string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
