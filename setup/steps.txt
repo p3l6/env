@@ -1,0 +1,16 @@
+# New Mac setup steps
+
+ 1. Create a user account
+ 2. Do system updates
+ 3. Get Xcode and homebrew
+ 4. Run ssh-keygen, add it to github
+ 5. Clone this repo as ~/var/env
+ 6. Comment out hidden-flags lines in setup dots, if desired
+ 7. Comment out lines in dwrites, if desired
+ 8. Run setup_dots.sh
+ 9. Run dwrites.sh; killall Dock
+10. Run `brew bundle install --file setup/Brewfile`
+11. Run `duti setup/duti.conf`
+12. Set preferences, as listed in setup/preferences.txt
+13. Push changes for any problems encountered to repo
+14. Setup https://github.com/p3l6/XLineTool

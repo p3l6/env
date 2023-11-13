@@ -1,0 +1,135 @@
+
+######
+# Homebrew
+######
+
+### Fonts
+tap "homebrew/cask-fonts"
+cask "font-fira-code"
+cask "font-fira-sans"
+cask "font-monaspace"
+cask "font-sf-mono"
+
+### Qmk
+brew "qmk/qmk/qmk"
+
+### Shell
+brew "bat"
+brew "choose-rust"
+brew "cloc"
+brew "diff-so-fancy"
+brew "duti"
+brew "exa"
+brew "fd"
+brew "jq"
+brew "just"
+brew "nano"
+brew "nanorc"
+brew "ripgrep"
+brew "sd"
+brew "tldr"
+brew "trash"
+brew "vim"
+brew "wget"
+brew "zsh"
+
+### Source control
+brew "bfg"
+brew "gh"
+brew "git"
+brew "git-lfs"
+brew "git-sizer"
+# brew "jj"
+
+### Swift dev tools
+# brew "carthage"
+# brew "cocoapods"
+brew "swiftformat"
+brew "vapor"
+
+### Other dev tools
+# brew "cmake"
+# brew "ruby"
+# brew "deno"
+# brew "docker"
+# brew "node"
+# brew "yarn"
+
+######
+# Applications
+######
+
+### Utils
+cask "alfred"
+cask "bartender"
+cask "1password"
+cask "1password-cli"
+cask "iina"
+cask "itsycal"
+cask "mouse-fix"
+cask "netnewswire"
+cask "syntax-highlight"
+
+### Coding
+cask "dash"
+cask "docker"
+cask "fork"
+cask "visual-studio-code"
+cask "sf-symbols"
+cask "warp"
+
+### Work tools
+cask "gimp"
+cask "google-chrome"
+cask "slack"
+
+### Other tools
+cask "calibre"
+cask "handbrake"
+cask "keka"
+cask "transmission"
+
+### Games
+cask "steam"
+cask "minecraft"
+cask "openemu"
+cask "synthesia"
+cask "battle-net"
+
+######
+# App store
+######
+
+brew "mas"
+
+mas "1Password for Safari", id: 1569813296
+mas "Bear", id: 1091189122
+mas "Core Data Lab", id: 1460684638
+mas "CotEditor", id: 1024640650
+mas "DaisyDisk", id: 411643860
+mas "Developer", id: 640199958
+mas "SnippetsLab", id: 1006087419
+mas "Things", id: 904280696
+
+######
+# Vscode extensions
+######
+
+vscode "akamud.vscode-theme-onelight"
+vscode "BriteSnow.vscode-toggle-quotes"
+vscode "davidbwaters.macos-modern-theme"
+vscode "dbaeumer.vscode-eslint"
+vscode "deerawan.vscode-dash"
+vscode "denoland.vscode-deno"
+vscode "esbenp.prettier-vscode"
+vscode "fabiospampinato.vscode-open-in-github"
+vscode "humao.rest-client"
+vscode "ms-python.isort"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode-remote.remote-containers"
+vscode "rust-lang.rust-analyzer"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "tomoki1207.pdf"
+vscode "waderyan.gitblame"
+vscode "zhuangtongfa.material-theme"
