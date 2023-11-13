@@ -55,15 +55,15 @@
 	<key>DVTMarkupTextOtherHeadingColor</key>
 	<string>0 0 0 0.5</string>
 	<key>DVTMarkupTextOtherHeadingFont</key>
-	<string>.SFNS-Regular - 15.0</string>
+	<string>.SFNS-Regular - 15.4</string>
 	<key>DVTMarkupTextPrimaryHeadingColor</key>
 	<string>0 0 0 1</string>
 	<key>DVTMarkupTextPrimaryHeadingFont</key>
-	<string>.SFNS-Regular - 25.0</string>
+	<string>.SFNS-Regular - 26.4</string>
 	<key>DVTMarkupTextSecondaryHeadingColor</key>
 	<string>0 0 0 1</string>
 	<key>DVTMarkupTextSecondaryHeadingFont</key>
-	<string>.SFNS-Regular - 19.0</string>
+	<string>.SFNS-Regular - 19.8</string>
 	<key>DVTMarkupTextStrongColor</key>
 	<string>0 0 0 1</string>
 	<key>DVTMarkupTextStrongFont</key>
@@ -89,7 +89,7 @@
 	<key>DVTSourceTextCurrentLineHighlightColor</key>
 	<string>0.909804 0.94902 1 1</string>
 	<key>DVTSourceTextInsertionPointColor</key>
-	<string>0 0 0 1</string>
+	<string>0.0392157 0.374814 0.998368 1</string>
 	<key>DVTSourceTextInvisiblesColor</key>
 	<string>0.8 0.8 0.8 1</string>
 	<key>DVTSourceTextSelectionColor</key>
@@ -168,11 +168,11 @@
 		<key>xcode.syntax.character</key>
 		<string>FiraCode-Regular - 12.0</string>
 		<key>xcode.syntax.comment</key>
-		<string>FiraCode-Regular - 12.0</string>
+		<string>FiraCode-Light - 12.0</string>
 		<key>xcode.syntax.comment.doc</key>
-		<string>Helvetica - 12.0</string>
+		<string>FiraSans-Italic - 12.0</string>
 		<key>xcode.syntax.comment.doc.keyword</key>
-		<string>FiraCode-Bold - 12.0</string>
+		<string>FiraSans-BoldItalic - 12.0</string>
 		<key>xcode.syntax.declaration.other</key>
 		<string>FiraCode-Regular - 12.0</string>
 		<key>xcode.syntax.declaration.type</key>

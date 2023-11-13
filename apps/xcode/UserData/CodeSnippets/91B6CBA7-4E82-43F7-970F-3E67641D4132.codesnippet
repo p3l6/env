@@ -14,7 +14,7 @@
         
         public var errorDescription: String? {
             switch self {
-            case .&lt;#badThing#&gt;: return "Loggable description of the error"
+            case .&lt;#badThing#&gt;: "Loggable description of the error"
             }
         }
     }</string>
