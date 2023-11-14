@@ -13,7 +13,7 @@
 			<key>text</key>
 			<string>minecraft wiki page</string>
 			<key>url</key>
-			<string>https://minecraft.fandom.com/wiki/{query}</string>
+			<string>https://minecraft.wiki/w/{query}</string>
 		</dict>
 		<key>62A0F2E4-096C-4A7D-8EA5-6190FABD970A</key>
 		<dict>
@@ -24,7 +24,7 @@
 			<key>text</key>
 			<string>Minecraft wiki search</string>
 			<key>url</key>
-			<string>https://minecraft.fandom.com/wiki/Special:Search?query={query}&amp;scope=internal</string>
+			<string>https://minecraft.wiki/w/Special:Search?search={query}</string>
 		</dict>
 		<key>922DCB19-2DD3-4FCA-9623-DD519E6FD27B</key>
 		<dict>

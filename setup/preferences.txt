@@ -10,6 +10,7 @@
 │ │ ├─── Dash, from preferences
 │ │ ├─── https://github.com/p3l6/div
 │ │ ├─── http://www.packal.org/workflow/toggle-hidden-files
+│ │ ├─── https://alfred.app/workflows/biatidigital/calculate-anything/
 │ │ └─── https://alfred.app/workflows/benziahamed/menu-bar-search/
 │ ├─── Hotkey: Cmd + Space
 │ ├─── Clipboard history: On
