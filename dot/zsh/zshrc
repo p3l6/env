@@ -1,17 +1,14 @@
+
+# load path settings first
 export DOTFILES=$HOME/var/env
+export PATH=$PATH:$DOTFILES/bin/local:$DOTFILES/bin
+export PATH="$HOME/.cargo/bin:$PATH"
+export WRKSP=$HOME/var
+export WORK_DIR=$HOME/var
+export EDITOR=nano
 
-# load configs
-typeset -U config_files
-config_files=($DOTFILES/dot/**/*.zsh)
-
-# load path files first
-for file in ${(M)config_files:#*path.zsh}
-do
-  source $file
-done
-
-# load everything else
-for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
+# load all config files
+for file in $DOTFILES/dot/zsh/**/*.zsh
 do
   source $file
 done
@@ -20,10 +17,11 @@ done
 autoload -U compinit
 compinit
 
-# load completion files last
-for file in ${(M)config_files:#*/completion.zsh}
-do
-  source $file
-done
+# load completions
 
-unset config_files
+## matches case insensitive for lowercase
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+## pasting with tabs doesn't perform completion
+zstyle ':completion:*' insert-tab pending
+

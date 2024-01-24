@@ -1,6 +1,6 @@
 # Find all functions
-fpath=($DOTFILES/dot/functions $fpath)
-autoload -U $DOTFILES/dot/functions/*(:t)
+fpath=($DOTFILES/dot/zsh/functions $fpath)
+autoload -U $DOTFILES/dot/zsh/functions/*(:t)
 
 #add homebrew's site functions for completion
 if test -f '$(brew --prefix)/share/zsh/site-functions/'
