@@ -33,6 +33,121 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>92C563C1-E2A8-470D-A5A8-5AF4FAF8321D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6A9EC268-739A-4342-9BBA-11C0978EF944</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F7720BEB-434B-4114-84D4-8C4173692227</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>86965040-A8C2-41A3-B7F3-0BC0D86475BE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E81B944F-4677-499A-B7BA-3C712A600B92</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>FB354AAE-5893-4273-BB36-63D86FFCB4F1</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B9B843C6-9F2D-4172-8DFE-2858BF556E33</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>92C563C1-E2A8-470D-A5A8-5AF4FAF8321D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D388CBA7-A5E5-460E-96DC-F91284F67D99</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D12098F0-9D62-4FD6-838C-87FA57258B5E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>86965040-A8C2-41A3-B7F3-0BC0D86475BE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D388CBA7-A5E5-460E-96DC-F91284F67D99</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6A9EC268-739A-4342-9BBA-11C0978EF944</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>D13AD3C3-3243-4C5A-A8F1-8D264DB22B45</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D5F77B41-B966-43F1-BB18-EB00174E7CFF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D12098F0-9D62-4FD6-838C-87FA57258B5E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F7720BEB-434B-4114-84D4-8C4173692227</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D5F77B41-B966-43F1-BB18-EB00174E7CFF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>FE701113-0348-4C57-98D0-B067961A98C7</key>
 		<array>
@@ -93,7 +208,7 @@
 				<key>keyword</key>
 				<string>today</string>
 				<key>subtext</key>
-				<string>And open in vscode</string>
+				<string>And open in editor</string>
 				<key>text</key>
 				<string>Create today's note</string>
 				<key>withspace</key>
@@ -138,15 +253,200 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>app_list</key>
+					<string>Mail.app</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/macOS/app.quit</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>E81B944F-4677-499A-B7BA-3C712A600B92</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>app_list</key>
+					<string>Mail.app</string>
+					<key>in_background</key>
+					<true/>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/macOS/app.open</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>6A9EC268-739A-4342-9BBA-11C0978EF944</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run
+  tell application "Mail"
+    return the unread count of inbox
+  end tell
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D5F77B41-B966-43F1-BB18-EB00174E7CFF</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>target_app</key>
+					<string>Mail.app</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/macOS/app.running</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>92C563C1-E2A8-470D-A5A8-5AF4FAF8321D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>0</string>
+						<key>outputlabel</key>
+						<string>no mail</string>
+						<key>uid</key>
+						<string>FB354AAE-5893-4273-BB36-63D86FFCB4F1</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>unread</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>86965040-A8C2-41A3-B7F3-0BC0D86475BE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>10</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>F7720BEB-434B-4114-84D4-8C4173692227</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>D12098F0-9D62-4FD6-838C-87FA57258B5E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>6</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>no</string>
+						<key>uid</key>
+						<string>D13AD3C3-3243-4C5A-A8F1-8D264DB22B45</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>D388CBA7-A5E5-460E-96DC-F91284F67D99</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>app_list</key>
+					<string>Mail</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/macOS/app.open</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>B9B843C6-9F2D-4172-8DFE-2858BF556E33</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
-	<string>To work around committing variables to a git repo, instead of defining variables here, place the following variables in a single line separated by commas in a file called `variables.txt` in this workspace folder:
-
-Jira prefix url, ie https://something.atlassian.net/browse/
-Jira projects, space separated, ie BUG ABC FOO
-Pull request url, ie https://github.com/team/repo/pull/
-Slack team id
-Slack channel id for standups</string>
+	<string></string>
 	<key>uidata</key>
 	<dict>
 		<key>49F37ACD-6B31-41AB-8E47-C6D291E09C8A</key>
@@ -163,12 +463,85 @@ Slack channel id for standups</string>
 			<key>ypos</key>
 			<real>60</real>
 		</dict>
+		<key>6A9EC268-739A-4342-9BBA-11C0978EF944</key>
+		<dict>
+			<key>xpos</key>
+			<real>495</real>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
 		<key>6B3C505D-010A-451F-BF31-69EF0B5AF70F</key>
 		<dict>
 			<key>xpos</key>
 			<real>445</real>
 			<key>ypos</key>
 			<real>60</real>
+		</dict>
+		<key>86965040-A8C2-41A3-B7F3-0BC0D86475BE</key>
+		<dict>
+			<key>note</key>
+			<string>If 0</string>
+			<key>xpos</key>
+			<real>961</real>
+			<key>ypos</key>
+			<real>200</real>
+		</dict>
+		<key>92C563C1-E2A8-470D-A5A8-5AF4FAF8321D</key>
+		<dict>
+			<key>note</key>
+			<string>Launch mail in the background to check for messages every morning when running the today script</string>
+			<key>xpos</key>
+			<real>290</real>
+			<key>ypos</key>
+			<real>195</real>
+		</dict>
+		<key>B9B843C6-9F2D-4172-8DFE-2858BF556E33</key>
+		<dict>
+			<key>note</key>
+			<string>Bring to front</string>
+			<key>xpos</key>
+			<real>1070</real>
+			<key>ypos</key>
+			<real>240</real>
+		</dict>
+		<key>D12098F0-9D62-4FD6-838C-87FA57258B5E</key>
+		<dict>
+			<key>xpos</key>
+			<real>885</real>
+			<key>ypos</key>
+			<real>210</real>
+		</dict>
+		<key>D388CBA7-A5E5-460E-96DC-F91284F67D99</key>
+		<dict>
+			<key>xpos</key>
+			<real>435</real>
+			<key>ypos</key>
+			<real>215</real>
+		</dict>
+		<key>D5F77B41-B966-43F1-BB18-EB00174E7CFF</key>
+		<dict>
+			<key>note</key>
+			<string>Count unread emails</string>
+			<key>xpos</key>
+			<real>750</real>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+		<key>E81B944F-4677-499A-B7BA-3C712A600B92</key>
+		<dict>
+			<key>xpos</key>
+			<real>1070</real>
+			<key>ypos</key>
+			<real>125</real>
+		</dict>
+		<key>F7720BEB-434B-4114-84D4-8C4173692227</key>
+		<dict>
+			<key>note</key>
+			<string>10s</string>
+			<key>xpos</key>
+			<real>660</real>
+			<key>ypos</key>
+			<real>210</real>
 		</dict>
 		<key>FE701113-0348-4C57-98D0-B067961A98C7</key>
 		<dict>
