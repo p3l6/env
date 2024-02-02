@@ -39,6 +39,7 @@ $LINK ~/var/env/apps/vscode/snippets "${VSCODE}/snippets"
 $LINK ~/var/env/dot/lldb/lldbinit ~/.lldbinit
 
 $LINK ~/var/env/dot/zsh/zshrc ~/.zshrc
+$LINK ~/var/env/dot/fish ~/.config/fish
 
 if [ ! -f ~/.gitconfig_local ]; then
   printf "[user]\n  name = Paul Landers\n  email = paul@thelanders.family\n" > ~/.gitconfig_local
