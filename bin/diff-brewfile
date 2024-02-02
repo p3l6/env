@@ -1,0 +1,8 @@
+#! /bin/bash
+
+echo "======"
+echo "Green lines are new in the local environment      (resolve: add to Brewfile)"
+echo "Red   lines are in the brewfile but not installed (resolve: install, or remove from Brewfile)"
+echo "======"
+
+diff -u <(cat $DOTFILES/setup/Brewfile | grep '^[^#]' | sort) <(brew bundle dump --file=- | sort) | diff-so-fancy
