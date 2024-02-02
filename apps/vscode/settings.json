@@ -1,6 +1,7 @@
 {
     "breadcrumbs.filePath": "off",
     "cSpell.enabled": false,
+    "chaliceIcons.showArrows": true,
 
     "debug.javascript.codelens.npmScripts": "never",
     "deno.enable": false,
@@ -14,14 +15,13 @@
 
     "editor.tabSize": 2,
     "editor.trimAutoWhitespace": false,
-    "editor.lightbulb.enabled": false,
+    "editor.lightbulb.enabled": "off",
     "editor.copyWithSyntaxHighlighting": false,
     "editor.dragAndDrop": false,
     "editor.definitionLinkOpensInPeek": true,
     "editor.semanticHighlighting.enabled": true,
     "editor.stablePeek": true,
     "editor.fastScrollSensitivity": 1,
-    "editor.stickyScroll.enabled": true,
     "editor.inlayHints.enabled": "onUnlessPressed",
 
     "editor.bracketPairColorization.enabled": true,
@@ -36,6 +36,9 @@
     "editor.minimap.maxColumn": 50,
     "editor.overviewRulerBorder": false,
     "editor.scrollbar.verticalScrollbarSize": 6,
+    "editor.scrollbar.horizontalScrollbarSize": 4,
+    "editor.stickyScroll.enabled": true,
+    "editor.mouseWheelScrollSensitivity": 0.4,
 
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -69,9 +72,6 @@
     },
 
     "markdown.preview.breaks": true,
-    "[markdown]": {
-        "files.trimTrailingWhitespace": false
-    },
 
     "openInGitHub.useLocalBranch": false,
     "openInGitHub.remote.branch": "main",
@@ -93,30 +93,31 @@
     "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
     "typescript.inlayHints.enumMemberValues.enabled": true,
     "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+
     "window.title": "${activeEditorShort}${separator}${rootName}${separator}${activeEditorMedium}",
-    "window.commandCenter": true,
     "window.newWindowDimensions": "offset",
     "window.autoDetectColorScheme": true,
     "window.confirmBeforeClose": "keyboardOnly",
 
     "workbench.activityBar.location": "top",
-    "workbench.editor.showIcons": false,
-    "workbench.iconTheme": "macos-modern-big-sur-icon-theme",
-    "workbench.productIconTheme": "macos-modern",
-    "workbench.colorTheme": "MacOS Modern Light - Xcode Default",
-    "workbench.preferredLightColorTheme": "MacOS Modern Light - Xcode Default",
-    "workbench.preferredDarkColorTheme": "MacOS Modern Dark - Ventura Xcode",
+    "workbench.iconTheme": "chalice-icon-theme",
+    "workbench.colorTheme": "Modest macOS - Light",
+    "workbench.preferredLightColorTheme": "Modest macOS - Light",
+    "workbench.preferredDarkColorTheme": "Modest macOS - Dark",
     "workbench.colorCustomizations": {
         "terminalCursor.foreground": "#C456FF",
-        "minimap.findMatchHighlight": "#C456FF",
+        "minimap.findMatchHighlight": "#C456FF88",
         "minimap.foregroundOpacity": "#FFFFFF99",
         "editorBracketHighlight.unexpectedBracket.foreground": "#A52A2A",
     },
 
+    "workbench.editor.tabActionLocation": "left",
+    "workbench.editor.showIcons": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.revealIfOpen": true,
     "workbench.editor.openPositioning": "last",
 
+    "workbench.editor.historyBasedLanguageDetection": true,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.decorations.colors": true,
     "workbench.editor.decorations.badges": true,
@@ -130,9 +131,7 @@
         "mainThreadWebview-markdown.preview": true
     },
     "workbench.editor.limit.perEditorGroup": false,
-    "workbench.editor.tabCloseButton": "left",
-    "workbench.editor.historyBasedLanguageDetection": true,
-
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.indent": 12
+    "workbench.tree.indent": 12,
+
 }

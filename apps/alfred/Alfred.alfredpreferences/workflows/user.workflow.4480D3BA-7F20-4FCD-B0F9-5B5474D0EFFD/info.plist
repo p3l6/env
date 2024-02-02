@@ -181,7 +181,7 @@
 				<key>allowemptyfiles</key>
 				<true/>
 				<key>createintermediatefolders</key>
-				<false/>
+				<true/>
 				<key>filename</key>
 				<string>{query}</string>
 				<key>filetext</key>
@@ -240,7 +240,7 @@
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>/Users/paul/var/logbook/{date:yyyy/MM/yyyy-MM-DD}.md</string>
+				<string>/Users/paul/var/logbook/{date:yyyy/MM/yyyy-MM-dd}.md</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
