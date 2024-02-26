@@ -84,6 +84,7 @@
 
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.fastScrollSensitivity": 1,
+    "terminal.integrated.shellIntegration.enabled": false,
 
     "typescript.updateImportsOnFileMove.enabled": "never",
     "typescript.autoClosingTags": false,

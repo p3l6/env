@@ -14,6 +14,11 @@ abbr --add --set-cursor var cd $WRKSP/%
 abbr --add --set-cursor varb cd $WRKSP/boomjam-%
 
 
+# Various shell integrations
 
-test -e /Users/paul/.iterm2_shell_integration.fish ; and source /Users/paul/.iterm2_shell_integration.fish ; or true
-# todo vscode integration snippet. both conditional
+string match -q "$TERM_PROGRAM" "iTerm"
+and test -e $HOME/.iterm2_shell_integration.fish
+and source $HOME/.iterm2_shell_integration.fish
+
+string match -q "$TERM_PROGRAM" "vscode"
+and source (code --locate-shell-integration-path fish)

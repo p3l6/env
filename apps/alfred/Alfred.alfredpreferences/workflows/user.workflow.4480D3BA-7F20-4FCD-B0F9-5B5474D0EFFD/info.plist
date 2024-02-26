@@ -8,24 +8,11 @@
 	<string>Committed</string>
 	<key>connections</key>
 	<dict>
-		<key>49F37ACD-6B31-41AB-8E47-C6D291E09C8A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6B3C505D-010A-451F-BF31-69EF0B5AF70F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>684AAAAE-A3D5-4D2B-8A51-5B33BB4155B1</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>FE701113-0348-4C57-98D0-B067961A98C7</string>
+				<string>9A72C4BE-9004-451B-ADE1-1046217F49D6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -95,6 +82,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9A72C4BE-9004-451B-ADE1-1046217F49D6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6B3C505D-010A-451F-BF31-69EF0B5AF70F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D12098F0-9D62-4FD6-838C-87FA57258B5E</key>
 		<array>
 			<dict>
@@ -149,19 +149,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>FE701113-0348-4C57-98D0-B067961A98C7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>49F37ACD-6B31-41AB-8E47-C6D291E09C8A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Paul Landers</string>
@@ -176,29 +163,40 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>adduuid</key>
-				<false/>
-				<key>allowemptyfiles</key>
-				<true/>
-				<key>createintermediatefolders</key>
-				<true/>
-				<key>filename</key>
-				<string>{query}</string>
-				<key>filetext</key>
-				<string>## </string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>relativepathmode</key>
-				<integer>0</integer>
-				<key>type</key>
-				<integer>0</integer>
+				<key>openwith</key>
+				<string>/Applications/MarkEdit.app</string>
+				<key>sourcefile</key>
+				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.writefile</string>
+			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>49F37ACD-6B31-41AB-8E47-C6D291E09C8A</string>
+			<string>6B3C505D-010A-451F-BF31-69EF0B5AF70F</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>~/var/logbook/bin/today</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9A72C4BE-9004-451B-ADE1-1046217F49D6</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -218,38 +216,6 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>684AAAAE-A3D5-4D2B-8A51-5B33BB4155B1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string>/Applications/MarkEdit.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>6B3C505D-010A-451F-BF31-69EF0B5AF70F</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>/Users/paul/var/logbook/{date:yyyy/MM/yyyy-MM-dd}.md</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>FE701113-0348-4C57-98D0-B067961A98C7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -449,13 +415,6 @@ end run</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>49F37ACD-6B31-41AB-8E47-C6D291E09C8A</key>
-		<dict>
-			<key>xpos</key>
-			<real>290</real>
-			<key>ypos</key>
-			<real>60</real>
-		</dict>
 		<key>684AAAAE-A3D5-4D2B-8A51-5B33BB4155B1</key>
 		<dict>
 			<key>xpos</key>
@@ -473,9 +432,9 @@ end run</string>
 		<key>6B3C505D-010A-451F-BF31-69EF0B5AF70F</key>
 		<dict>
 			<key>xpos</key>
-			<real>445</real>
+			<real>480</real>
 			<key>ypos</key>
-			<real>60</real>
+			<real>55</real>
 		</dict>
 		<key>86965040-A8C2-41A3-B7F3-0BC0D86475BE</key>
 		<dict>
@@ -494,6 +453,13 @@ end run</string>
 			<real>290</real>
 			<key>ypos</key>
 			<real>195</real>
+		</dict>
+		<key>9A72C4BE-9004-451B-ADE1-1046217F49D6</key>
+		<dict>
+			<key>xpos</key>
+			<real>295</real>
+			<key>ypos</key>
+			<real>55</real>
 		</dict>
 		<key>B9B843C6-9F2D-4172-8DFE-2858BF556E33</key>
 		<dict>
@@ -542,13 +508,6 @@ end run</string>
 			<real>660</real>
 			<key>ypos</key>
 			<real>210</real>
-		</dict>
-		<key>FE701113-0348-4C57-98D0-B067961A98C7</key>
-		<dict>
-			<key>xpos</key>
-			<real>220</real>
-			<key>ypos</key>
-			<real>90</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

@@ -3,6 +3,7 @@ ref/www/
 
 dot/local
 bin/local
+dot/fish/conf.d/local.fish
 
 apps/karabiner/automatic_backups
 

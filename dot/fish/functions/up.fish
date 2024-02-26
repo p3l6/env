@@ -9,5 +9,5 @@ function up
         set change_path "$change_path../"
     end
 
-    echo $change_path
+    cd $change_path
 end
