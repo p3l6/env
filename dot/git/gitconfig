@@ -5,7 +5,17 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	whitespace = -blank-at-eol
-	pager = diff-so-fancy | less --tabs=2 -RFX
+	pager = delta
+[delta]
+    navigate = true
+    line-numbers = true
+[diff]
+    colorMoved = default
+[fetch]
+    prune = true
+    prunetags = true
+[interactive]
+    diffFilter = delta --color-only
 [push]
 	default = simple
 [alias]
@@ -38,25 +48,22 @@
 	search = log --pretty=format:\"%C(yellow)%h %Cblue%ad %Cgreen%aN%Cred%d %Creset%s\" --date=short -S
 	amend-content = commit --amend --no-edit
 	amend-message = commit --amend --no-verify
-	prune-all = ! git prune-origin && git prune-local
 	prune-local = ! git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D
-	prune-origin = remote prune origin
 
 	# Abbreviations
 	cp = cherry-pick
 	original = remote set-url origin
-
-	# Overrides diff-so-fancy for a sharable diff
-	patch = !git --no-pager diff
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[diff-so-fancy]
-	markEmptyLines = false
+[merge]
+    conflictstyle = zdiff3
 [pull]
-	rebase = true
+	ff = only
 [init]
 	defaultBranch = main
+[url "git@github.com:"]
+	insteadOf = "https://github.com/"
