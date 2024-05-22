@@ -16,9 +16,9 @@ abbr --add --set-cursor varb cd $WRKSP/boomjam-%
 
 # Various shell integrations
 
-string match -q "$TERM_PROGRAM" "iTerm"
+string match -q "iTerm.app" "$TERM_PROGRAM"
 and test -e $HOME/.iterm2_shell_integration.fish
 and source $HOME/.iterm2_shell_integration.fish
 
-string match -q "$TERM_PROGRAM" "vscode"
+string match -q "vscode" "$TERM_PROGRAM"
 and source (code --locate-shell-integration-path fish)
