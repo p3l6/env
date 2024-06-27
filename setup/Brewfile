@@ -20,6 +20,7 @@ brew "diff-so-fancy"
 brew "duti"
 brew "eza"
 brew "fd"
+brew "fish"
 brew "jq"
 brew "just"
 brew "nano"
@@ -36,9 +37,10 @@ brew "zsh"
 brew "bfg"
 brew "gh"
 brew "git"
+brew "git-delta"
 brew "git-lfs"
 brew "git-sizer"
-# brew "jj"
+brew "jj"
 
 ### Swift dev tools
 # brew "carthage"
@@ -47,12 +49,13 @@ brew "swiftformat"
 brew "vapor"
 
 ### Other dev tools
-brew "typst"
 # brew "cmake"
-# brew "ruby"
 # brew "deno"
 # brew "docker"
 # brew "node"
+# brew "ruby"
+brew "typst"
+# brew "vsce"
 # brew "yarn"
 
 ######
@@ -66,7 +69,7 @@ cask "1password"
 cask "1password-cli"
 cask "iina"
 cask "itsycal"
-cask "mouse-fix"
+cask "mac-mouse-fix"
 cask "netnewswire"
 cask "syntax-highlight"
 
@@ -74,9 +77,9 @@ cask "syntax-highlight"
 cask "dash"
 cask "docker"
 cask "fork"
-cask "visual-studio-code"
+cask "iterm2"
 cask "sf-symbols"
-cask "warp"
+cask "visual-studio-code"
 
 ### Work tools
 cask "gimp"
@@ -108,29 +111,26 @@ mas "Core Data Lab", id: 1460684638
 mas "CotEditor", id: 1024640650
 mas "DaisyDisk", id: 411643860
 mas "Developer", id: 640199958
-mas "SnippetsLab", id: 1006087419
+mas "Free Ruler", id: 1483172210
 mas "Things", id: 904280696
+mas "Xcode", id: 497799835
 
 ######
 # Vscode extensions
 ######
 
-vscode "akamud.vscode-theme-onelight"
-vscode "BriteSnow.vscode-toggle-quotes"
-vscode "davidbwaters.macos-modern-theme"
+vscode "artlaman.chalice-icon-theme"
+vscode "briteSnow.vscode-toggle-quotes"
 vscode "dbaeumer.vscode-eslint"
 vscode "deerawan.vscode-dash"
-vscode "denoland.vscode-deno"
 vscode "esbenp.prettier-vscode"
 vscode "fabiospampinato.vscode-open-in-github"
-vscode "humao.rest-client"
 vscode "ms-python.isort"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-vscode-remote.remote-containers"
 vscode "nvarner.typst-lsp"
-vscode "rust-lang.rust-analyzer"
+vscode "redhat.vscode-yaml"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "tomoki1207.pdf"
 vscode "waderyan.gitblame"
-vscode "zhuangtongfa.material-theme"
