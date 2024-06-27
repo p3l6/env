@@ -11,8 +11,21 @@ set functioncolor magenta
 set keycolor cyan,normal
 set numbercolor yellow,normal
 
-bind ^F whereis all
 bind ^/ comment all
-bind ^Z undo all
-bind ^Y copy all
+bind M-F nextword main
+bind M-B prevword main
 
+# The following match the CLI option: --modernbindings
+bind ^Q exit main
+bind ^X cut main
+bind ^C copy main
+bind ^V paste main
+bind ^Z undo main
+bind ^Y redo main
+bind ^W writeout main
+bind ^R replace main
+bind ^G findnext main
+bind ^D findprevious main
+bind ^A mark main
+bind ^T gotoline main
+bind ^E execute main

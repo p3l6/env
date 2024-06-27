@@ -106,7 +106,7 @@
 │   └─── use notifications
 └─┬─ System Preferences
   ├─┬─ Appearance
-  │ ├─── theme: dark
+  │ ├─── theme: match day cycle
   │ ├─── accent: multi
   │ ├─── show scroll bars: when scrolling
   │ ├─── scroll bar: jump to spot clicked

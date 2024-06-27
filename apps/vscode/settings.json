@@ -54,11 +54,15 @@
     "files.autoSave": "onFocusChange",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "files.exclude": {
+        "**/.jj": true
+    },
 
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
     "git.enableStatusBarSync": false,
     "git.rebaseWhenSync": true,
+    "git.openRepositoryInParentFolders": "never",
 
     "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
     "gitblame.infoMessageFormat": "[${commit.hash_short}] ${commit.summary}",
@@ -72,6 +76,8 @@
     },
 
     "markdown.preview.breaks": true,
+
+    "openapi.codeLens": false,
 
     "openInGitHub.useLocalBranch": false,
     "openInGitHub.remote.branch": "main",
