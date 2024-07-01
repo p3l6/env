@@ -78,6 +78,7 @@ cask "dash"
 cask "docker"
 cask "fork"
 cask "iterm2"
+cask "markedit"
 cask "sf-symbols"
 cask "visual-studio-code"
 

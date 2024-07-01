@@ -44,6 +44,15 @@
 │ └─┬─ Viewing
 │   ├─── Move discards to Archive
 │   └─── Show most recent message at the top
+├─┬─ MarkEdit
+│ ├─┬─ Editor
+│ │ ├─── Fira Code regular 13
+│ │ └─── Xcode Light/dark
+│ ├─┬─ Assistant
+│ │ ├─── Insert final newline
+│ │ └─── Trim trailing whitespace
+│ └─┬─ Window
+│   └─── Tabbing mode: preferred
 ├─┬─ Safari
 │ ├─┬─ General
 │ │ └───  Don't open safe files
