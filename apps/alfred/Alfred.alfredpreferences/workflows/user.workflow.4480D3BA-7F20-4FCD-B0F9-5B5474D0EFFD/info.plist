@@ -8,6 +8,32 @@
 	<string>Committed</string>
 	<key>connections</key>
 	<dict>
+		<key>0767B09B-6E34-43E7-AD5E-55B068070629</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5A02F7B0-FD5E-40AE-A96B-CC350ABC6B40</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5A02F7B0-FD5E-40AE-A96B-CC350ABC6B40</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B85BA247-9EDC-4A3F-9932-F35B7A165810</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>684AAAAE-A3D5-4D2B-8A51-5B33BB4155B1</key>
 		<array>
 			<dict>
@@ -87,6 +113,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>6B3C505D-010A-451F-BF31-69EF0B5AF70F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B85BA247-9EDC-4A3F-9932-F35B7A165810</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>31A56506-03CE-4C24-9376-D39E35E6CDF1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -410,11 +449,121 @@ end run</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open -a 'MarkEdit' "${@}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>31A56506-03CE-4C24-9376-D39E35E6CDF1</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>~/var/logbook/bin/last-week</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5A02F7B0-FD5E-40AE-A96B-CC350ABC6B40</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>week</string>
+				<key>subtext</key>
+				<string>And open in editor</string>
+				<key>text</key>
+				<string>Create last week's notes</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>0767B09B-6E34-43E7-AD5E-55B068070629</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>
+</string>
+				<key>discardemptyarguments</key>
+				<true/>
+				<key>outputas</key>
+				<integer>1</integer>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>split</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>B85BA247-9EDC-4A3F-9932-F35B7A165810</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>0767B09B-6E34-43E7-AD5E-55B068070629</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>455</real>
+		</dict>
+		<key>31A56506-03CE-4C24-9376-D39E35E6CDF1</key>
+		<dict>
+			<key>xpos</key>
+			<real>445</real>
+			<key>ypos</key>
+			<real>455</real>
+		</dict>
+		<key>5A02F7B0-FD5E-40AE-A96B-CC350ABC6B40</key>
+		<dict>
+			<key>xpos</key>
+			<real>200</real>
+			<key>ypos</key>
+			<real>455</real>
+		</dict>
 		<key>684AAAAE-A3D5-4D2B-8A51-5B33BB4155B1</key>
 		<dict>
 			<key>xpos</key>
@@ -460,6 +609,13 @@ end run</string>
 			<real>295</real>
 			<key>ypos</key>
 			<real>55</real>
+		</dict>
+		<key>B85BA247-9EDC-4A3F-9932-F35B7A165810</key>
+		<dict>
+			<key>xpos</key>
+			<real>365</real>
+			<key>ypos</key>
+			<real>485</real>
 		</dict>
 		<key>B9B843C6-9F2D-4172-8DFE-2858BF556E33</key>
 		<dict>
