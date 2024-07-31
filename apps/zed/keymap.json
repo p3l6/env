@@ -1,0 +1,27 @@
+[
+  {
+    "bindings": {
+      "cmd-shift-y": "workspace::ToggleBottomDock",
+      "cmd-shift-o": "file_finder::Toggle",
+      "cmd-p": "outline::Toggle",
+      "cmd-0": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-down": "editor::AddSelectionBelow",
+      "alt-up": "editor::AddSelectionAbove",
+      "cmd-d": "editor::DeleteLine",
+      "cmd-shift-d": "editor::DuplicateLineDown",
+      "shift-enter": "editor::NewlineBelow",
+      "shift-alt-up": "editor::MoveLineUp",
+      "shift-alt-down": "editor::MoveLineDown",
+      "cmd-l": "go_to_line::Toggle",
+      "cmd-shift-e": "editor::SelectNext",
+      "cmd-ctrl-left": "pane::GoBack",
+      "cmd-ctrl-right": "pane::GoForward",
+      "cmd-ctrl-j": "editor::GoToDefinition"
+    }
+  }
+]

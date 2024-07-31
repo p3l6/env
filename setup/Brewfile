@@ -6,7 +6,7 @@
 ### Fonts
 cask "font-fira-code"
 cask "font-fira-sans"
-cask "font-monaspace"
+cask "font-latin-modern"
 cask "font-sf-mono"
 
 ### Qmk
@@ -81,6 +81,7 @@ cask "iterm2"
 cask "markedit"
 cask "sf-symbols"
 cask "visual-studio-code"
+cask "zed"
 
 ### Work tools
 cask "gimp"

@@ -36,6 +36,8 @@ $LINK ~/var/env/apps/warp/ ~/.warp
 $LINK ~/var/env/apps/vscode/settings.json "${VSCODE}/settings.json"
 $LINK ~/var/env/apps/vscode/keybindings.json "${VSCODE}/keybindings.json"
 $LINK ~/var/env/apps/vscode/snippets "${VSCODE}/snippets"
+$LINK ~/var/env/apps/zed/keymap.json ~/.config/zed/keymap.json
+$LINK ~/var/env/apps/zed/settings.json ~/.config/zed/settings.json
 $LINK ~/var/env/dot/lldb/lldbinit ~/.lldbinit
 
 $LINK ~/var/env/dot/zsh/zshrc ~/.zshrc

@@ -65,5 +65,6 @@
 	ff = only
 [init]
 	defaultBranch = main
-[url "git@github.com:"]
-	insteadOf = "https://github.com/"
+# Cool, but breaks xcode package manager: add/update package actions
+# [url "git@github.com:"]
+# insteadOf = "https://github.com/"
