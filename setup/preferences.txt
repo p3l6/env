@@ -16,9 +16,6 @@
 │ ├─── Clipboard history: On
 │ ├─── Appearance > Options > Hide hat on alfred window
 │ └─── Sync directory: ~/var/env/apps/alfred
-├─┬─ Bartender
-│ ├─── dont use bartender bar for hidden items
-│ └─── menu bar icon: not visible
 ├─┬─ Bear
 │ ├─── Markdown mode
 │ ├─── Bear > Web content preferences > no images; tags: !
@@ -35,6 +32,9 @@
 │   ├─── always open in list view
 │   ├─── browse in list view
 │   └─── show library folder
+├─┬─ Ice
+│ ├─── Launch at login
+│ └─── Don't show icon
 ├─┬─ iTerm
 │ └─── Use settings folder: ~/var/env/apps/iterm/ ; update manually; quit (to apply) ; update automatically
 ├─┬─ Itsycal

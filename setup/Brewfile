@@ -64,11 +64,11 @@ brew "typst"
 
 ### Utils
 cask "alfred"
-cask "bartender"
 cask "1password"
 cask "1password-cli"
 cask "iina"
 cask "itsycal"
+cask "jordanbaird-ice"
 cask "mac-mouse-fix"
 cask "netnewswire"
 cask "syntax-highlight"
