@@ -8,6 +8,19 @@
 	<string>Committed</string>
 	<key>connections</key>
 	<dict>
+		<key>558F93BC-BFBF-4675-A52D-4C0E0B513B47</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6262E61A-70A6-4256-BC3F-FCA1EF21155E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>60892BF6-1798-4C0F-894D-61C044194F1C</key>
 		<array>
 			<dict>
@@ -82,6 +95,7 @@
 				<string>case $1 in
   Fork.app) open -a "Fork.app" $2 ;;
   Xcode.app) open -a "Xcode.app" $2 ;;
+  Zed.app) open -a "Zed.app" $2 ;;
   "Visual Studio Code.app") open -a "Visual Studio Code.app" $2 ;;
   x) ~/var/env/bin/x $2 ;;
 esac</string>
@@ -295,11 +309,67 @@ esac</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>zed</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>...</string>
+				<key>script</key>
+				<string>python3 ./codeFolders.py "${WORKSPACE}" "Zed.app"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Open folder in zed</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>558F93BC-BFBF-4675-A52D-4C0E0B513B47</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>WORKSPACE is a folder where you keep all your projects.</string>
 	<key>uidata</key>
 	<dict>
+		<key>558F93BC-BFBF-4675-A52D-4C0E0B513B47</key>
+		<dict>
+			<key>xpos</key>
+			<real>35</real>
+			<key>ypos</key>
+			<real>485</real>
+		</dict>
 		<key>60892BF6-1798-4C0F-894D-61C044194F1C</key>
 		<dict>
 			<key>xpos</key>
