@@ -93,6 +93,7 @@ cask "calibre"
 cask "handbrake"
 cask "keka"
 cask "transmission"
+cask "losslesscut"
 
 ### Games
 cask "steam"
