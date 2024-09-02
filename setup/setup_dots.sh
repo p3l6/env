@@ -21,7 +21,7 @@ else
   MAC='NO'
 fi
 
-mkdir -p $VSCODE
+mkdir -p "$VSCODE" $HOME/.config/zed
 
 # TODO add a common extension to all of these, and find them  automatically
 # ie https://github.com/holman/dotfiles/blob/master/zsh/zshrc.symlink

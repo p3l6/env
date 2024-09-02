@@ -16,7 +16,6 @@
 │ ├─── Appearance > Options > Hide hat on alfred window
 │ └─── Sync directory: ~/var/env/apps/alfred
 ├─┬─ Bear
-│ ├─── Markdown mode
 │ ├─── Bear > Web content preferences > no images; tags: !
 │ └─── Global shortcut: open main window: Shift + Cmd + \
 ├─┬─ Dash
@@ -65,7 +64,7 @@
 ├─┬─ Mac Mouse Fix
 │ ├─── Show in menu bar
 │ ├─┬─ Scrolling
-│ │ └─── Always on precise scrolling
+│ │ └─── Precision
 │ └─┬─ Buttons
 │   ├─── Button 4 Click: Back
 │   ├─── Button 4 Double Click: Forward
@@ -117,8 +116,7 @@
   │ ├─── theme: match day cycle
   │ ├─── accent: multi
   │ ├─── show scroll bars: when scrolling
-  │ ├─── scroll bar: jump to spot clicked
-  │ └─── default browser: safari
+  │ └─── scroll bar: jump to spot clicked
   ├─┬─ Accessibility
   │ ├─── use scroll gesture with ctrl to zoom
   │ └─── double click speed second from fastest
@@ -132,12 +130,12 @@
   │ ├─── position: left
   │ ├─── automatically show and hide the dock
   │ ├─── don't show recent applications in dock
+  │ └─┬─ Mission Control
+  │   ├─── o o x x ^up ^down f10
+  │   └─── no hot corners
   ├─┬─ Wallpaper
   │ ├─── add folder ~/Desktop/Wallpaper/
   │ └─── random when waking up
-  ├─┬─ Mission Control
-  │ ├─── o o x x ^up ^down f10
-  │ └─── no hot corners
   ├─┬─ Keyboard
   │ ├─┬─ Text
   │ │ └─── don't use smart quotes and dashes
