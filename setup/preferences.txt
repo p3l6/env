@@ -39,6 +39,8 @@
 │ ├─── launch at login
 │ └─── use outline icon
 ├─┬─ Mail
+│ ├─┬─ Fonts
+│ │ └─── Use fixed width for plain text
 │ └─┬─ Viewing
 │   ├─── Move discards to Archive
 │   └─── Show most recent message at the top
