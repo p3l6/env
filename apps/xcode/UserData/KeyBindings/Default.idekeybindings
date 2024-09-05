@@ -148,7 +148,7 @@
 				<key>Alternate</key>
 				<string>NO</string>
 				<key>CommandID</key>
-				<string>IDESourceEditorExtension:pwxn.XLineTool.XLineTools,IDESourceEditorExtensionCommand:pwxn.XLineTool.XLineTools.Duplicate</string>
+				<string>IDESourceEditorExtension:dev.p3l6.XLineTool.XLineTools,IDESourceEditorExtensionCommand:dev.p3l6.XLineTool.XLineTools.Duplicate</string>
 				<key>Group</key>
 				<string>Editor Menu for Source Code</string>
 				<key>GroupID</key>
@@ -170,7 +170,7 @@
 				<key>Alternate</key>
 				<string>NO</string>
 				<key>CommandID</key>
-				<string>IDESourceEditorExtension:pwxn.XLineTool.XLineTools,IDESourceEditorExtensionCommand:pwxn.XLineTool.XLineTools.NewlineAfter</string>
+				<string>IDESourceEditorExtension:dev.p3l6.XLineTool.XLineTools,IDESourceEditorExtensionCommand:dev.p3l6.XLineTool.XLineTools.NewlineAfter</string>
 				<key>Group</key>
 				<string>Editor Menu for Source Code</string>
 				<key>GroupID</key>
