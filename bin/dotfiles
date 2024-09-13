@@ -1,6 +1,15 @@
 #! /usr/bin/env ruby
 
-def help()
+require 'yaml'
+
+#### HELPERS
+
+
+
+
+#### COMMANDS
+
+def help
   puts "Dotfiles management and setup commands:"
   puts "  help:      print this info"
   puts "  configure: generate sample config for dotfiles"
@@ -20,7 +29,18 @@ def brewBundle()
 end
 
 def link()
-  system("./setup/setup_dots.sh")
+  repo = File.expand_path(File.join(__dir__, '../'))
+  file = File.join(repo, 'config/links.yaml')
+  home = Dir.home
+
+  yamlFile = YAML.load_file(file)
+  yamlFile['mkdirs-in-home'].each do |dir|
+    system("mkdir", "-p", File.join(home, dir))
+  end
+  yamlFile['links'].each do |link|
+    # TODO: if link is already correct, skip
+    system("ln", "-sih", File.join(repo, link['repo']), File.join(home, link['home']))
+  end
 end
 
 def prefs()

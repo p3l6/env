@@ -1,0 +1,37 @@
+mkdirs-in-home:
+  - Library/Application Support/Code/User
+  - .config/zed
+  - Library/Developer/Xcode/UserData
+links:
+  - home: .bash_profile
+    repo: dot/bash/bash_profile
+  - home: .bashrc
+    repo: dot/bash/bashrc
+  - home: .vimrc
+    repo: dot/vim/vimrc
+  - home: .nanorc
+    repo: dot/nano/nanorc
+  - home: .gitconfig
+    repo: dot/git/gitconfig
+  - home: .gitignore_global
+    repo: dot/git/gitignore_global
+  - home: .warp
+    repo: apps/warp/
+  - home: .config/zed/keymap.json
+    repo: apps/zed/keymap.json
+  - home: .config/zed/settings.json
+    repo: apps/zed/settings.json
+  - home: .lldbinit
+    repo: dot/lldb/lldbinit
+  - home: .zshrc
+    repo: dot/zsh/zshrc
+  - home: .config/fish
+    repo: dot/fish
+  - home: Library/Developer/Xcode/UserData
+    repo: apps/xcode/UserData
+  - home: Library/Application Support/Code/User/settings.json
+    repo: apps/vscode/settings.json
+  - home: Library/Application Support/Code/User/keybindings.json
+    repo: apps/vscode/keybindings.json
+  - home: Library/Application Support/Code/User/snippets
+    repo: apps/vscode/snippets

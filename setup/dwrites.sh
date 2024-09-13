@@ -41,3 +41,7 @@ defaults write com.apple.Terminal CopyAttributesProfile com.apple.Terminal.no-at
 
 # Disable the warning before emptying the Trash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+chflags nohidden ~/Library
+chflags hidden ~/Public
+chflags hidden ~/Music ~/Movies ~/Pictures
