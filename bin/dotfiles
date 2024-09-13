@@ -1,0 +1,59 @@
+#! /usr/bin/env ruby
+
+def help()
+  puts "Dotfiles management and setup commands:"
+  puts "  help:      print this info"
+  puts "  configure: generate sample config for dotfiles"
+  puts "  get-brew:  install brew"
+  puts "  bundle:    install tools from brewfile"
+  puts "  link:      create symlinks"
+  puts "  fish:      set fish as default shell"
+  puts "  prefs:     load prefs from dwrites, duti conf, and print manual prefs"
+end
+
+def getBrew()
+  system("curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh")
+end
+
+def brewBundle()
+  system("brew bundle install --file ./setup/Brewfile")
+end
+
+def link()
+  system("./setup/setup_dots.sh")
+end
+
+def prefs()
+  system("./setup/dwrites.sh")
+  system("killall Dock")
+  system("duti ./setup/duti.conf")
+  system("cat ./setup/preferences.txt")
+end
+
+def configure()
+end
+
+def fish()
+  system("sudo echo /opt/homebrew/bin/fish >> /etc/shells")
+  system("chsh -s /opt/homebrew/bin/fish")
+end
+
+if ARGV.length == 0
+  help()
+  exit
+end
+
+ARGV.each do |f|
+  case f
+    when "help"; help
+    when "get-brew"; getBrew
+    when "bundle"; brewBundle
+    when "link"; link
+    when "prefs"; prefs
+    when "configure"; configure
+    when "fish"; fish
+    else
+      puts "unknown command: #{f}. see help for more info"
+      exit!
+  end
+end
