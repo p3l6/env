@@ -4,58 +4,101 @@ require 'yaml'
 
 #### HELPERS
 
+$repo = File.expand_path(File.join(__dir__, '../'))
+$home = Dir.home
 
+def load_config
+  config_file_yaml = File.join($repo, "config/local/vars.yaml")
+  vars = {}
+  if File.exist?(config_file_yaml)
+    vars = YAML.load_file(config_file_yaml)
+  end
+  return vars
+end
 
+def save_config(vars)
+  config_file_yaml = File.join($repo, "config/local/vars.yaml")
+  parent = File.join($repo, "config/local")
+  Dir.mkdir(parent) unless Dir.exists?(parent)
+
+  File.write(config_file_yaml, vars.to_yaml)
+
+  zsh_output = vars.map { |key, var| "export #{key}=\"#{var}\"" }.join("\n")
+  File.write(File.join($repo, "config/local/vars.zsh"), zsh_output)
+
+  fish_output = vars.map { |key, var| "set -gx #{key} #{var}" }.join("\n")
+  File.write(File.join($repo, "config/local/vars.fish"), fish_output)
+
+  git_output = "[user]\n  name = #{vars['GIT_NAME']}\n  email = #{vars['GIT_EMAIL']}\n"
+  File.write(File.join($home, ".gitconfig_local"), git_output) # TODO: move to config dir, but then gitconfig would depend on checkout location.
+end
 
 #### COMMANDS
 
-def help
-  puts "Dotfiles management and setup commands:"
-  puts "  help:      print this info"
-  puts "  configure: generate sample config for dotfiles"
-  puts "  get-brew:  install brew"
-  puts "  bundle:    install tools from brewfile"
-  puts "  link:      create symlinks"
-  puts "  fish:      set fish as default shell"
-  puts "  prefs:     load prefs from dwrites, duti conf, and print manual prefs"
-end
-
 def getBrew()
-  system("curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh")
+  system('/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"')
 end
 
 def brewBundle()
-  system("brew bundle install --file ./setup/Brewfile")
+  brew_file = File.join($repo, "setup/Brewfile")
+  system("brew bundle install --file #{brew_file}")
 end
 
 def link()
-  repo = File.expand_path(File.join(__dir__, '../'))
-  file = File.join(repo, 'config/links.yaml')
-  home = Dir.home
+  file = File.join($repo, 'config/links.yaml')
 
-  yamlFile = YAML.load_file(file)
-  yamlFile['mkdirs-in-home'].each do |dir|
-    system("mkdir", "-p", File.join(home, dir))
+  yaml_file = YAML.load_file(file)
+  yaml_file['mkdirs-in-home'].each do |dir|
+    # ruby's mkdir isn't recursive
+    system("mkdir", "-p", File.join($home, dir))
   end
-  yamlFile['links'].each do |link|
-    # TODO: if link is already correct, skip
-    system("ln", "-sih", File.join(repo, link['repo']), File.join(home, link['home']))
+  yaml_file['links'].each do |link|
+    new_link = File.join($home, link['home'])
+    File.symlink(File.join($repo, link['repo']), new_link) unless File.exist?(new_link)
   end
 end
 
 def prefs()
-  system("./setup/dwrites.sh")
+  system(File.join($repo, "setup/dwrites.sh"))
   system("killall Dock")
-  system("duti ./setup/duti.conf")
-  system("cat ./setup/preferences.txt")
+  system("duti", File.join($repo, "setup/duti.conf"))
+  system("cat", File.join($repo, "setup/preferences.txt"))
 end
 
 def configure()
+  vars = load_config()
+
+  puts "The following config are local to this machine:"
+  if !vars['GIT_NAME']
+    print "Name (git ops): "
+    vars['GIT_NAME'] = STDIN.gets.chomp
+  end
+  if !vars['GIT_EMAIL']
+    print "Email (git ops): "
+    vars['GIT_EMAIL'] = STDIN.gets.chomp
+  end
+  if !vars['XCODE_APP']
+    print 'Xcode app name (ie "Xcode_12_0.app", must be in /Applications): '
+    vars['XCODE_APP'] = STDIN.gets.chomp
+  end
+
+  save_config(vars)
 end
 
 def fish()
   system("sudo echo /opt/homebrew/bin/fish >> /etc/shells")
   system("chsh -s /opt/homebrew/bin/fish")
+end
+
+def help
+  puts "Dotfiles management and setup commands:"
+  puts "  help:      print this info"
+  puts "  configure: queries and sets required shell variables"
+  puts "  get-brew:  install brew"
+  puts "  bundle:    install tools from brewfile"
+  puts "  link:      create symlinks"
+  puts "  fish:      set fish as default shell"
+  puts "  prefs:     load prefs from dwrites, duti conf, and print manual prefs"
 end
 
 if ARGV.length == 0
@@ -72,6 +115,7 @@ ARGV.each do |f|
     when "prefs"; prefs
     when "configure"; configure
     when "fish"; fish
+      # TODO: move diff-brewfile here
     else
       puts "unknown command: #{f}. see help for more info"
       exit!

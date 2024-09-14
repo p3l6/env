@@ -30,21 +30,21 @@ openItem() {
 
   if [[ -f $A ]] ; then
     echo Opening file: $1
-    open -a Xcode.app $1
+    open -a $XCODE_APP $1
 
   elif [[ -d $A ]] ; then
     if [[ -n $A/*.xcodeproj(#qN) ]] ; then
       echo Opening project in: $1
-      open -a Xcode.app $A/*.xcodeproj
+      open -a $XCODE_APP $A/*.xcodeproj
     elif [[ -n $A/*.xcworkspace(#qN) ]] ; then
       echo Opening workspace in: $1
-      open -a Xcode.app $A/*.xcworkspace
+      open -a $XCODE_APP $A/*.xcworkspace
     elif [[ -f $A/Package.swift ]] ; then
       echo Opening package in: $1
-      open -a Xcode.app $A/Package.swift
+      open -a $XCODE_APP $A/Package.swift
     elif [[ -d $A/.xcode/$basename.xcworkspace ]] ; then
       echo Opening folder: $1
-      open -a Xcode.app $A/.xcode/$basename.xcworkspace
+      open -a $XCODE_APP $A/.xcode/$basename.xcworkspace
     else
       echo Wrapping: $basename as $A/.xcode/$basename.xcworkspace
       mkdir -p $A/.xcode/$basename.xcworkspace/
@@ -58,7 +58,7 @@ openItem() {
 </Workspace>
 EOF
       echo Opening folder: $1
-      open -a Xcode.app $A/.xcode/$basename.xcworkspace
+      open -a $XCODE_APP $A/.xcode/$basename.xcworkspace
     fi
 
   else

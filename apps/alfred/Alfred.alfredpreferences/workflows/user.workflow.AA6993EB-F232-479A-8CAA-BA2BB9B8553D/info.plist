@@ -253,7 +253,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>cd /Users/paul/var/MacOS
+				<string>cd ./current_repository_link
 
 echo '{"items": ['
 
@@ -573,6 +573,11 @@ fi</string>
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>unstackview</key>
+				<false/>
+			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.hidealfred</string>
 			<key>uid</key>

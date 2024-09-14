@@ -1,1 +1,1 @@
-export BAT_THEME="Monokai Extended"
+export BAT_THEME="Dracula"

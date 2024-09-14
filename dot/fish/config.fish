@@ -1,3 +1,7 @@
+# TODO: link this in '.config/dotfile-vars'; set workspace and dotfiles of '/var/env' in the config itself. same for zsh. Perhaps have a default fallback for /var/env.
+test -e $HOME/var/env/config/local/vars.fish
+and source $HOME/var/env/config/local/vars.fish
+
 set -gx DOTFILES $HOME/var/env
 set -gx WRKSP $HOME/var
 set -gx WORK_DIR $HOME/var
