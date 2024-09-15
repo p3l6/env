@@ -14,9 +14,7 @@ set -a -gx PATH $HOME/.cargo/bin
 abbr --add back prevd
 abbr --add which type -a
 
-abbr --add --set-cursor var cd $WRKSP/%
-abbr --add --set-cursor varb cd $WRKSP/boomjam-%
-
+abbr --add --set-cursor var cd -P $WRKSP/%
 
 # Various shell integrations
 

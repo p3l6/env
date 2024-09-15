@@ -9,7 +9,7 @@
 			<key>Python_Debugger</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:34:58Z</date>
+				<date>2024-09-02T17:24:15Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -110,7 +110,7 @@
 			<key>https://github.com/auth0/Auth0.swift</key>
 			<dict>
 				<key>date</key>
-				<date>2023-09-20T14:10:28Z</date>
+				<date>2024-09-02T17:26:25Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -124,7 +124,7 @@
 			<key>https://github.com/getsentry/sentry-cocoa</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-01T14:24:16Z</date>
+				<date>2024-09-13T13:30:40Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -138,7 +138,7 @@
 			<key>https://github.com/mixpanel/mixpanel-swift</key>
 			<dict>
 				<key>date</key>
-				<date>2023-11-14T13:59:38Z</date>
+				<date>2024-09-02T17:26:14Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -160,7 +160,7 @@
 			<key>Deno</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-19T05:27:33Z</date>
+				<date>2024-09-02T17:24:15Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -182,7 +182,7 @@
 			<key>React_Native</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:34:59Z</date>
+				<date>2024-09-02T17:24:15Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -211,7 +211,7 @@
 			<key>Zsh</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:34:58Z</date>
+				<date>2024-09-02T17:24:15Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -231,7 +231,7 @@
 			<key>mypy</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:34:59Z</date>
+				<date>2024-09-02T17:24:15Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -298,102 +298,102 @@
 			<key>http://kapeli.com/feeds/Apple_API_Reference.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:06Z</date>
+				<date>2024-09-02T17:24:22Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Bash.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:01Z</date>
+				<date>2024-09-02T17:24:22Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/CSS.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:03Z</date>
+				<date>2024-09-02T17:24:20Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Django.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:00Z</date>
+				<date>2024-09-02T17:24:18Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Docker.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:01Z</date>
+				<date>2024-09-02T17:24:23Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/HTML.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:08Z</date>
+				<date>2024-09-02T17:24:22Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/JavaScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:13Z</date>
+				<date>2024-09-02T17:24:28Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Jekyll.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:03Z</date>
+				<date>2024-09-02T17:24:24Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Jinja.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:02Z</date>
+				<date>2024-09-02T17:24:23Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/LaTeX.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:04Z</date>
+				<date>2024-09-02T17:24:22Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Man_Pages.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:09Z</date>
+				<date>2024-09-02T17:24:29Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Markdown.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:08Z</date>
+				<date>2024-09-02T17:24:25Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Nginx.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:07Z</date>
+				<date>2024-09-02T17:24:26Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/NodeJS.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:06Z</date>
+				<date>2024-09-02T17:24:25Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/PostgreSQL.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:09Z</date>
+				<date>2024-09-02T17:24:26Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Python_3.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:12Z</date>
+				<date>2024-09-02T17:24:30Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/React.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:08Z</date>
+				<date>2024-09-02T17:24:27Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/SQLAlchemy.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:10Z</date>
+				<date>2024-09-02T17:24:27Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Sass.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:10Z</date>
+				<date>2024-09-02T17:24:29Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/TypeScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-01-29T01:35:12Z</date>
+				<date>2024-09-02T17:24:30Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>

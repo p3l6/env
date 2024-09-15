@@ -18,12 +18,12 @@
 
 ## Config
 
-1. Comment out hidden-flags lines in `setup_dots.sh`, if desired
-3. `./bin/dotfiles link`
-   3.1. Open a new shell, to update path variable
-4. `dotfiles brew bundle`
-5. Comment out lines in `dwrites.sh`, if desired
-6. `dotfiles prefs`
-7. `dotfiles fish`
-8. Set preferences, as described in `./setup/preferences.txt`
-9. Install [XLineTool](https://github.com/p3l6/XLineTool)
+1. `./bin/dotfiles configure link`
+    1. Then open a new shell, to update path variables
+2. `dotfiles brew bundle`
+3. Comment out prefs and hidden-flags in `dwrites.sh`, if desired
+4. `dotfiles prefs`
+5. `dotfiles fish`
+6. Set preferences, as described in `./setup/preferences.txt`
+7. Install [XLineTool](https://github.com/p3l6/XLineTool)
+   1. TODO: move this to a dotfiles action

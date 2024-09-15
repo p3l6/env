@@ -440,7 +440,7 @@ echo ']}'</string>
 				<key>script</key>
 				<string>cd ./current_repository_link
 
-PATH="$PATH:/Users/paul/var/env/bin"
+PATH="$PATH:$HOME/var/env/bin"
 
 git {query} 2&gt;&amp;1
 

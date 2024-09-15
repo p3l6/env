@@ -94,12 +94,14 @@
 				<key>script</key>
 				<string>source ~/var/env/config/local/vars.zsh
 
+REAL=$(realpath $2)
+
 case $1 in
-  Fork.app) open -a "Fork.app" $2 ;;
-  Xcode.app) open -a "$XCODE_APP" $2 ;;
-  Zed.app) open -a "Zed.app" $2 ;;
-  "Visual Studio Code.app") open -a "Visual Studio Code.app" $2 ;;
-  x) ~/var/env/bin/x $2 ;;
+  Fork.app) open -a "Fork.app" $REAL ;;
+  Xcode.app) open -a "$XCODE_APP" $REAL ;;
+  Zed.app) open -a "Zed.app" $REAL ;;
+  "Visual Studio Code.app") open -a "Visual Studio Code.app" $REAL ;;
+  x) ~/var/env/bin/x $REAL ;;
 esac</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>

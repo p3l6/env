@@ -2,4 +2,5 @@
 --smart-case
 --ignore-file
 # neither $vars nor ~ are expanded here
+# TODO: link this as a dotfile
 /Users/paul/var/env/dot/ripgrep/ignore
