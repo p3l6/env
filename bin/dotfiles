@@ -90,6 +90,16 @@ def fish()
   system("chsh -s /opt/homebrew/bin/fish")
 end
 
+def get_xcode_extension
+  if Dir.exist?("/Applications/XLineTool.app")
+    puts "-> Already installed, update manually if needed."
+    return
+  end
+  system("curl -L -o ~/Downloads/XLineTool.zip https://github.com/p3l6/XLineTool/releases/latest/download/XLineTool.zip")
+  system("unzip ~/Downloads/XLineTool.zip -d /Applications/")
+  puts "Moved to applications. Open app to configure settings."
+end
+
 def help
   puts "Dotfiles management and setup commands:"
   puts "  help:      print this info"
@@ -99,6 +109,7 @@ def help
   puts "  link:      create symlinks"
   puts "  fish:      set fish as default shell"
   puts "  prefs:     load prefs from dwrites, duti conf, and print manual prefs"
+  puts "  xlinetool: download and unpack xcode extension"
 end
 
 if ARGV.length == 0
@@ -115,6 +126,7 @@ ARGV.each do |f|
     when "prefs"; prefs
     when "configure"; configure
     when "fish"; fish
+    when "xlinetool"; get_xcode_extension
       # TODO: move diff-brewfile here
     else
       puts "unknown command: #{f}. see help for more info"
