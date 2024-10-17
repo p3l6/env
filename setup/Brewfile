@@ -16,20 +16,19 @@ brew "qmk/qmk/qmk"
 brew "bat"
 brew "choose-rust"
 brew "cloc"
-brew "diff-so-fancy"
 brew "duti"
-brew "eza"
 brew "fd"
 brew "fish"
+brew "httpie"
+brew "jnv"
 brew "jq"
 brew "just"
-brew "nano"
-brew "nanorc"
+brew "lsd"
+brew "micro"
 brew "ripgrep"
 brew "sd"
 brew "tldr"
-brew "trash"
-brew "vim"
+brew "macos-trash"
 brew "wget"
 brew "zsh"
 
@@ -53,7 +52,7 @@ brew "vapor"
 # brew "deno"
 # brew "docker"
 # brew "node"
-# brew "ruby"
+brew "ruby"
 brew "typst"
 # brew "vsce"
 # brew "yarn"
@@ -70,6 +69,7 @@ cask "iina"
 cask "itsycal"
 cask "jordanbaird-ice"
 cask "mac-mouse-fix"
+cask "monodraw"
 cask "netnewswire"
 cask "syntax-highlight"
 
@@ -98,6 +98,7 @@ cask "losslesscut"
 ### Games
 cask "steam"
 cask "minecraft"
+cask "modrinth"
 cask "openemu"
 cask "synthesia"
 cask "battle-net"
@@ -111,7 +112,6 @@ brew "mas"
 mas "1Password for Safari", id: 1569813296
 mas "Bear", id: 1091189122
 mas "Core Data Lab", id: 1460684638
-mas "CotEditor", id: 1024640650
 mas "DaisyDisk", id: 411643860
 mas "Developer", id: 640199958
 mas "Free Ruler", id: 1483172210
@@ -123,7 +123,7 @@ mas "Xcode", id: 497799835
 ######
 
 vscode "artlaman.chalice-icon-theme"
-vscode "briteSnow.vscode-toggle-quotes"
+vscode "britesnow.vscode-toggle-quotes"
 vscode "dbaeumer.vscode-eslint"
 vscode "deerawan.vscode-dash"
 vscode "esbenp.prettier-vscode"

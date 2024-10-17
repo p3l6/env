@@ -1,7 +1,8 @@
 mkdirs-in-home:
   - Library/Application Support/Code/User
-  - .config/zed
   - Library/Developer/Xcode/UserData
+  - .config/zed
+  - .config/lsd
 links:
   - home: .bash_profile
     repo: dot/bash/bash_profile
@@ -35,3 +36,7 @@ links:
     repo: apps/vscode/keybindings.json
   - home: Library/Application Support/Code/User/snippets
     repo: apps/vscode/snippets
+  - home: .config/lsd/config.yaml
+    repo: dot/lsd/config.yaml
+  - home: .config/lsd/colors.yaml
+    repo: dot/lsd/colors.yaml

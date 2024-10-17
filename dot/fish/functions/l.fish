@@ -1,3 +1,3 @@
 function l
-    command ls -halFG $argv
+    command lsd -l $argv
 end

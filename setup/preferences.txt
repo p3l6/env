@@ -85,6 +85,8 @@
 ├─┬─ VSCode
 │ └─── $ cat ~/var/env/apps/vscode/extensions.txt | xargs -L 1 code --install-extension
 ├─┬─ Xcode
+│ ├─┬─ General
+│ │ └─── File extensions: hide listed
 │ ├─┬─ Navigation
 │ │ └─── command-click jumps to definition
 │ ├─┬─ Text editing
