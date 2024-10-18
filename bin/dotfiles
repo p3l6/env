@@ -7,6 +7,8 @@ require 'yaml'
 $repo = File.expand_path(File.join(__dir__, '../'))
 $home = Dir.home
 
+$dotfile_help_info = {}
+
 def load_config
   config_file_yaml = File.join($repo, "config/local/vars.yaml")
   vars = {}
@@ -35,16 +37,21 @@ end
 
 #### COMMANDS
 
-def getBrew()
-  system('/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"')
+$dotfile_help_info[:brew] = "install brew"
+def dotfile_task_brew
+  system '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
 end
 
-def brewBundle()
+$dotfile_help_info[:bundle] = "install tools from brewfile"
+def dotfile_task_bundle
   brew_file = File.join($repo, "setup/Brewfile")
-  system("brew bundle install --file #{brew_file}")
+  system "brew bundle install --file #{brew_file}"
 end
 
-def link()
+# TODO: move diff-brewfile script here
+
+$dotfile_help_info[:link] = "create symlinks"
+def dotfile_task_link
   file = File.join($repo, 'config/links.yaml')
 
   yaml_file = YAML.load_file(file)
@@ -58,15 +65,17 @@ def link()
   end
 end
 
-def prefs()
-  system(File.join($repo, "setup/dwrites.sh"))
-  system("killall Dock")
-  system("duti", File.join($repo, "setup/duti.conf"))
-  system("cat", File.join($repo, "setup/preferences.txt"))
+$dotfile_help_info[:prefs] = "load prefs from dwrites, duti conf, and print manual prefs"
+def dotfile_task_prefs
+  system File.join($repo, "setup/dwrites.sh")
+  system "killall Dock"
+  system "duti", File.join($repo, "setup/duti.conf")
+  system "cat", File.join($repo, "setup/preferences.txt")
 end
 
-def configure()
-  vars = load_config()
+$dotfile_help_info[:configure] = "queries and sets required shell variables"
+def dotfile_task_configure
+  vars = load_config
 
   puts "The following config are local to this machine:"
   if !vars['GIT_NAME']
@@ -82,54 +91,51 @@ def configure()
     vars['XCODE_APP'] = STDIN.gets.chomp
   end
 
-  save_config(vars)
+  save_config vars
 end
 
-def fish()
-  system("sudo echo /opt/homebrew/bin/fish >> /etc/shells")
-  system("chsh -s /opt/homebrew/bin/fish")
+$dotfile_help_info[:fish] = "set fish as default shell"
+def dotfile_task_fish
+  system "sudo echo /opt/homebrew/bin/fish >> /etc/shells"
+  system "chsh -s /opt/homebrew/bin/fish"
 end
 
-def get_xcode_extension
+$dotfile_help_info[:xlinetool] = "download and unpack xcode extension"
+def dotfile_task_xlinetool
   if Dir.exist?("/Applications/XLineTool.app")
     puts "-> Already installed, update manually if needed."
     return
   end
-  system("curl -L -o ~/Downloads/XLineTool.zip https://github.com/p3l6/XLineTool/releases/latest/download/XLineTool.zip")
-  system("unzip ~/Downloads/XLineTool.zip -d /Applications/")
+  system "curl -L -o ~/Downloads/XLineTool.zip https://github.com/p3l6/XLineTool/releases/latest/download/XLineTool.zip"
+  system "unzip ~/Downloads/XLineTool.zip -d /Applications/"
   puts "Moved to applications. Open app to configure settings."
 end
 
-def help
+$dotfile_help_info[:help] = "print this info"
+def dotfile_task_help
   puts "Dotfiles management and setup commands:"
-  puts "  help:      print this info"
-  puts "  configure: queries and sets required shell variables"
-  puts "  get-brew:  install brew"
-  puts "  bundle:    install tools from brewfile"
-  puts "  link:      create symlinks"
-  puts "  fish:      set fish as default shell"
-  puts "  prefs:     load prefs from dwrites, duti conf, and print manual prefs"
-  puts "  xlinetool: download and unpack xcode extension"
+  width = $dotfile_help_info.keys.map(&:length).max + 2
+  $dotfile_help_info.each do |k,v|
+    title = "#{k}:"
+    puts "  #{title.ljust(width, ' ')}#{v}"
+  end
 end
 
+### MAIN
+
 if ARGV.length == 0
-  help()
+  help
   exit
 end
 
-ARGV.each do |f|
-  case f
-    when "help"; help
-    when "get-brew"; getBrew
-    when "bundle"; brewBundle
-    when "link"; link
-    when "prefs"; prefs
-    when "configure"; configure
-    when "fish"; fish
-    when "xlinetool"; get_xcode_extension
-      # TODO: move diff-brewfile here
-    else
-      puts "unknown command: #{f}. see help for more info"
-      exit!
-  end
+missing_tasks = ARGV.select { |arg| !respond_to?("dotfile_task_#{arg}", :include_private) }
+
+if missing_tasks.any?
+  puts "unknown command(s): #{missing_tasks.join(', ')}."
+  puts "See `dotfiles help` for list of options"
+  exit!
+end
+
+ARGV.each do |arg|
+    send "dotfile_task_#{arg}"
 end
