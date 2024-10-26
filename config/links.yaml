@@ -40,3 +40,5 @@ links:
     repo: dot/lsd/config.yaml
   - home: .config/lsd/colors.yaml
     repo: dot/lsd/colors.yaml
+  - home: .config/karabiner/karabiner.json
+    repo: apps/karabiner/karabiner.json
