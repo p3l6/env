@@ -302,12 +302,16 @@
 			<true/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.15977837145328522</real>
+				<real>0.20905745029449463</real>
+				<key>Color Space</key>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.12215272337198257</real>
+				<real>0.16378903388977051</real>
 				<key>Red Component</key>
-				<real>0.11765811592340469</real>
+				<real>0.15816760063171387</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -356,13 +360,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.80690854787826538</real>
+				<real>0.80784313725490198</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.59446918964385986</real>
+				<real>0.59607843137254901</real>
 				<key>Red Component</key>
-				<real>0.94965797662734985</real>
+				<real>0.94901960784313721</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -406,12 +410,16 @@
 			<true/>
 			<key>Foreground Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.90032327175140381</real>
+				<real>0.92010492086410522</real>
+				<key>Color Space</key>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.90032327175140381</real>
+				<real>0.92010492086410522</real>
 				<key>Red Component</key>
-				<real>0.90032327175140381</real>
+				<real>0.92010486125946045</real>
 			</dict>
 			<key>Guid</key>
 			<string>A708799E-01F7-4936-8ECB-325174E57F08</string>
@@ -633,13 +641,6 @@
 					<key>Text</key>
 					<string>[1;6A</string>
 				</dict>
-				<key>0xf700-0x280000</key>
-				<dict>
-					<key>Action</key>
-					<integer>11</integer>
-					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x41</string>
-				</dict>
 				<key>0xf701-0x220000-0x0</key>
 				<dict>
 					<key>Action</key>
@@ -660,13 +661,6 @@
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;6B</string>
-				</dict>
-				<key>0xf701-0x280000</key>
-				<dict>
-					<key>Action</key>
-					<integer>11</integer>
-					<key>Text</key>
-					<string>0x1b 0x1b 0x5b 0x42</string>
 				</dict>
 				<key>0xf702-0x220000-0x0</key>
 				<dict>
@@ -935,12 +929,16 @@
 			</dict>
 			<key>Selection Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.35294118523597717</real>
+				<real>0.4219820499420166</real>
+				<key>Color Space</key>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.27843138575553894</real>
+				<real>0.35153666138648987</real>
 				<key>Red Component</key>
-				<real>0.26666668057441711</real>
+				<real>0.33915203809738159</real>
 			</dict>
 			<key>Send Bell Alert</key>
 			<true/>
@@ -1706,13 +1704,6 @@
 													<key>Text</key>
 													<string>[1;6A</string>
 												</dict>
-												<key>0xf700-0x280000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b 0x1b 0x5b 0x41</string>
-												</dict>
 												<key>0xf701-0x220000-0x0</key>
 												<dict>
 													<key>Action</key>
@@ -1733,13 +1724,6 @@
 													<integer>10</integer>
 													<key>Text</key>
 													<string>[1;6B</string>
-												</dict>
-												<key>0xf701-0x280000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b 0x1b 0x5b 0x42</string>
 												</dict>
 												<key>0xf702-0x220000-0x0</key>
 												<dict>

@@ -1,0 +1,14 @@
+font-family = Fira Code
+theme = Dracula
+background = #282A36
+foreground = #F8F8F2
+cursor-color = #F298CE
+cursor-style = underline
+shell-integration-features = no-cursor
+cursor-style-blink = false
+cursor-click-to-move = true
+window-padding-x = 6
+window-padding-y = 6
+macos-titlebar-style = tabs
+bold-is-bright = true
+copy-on-select = false

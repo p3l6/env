@@ -42,3 +42,5 @@ links:
     repo: dot/lsd/colors.yaml
   - home: .config/karabiner/karabiner.json
     repo: apps/karabiner/karabiner.json
+  - home: .config/ghostty/config
+    repo: apps/ghostty/config
