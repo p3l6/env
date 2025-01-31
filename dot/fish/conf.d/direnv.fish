@@ -1,3 +1,3 @@
-if type -q direnv
-    direnv hook fish | source
-end
+
+type -q direnv
+and direnv hook fish | source

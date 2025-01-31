@@ -100,17 +100,6 @@ def dotfile_task_fish
   system "chsh -s /opt/homebrew/bin/fish"
 end
 
-$dotfile_help_info[:xlinetool] = "download and unpack xcode extension"
-def dotfile_task_xlinetool
-  if Dir.exist?("/Applications/XLineTool.app")
-    puts "-> Already installed, update manually if needed."
-    return
-  end
-  system "curl -L -o ~/Downloads/XLineTool.zip https://github.com/p3l6/XLineTool/releases/latest/download/XLineTool.zip"
-  system "unzip ~/Downloads/XLineTool.zip -d /Applications/"
-  puts "Moved to applications. Open app to configure settings."
-end
-
 $dotfile_help_info[:help] = "print this info"
 def dotfile_task_help
   puts "Dotfiles management and setup commands:"

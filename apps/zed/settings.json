@@ -40,6 +40,7 @@
   "inlay_hints": {
     "enabled": true
   },
+  "languages": { "Markdown": { "soft_wrap": "editor_width" } },
   "notification_panel": {
     "button": false
   },
@@ -60,9 +61,41 @@
     "git_status": true,
     "close_position": "left"
   },
+  "tab_size": 2,
   "theme": {
     "mode": "system",
     "light": "Xcode Default Light",
     "dark": "Xcode Default Dark"
+  },
+  "experimental.theme_overrides": {
+    "terminal.background": "#353740",
+    // Copied from https://github.com/dracula/zed/blob/main/themes/dracula.json
+    "terminal.foreground": "#f8f8f2ff",
+    "terminal.bright_foreground": "#f9f9f5ff",
+    "terminal.dim_foreground": "#c6c6c2ff",
+    "terminal.ansi.black": "#21222cff",
+    "terminal.ansi.bright_black": "#919cbfff",
+    "terminal.ansi.dim_black": "#1a1b23ff",
+    "terminal.ansi.red": "#ff5555ff",
+    "terminal.ansi.bright_red": "#FF6E6Eff",
+    "terminal.ansi.dim_red": "#cc4444ff",
+    "terminal.ansi.green": "#50fa7bff",
+    "terminal.ansi.bright_green": "#69FF94ff",
+    "terminal.ansi.dim_green": "#40c862ff",
+    "terminal.ansi.yellow": "#f1fa8cff",
+    "terminal.ansi.bright_yellow": "#FFFFA5ff",
+    "terminal.ansi.dim_yellow": "#c1c870ff",
+    "terminal.ansi.blue": "#9580ffff",
+    "terminal.ansi.bright_blue": "#D6ACFFff",
+    "terminal.ansi.dim_blue": "#7766ccff",
+    "terminal.ansi.magenta": "#ff79c6ff",
+    "terminal.ansi.bright_magenta": "#FF92DFff",
+    "terminal.ansi.dim_magenta": "#cc619eff",
+    "terminal.ansi.cyan": "#8be9fdff",
+    "terminal.ansi.bright_cyan": "#A4FFFFff",
+    "terminal.ansi.dim_cyan": "#6fbacaff",
+    "terminal.ansi.white": "#f8f8f2ff",
+    "terminal.ansi.bright_white": "ffffffff",
+    "terminal.ansi.dim_white": "#c6c6c2ff"
   }
 }

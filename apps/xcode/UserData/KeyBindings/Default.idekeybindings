@@ -11,6 +11,8 @@
 				<string>GPUDebugger_selectNextItem:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>GPUDebugger.CmdDefinition.GPUCounters.SelectNextItem</string>
 				<key>CommandID</key>
 				<string>GPUDebugger.CmdDefinition.GPUCounters.SelectNextItem</string>
 				<key>Group</key>
@@ -29,6 +31,8 @@
 				<string>GPUDebugger_selectPrevItem:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>GPUDebugger.CmdDefinition.GPUCounters.SelectPrevItem</string>
 				<key>CommandID</key>
 				<string>GPUDebugger.CmdDefinition.GPUCounters.SelectPrevItem</string>
 				<key>Group</key>
@@ -257,6 +261,8 @@
 				<string>stepToPreviousCall:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.GPUToolsKit.CmdDefinition.StepPreviousCall</string>
 				<key>CommandID</key>
 				<string>Xcode.GPUToolsKit.CmdDefinition.StepPreviousCall</string>
 				<key>Group</key>
@@ -275,6 +281,8 @@
 				<string>showCallHierarchy:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.CallHierarchy</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEKit.CmdDefinition.CallHierarchy</string>
 				<key>Group</key>
@@ -295,6 +303,8 @@
 				<string>duplicate:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.Duplicate</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEKit.CmdDefinition.Duplicate</string>
 				<key>Group</key>
@@ -313,6 +323,8 @@
 				<string>findSelectedSymbolInWorkspace:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.FindSelectedSymbolInWorkspace</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEKit.CmdDefinition.FindSelectedSymbolInWorkspace</string>
 				<key>Group</key>
@@ -330,9 +342,35 @@
 			</dict>
 			<dict>
 				<key>Action</key>
+				<string>newFolder:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>IDENewGrouping</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.NewFolder</string>
+				<key>Group</key>
+				<string>File Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>~@n</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>New</string>
+				<key>Title</key>
+				<string>Folder</string>
+			</dict>
+			<dict>
+				<key>Action</key>
 				<string>runPageLayout:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.PageSetup</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEKit.CmdDefinition.PageSetup</string>
 				<key>Group</key>
@@ -373,6 +411,8 @@
 				<string>revealBuildFolder:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.RevealBuildFolder</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEKit.CmdDefinition.RevealBuildFolder</string>
 				<key>Group</key>
@@ -393,6 +433,8 @@
 				<string>revealInDebugNavigator:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.RevealInDebugNavigator</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEKit.CmdDefinition.RevealInDebugNavigator</string>
 				<key>Group</key>
@@ -411,6 +453,8 @@
 				<string>selectNextOccurrence:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.SelectNextOccurrence</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEKit.CmdDefinition.SelectNextOccurrence</string>
 				<key>Group</key>
@@ -431,6 +475,8 @@
 				<string>showQuickActions:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.ShowQuickActions</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEKit.CmdDefinition.ShowQuickActions</string>
 				<key>Group</key>
@@ -451,6 +497,8 @@
 				<string>stepInto:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.StepInto</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEKit.CmdDefinition.StepInto</string>
 				<key>Group</key>
@@ -471,6 +519,8 @@
 				<string>stepIntoInstruction:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.StepIntoInstruction</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEKit.CmdDefinition.StepIntoInstruction</string>
 				<key>Group</key>
@@ -491,6 +541,8 @@
 				<string>stepOut:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.StepOut</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEKit.CmdDefinition.StepOut</string>
 				<key>Group</key>
@@ -555,6 +607,8 @@
 				<string>toggleFullScreen:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.ToggleFullScreen</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEKit.CmdDefinition.ToggleFullScreen</string>
 				<key>Group</key>
@@ -573,6 +627,8 @@
 				<string>useSelectionForReplace:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEKit.CmdDefinition.UseSelectionForReplace</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEKit.CmdDefinition.UseSelectionForReplace</string>
 				<key>Group</key>
@@ -735,6 +791,56 @@
 				<string>selectColumnDown:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.SelectColumnDown</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.SelectColumnDown</string>
+				<key>Group</key>
+				<string>Editor Menu for Asset Catalog Comparison</string>
+				<key>GroupID</key>
+				<string>Xcode.DeltaComparisonEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>~</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Selection</string>
+				<key>Title</key>
+				<string>Select Column Down</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>selectColumnDown:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.SelectColumnDown</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.SelectColumnDown</string>
+				<key>Group</key>
+				<string>Editor Menu for Playground</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPlaygroundEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>~</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Selection</string>
+				<key>Title</key>
+				<string>Select Column Down</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>selectColumnDown:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.SelectColumnDown</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.SelectColumnDown</string>
 				<key>Group</key>
@@ -757,6 +863,56 @@
 				<string>selectColumnUp:</string>
 				<key>Alternate</key>
 				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.SelectColumnUp</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.SelectColumnUp</string>
+				<key>Group</key>
+				<string>Editor Menu for Asset Catalog Comparison</string>
+				<key>GroupID</key>
+				<string>Xcode.DeltaComparisonEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>~</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Selection</string>
+				<key>Title</key>
+				<string>Select Column Up</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>selectColumnUp:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.SelectColumnUp</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.SelectColumnUp</string>
+				<key>Group</key>
+				<string>Editor Menu for Playground</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPlaygroundEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>~</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Selection</string>
+				<key>Title</key>
+				<string>Select Column Up</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>selectColumnUp:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.SelectColumnUp</string>
 				<key>CommandID</key>
 				<string>Xcode.IDEPegasusSourceEditor.CmdDefinition.SelectColumnUp</string>
 				<key>Group</key>
