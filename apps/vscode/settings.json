@@ -64,10 +64,6 @@
     "git.rebaseWhenSync": true,
     "git.openRepositoryInParentFolders": "never",
 
-    "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
-    "gitblame.infoMessageFormat": "[${commit.hash_short}] ${commit.summary}",
-    "gitblame.statusBarMessageClickAction": "Open tool URL",
-
     "html.autoClosingTags": false,
     "javascript.autoClosingTags": false,
 
