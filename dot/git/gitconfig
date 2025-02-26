@@ -7,17 +7,26 @@
 	whitespace = -blank-at-eol
 	pager = delta
 [delta]
-    navigate = true
-    line-numbers = true
+	navigate = true
+	line-numbers = true
 [diff]
-    colorMoved = default
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
 [fetch]
-    prune = true
-    prunetags = true
+	prune = true
+	prunetags = true
+	all = true
 [interactive]
-    diffFilter = delta --color-only
+	diffFilter = delta --color-only
 [push]
 	default = simple
+	autoSetupRemote = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
 [alias]
 	# Shell commands (that is, with an exclamation) always execute at the repo root; not the current directory!
 
@@ -27,9 +36,7 @@
 	staged = diff --cached
 	unstage = restore --staged
 	discard = restore --
-	pullr = pull --rebase --autostash
-	pushup = push --set-upstream origin HEAD
-	pushpr = ! git pushup && git pr new
+	pushpr = ! git push && git pr new
 	sync = ! git pullr && git push
 	syncbase = ! git pullother $(git default) && git merge $(git default) && git push
 	abandon = ! git stash push -u -m "abandoned" && git switch $(git default)
@@ -60,11 +67,21 @@
 	process = git-lfs filter-process
 	required = true
 [merge]
-    conflictstyle = zdiff3
+	conflictstyle = zdiff3
 [pull]
 	ff = only
+	rebase = true
 [init]
 	defaultBranch = main
+[rerere]
+	enabled = true
+	autoupdate = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
 # Cool, but breaks xcode package manager: add/update package actions
 # [url "git@github.com:"]
 # insteadOf = "https://github.com/"
