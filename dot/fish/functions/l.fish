@@ -1,3 +1,3 @@
 function l
-    command lsd -l $argv
+    command lsd -l -A $argv
 end

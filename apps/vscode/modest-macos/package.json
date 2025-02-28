@@ -1,0 +1,30 @@
+{
+  "name": "modest-macos",
+  "displayName": "Modest macOS",
+  "description": "A modestly simple macOS and Xcode color theme",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/p3l6/env/apps/vscode/modest-macos"
+  },
+  "publisher": "p3l6",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Modest macOS - Light",
+        "uiTheme": "vs",
+        "path": "./themes/light-color-theme.json"
+      },
+      {
+        "label": "Modest macOS - Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-color-theme.json"
+      }
+    ]
+  }
+}
