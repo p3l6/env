@@ -9,7 +9,7 @@ and source $HOME/var/env/config/local/vars.fish
 set -gx DOTFILES $HOME/var/env
 set -gx WRKSP $HOME/var
 set -gx WORK_DIR $HOME/var
-set -gx EDITOR nano
+set -gx EDITOR micro
 
 set -a -gx PATH $DOTFILES/bin/local
 set -a -gx PATH $DOTFILES/bin

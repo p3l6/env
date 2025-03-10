@@ -61,7 +61,11 @@ def dotfile_task_link
   end
   yaml_file['links'].each do |link|
     new_link = File.join($home, link['home'])
-    File.symlink(File.join($repo, link['repo']), new_link) unless File.exist?(new_link)
+    ## TODO: detect if the file exists, but is either a plain file, or the wrong link, and fix it
+    if !File.exist?(new_link)
+      File.symlink(File.join($repo, link['repo']), new_link)
+      puts "-> Linked #{link['repo']}"
+    end
   end
 end
 
@@ -113,7 +117,7 @@ end
 ### MAIN
 
 if ARGV.length == 0
-  help
+  dotfile_task_help
   exit
 end
 

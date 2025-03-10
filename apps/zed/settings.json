@@ -18,13 +18,13 @@
   "confirm_quit": true,
   "cursor_blink": false,
   "chat_panel": {
-    "button": false
+    "button": "never"
   },
   "collaboration_panel": {
     "button": false
   },
   "features": {
-    "inline_completion_provider": "none",
+    "edit_prediction_provider": "none",
     "copilot": false
   },
   "git": {

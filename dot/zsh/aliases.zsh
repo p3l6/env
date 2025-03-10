@@ -19,6 +19,5 @@ alias l='ls -halF'
 alias lc='ls -halFG'
 
 ## file opening aliases
-alias edit='vim'
+alias edit='micro'
 alias readme='less *[Rr][Ee][Aa][Dd]*[Mm][Ee]*'
-alias env-edit="code $DOTFILES"
