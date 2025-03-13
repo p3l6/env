@@ -2,7 +2,7 @@
 #define USERSPACE
 
 #define _______ KC_TRNS // a key transparent to the layer below
-#define XXXXXXX KC_NO   // a key phisically missing
+#define XXXXXXX KC_NO   // a key physically missing
 #define __xxx__ KC_NO   // a key masked for this layer
 
 // Move between window tabs
@@ -23,6 +23,8 @@
 // System
 #define D_EXPOS LCTL(KC_UP)
 #define D_NOTIF LCTL(KC_F10)
+#define D_NXTWN LCTL(KC_F4) // like cmd-` but cycle all windows
+#define D_HELP  LGUI(LSFT(KC_SLSH))
 #define D_HIDE  LGUI(KC_H)
 #define D_SSHOT LGUI(LSFT(KC_5))
 #define D_FORCQ LGUI(LALT(KC_ESC))

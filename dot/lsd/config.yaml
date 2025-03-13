@@ -10,3 +10,4 @@ color:
 date: '+%e %b %y %R'
 icons:
   when: never
+dereference: true

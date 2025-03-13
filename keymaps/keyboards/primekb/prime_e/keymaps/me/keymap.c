@@ -20,8 +20,8 @@ KC_LCTL, KC_LALT,                   KC_LGUI, MO(NAV), KC_SPC,            KC_UNDS
 
 ),[NAV] = LAYOUT(
 KC_BSPC, D_SUBWD, D_LIN_U, KC_UP,   D_EXPOS, D_CUR_U,           D_SPC_L, D_SPC_R, KC_UP,   KC_HOME, KC_PGUP, _______, _______, \
-KC_ENT,  KC_LALT, KC_LEFT, KC_DOWN, KC_RGHT, D_CUR_D,           D_SEL_W, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_PENT, \
-KC_LSFT, KC_LGUI, D_LIN_D, D_SWAP,  D_ALF_V, D_CUR_N, D_TAB_L,  D_TAB_R, D_BACK,  D_GOTO,  D_FRWD,  KC_END,  _______,  \
+KC_ENT,  KC_LALT, KC_LEFT, KC_DOWN, KC_RGHT, D_CUR_D,           D_NXTWN, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_PENT, \
+KC_LSFT, KC_LGUI, D_LIN_D, D_SWAP,  D_ALF_V, D_CUR_N, D_TAB_L,  D_TAB_R, D_BACK,  D_SEL_W, D_FRWD,  KC_END,  _______,  \
 KC_LCTL, KC_LALT,                   KC_LGUI, _______, KC_SPC,            KC_RGUI,          __xxx__,          __xxx__    \
 
 
@@ -42,7 +42,7 @@ _______, _______,                   _______, _______, _______,           _______
 ),[CODE] = LAYOUT(
 KC_ESC,  D_FORCQ, __xxx__, T_PLNXT, KC_VOLD, KC_VOLU,           KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   __xxx__, QK_BOOT, \
 __xxx__, D_AUTHR, __xxx__, Z_DEL_W, __xxx__, __xxx__,           KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  __xxx__, \
-__xxx__, D_MIMAP, __xxx__, D_SSHOT, __xxx__, __xxx__, __xxx__,  __xxx__, D_DBG_C, D_DBG_N, D_DBG_S, D_DBG_O, KC_CAPS,  \
+__xxx__, D_MIMAP, __xxx__, D_SSHOT, __xxx__, __xxx__, __xxx__,  D_DBG_C, D_DBG_N, D_DBG_S, D_DBG_O, D_HELP,  KC_CAPS,  \
 __xxx__, __xxx__,                   __xxx__, _______, __xxx__,           __xxx__,          __xxx__,          __xxx__    \
 
 ),
