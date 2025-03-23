@@ -69,7 +69,7 @@
 [merge]
 	conflictstyle = zdiff3
 [pull]
-	ff = only
+	# ff = only # This overrides with `rebase = true` which is a better option
 	rebase = true
 [init]
 	defaultBranch = main

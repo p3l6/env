@@ -21,7 +21,8 @@
       "cmd-shift-e": "editor::SelectNext",
       "cmd-ctrl-left": "pane::GoBack",
       "cmd-ctrl-right": "pane::GoForward",
-      "cmd-ctrl-j": "editor::GoToDefinition"
+      "cmd-ctrl-j": "editor::GoToDefinition",
+      "cmd-ctrl-shift-a": "git::Blame"
     }
   }
 ]
