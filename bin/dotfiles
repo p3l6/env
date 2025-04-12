@@ -100,7 +100,7 @@ end
 
 $dotfile_help_info[:fish] = "set fish as default shell"
 def dotfile_task_fish
-  system "sudo echo /opt/homebrew/bin/fish >> /etc/shells"
+  system "echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells"
   system "chsh -s /opt/homebrew/bin/fish"
 end
 

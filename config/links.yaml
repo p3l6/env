@@ -4,6 +4,8 @@ mkdirs-in-home:
   - .config/zed
   - .config/lsd
   - .config/micro
+  - .config/karabiner
+  - .config/ghostty
 links:
   - home: .bash_profile
     repo: dot/bash/bash_profile

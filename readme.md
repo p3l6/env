@@ -19,9 +19,9 @@
 
 ## Config
 
-1. `./bin/dotfiles configure link`
+1. `./bin/dotfiles configure link brew`
     * Then open a new shell, to update path variables
-2. `dotfiles brew bundle`
+2. `dotfiles bundle`
 3. Comment out prefs and hidden-flags in `dwrites.sh`, if desired
 4. `dotfiles prefs`
 5. `dotfiles fish`

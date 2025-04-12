@@ -40,7 +40,6 @@
   "inlay_hints": {
     "enabled": true
   },
-  "languages": { "Markdown": { "soft_wrap": "editor_width" } },
   "notification_panel": {
     "button": false
   },
