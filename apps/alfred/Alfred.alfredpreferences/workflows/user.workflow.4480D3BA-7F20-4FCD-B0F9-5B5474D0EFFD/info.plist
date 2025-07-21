@@ -457,7 +457,8 @@ end run</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>open -a 'MarkEdit' "${@}"</string>
+				<string>zed ~/var/logbook
+open -a 'Zed' "${@}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>

@@ -1,9 +1,10 @@
 {
-  "Alt-/": "lua:comment.comment",
-  "AltDown": "SpawnMultiCursorDown",
-  "AltShiftDown": "MoveLinesDown",
-  "AltShiftUp": "MoveLinesUp",
-  "AltUp": "SpawnMultiCursorUp",
-  "Ctrl-D": "Delete",
-  "CtrlUnderscore": "lua:comment.comment"
+    "Alt-/": "lua:comment.comment",
+    "Alt-D": "DuplicateLine",
+    "Alt-d": "DeleteLine",
+    "AltDown": "SpawnMultiCursorDown",
+    "AltShiftDown": "MoveLinesDown",
+    "AltShiftUp": "MoveLinesUp",
+    "AltUp": "SpawnMultiCursorUp",
+    "CtrlUnderscore": "lua:comment.comment"
 }

@@ -7,7 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "assistant": {
+  "agent": {
     "version": "2",
     "enabled": false,
     "button": false
@@ -39,6 +39,9 @@
   },
   "inlay_hints": {
     "enabled": true
+  },
+  "minimap": {
+    "show": "auto"
   },
   "notification_panel": {
     "button": false

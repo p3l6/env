@@ -56,8 +56,8 @@ top_level_folders = [f for f in os.scandir(workspace_path) if f.is_dir()]
 items = []
 
 for top_entry in top_level_folders:
-  if allowXcode: items.append(xcode_item(top_entry.name, top_entry.path))
   if allowZed: items.append(zed_item(top_entry.name, top_entry.path))
+  if allowXcode: items.append(xcode_item(top_entry.name, top_entry.path))
 
   for child_entry in os.scandir(top_entry.path):
     if allowVscode and os.path.splitext(child_entry.name)[1] == '.code-workspace':
