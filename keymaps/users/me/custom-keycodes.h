@@ -85,7 +85,7 @@ enum custom_keycodes {
 #define DEF_SFRMT SEND_STRING("\\()"SS_TAP(X_LEFT));
 #define DEF_JSSTR SEND_STRING("``"SS_TAP(X_LEFT)"${}"SS_TAP(X_LEFT));
 #define DEF_MTODO SEND_STRING("- [ ] ");
-#define DEF_XTODO SEND_STRING("TODO: ");
+#define DEF_XTODO SEND_STRING("// :TODO: ");
 #define DEF_DEL_W SEND_STRING(SS_LALT(SS_TAP(X_LEFT)SS_TAP(X_DEL)));
 #define DEF_DLR_0 SEND_STRING("$0");
 
