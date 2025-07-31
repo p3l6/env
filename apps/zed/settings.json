@@ -8,7 +8,6 @@
 // from the command palette or from `Zed` application menu.
 {
   "agent": {
-    "version": "2",
     "enabled": false,
     "button": false
   },
@@ -23,9 +22,9 @@
   "collaboration_panel": {
     "button": false
   },
+  "disable_ai": true,
   "features": {
-    "edit_prediction_provider": "none",
-    "copilot": false
+    "edit_prediction_provider": "none"
   },
   "git": {
     "git_gutter": "tracked_files",
@@ -49,9 +48,6 @@
   "preferred_line_length": 120,
   "project_panel": {
     "auto_fold_dirs": true
-  },
-  "semantic_index": {
-    "enabled": false
   },
   "terminal": {
     "blinking": "off"
