@@ -44,10 +44,6 @@
 │ └─┬─ Viewing
 │   ├─── Move discards to Archive
 │   └─── Show most recent message at the top
-├─┬─ MarkEdit
-│ ├─┬─ Editor
-│ │ ├─── Fira Code regular 13
-│ │ └─── Xcode Light/dark
 │ ├─┬─ Assistant
 │ │ ├─── Insert final newline
 │ │ └─── Trim trailing whitespace
@@ -88,6 +84,7 @@
 │ ├─┬─ General
 │ │ └─── File extensions: hide listed
 │ ├─┬─ Navigation
+│ │ ├─── pin editor tabs when document is edited
 │ │ └─── command-click jumps to definition
 │ ├─┬─ Text editing
 │ │ ├─┬─ Display

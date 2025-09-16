@@ -26,3 +26,4 @@
 4. `dotfiles prefs`
 5. `dotfiles fish`
 6. Set preferences manually, as described in `./setup/preferences.txt`
+7. Download Panda (not in brew or app store)
