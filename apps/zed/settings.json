@@ -16,9 +16,6 @@
   "buffer_font_size": 12,
   "confirm_quit": true,
   "cursor_blink": false,
-  "chat_panel": {
-    "button": "never"
-  },
   "collaboration_panel": {
     "button": false
   },
@@ -26,6 +23,7 @@
   "features": {
     "edit_prediction_provider": "none"
   },
+  "format_on_save": "off",
   "git": {
     "git_gutter": "tracked_files",
     // "gutter_debounce": null,
