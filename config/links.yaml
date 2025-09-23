@@ -6,6 +6,7 @@ mkdirs-in-home:
   - .config/micro
   - .config/karabiner
   - .config/ghostty
+  - .config/rubocop
 links:
   - home: .bash_profile
     repo: dot/bash/bash_profile
@@ -51,3 +52,5 @@ links:
     repo: apps/karabiner/karabiner.json
   - home: .config/ghostty/config
     repo: apps/ghostty/config
+  - home: .config/rubocop/config.yml
+    repo: dot/ruby/rubocop.yml

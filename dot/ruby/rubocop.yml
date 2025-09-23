@@ -1,0 +1,15 @@
+
+Style/SymbolArray:
+   Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/BlockLength:
+  CountAsOne: ['array', 'hash', 'heredoc', 'method_call']
+
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/MethodLength:
+  Max: 30

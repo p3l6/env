@@ -4,111 +4,109 @@ require 'yaml'
 
 #### HELPERS
 
-$repo = File.expand_path(File.join(__dir__, '../'))
-$home = Dir.home
+REPO = File.expand_path(File.join(__dir__, '../'))
+HOME = Dir.home
 
 $dotfile_help_info = {}
 
 def load_config
-  config_file_yaml = File.join($repo, "config/local/vars.yaml")
+  config_file_yaml = File.join(REPO, 'config/local/vars.yaml')
   vars = {}
-  if File.exist?(config_file_yaml)
-    vars = YAML.load_file(config_file_yaml)
-  end
-  return vars
+  vars = YAML.load_file(config_file_yaml) if File.exist?(config_file_yaml)
+  vars
 end
 
 def save_config(vars)
-  config_file_yaml = File.join($repo, "config/local/vars.yaml")
-  parent = File.join($repo, "config/local")
-  Dir.mkdir(parent) unless Dir.exists?(parent)
+  config_file_yaml = File.join(REPO, 'config/local/vars.yaml')
+  parent = File.join(REPO, 'config/local')
+  Dir.mkdir(parent) unless Dir.exist?(parent)
 
   File.write(config_file_yaml, vars.to_yaml)
 
   zsh_output = vars.map { |key, var| "export #{key}=\"#{var}\"" }.join("\n")
-  File.write(File.join($repo, "config/local/vars.zsh"), zsh_output)
+  File.write(File.join(REPO, 'config/local/vars.zsh'), zsh_output)
 
   fish_output = vars.map { |key, var| "set -gx #{key} #{var}" }.join("\n")
-  File.write(File.join($repo, "config/local/vars.fish"), fish_output)
+  File.write(File.join(REPO, 'config/local/vars.fish'), fish_output)
 
   git_output = "[user]\n  name = #{vars['GIT_NAME']}\n  email = #{vars['GIT_EMAIL']}\n"
-  File.write(File.join($home, ".gitconfig_local"), git_output) # TODO: move to config dir, but then gitconfig would depend on checkout location.
+  File.write(File.join(HOME, '.gitconfig_local'), git_output) # TODO: move to config dir, but then gitconfig would depend on checkout location.
 end
 
 #### COMMANDS
 
-$dotfile_help_info[:brew] = "install brew"
+$dotfile_help_info[:brew] = 'install brew'
 def dotfile_task_brew
   system '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
 end
 
-$dotfile_help_info[:bundle] = "install tools from brewfile"
+$dotfile_help_info[:bundle] = 'install tools from brewfile'
 def dotfile_task_bundle
-  brew_file = File.join($repo, "setup/Brewfile")
+  brew_file = File.join(REPO, 'setup/Brewfile')
   system "brew bundle install --file #{brew_file}"
 end
 
 # TODO: move diff-brewfile script here
 
-$dotfile_help_info[:link] = "create symlinks"
+$dotfile_help_info[:link] = 'create symlinks'
 def dotfile_task_link
-  file = File.join($repo, 'config/links.yaml')
+  file = File.join(REPO, 'config/links.yaml')
 
   yaml_file = YAML.load_file(file)
   yaml_file['mkdirs-in-home'].each do |dir|
     # ruby's mkdir isn't recursive
-    system("mkdir", "-p", File.join($home, dir))
+    system('mkdir', '-p', File.join(HOME, dir))
   end
   yaml_file['links'].each do |link|
-    new_link = File.join($home, link['home'])
+    new_link = File.join(HOME, link['home'])
     ## TODO: detect if the file exists, but is either a plain file, or the wrong link, and fix it
-    if !File.exist?(new_link)
-      File.symlink(File.join($repo, link['repo']), new_link)
+    unless File.exist?(new_link)
+      File.symlink(File.join(REPO, link['repo']), new_link)
       puts "-> Linked #{link['repo']}"
     end
   end
 end
 
-$dotfile_help_info[:prefs] = "load prefs from dwrites, duti conf, and print manual prefs"
+$dotfile_help_info[:prefs] = 'load prefs from dwrites, duti conf, and print manual prefs'
 def dotfile_task_prefs
-  system File.join($repo, "setup/dwrites.sh")
-  system "killall Dock"
-  system "duti", File.join($repo, "setup/duti.conf")
-  system "cat", File.join($repo, "setup/preferences.txt")
+  system File.join(REPO, 'setup/dwrites.sh')
+  system 'killall Dock'
+  system 'duti', File.join(REPO, 'setup/duti.conf')
+  system 'cat', File.join(REPO, 'setup/preferences.txt')
 end
 
-$dotfile_help_info[:configure] = "queries and sets required shell variables"
+$dotfile_help_info[:configure] = 'queries and sets required shell variables'
 def dotfile_task_configure
   vars = load_config
 
-  puts "The following config are local to this machine:"
-  if !vars['GIT_NAME']
-    print "Name (git ops): "
-    vars['GIT_NAME'] = STDIN.gets.chomp
+  puts 'The following config are local to this machine:'
+  unless vars['GIT_NAME']
+    print 'Name (git ops): '
+    vars['GIT_NAME'] = $stdin.gets.chomp
   end
-  if !vars['GIT_EMAIL']
-    print "Email (git ops): "
-    vars['GIT_EMAIL'] = STDIN.gets.chomp
+  unless vars['GIT_EMAIL']
+    print 'Email (git ops): '
+    vars['GIT_EMAIL'] = $stdin.gets.chomp
   end
-  if !vars['XCODE_APP']
+  unless vars['XCODE_APP']
     print 'Xcode app name (ie "Xcode_12_0.app", must be in /Applications): '
-    vars['XCODE_APP'] = STDIN.gets.chomp
+    vars['XCODE_APP'] = $stdin.gets.chomp
   end
 
   save_config vars
 end
 
-$dotfile_help_info[:fish] = "set fish as default shell"
+$dotfile_help_info[:fish] = 'set fish as default shell'
 def dotfile_task_fish
-  system "echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells"
-  system "chsh -s /opt/homebrew/bin/fish"
+  system 'echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells'
+  system 'chsh -s /opt/homebrew/bin/fish'
 end
 
-$dotfile_help_info[:help] = "print this info"
+$dotfile_help_info[:help] = 'print this info'
 def dotfile_task_help
-  puts "Dotfiles management and setup commands:"
+  puts 'Dotfiles management and setup commands:'
   width = $dotfile_help_info.keys.map(&:length).max + 2
-  $dotfile_help_info.each do |k,v|
+  $dotfile_help_info.each do |k, v|
     title = "#{k}:"
     puts "  #{title.ljust(width, ' ')}#{v}"
   end
@@ -116,19 +114,19 @@ end
 
 ### MAIN
 
-if ARGV.length == 0
+if ARGV.empty?
   dotfile_task_help
   exit
 end
 
-missing_tasks = ARGV.select { |arg| !respond_to?("dotfile_task_#{arg}", :include_private) }
+missing_tasks = ARGV.reject { |arg| respond_to?("dotfile_task_#{arg}", :include_private) }
 
 if missing_tasks.any?
   puts "unknown command(s): #{missing_tasks.join(', ')}."
-  puts "See `dotfiles help` for list of options"
+  puts 'See `dotfiles help` for list of options'
   exit!
 end
 
 ARGV.each do |arg|
-    send "dotfile_task_#{arg}"
+  send "dotfile_task_#{arg}"
 end
