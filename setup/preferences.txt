@@ -33,17 +33,15 @@
 ├─┬─ Ice
 │ ├─── Launch at login
 │ └─── Don't show icon
-├─┬─ iTerm
-│ └─── Use settings folder: ~/var/env/apps/iterm/ ; update manually; quit (to apply) ; update automatically
 ├─┬─ Itsycal
 │ ├─── launch at login
 │ └─── use outline icon
 ├─┬─ Mail
 │ ├─┬─ Fonts
 │ │ └─── Use fixed width for plain text
-│ └─┬─ Viewing
-│   ├─── Move discards to Archive
-│   └─── Show most recent message at the top
+│ ├─┬─ Viewing
+│ │ ├─── Move discards to Archive
+│ │ └─── Show most recent message at the top
 │ ├─┬─ Assistant
 │ │ ├─── Insert final newline
 │ │ └─── Trim trailing whitespace
@@ -68,16 +66,6 @@
 │   ├─── Button 4 Double Click: Forward
 │   ├─── Button 4 Click and Scroll: Horizontal Scroll
 │   └─── Button 4 Click and Drag: Scroll & Navigate
-├─┬─ Terminal
-│ ├─── Import profiles from export/terminal
-│ ├─┬─ Enable homebrew's zsh
-│ │ ├─── $ sudo echo /usr/local/bin/zsh >> /etc/shells
-│ │ └─── $ chsh -s /usr/local/bin/zsh
-│ ├─── New windows and tabs open with default working directory
-│ ├─┬─ Add to Profile->Keyboard:
-│ │ ├─── opt+bksp  \027
-│ │ └─── opt+del   \033d
-│ └─── Menu > View > Hide Marks
 ├─┬─ VSCode
 │ └─── $ cat ~/var/env/apps/vscode/extensions.txt | xargs -L 1 code --install-extension
 ├─┬─ Xcode
@@ -102,16 +90,6 @@
 │   ├───  don't automatically add and remove files
 │   ├───  don't fetch server status automatically
 │   └───  local revision on left
-├─┬─ Warp
-│ ├─┬─ Appearance
-│ │ ├─── theme: Warp Blue
-│ │ └─── dont blink cursor
-│ └─┬─ Features
-│   ├─── dont copy on select
-│   ├─── open file links: vscode
-│   ├─── right option key is meta
-│   ├─── working directory for new sessions: home
-│   └─── use notifications
 └─┬─ System Preferences
   ├─┬─ Appearance
   │ ├─── theme: match day cycle
