@@ -9,6 +9,7 @@
 [delta]
 	navigate = true
 	line-numbers = true
+	dark = true
 [diff]
 	algorithm = histogram
 	colorMoved = plain

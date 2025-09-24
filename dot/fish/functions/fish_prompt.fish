@@ -28,7 +28,7 @@ function fish_prompt
     else
         echo
         string join '' -- (set_color cyan) (basename $PWD) (set_color normal) (fish_git_prompt) ' ' (set_color cyan) (prompt_pwd -D 4) (set_color normal)
-        string join '' -- $stat (set_color magenta) '> ' (set_color normal)
+        string join '' -- $stat (set_color magenta) '〉' (set_color normal)
     end
 end
 

@@ -7,6 +7,8 @@ mkdirs-in-home:
   - .config/karabiner
   - .config/ghostty
   - .config/rubocop
+  - Library/Application Support/lazygit
+  # TODO: these folders should be auto-created based on the links
 links:
   - home: .bash_profile
     repo: dot/bash/bash_profile
@@ -54,3 +56,5 @@ links:
     repo: apps/ghostty/config
   - home: .config/rubocop/config.yml
     repo: dot/ruby/rubocop.yml
+  - home: Library/Application Support/lazygit/config.yml
+    repo: dot/git/lazygit_config.yml

@@ -57,7 +57,7 @@ prompt_path()      { echo "%F{cyan}%~%f" }
 prompt_time()      { echo "%F{yellow}%D{%L:%M%p}%f" }
 prompt_exit_code() { echo "%F{red}%(?..(%?%))%f" }
 prompt_bg_jobs()   { echo "%F{white}%(1j.[bg jobs: %j].)%f" }
-prompt_char()      { echo "%F{magenta}$ %f" }
+prompt_char()      { echo "%F{magenta}〉%f" }
 
 # This supports three propmpt positions
 #   upper

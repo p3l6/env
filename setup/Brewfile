@@ -1,4 +1,3 @@
-
 ######
 # Homebrew
 ######
@@ -45,14 +44,17 @@ brew "jj"
 # brew "cocoapods"
 brew "swiftformat"
 brew "vapor"
+brew "xcbeautify"
 
 ### Other dev tools
 # brew "cmake"
 # brew "deno"
 # brew "docker"
+brew "lazygit"
 # brew "node"
-brew "ruby"
 brew "typst"
+brew "rbenv"
+brew "solargraph"
 # brew "vsce"
 # brew "yarn"
 
@@ -68,7 +70,6 @@ cask "iina"
 cask "itsycal"
 cask "jordanbaird-ice"
 cask "mac-mouse-fix"
-cask "monodraw"
 cask "netnewswire"
 cask "syntax-highlight"
 
@@ -77,6 +78,7 @@ cask "dash"
 cask "docker"
 cask "fork"
 cask "ghostty"
+cask "icon-composer"
 cask "p3l6/tap/xlinetool"
 cask "sf-symbols"
 cask "visual-studio-code"
@@ -89,7 +91,8 @@ cask "slack"
 
 ### Other tools
 cask "calibre"
-cask "handbrake"
+cask "handbrake-app"
+cask "karabiner-elements"
 cask "keka"
 cask "transmission"
 cask "losslesscut"

@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// TODO: &lt;#todo#&gt;</string>
+	<string>// :TODO: &lt;#todo#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F09DE461-FAE1-44E0-BBB0-67ACD438A02D</string>
 	<key>IDECodeSnippetLanguage</key>
