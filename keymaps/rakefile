@@ -1,0 +1,44 @@
+# Keyboard build tasks
+
+DEFAULT_KEYMAP = 'me'.freeze
+
+KB_DATA = {
+  'prime_e' => 'primekb/prime_e/rgb',
+  'bmek' => 'bemeir/bmek/rev3',
+  'quefrency' => 'keebio/quefrency/rev3',
+  'tokyo60' => 'tokyokeyboard/tokyo60',
+  'dz60' => 'dz60',
+  'ca66' => 'playkbtw/ca66'
+}.freeze
+
+directory 'hex'
+
+task :default do
+  puts 'Build any keyboard with `rake <board>`'
+  puts 'Build & install any keyboard with `rake <board>_flash`'
+  puts ''
+  puts 'Keyboards:'
+  KB_DATA.each_key do |name|
+    puts "  #{name}"
+  end
+end
+
+desc 'Setup qmk specific configs'
+task :setup do
+  sh 'qmk setup -H ~/.qmk/qmk_firmware'
+  sh "qmk config user.overlay_dir=\"#{__dir__}\""
+end
+
+# Add two tasks for each keyboard
+KB_DATA.each do |name, path|
+  desc "Build #{name} keyboard"
+  task name => 'hex' do
+    sh "qmk compile -kb #{path} -km #{DEFAULT_KEYMAP}"
+    sh 'mv *.hex hex/'
+  end
+
+  desc "Install #{name} hex file"
+  task "#{name}_flash" => name do
+    sh "qmk flash -kb #{path} -km #{DEFAULT_KEYMAP}"
+  end
+end

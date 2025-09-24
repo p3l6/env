@@ -3,16 +3,16 @@ This folder contains my QMK keymaps.
 It uses the "External Userspace" feature, which overlays these contents when building.
 
 # Setup dependencies
-1. `brew install just qmk/qmk/qmk`
-2. `just setup`
+1. `brew install qmk/qmk/qmk`
+2. `rake setup`
 
 # Build
-1. `just build primekb/prime_e/rgb`
+1. `rake prime_e`
 
 # Installing firmware
 
 ## Basic
-`just flash primekb/prime_e/rgb`, then hit reset button, or pre-programmed reset key
+`rake prime_e_flash`, then hit reset button, or pre-programmed reset key
 
 ## Ca66
 Plug in ca66 while holding ESC, then run
