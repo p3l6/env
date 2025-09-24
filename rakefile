@@ -1,0 +1,104 @@
+# Dotfiles management tasks
+
+require 'yaml'
+
+#### HELPERS
+
+def load_config
+  config_file_yaml = 'config/local/vars.yaml'
+  vars = {}
+  vars = YAML.load_file(config_file_yaml) if File.exist?(config_file_yaml)
+  vars
+end
+
+def save_config(vars)
+  config_file_yaml = 'config/local/vars.yaml'
+  parent = 'config/local'
+  Dir.mkdir(parent) unless Dir.exist?(parent)
+
+  File.write(config_file_yaml, vars.to_yaml)
+
+  zsh_output = vars.map { |key, var| "export #{key}=\"#{var}\"" }.join("\n")
+  File.write('config/local/vars.zsh', zsh_output)
+
+  fish_output = vars.map { |key, var| "set -gx #{key} #{var}" }.join("\n")
+  File.write('config/local/vars.fish', fish_output)
+
+  git_output = "[user]\n  name = #{vars['GIT_NAME']}\n  email = #{vars['GIT_EMAIL']}\n"
+  File.write(File.join(Dir.home, '.gitconfig_local'), git_output)
+  # TODO: move gitconfig to config dir. but then gitconfig would depend on checkout location? hmm.
+end
+
+#### COMMANDS
+
+task default: :help
+
+desc 'fake task'
+task :fake do
+  puts 'yo yo yo'
+end
+
+desc 'install brew'
+task :brew do
+  system '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
+end
+
+desc 'install tools from brewfile'
+task :bundle do
+  system 'brew bundle install --file setup/Brewfile'
+end
+
+# TODO: move diff-brewfile script here
+
+desc 'create symlinks'
+task :link do
+  yaml_file = YAML.load_file('config/links.yaml')
+  yaml_file['mkdirs-in-home'].each do |dir|
+    # ruby's mkdir isn't recursive
+    system('mkdir', '-p', File.join(Dir.home, dir))
+  end
+  yaml_file['links'].each do |link|
+    new_link = File.join(Dir.home, link['home'])
+    ## TODO: detect if the file exists, but is either a plain file, or the wrong link, and fix it
+    unless File.exist?(new_link)
+      File.symlink(link['repo'], new_link)
+      puts "-> Linked #{link['repo']}"
+    end
+  end
+end
+
+desc 'load prefs from dwrites, duti conf, and print manual prefs'
+task :prefs do
+  system 'setup/dwrites.sh'
+  system 'killall Dock'
+  system 'duti', 'setup/duti.conf'
+  system 'cat', 'setup/preferences.txt'
+end
+
+desc 'queries and sets required shell variables'
+task :configure do
+  vars = load_config
+
+  # TODO: should somehow allow updating these
+  puts 'The following config are local to this machine:'
+  unless vars['GIT_NAME']
+    print 'Name (git ops): '
+    vars['GIT_NAME'] = $stdin.gets.chomp
+  end
+  unless vars['GIT_EMAIL']
+    print 'Email (git ops): '
+    vars['GIT_EMAIL'] = $stdin.gets.chomp
+  end
+  unless vars['XCODE_APP']
+    print 'Xcode app name (ie "Xcode_12_0.app", must be in /Applications): '
+    vars['XCODE_APP'] = $stdin.gets.chomp
+  end
+
+  save_config vars
+end
+
+desc 'set fish as default shell'
+task :fish do
+  system 'echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells'
+  system 'chsh -s /opt/homebrew/bin/fish'
+end

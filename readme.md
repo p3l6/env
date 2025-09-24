@@ -3,7 +3,7 @@
 [Config for GUI applications](./apps)
 [Config for CLI applications](./dot)
 [Binaries](./bin)
-[Dotfiles management command](./bin/dotfiles)
+[Dotfiles management tasks](./rakefile), usually invoked by the `./bin/dotfiles` wrapper
 [Scripts and utils](./setup) for setting up a new environment
 
 # New Mac setup steps
@@ -19,7 +19,7 @@
 
 ## Config
 
-1. `./bin/dotfiles configure link brew`
+1. `rake configure link brew`
     * Then open a new shell, to update path variables
 2. `dotfiles bundle`
 3. Comment out prefs and hidden-flags in `dwrites.sh`, if desired
