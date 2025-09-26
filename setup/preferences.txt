@@ -90,6 +90,14 @@
 │   ├───  don't automatically add and remove files
 │   ├───  don't fetch server status automatically
 │   └───  local revision on left
+├─┬─ Zed (Extensions)
+│ ├─── Bag notation (local)
+│ ├─── Html
+│ ├─── Ruby
+│ ├─── Xcode Themes
+│ ├─── Fish
+│ ├─── Typst
+│ └─── Typos
 └─┬─ System Preferences
   ├─┬─ Appearance
   │ ├─── theme: match day cycle
