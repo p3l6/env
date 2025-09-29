@@ -66,8 +66,6 @@
 │   ├─── Button 4 Double Click: Forward
 │   ├─── Button 4 Click and Scroll: Horizontal Scroll
 │   └─── Button 4 Click and Drag: Scroll & Navigate
-├─┬─ VSCode
-│ └─── $ cat ~/var/env/apps/vscode/extensions.txt | xargs -L 1 code --install-extension
 ├─┬─ Xcode
 │ ├─┬─ General
 │ │ └─── File extensions: hide listed
