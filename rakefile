@@ -2,42 +2,6 @@
 
 require 'yaml'
 
-#### HELPERS
-
-def load_config
-  config_file_yaml = 'config/local/vars.yaml'
-  vars = {}
-  vars = YAML.load_file(config_file_yaml) if File.exist?(config_file_yaml)
-  vars
-end
-
-def save_config(vars)
-  config_file_yaml = 'config/local/vars.yaml'
-  parent = 'config/local'
-  Dir.mkdir(parent) unless Dir.exist?(parent)
-
-  File.write(config_file_yaml, vars.to_yaml)
-
-  zsh_output = vars.map { |key, var| "export #{key}=\"#{var}\"" }.join("\n")
-  File.write('config/local/vars.zsh', zsh_output)
-
-  fish_output = vars.map { |key, var| "set -gx #{key} #{var}" }.join("\n")
-  File.write('config/local/vars.fish', fish_output)
-
-  git_output = "[user]\n  name = #{vars['GIT_NAME']}\n  email = #{vars['GIT_EMAIL']}\n"
-  File.write(File.join(Dir.home, '.gitconfig_local'), git_output)
-  # TODO: move gitconfig to config dir. but then gitconfig would depend on checkout location? hmm.
-end
-
-#### COMMANDS
-
-task default: :help
-
-desc 'fake task'
-task :fake do
-  puts 'yo yo yo'
-end
-
 desc 'install brew'
 task :brew do
   system '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
@@ -53,17 +17,22 @@ end
 desc 'create symlinks'
 task :link do
   yaml_file = YAML.load_file('config/links.yaml')
-  yaml_file['mkdirs-in-home'].each do |dir|
-    # ruby's mkdir isn't recursive
-    system('mkdir', '-p', File.join(Dir.home, dir))
-  end
+
   yaml_file['links'].each do |link|
     new_link = File.join(Dir.home, link['home'])
-    ## TODO: detect if the file exists, but is either a plain file, or the wrong link, and fix it
-    unless File.exist?(new_link)
-      File.symlink(link['repo'], new_link)
-      puts "-> Linked #{link['repo']}"
-    end
+    repo_file = File.join(__dir__, link['repo'])
+
+    # skip if correct
+    next if File.symlink?(new_link) && File.readlink(new_link) == repo_file
+
+    # delete wrong links and plain files
+    File.delete(new_link) if File.symlink?(new_link) || File.exist?(new_link)
+
+    # use shell since Dir.mkdir isn't recursive
+    system('mkdir', '-p', File.dirname(new_link)) unless Dir.exist?(File.dirname(new_link))
+
+    File.symlink(repo_file, new_link)
+    puts "-> Linked #{link['repo']}"
   end
 end
 
@@ -72,33 +41,81 @@ task :prefs do
   system 'setup/dwrites.sh'
   system 'killall Dock'
   system 'duti', 'setup/duti.conf'
+  # TODO: (maybe) these could be moved to plists/dwrites, with a custom diff. like brewfile does.
   system 'cat', 'setup/preferences.txt'
 end
 
 desc 'queries and sets required shell variables'
 task :configure do
-  vars = load_config
+  config = LocalConfig.new
 
-  # TODO: should somehow allow updating these
-  puts 'The following config are local to this machine:'
-  unless vars['GIT_NAME']
-    print 'Name (git ops): '
-    vars['GIT_NAME'] = $stdin.gets.chomp
-  end
-  unless vars['GIT_EMAIL']
-    print 'Email (git ops): '
-    vars['GIT_EMAIL'] = $stdin.gets.chomp
-  end
-  unless vars['XCODE_APP']
-    print 'Xcode app name (ie "Xcode_12_0.app", must be in /Applications): '
-    vars['XCODE_APP'] = $stdin.gets.chomp
+  puts 'The following config are local to this machine.'
+  puts 'Leave blank to keep [current value]'
+  LocalConfig::KEYS.each do |key|
+    print "#{LocalConfig::LABELS[key] || key} [#{config.send(key)}]: "
+    input = $stdin.gets.chomp
+    config.update(key, input)
   end
 
-  save_config vars
+  config.save
 end
 
 desc 'set fish as default shell'
 task :fish do
   system 'echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells'
   system 'chsh -s /opt/homebrew/bin/fish'
+end
+
+# Handler for machine-local variables
+class LocalConfig
+  CONFIG_FOLDER = 'config/local'.freeze
+  CONFIG_FILE_YAML = 'config/local/vars.yaml'.freeze
+  CONFIG_FILE_ZSH = 'config/local/vars.zsh'.freeze
+  CONFIG_FILE_FISH = 'config/local/vars.fish'.freeze
+  KEYS = [:git_name, :git_email, :xcode_app].freeze
+  LABELS = {
+    git_name: 'Name (git ops)',
+    git_email: 'Email (git ops)',
+    xcode_app: 'Xcode app name (ie "Xcode_12_0.app", must be in /Applications)'
+  }.freeze
+
+  attr_accessor(*KEYS)
+
+  def initialize
+    return unless File.exist?(CONFIG_FILE_YAML)
+
+    vars = YAML.load_file(CONFIG_FILE_YAML)
+    KEYS.each { |key| update(key, vars[key.to_s.upcase]) }
+  end
+
+  def update(key, value)
+    return if value.empty?
+
+    send("#{key}=", value)
+  end
+
+  def save
+    yaml_vars = {}
+    zsh_output = ''
+    fish_output = ''
+
+    KEYS.each do |key|
+      key_upper = key.to_s.upcase
+      value = send(key)
+
+      yaml_vars[key_upper] = value
+      zsh_output += "export #{key_upper}=\"#{value}\"\n"
+      fish_output += "set -gx #{key_upper} #{value}\n"
+    end
+
+    git_output = "[user]\n  name = #{@git_name}\n  email = #{@git_email}\n"
+
+    Dir.mkdir(CONFIG_FOLDER) unless Dir.exist?(CONFIG_FOLDER)
+    File.write(CONFIG_FILE_YAML, yaml_vars.to_yaml)
+    File.write(CONFIG_FILE_ZSH, zsh_output)
+    File.write(CONFIG_FILE_FISH, fish_output)
+    # TODO: move gitconfig_local to config dir. but then gitconfig would depend on checkout location? hmm.
+    # probably should put it in local, and simlink it, like everything else
+    File.write(File.join(Dir.home, '.gitconfig_local'), git_output)
+  end
 end
