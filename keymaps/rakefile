@@ -40,5 +40,6 @@ KB_DATA.each do |name, path|
   desc "Install #{name} hex file"
   task "#{name}_flash" => name do
     sh "qmk flash -kb #{path} -km #{DEFAULT_KEYMAP}"
+    sh 'mv *.hex hex/'
   end
 end
