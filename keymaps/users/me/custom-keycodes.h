@@ -5,29 +5,21 @@
 #define XXXXXXX KC_NO   // a key physically missing
 #define __xxx__ KC_NO   // a key masked for this layer
 
+//
+// D: Defined shorthands
+//
+
 // Move between window tabs
-#define D_TAB_L LGUI(LSFT(KC_LBRC))
-#define D_TAB_R LGUI(LSFT(KC_RBRC))
-// Move between editor tab groups (vscode)
-#define D_GRP_U LGUI(LSFT(LCTL(KC_LBRC)))
-#define D_GRP_D LGUI(LSFT(LCTL(KC_RBRC)))
-#define D_GRP_L LGUI(LSFT(LALT(KC_LBRC)))
-#define D_GRP_R LGUI(LSFT(LALT(KC_RBRC)))
+#define D_TAB_L G(S(KC_LBRC))
+#define D_TAB_R G(S(KC_RBRC))
 // Move between system spaces
-#define D_SPC_L LCTL(KC_LEFT)
-#define D_SPC_R LCTL(KC_RGHT)
-#define D_SPC_1 LCTL(KC_1)
-#define D_SPC_2 LCTL(KC_2)
-#define D_SPC_3 LCTL(KC_3)
-#define D_SPC_4 LCTL(KC_4)
+#define D_SPC_L C(KC_LEFT)
+#define D_SPC_R C(KC_RGHT)
 // System
-#define D_EXPOS LCTL(KC_UP)
-#define D_NOTIF LCTL(KC_F10)
-#define D_NXTWN LCTL(KC_F4) // like cmd-` but cycle all windows
-#define D_HELP  LGUI(LSFT(KC_SLSH))
-#define D_HIDE  LGUI(KC_H)
-#define D_SSHOT LGUI(LSFT(KC_5))
-#define D_FORCQ LGUI(LALT(KC_ESC))
+#define D_EXPOS C(KC_UP)
+#define D_HELP  G(S(KC_SLSH))
+#define D_SSHOT G(S(KC_5))
+#define D_FORCQ G(A(KC_ESC))
 // Debugging actions
 #define D_DBG_C KC_F16
 #define D_DBG_N KC_F17
@@ -37,39 +29,36 @@
 #define D_BRT_D KC_SCRL
 #define D_BRT_U KC_PAUS
 // Move lines, cursor, etc (vscode, xcode)
-#define D_LIN_U LALT(LSFT(KC_UP))
-#define D_LIN_D LALT(LSFT(KC_DOWN))
-#define D_LIN_N LGUI(LSFT(KC_D))
-#define D_LIN_X LGUI(KC_D)
-#define D_CUR_U LALT(KC_UP)
-#define D_CUR_D LALT(KC_DOWN)
-#define D_CUR_N LGUI(LSFT(KC_E))
-#define D_CUR_A LGUI(LALT(LSFT(KC_E)))
-#define D_COPY  LGUI(KC_C)
-#define D_PASTE LGUI(KC_V)
-#define D_SUBWD LCTL(KC_LALT)
-#define D_SWAP  LCTL(KC_T)
-#define D_BACK  LGUI(LCTL(KC_LEFT))
-#define D_FRWD  LGUI(LCTL(KC_RIGHT))
-#define D_GOTO  LGUI(LCTL(KC_J))
-#define D_SEL_W LGUI(LCTL(LSFT(KC_E)))
-#define D_AUTHR LGUI(LCTL(LSFT(KC_A))) // xcode toggle authors
-#define D_MIMAP LGUI(LCTL(LSFT(KC_M))) // xcode toggle minimap
+#define D_LIN_U A(S(KC_UP))    // move current line up
+#define D_LIN_D A(S(KC_DOWN))  // move current line down
+#define D_LIN_N G(S(KC_D))     // duplicate current line
+#define D_LIN_X G(KC_D)        // delete current line
+#define D_CUR_U A(KC_UP)       // extend multi-cursor
+#define D_CUR_D A(KC_DOWN)     // extend multi-cursor
+#define D_CUR_N G(S(KC_E))     // add multi-cursor at next matching word
+#define D_CUR_A G(A(S(KC_E)))  // add multi-cursors at all matching words
+#define D_SUBWD C(KC_LALT)     // arrow key modifier to move by camelCase
+#define D_SWAP  C(KC_T)        // exchange characters on either side of cursor
+#define D_BACK  G(C(KC_LEFT))  // xcode back
+#define D_FRWD  G(C(KC_RIGHT)) // xcode navigate
+#define D_GOTO  G(C(KC_J))     // xcode jump to definition
+#define D_SEL_W G(C(S(KC_E)))  // select current word
+#define D_AUTHR G(C(S(KC_A)))  // xcode toggle authors
+#define D_MIMAP G(C(S(KC_M)))  // xcode toggle minimap
 // Alfred triggers
-#define D_SLACK LALT(LCTL(KC_F1)) // alfred action to launch slack and send correct keycommand
-#define D_ZOOM  LALT(LCTL(KC_F2)) // alfred action to launch zoom and send correct keycommand
 #define D_ALF_X G(S(KC_X))
 #define D_ALF_C G(S(KC_C))
 #define D_ALF_V G(S(KC_V))
 
+//
+// Z: String Macros
+//
+
 enum custom_keycodes {
-    Z_PRINT = SAFE_RANGE,
-    Z_ARROW,
+    Z_ARROW = SAFE_RANGE,
     Z_LGARW,
-    Z_STCMT,
-    Z_ENCMT,
-    Z_SFRMT,
-    Z_JSSTR,
+    Z_SWFMT,
+    Z_JSFMT,
     Z_ALTTB,
     Z_MTODO,
     Z_XTODO,
@@ -77,13 +66,10 @@ enum custom_keycodes {
     Z_DLR_0,
 };
 
-#define DEF_PRINT SEND_STRING("print(\"\")"SS_TAP(X_LEFT)SS_TAP(X_LEFT));
 #define DEF_ARROW SEND_STRING("->");
 #define DEF_LGARW SEND_STRING("=>");
-#define DEF_STCMT SEND_STRING("/*");
-#define DEF_ENCMT SEND_STRING("*/");
-#define DEF_SFRMT SEND_STRING("\\()"SS_TAP(X_LEFT));
-#define DEF_JSSTR SEND_STRING("``"SS_TAP(X_LEFT)"${}"SS_TAP(X_LEFT));
+#define DEF_SWFMT SEND_STRING("\\()"SS_TAP(X_LEFT));
+#define DEF_JSFMT SEND_STRING("${}"SS_TAP(X_LEFT));
 #define DEF_MTODO SEND_STRING("- [ ] ");
 #define DEF_XTODO SEND_STRING("// :TODO: ");
 #define DEF_DEL_W SEND_STRING(SS_LALT(SS_TAP(X_LEFT)SS_TAP(X_DEL)));
@@ -94,31 +80,13 @@ enum custom_keycodes {
   if (mods & MOD_MASK_SHIFT) { del_mods(MOD_MASK_SHIFT);  DEF_##shifted_macro set_mods(mods); } \
   else { DEF_##macro } return false; break; }
 
-#define OVERLOAD_MACRO(_1,_2,_3,_4,_5,NAME,...) NAME
-#define SEQ(...) OVERLOAD_MACRO(__VA_ARGS__, SEQ_FIVE_KEYS,SEQ_FOUR_KEYS,SEQ_THREE_KEYS,SEQ_TWO_KEYS,SEQ_ONE_KEY)(__VA_ARGS__)
+//
+// T: Tap dance keycodes
+//
 
-#define ALT_TAB_DELAY 750  // 0.75 s
-#define ALT_TAB_INIT uint16_t altTabTimer = 0;
-#define ALT_TAB_PROC_REC if (keycode == Z_ALTTB) { \
-  if (record->event.pressed) { \
-    if (altTabTimer == 0) register_code(KC_RGUI); \
-    register_code(KC_TAB); \
-  } else { \
-    altTabTimer = timer_read(); \
-    unregister_code(KC_TAB); \
-  } return false; }
-
-#define ALT_TAB_MATRIX_SCAN if \
-  (altTabTimer && timer_elapsed(altTabTimer) >= ALT_TAB_DELAY) { \
-    unregister_code(KC_RGUI); \
-    altTabTimer = 0; \
-  }
-
-#endif
-
-// Tap dance keycodes
+#define T_PLNXT TD(0) // one: play, two: next
 #define TAP_DANCE_INIT tap_dance_action_t tap_dance_actions[] = { \
   [0] = ACTION_TAP_DANCE_DOUBLE(KC_MPLY, KC_MFFD), \
   };
 
-#define T_PLNXT TD(0)
+#endif

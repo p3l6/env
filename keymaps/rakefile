@@ -7,7 +7,6 @@ KB_DATA = {
   'bmek' => 'bemeir/bmek/rev3',
   'quefrency' => 'keebio/quefrency/rev3',
   'tokyo60' => 'tokyokeyboard/tokyo60',
-  'dz60' => 'dz60',
   'ca66' => 'playkbtw/ca66'
 }.freeze
 

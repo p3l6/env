@@ -15,35 +15,35 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 QK_GESC, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,              KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, KC_DEL, \
 LT_SYMB, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,              KC_H,    KC_J,    KC_K,    KC_L,    KC_QUOT, KC_ENT,  \
 SC_LSPO, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    OSL(NUM), KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SC_RSPC,  \
-KC_LCTL, KC_LALT,                   KC_LGUI, MO(NAV), KC_SPC,            KC_UNDS,          KC_RALT,          MO(CODE)   \
+KC_LCTL, KC_LALT,                   KC_LGUI, MO(NAV), KC_SPC,            KC_UNDS,          Z_XTODO,          MO(CODE)   \
 
 
 ),[NAV] = LAYOUT(
 KC_BSPC, D_SUBWD, D_LIN_U, KC_UP,   D_EXPOS, D_CUR_U,           D_SPC_L, D_SPC_R, KC_UP,   KC_HOME, KC_PGUP, _______, _______, \
-KC_ENT,  KC_LALT, KC_LEFT, KC_DOWN, KC_RGHT, D_CUR_D,           D_NXTWN, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_PENT, \
-KC_LSFT, KC_LGUI, D_LIN_D, D_SWAP,  D_ALF_V, D_CUR_N, D_TAB_L,  D_TAB_R, D_BACK,  D_GOTO,  D_FRWD,  KC_END,  _______,  \
-KC_LCTL, KC_LALT,                   KC_LGUI, _______, KC_SPC,            KC_RGUI,          __xxx__,          __xxx__    \
+KC_ENT,  KC_LALT, KC_LEFT, KC_DOWN, KC_RGHT, D_CUR_D,           _______, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_PENT, \
+KC_LSFT, KC_LGUI, D_LIN_D, D_SWAP,  D_ALF_V, D_CUR_N,  D_TAB_L, D_TAB_R, D_BACK,  D_GOTO,  D_FRWD,  KC_END,  _______,  \
+KC_LCTL, KC_LALT,                   KC_LGUI, _______,  KC_SPC,           KC_RGUI,          __xxx__,          __xxx__    \
 
 
 ),[SYMB] = LAYOUT(
-KC_GRV,  KC_LT,   KC_GT,   KC_LBRC, KC_RBRC, Z_XTODO,           KC_AT,   KC_EXLM, KC_PIPE, KC_ASTR, KC_CIRC, _______, _______, \
-_______, KC_TILD, KC_DLR,  KC_LCBR, KC_RCBR, KC_UNDS,           KC_HASH, KC_EQL,  KC_MINS, KC_PLUS, KC_GRV,  KC_PENT, \
-KC_LSFT, KC_QUES, KC_BSLS, KC_LPRN, KC_RPRN, Z_ARROW, KC_PERC,  KC_AMPR, KC_DLR,  KC_SCLN, KC_COLN, KC_BSLS, KC_RSFT,  \
-_______, _______,                   _______, _______, KC_SPC,            _______,          __xxx__,          __xxx__    \
+KC_GRV, KC_LPRN,  KC_RPRN, KC_LBRC, KC_RBRC, Z_XTODO,           KC_AT,   KC_EXLM, KC_PIPE, KC_ASTR, KC_CIRC, _______, _______, \
+_______, Z_ARROW, _______, KC_LCBR, KC_RCBR, Z_DLR_0,           KC_HASH, KC_EQL,  KC_MINS, KC_PLUS, KC_GRV,  KC_PENT, \
+KC_LSFT, _______, _______, KC_LT,   KC_GT,   Z_SWFMT,  KC_PERC, KC_AMPR, KC_DLR,  KC_SCLN, KC_COLN, KC_BSLS, KC_RSFT,  \
+_______, _______,                   _______, _______,  KC_SPC,           _______,          __xxx__,          __xxx__    \
 
 
 ),[NUM] = LAYOUT(
 KC_0,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,              KC_AT,   KC_EXLM, KC_PIPE, KC_ASTR, __xxx__, _______, _______, \
 __xxx__, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,              KC_HASH, KC_EQL,  KC_MINS, KC_PLUS, __xxx__, KC_PENT, \
-KC_LSFT, KC_COLN, KC_DLR,  KC_DOT,  KC_SLSH, KC_UNDS, _______,  KC_AMPR, KC_DLR,  _______, _______, _______, __xxx__,  \
-_______, _______,                   _______, _______, _______,           _______,          _______,          __xxx__    \
+KC_LSFT, _______, _______, KC_DOT,  KC_SLSH, _______,  _______, KC_AMPR, KC_DLR,  _______, _______, _______, __xxx__,  \
+_______, _______,                   _______, _______,  _______,          _______,          _______,          __xxx__    \
 
 
 ),[CODE] = LAYOUT(
 KC_ESC,  D_FORCQ, __xxx__, T_PLNXT, KC_VOLD, KC_VOLU,           KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   __xxx__, QK_BOOT, \
 __xxx__, D_AUTHR, D_SEL_W, Z_DEL_W, __xxx__, __xxx__,           KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  __xxx__, \
-__xxx__, D_MIMAP, __xxx__, D_SSHOT, __xxx__, __xxx__, __xxx__,  D_DBG_C, D_DBG_N, D_DBG_S, D_DBG_O, D_HELP,  KC_CAPS,  \
-__xxx__, __xxx__,                   __xxx__, _______, __xxx__,           __xxx__,          __xxx__,          __xxx__    \
+__xxx__, D_MIMAP, __xxx__, D_SSHOT, __xxx__, __xxx__,  __xxx__, D_DBG_C, D_DBG_N, D_DBG_S, D_DBG_O, D_HELP,  KC_CAPS,  \
+__xxx__, __xxx__,                   __xxx__, _______,  __xxx__,          __xxx__,          __xxx__,          __xxx__    \
 
 ),
 };
@@ -55,10 +55,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   if (record->event.pressed) {
     switch(keycode) {
       SHIFTED_CASE(ARROW, LGARW)
-      CASE(STCMT) CASE(ENCMT)
       CASE(DEL_W)
       SHIFTED_CASE(XTODO, MTODO)
       CASE(DLR_0)
+      SHIFTED_CASE(SWFMT, JSFMT)
     }
   }
   return true;
