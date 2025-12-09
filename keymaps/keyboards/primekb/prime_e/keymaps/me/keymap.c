@@ -2,10 +2,12 @@
 #include "custom-keycodes.h"
 
 #define BASE 0
-#define NAV  1
-#define SYMB 2
-#define NUM  3
-#define CODE 4
+#define SMPL 1 // Alternate base layer that hides all complex functions
+#define NAV  2
+#define SYMB 3
+#define NUM  4
+#define CODE 5
+
 
 #define LT_SYMB  LT(SYMB, KC_TAB)
 
@@ -18,6 +20,13 @@ SC_LSPO, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    OSL(NUM), KC_N,    KC_M,  
 KC_LCTL, KC_LALT,                   KC_LGUI, MO(NAV), KC_SPC,            KC_UNDS,          Z_XTODO,          MO(CODE)   \
 
 
+),[SMPL] = LAYOUT(
+KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,              KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, KC_DEL, \
+KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,              KC_H,    KC_J,    KC_K,    KC_L,    KC_QUOT, KC_ENT,  \
+KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    __xxx__,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,  \
+KC_LCTL, KC_LALT,                   KC_LGUI, KC_SPC,  KC_SPC,            KC_RGUI,          DF(BASE),         KC_RCTL    \
+
+
 ),[NAV] = LAYOUT(
 KC_BSPC, D_SUBWD, D_LIN_U, KC_UP,   D_EXPOS, D_CUR_U,           D_SPC_L, D_SPC_R, KC_UP,   KC_HOME, KC_PGUP, _______, _______, \
 KC_ENT,  KC_LALT, KC_LEFT, KC_DOWN, KC_RGHT, D_CUR_D,           _______, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_PENT, \
@@ -26,22 +35,22 @@ KC_LCTL, KC_LALT,                   KC_LGUI, _______,  KC_SPC,           KC_RGUI
 
 
 ),[SYMB] = LAYOUT(
-KC_GRV, KC_LPRN,  KC_RPRN, KC_LBRC, KC_RBRC, Z_XTODO,           KC_AT,   KC_EXLM, KC_PIPE, KC_ASTR, KC_CIRC, _______, _______, \
+KC_GRV, KC_LPRN,  KC_RPRN, KC_LBRC, KC_RBRC, _______,           KC_AT,   KC_EXLM, KC_PIPE, KC_ASTR, KC_CIRC, _______, _______, \
 _______, Z_ARROW, _______, KC_LCBR, KC_RCBR, Z_DLR_0,           KC_HASH, KC_EQL,  KC_MINS, KC_PLUS, KC_GRV,  KC_PENT, \
 KC_LSFT, _______, _______, KC_LT,   KC_GT,   Z_SWFMT,  KC_PERC, KC_AMPR, KC_DLR,  KC_SCLN, KC_COLN, KC_BSLS, KC_RSFT,  \
 _______, _______,                   _______, _______,  KC_SPC,           _______,          __xxx__,          __xxx__    \
 
 
 ),[NUM] = LAYOUT(
-KC_0,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,              KC_AT,   KC_EXLM, KC_PIPE, KC_ASTR, __xxx__, _______, _______, \
-__xxx__, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,              KC_HASH, KC_EQL,  KC_MINS, KC_PLUS, __xxx__, KC_PENT, \
-KC_LSFT, _______, _______, KC_DOT,  KC_SLSH, _______,  _______, KC_AMPR, KC_DLR,  _______, _______, _______, __xxx__,  \
+KC_0,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,              KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   _______, _______, \
+__xxx__, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,              KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_PENT, \
+KC_LSFT, _______, _______, KC_DOT,  KC_SLSH, _______,  _______, _______, _______, _______, _______, _______, __xxx__,  \
 _______, _______,                   _______, _______,  _______,          _______,          _______,          __xxx__    \
 
 
 ),[CODE] = LAYOUT(
-KC_ESC,  D_FORCQ, __xxx__, T_PLNXT, KC_VOLD, KC_VOLU,           KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   __xxx__, QK_BOOT, \
-__xxx__, D_AUTHR, D_SEL_W, Z_DEL_W, __xxx__, __xxx__,           KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  __xxx__, \
+KC_ESC,  D_FORCQ, __xxx__, T_PLNXT, KC_VOLD, KC_VOLU,           __xxx__, __xxx__, __xxx__, __xxx__, DF(SMPL),__xxx__, QK_BOOT, \
+__xxx__, D_AUTHR, D_SEL_W, Z_DEL_W, __xxx__, __xxx__,           __xxx__, __xxx__, __xxx__, __xxx__, __xxx__, __xxx__, \
 __xxx__, D_MIMAP, __xxx__, D_SSHOT, __xxx__, __xxx__,  __xxx__, D_DBG_C, D_DBG_N, D_DBG_S, D_DBG_O, D_HELP,  KC_CAPS,  \
 __xxx__, __xxx__,                   __xxx__, _______,  __xxx__,          __xxx__,          __xxx__,          __xxx__    \
 
@@ -58,7 +67,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       CASE(DEL_W)
       SHIFTED_CASE(XTODO, MTODO)
       CASE(DLR_0)
-      SHIFTED_CASE(SWFMT, JSFMT)
+      SHIFTED_CASE(SWFMT, RBFMT)
     }
   }
   return true;
@@ -81,7 +90,10 @@ layer_state_t layer_state_set_user(layer_state_t state)
     writePin(B1, layer_state_cmp(state, SYMB) ||
                  layer_state_cmp(state, NAV) ||
                  layer_state_cmp(state, CODE) );
-    writePin(B3, layer_state_cmp(state, NUM));
+    writePin(B3, layer_state_cmp(state, NUM) ||
+                 // TODO: layer_state_set_user is not called when this layer is deactivated, light stays on until next temporary layer
+                 get_highest_layer(default_layer_state) == SMPL
+    );
     return state;
 }
 

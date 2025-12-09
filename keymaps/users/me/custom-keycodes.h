@@ -59,6 +59,7 @@ enum custom_keycodes {
     Z_LGARW,
     Z_SWFMT,
     Z_JSFMT,
+    Z_RBFMT,
     Z_ALTTB,
     Z_MTODO,
     Z_XTODO,
@@ -70,6 +71,7 @@ enum custom_keycodes {
 #define DEF_LGARW SEND_STRING("=>");
 #define DEF_SWFMT SEND_STRING("\\()"SS_TAP(X_LEFT));
 #define DEF_JSFMT SEND_STRING("${}"SS_TAP(X_LEFT));
+#define DEF_RBFMT SEND_STRING("#{}"SS_TAP(X_LEFT));
 #define DEF_MTODO SEND_STRING("- [ ] ");
 #define DEF_XTODO SEND_STRING("// :TODO: ");
 #define DEF_DEL_W SEND_STRING(SS_LALT(SS_TAP(X_LEFT)SS_TAP(X_DEL)));
