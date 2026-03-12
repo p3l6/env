@@ -24,5 +24,11 @@
       "cmd-ctrl-j": "editor::GoToDefinition",
       "cmd-ctrl-shift-a": "git::Blame"
     }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-w": null
+    }
   }
 ]
