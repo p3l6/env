@@ -1,14 +1,37 @@
-font-family = Fira Code
+## Visuals
+
 theme = Dracula
-background = #282A36
-foreground = #F8F8F2
 cursor-color = #F298CE
-cursor-style = underline
-shell-integration-features = no-cursor
-cursor-style-blink = false
-cursor-click-to-move = true
-window-padding-x = 6
-window-padding-y = 6
-macos-titlebar-style = tabs
 bold-is-bright = true
+macos-titlebar-style = tabs
+window-padding-balance=true
+window-padding-x = 12
+window-padding-y = 4
+
+window-height = 50
+window-width = 120
+
+font-family = Fira Code
+font-thicken = true
+
+cursor-style = underline
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+## Behavior
+
+cursor-click-to-move = true
 copy-on-select = false
+notify-on-command-finish = unfocused
+notify-on-command-finish-action = no-bell,notify
+notify-on-command-finish-after = 10s
+tab-inherit-working-directory = false
+window-inherit-working-directory = false
+window-new-tab-position = end
+
+## Shortcuts
+
+keybind = page_up=scroll_page_up
+keybind = home=scroll_to_top
+keybind = page_down=scroll_page_down
+keybind = end=scroll_to_bottom

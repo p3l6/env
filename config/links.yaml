@@ -41,7 +41,7 @@ links:
     repo: dot/lsd/colors.yaml
   - home: .config/karabiner/karabiner.json
     repo: apps/karabiner/karabiner.json
-  - home: .config/ghostty/config
+  - home: Library/Application Support/com.mitchellh.ghostty/config
     repo: apps/ghostty/config
   - home: .config/rubocop/config.yml
     repo: dot/ruby/rubocop.yml
