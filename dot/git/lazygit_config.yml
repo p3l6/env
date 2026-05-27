@@ -1,15 +1,12 @@
 gui:
   nerdFontsVersion: "3"
-
 git:
-  paging:
-    colorArg: always
-    pager: "delta --dark --paging=never"
+  pagers:
+    - colorArg: always
+      pager: "delta --dark --paging=never"
   skipHookPrefix: WIP
   autoFetch: false
-
 os:
   editPreset: "micro"
-
 promptToReturnFromSubprocess: false
 quitOnTopLevelReturn: true

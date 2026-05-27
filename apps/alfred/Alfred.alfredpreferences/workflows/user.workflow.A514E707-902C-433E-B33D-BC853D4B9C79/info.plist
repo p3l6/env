@@ -99,7 +99,7 @@ REAL=$(realpath $2)
 case $1 in
   Fork.app) open -a "Fork.app" $REAL ;;
   Xcode.app) open -a "$XCODE_APP" $REAL ;;
-  Zed.app) open -a "Zed.app" $REAL ;;
+  Zed.app) zed $REAL ;;
   "Visual Studio Code.app") open -a "Visual Studio Code.app" $REAL ;;
   x) ~/var/env/bin/x $REAL ;;
 esac</string>

@@ -42,7 +42,7 @@
 		<key>E40E73C5-F786-4DDB-933D-F85B9EC44C31</key>
 		<dict>
 			<key>enabled</key>
-			<true/>
+			<false/>
 			<key>keyword</key>
 			<string>kagi</string>
 			<key>text</key>

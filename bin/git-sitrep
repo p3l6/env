@@ -1,0 +1,11 @@
+#! /bin/bash
+# Adapted from https://piechowski.io/post/git-commands-before-reading-code/
+
+echo "== Who wrote this =="
+git shortlog -sn --no-merges
+
+echo "== Most often changed (past year) =="
+git log --format='' --name-only --since="1 year ago" | sort | uniq -c | sort -nr | head -20
+
+echo "== Common bugfix areas =="
+git log --format='' --name-only -i -E --grep="fix|bug|broken" | sort | uniq -c | sort -nr | head -20
