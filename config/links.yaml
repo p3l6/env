@@ -17,6 +17,8 @@ links:
     repo: apps/zed/keymap.json
   - home: .config/zed/settings.json
     repo: apps/zed/settings.json
+  - home: .config/zed/themes
+    repo: apps/zed/themes
   - home: .config/micro/bindings.json
     repo: dot/micro/bindings.json
   - home: .config/micro/settings.json
@@ -47,3 +49,5 @@ links:
     repo: dot/ruby/rubocop.yml
   - home: Library/Application Support/lazygit/config.yml
     repo: dot/git/lazygit_config.yml
+  - home: .config/bat/themes/Mist-dark.tmTheme
+    repo: dot/bat/Mist-dark.tmTheme

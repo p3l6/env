@@ -10,6 +10,10 @@
 	navigate = true
 	line-numbers = true
 	dark = true
+	minus-emph-style = normal "#B96A5F"
+	minus-style = normal "#683832"
+	plus-emph-style = syntax bold "#69914F"
+	plus-style = syntax "#385028"
 [diff]
 	algorithm = histogram
 	colorMoved = plain

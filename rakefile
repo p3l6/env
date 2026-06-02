@@ -41,6 +41,7 @@ task :prefs do
   system 'setup/dwrites.sh'
   system 'killall Dock'
   system 'duti', 'setup/duti.conf'
+  system 'bat cache --build'
   # TODO: (maybe) these could be moved to plists/dwrites, with a custom diff. like brewfile does.
   system 'cat', 'setup/preferences.txt'
 end

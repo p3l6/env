@@ -6,8 +6,8 @@ blocks:
   - git
   - name
 color:
-  theme: custom
+  theme: default
 date: '+%e %b %y %R'
 icons:
   when: never
-dereference: true
+indicators: true
