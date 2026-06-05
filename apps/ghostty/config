@@ -4,7 +4,7 @@ bold-is-bright = true
 macos-titlebar-style = tabs
 window-padding-balance=true
 window-padding-x = 12
-window-padding-y = 4
+window-padding-y = 8
 
 window-height = 50
 window-width = 120
@@ -33,6 +33,7 @@ keybind = page_up=scroll_page_up
 keybind = home=scroll_to_top
 keybind = page_down=scroll_page_down
 keybind = end=scroll_to_bottom
+keybind = cmd+enter=ignore
 
 ## Mist (dark) theme
 
