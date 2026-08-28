@@ -44,6 +44,7 @@
     "dock": "left",
     "button": false
   },
+  "default_open_behavior": "new_window",
   "disable_ai": false,
   "edit_predictions": {
     "provider": "none"
@@ -55,7 +56,9 @@
   "git": {
     "git_gutter": "tracked_files",
     "inline_blame": {
-      "enabled": false
+      "enabled": true,
+      "location": "status_bar"
+
     }
   },
   "indent_guides": {
