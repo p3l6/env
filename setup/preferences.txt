@@ -69,6 +69,10 @@
 ├─┬─ Xcode
 │ ├─┬─ General
 │ │ └─── File extensions: hide listed
+│ ├─┬─ Appearance / Fonts
+│ │ ├─── Code: Fira Code Retina
+│ │ ├─── Prose: Fira Sans Medium
+│ │ └─── Comments (Emphasized): SemiBold
 │ ├─┬─ Navigation
 │ │ ├─── pin editor tabs when document is edited
 │ │ └─── command-click jumps to definition

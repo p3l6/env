@@ -137,5 +137,6 @@
     "workbench.editor.limit.perEditorGroup": false,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 12,
+    "chat.disableAIFeatures": true,
 
 }
