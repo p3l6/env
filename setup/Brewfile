@@ -10,6 +10,7 @@ cask "font-sf-mono"
 
 ### Qmk
 brew "qmk/qmk/qmk"
+brew "bskaplou/tap/vitaly"
 
 ### Shell
 brew "bat"
@@ -26,13 +27,14 @@ brew "micro"
 brew "ripgrep"
 brew "sd"
 brew "tldr"
-brew "macos-trash"
+brew "macos-trash", link: true
+brew "vim"
 brew "wget"
 brew "zsh"
 
 ### Source control
-brew "bfg"
-brew "gh"
+# brew "bfg"
+# brew "gh"
 brew "git"
 brew "git-delta"
 brew "git-lfs"
@@ -43,16 +45,18 @@ brew "jj"
 # brew "carthage"
 # brew "cocoapods"
 brew "swiftformat"
-brew "vapor"
+# brew "vapor"
 brew "xcbeautify"
 
 ### Other dev tools
 # brew "cmake"
 # brew "deno"
-# brew "docker"
+brew "go-task"
+brew "hugo"
 brew "lazygit"
 # brew "node"
 brew "typst"
+brew "resvg"
 brew "rbenv"
 brew "solargraph"
 # brew "vsce"
@@ -66,6 +70,7 @@ brew "solargraph"
 cask "alfred"
 cask "1password"
 cask "1password-cli"
+cask "homebrew-app"
 cask "iina"
 cask "itsycal"
 cask "jordanbaird-ice"
@@ -75,7 +80,6 @@ cask "syntax-highlight"
 
 ### Coding
 cask "dash"
-cask "docker"
 cask "fork"
 cask "ghostty"
 cask "icon-composer"
@@ -85,11 +89,12 @@ cask "visual-studio-code"
 cask "zed"
 
 ### Work tools
-cask "gimp"
+# cask "gimp"
 cask "google-chrome"
 cask "slack"
 
 ### Other tools
+cask "audacity"
 cask "calibre"
 cask "handbrake-app"
 cask "karabiner-elements"
@@ -98,10 +103,10 @@ cask "transmission"
 cask "losslesscut"
 
 ### Games
+cask "discord"
 cask "steam"
 cask "minecraft"
 cask "modrinth"
-cask "openemu"
 cask "synthesia"
 cask "battle-net"
 
@@ -117,6 +122,7 @@ mas "Core Data Lab", id: 1460684638
 mas "DaisyDisk", id: 411643860
 mas "Developer", id: 640199958
 mas "Free Ruler", id: 1483172210
+mas "Pixen", id: 525180431
 mas "Things", id: 904280696
 mas "Xcode", id: 497799835
 

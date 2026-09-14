@@ -457,8 +457,9 @@ end run</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>zed ~/var/logbook
-open -a 'Zed' "${@}"</string>
+				<string>open -a 'Lettera' ~/var/logbook/life/2026
+fork ~/var/logbook
+open -a 'Ghostty' ~/var/logbook</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
