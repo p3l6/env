@@ -30,9 +30,6 @@
 │   ├─── always open in list view
 │   ├─── browse in list view
 │   └─── show library folder
-├─┬─ Ice
-│ ├─── Launch at login
-│ └─── Don't show icon
 ├─┬─ Itsycal
 │ ├─── launch at login
 │ └─── use outline icon
