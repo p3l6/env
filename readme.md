@@ -13,7 +13,7 @@
 1. Create a user account
 2. Do system updates
 3. Run `tasks/bootstrap.sh`
-    * or: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/p3l6/env/HEAD/tasks/bootstrap.sh)"`
+    * or: `zsh <(curl -fsSL https://raw.githubusercontent.com/p3l6/env/HEAD/tasks/bootstrap.sh)`
     * Then open a new shell, to update path variables
 
 ## Config

@@ -1,8 +1,9 @@
-#! /bin/bash
+#! /bin/zsh
+# // :TODO: update to zsh, with `read -q "answer?Do ...`
 
 prompt_gate() {
   local exe="$1"
-  read -r -p "[env/bootstrap] $exe was not found. Install it? [y/N] " answer
+  read -q "answer?[env/bootstrap] $exe was not found. Install it? [y/N] "
   case "$answer" in
     [yY]|[yY][eE][sS]) return 0 ;;
     *)
@@ -35,7 +36,7 @@ is_xcode_tools_needed() {
 if is_xcode_tools_needed; then
   echo "[env/bootstrap] Installing Xcode CLI Tools"
   xcode-select --install
-  read -r -p "[env/bootstrap] ...Press [enter] when complete" ignored
+  read -q "ignored?[env/bootstrap] ...Press [enter] when complete"
 fi
 
 #// :TODO:  if no WRKSP / DOTFILES / ~/var/env / etc
@@ -64,4 +65,5 @@ fi
 # Bootstrap is complete
 echo "[env/bootstrap] Done. Next steps:"
 echo "    > exit; # then open a new shell"
-echo "    > task bundle"
+echo "    > task gitinit link bundle"
+echo "    > task fish prefs"
