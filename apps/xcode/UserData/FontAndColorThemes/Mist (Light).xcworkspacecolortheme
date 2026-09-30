@@ -142,14 +142,14 @@
         "keyword" : {
           "color" : {
             "chroma" : {
-              "exact" : 0.10462524975899387
+              "exact" : 0.1046252313696937
             },
             "gamut" : "P3",
             "hue" : {
-              "radians" : 5.776783416181552
+              "radians" : 5.77678323919131
             },
             "lightness" : {
-              "exact" : 0.609843076082022
+              "exact" : 0.6098433323324991
             },
             "opacity" : 1
           }
@@ -202,14 +202,14 @@
         "markdownEmphasized" : {
           "color" : {
             "chroma" : {
-              "exact" : 0.009422661499227976
+              "exact" : 0.009612814481936571
             },
             "gamut" : "P3",
             "hue" : {
-              "radians" : 4.431674510356991
+              "radians" : 4.328151562026982
             },
             "lightness" : {
-              "exact" : 0.49078696182457804
+              "exact" : 0.6107677662450367
             },
             "opacity" : 1
           }
