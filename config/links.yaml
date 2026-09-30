@@ -9,6 +9,8 @@ links:
     repo: dot/nano/nanorc
   - home: .gitconfig
     repo: dot/git/gitconfig
+  - home: .gitconfig_local
+    repo: dot/git/local/gitconfig_local
   - home: .gitignore_global
     repo: dot/git/gitignore_global
   - home: .warp

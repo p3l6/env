@@ -1,7 +1,3 @@
-if [[ -e $HOME/var/env/config/local/vars.zsh ]] ; then
-  source $HOME/var/env/config/local/vars.zsh
-fi
-
 # load path settings first
 export DOTFILES=$HOME/var/env
 export PATH=$PATH:$DOTFILES/bin/local:$DOTFILES/bin
@@ -9,6 +5,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export WRKSP=$HOME/var
 export WORK_DIR=$HOME/var
 export EDITOR=micro
+export XCODE_APP="$(xcode-select -p | grep -o 'Xcode.*.app')"
 
 # load all config files
 for file in $DOTFILES/dot/zsh/**/*.zsh

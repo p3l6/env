@@ -15,11 +15,11 @@
 3. Run `tasks/bootstrap.sh`
     * or: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/p3l6/env/HEAD/tasks/bootstrap.sh)"`
     * Then open a new shell, to update path variables
-4. Run ssh-keygen, add it to github
 
 ## Config
 
-1. `task configure link`
+1. `task gitinit`
+2. `task link`
 2. `task bundle`
 3. Comment out prefs and hidden-flags in `dwrites.sh`, if desired
 4. `task prefs`
