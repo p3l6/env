@@ -4,7 +4,7 @@
 * [Config for CLI applications](./dot)
 * [Binaries](./bin)
 * [Dotfiles management tasks](./taskfile.yml)
-* [Scripts and utils](./setup) for setting up a new environment
+* [Preferences and repository configs](./config) for setting up a new environment
 
 # New Mac setup steps
 
@@ -24,5 +24,5 @@
 3. Comment out prefs and hidden-flags in `dwrites.sh`, if desired
 4. `task prefs`
 5. `task fish`
-6. Set preferences manually, as described in `./setup/preferences.txt`
+6. Set preferences manually, as described in `./config/preferences.txt`
 7. Download Lettera (from testflight)

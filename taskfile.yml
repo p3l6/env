@@ -6,7 +6,7 @@ run: once
 tasks:
   bundle:
     desc: Install tools from brewfile
-    cmd: brew bundle install --file setup/Brewfile
+    cmd: brew bundle install --file config/brewfile
   bundle-diff:
     desc: Compare bundle file to current installs
     cmd: tasks/diff-brewfile.sh
@@ -18,11 +18,11 @@ tasks:
   prefs:
     desc: Load prefs from dwrites, duti conf, and print manual prefs
     cmds:
-      - setup/dwrites.sh
+      - config/dwrites.sh
       - killall Dock
-      - duti setup/duti.conf
+      - duti config/duti.conf
       - bat cache --build
-      - cat setup/preferences.txt
+      - cat config/preferences.txt
   link:
     desc: Creates symlinks from home directory to repository files
     cmd: ruby tasks/link.rb
