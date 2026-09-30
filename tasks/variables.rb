@@ -1,47 +1,4 @@
-# Dotfiles management tasks
-
 require 'yaml'
-
-# TODO: move diff-brewfile script here
-
-desc 'create symlinks'
-task :link do
-  yaml_file = YAML.load_file('config/links.yaml')
-
-  yaml_file['links'].each do |link|
-    new_link = File.join(Dir.home, link['home'])
-    repo_file = File.join(__dir__, link['repo'])
-
-    # skip if correct
-    next if File.symlink?(new_link) && File.readlink(new_link) == repo_file
-
-    # delete wrong links and plain files
-    File.delete(new_link) if File.symlink?(new_link) || File.exist?(new_link)
-
-    # use shell since Dir.mkdir isn't recursive
-    system('mkdir', '-p', File.dirname(new_link)) unless Dir.exist?(File.dirname(new_link))
-
-    File.symlink(repo_file, new_link)
-    puts "-> Linked #{link['repo']}"
-  end
-end
-
-
-desc 'queries and sets required shell variables'
-task :configure do
-  config = LocalConfig.new
-
-  puts 'The following config are local to this machine.'
-  puts 'Leave blank to keep [current value]'
-  LocalConfig::KEYS.each do |key|
-    print "#{LocalConfig::LABELS[key] || key} [#{config.send(key)}]: "
-    input = $stdin.gets.chomp
-    config.update(key, input)
-  end
-
-  config.save
-end
-
 
 # Handler for machine-local variables
 class LocalConfig
@@ -96,3 +53,16 @@ class LocalConfig
     File.write(File.join(Dir.home, '.gitconfig_local'), git_output)
   end
 end
+
+
+config = LocalConfig.new
+
+puts 'The following config are local to this machine.'
+puts 'Leave blank to keep [current value]'
+LocalConfig::KEYS.each do |key|
+  print "#{LocalConfig::LABELS[key] || key} [#{config.send(key)}]: "
+  input = $stdin.gets.chomp
+  config.update(key, input)
+end
+
+config.save

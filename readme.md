@@ -1,10 +1,10 @@
 # Dotfiles
 
-[Config for GUI applications](./apps)
-[Config for CLI applications](./dot)
-[Binaries](./bin)
-[Dotfiles management tasks](./rakefile), usually invoked by the `./bin/dotfiles` wrapper
-[Scripts and utils](./setup) for setting up a new environment
+* [Config for GUI applications](./apps)
+* [Config for CLI applications](./dot)
+* [Binaries](./bin)
+* [Dotfiles management tasks](./taskfile.yml)
+* [Scripts and utils](./setup) for setting up a new environment
 
 # New Mac setup steps
 
@@ -12,18 +12,17 @@
 
 1. Create a user account
 2. Do system updates
-3. Get Xcode
+3. Run `tasks/bootstrap.sh`
+    * or: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/p3l6/env/HEAD/tasks/bootstrap.sh)"`
+    * Then open a new shell, to update path variables
 4. Run ssh-keygen, add it to github
-5. Clone this repo as ~/var/env
-    * Note: currently, these scripts will not work from any other location!
 
 ## Config
 
-1. `rake configure link brew`
-    * Then open a new shell, to update path variables
-2. `dotfiles bundle`
+1. `task configure link`
+2. `task bundle`
 3. Comment out prefs and hidden-flags in `dwrites.sh`, if desired
-4. `dotfiles prefs`
-5. `dotfiles fish`
+4. `task prefs`
+5. `task fish`
 6. Set preferences manually, as described in `./setup/preferences.txt`
-7. Download Panda (not in brew or app store)
+7. Download Lettera (from testflight)

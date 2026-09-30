@@ -23,3 +23,9 @@ tasks:
       - duti setup/duti.conf
       - bat cache --build
       - cat setup/preferences.txt
+  link:
+    desc: Creates symlinks from home directory to repository files
+    cmd: ruby tasks/link.rb
+  configure:
+    desc: Queries and sets required shell variables
+    cmd: ruby tasks/variables.rb
