@@ -2,16 +2,6 @@
 
 require 'yaml'
 
-desc 'install brew'
-task :brew do
-  system '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
-end
-
-desc 'install tools from brewfile'
-task :bundle do
-  system 'brew bundle install --file setup/Brewfile'
-end
-
 # TODO: move diff-brewfile script here
 
 desc 'create symlinks'
@@ -36,15 +26,6 @@ task :link do
   end
 end
 
-desc 'load prefs from dwrites, duti conf, and print manual prefs'
-task :prefs do
-  system 'setup/dwrites.sh'
-  system 'killall Dock'
-  system 'duti', 'setup/duti.conf'
-  system 'bat cache --build'
-  # TODO: (maybe) these could be moved to plists/dwrites, with a custom diff. like brewfile does.
-  system 'cat', 'setup/preferences.txt'
-end
 
 desc 'queries and sets required shell variables'
 task :configure do
@@ -61,11 +42,6 @@ task :configure do
   config.save
 end
 
-desc 'set fish as default shell'
-task :fish do
-  system 'echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells'
-  system 'chsh -s /opt/homebrew/bin/fish'
-end
 
 # Handler for machine-local variables
 class LocalConfig

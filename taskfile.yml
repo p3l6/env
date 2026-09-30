@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+run: once
+
+tasks:
+  bundle:
+    desc: Install tools from brewfile
+    cmd: brew bundle install --file setup/Brewfile
+  bundle-diff:
+    desc: Compare bundle file to current installs
+    cmd: tasks/diff-brewfile.sh
+  fish:
+    desc: Set fish as default shell
+    cmds:
+      - echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
+      - chsh -s /opt/homebrew/bin/fish
+  prefs:
+    desc: Load prefs from dwrites, duti conf, and print manual prefs
+    cmds:
+      - setup/dwrites.sh
+      - killall Dock
+      - duti setup/duti.conf
+      - bat cache --build
+      - cat setup/preferences.txt

@@ -63,4 +63,5 @@ fi
 
 # Bootstrap is complete
 echo "[env/bootstrap] Done. Next steps:"
+echo "    > exit; # then open a new shell"
 echo "    > task bundle"
