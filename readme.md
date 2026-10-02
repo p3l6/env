@@ -23,6 +23,7 @@
 2. `task bundle`
 3. Comment out prefs and hidden-flags in `dwrites.sh`, if desired
 4. `task prefs`
+5. `task duti` (this might spawn a lot of popup modals)
 5. `task fish`
 6. Set preferences manually, as described in `./config/preferences.txt`
 7. Download Lettera (from testflight)

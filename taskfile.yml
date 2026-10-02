@@ -15,14 +15,16 @@ tasks:
     cmds:
       - echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
       - chsh -s /opt/homebrew/bin/fish
+  duti:
+    desc: Set app defaults with duti
+    cmd: duti config/duti.conf
   prefs:
-    desc: Load prefs from dwrites, duti conf, and print manual prefs
+    desc: Load prefs from dwrites, and print manual prefs
     cmds:
       - config/dwrites.sh
       - killall Dock
-      - duti config/duti.conf
       - bat cache --build
-      - cat config/preferences.txt
+      - cat config/*.yaml
   link:
     desc: Creates symlinks from home directory to repository files
     cmd: ruby tasks/link.rb

@@ -1,6 +1,5 @@
 #! /bin/zsh
 
-update local config
 read "git_name?Local git_config user's name: "
 read "git_email?Local git config user's email: "
 mkdir -p dot/git/local
@@ -22,6 +21,7 @@ keys=(~/.ssh/id*.pub(N))
 
 if (( ${#keys} == 0 )); then
   ssh-keygen -t ed25519
-  # // :TODO: pbcopy the new public key
+  echo "Copying public key to clipboard"
+  cat ~/.ssh/id_ed25519.pub | pbcopy
   open "https://github.com/settings/keys"
 fi

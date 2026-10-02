@@ -4,6 +4,7 @@
 prompt_gate() {
   local exe="$1"
   read -q "answer?[env/bootstrap] $exe was not found. Install it? [y/N] "
+  echo
   case "$answer" in
     [yY]|[yY][eE][sS]) return 0 ;;
     *)
@@ -37,6 +38,7 @@ if is_xcode_tools_needed; then
   echo "[env/bootstrap] Installing Xcode CLI Tools"
   xcode-select --install
   read -q "ignored?[env/bootstrap] ...Press [enter] when complete"
+  echo
 fi
 
 #// :TODO:  if no WRKSP / DOTFILES / ~/var/env / etc
