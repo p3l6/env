@@ -1,0 +1,6 @@
+# Bear preferences
+
+Bear:
+  Web content preferences:
+    images: no
+    tags: !

@@ -1,0 +1,45 @@
+# System preferences
+
+Appearance:
+  theme: match day cycle
+  accent: multi
+  show scroll bars: when scrolling
+  scroll bar: jump to spot clicked
+
+Accessibility:
+  ─ use scroll gesture with ctrl to zoom
+  ─ double click speed second from fastest
+
+Control Center:
+  show bluetooth in menu bar: yes
+  show spotlight in menu bar: no
+  show date: never
+
+Spotlight:
+  no: bookmarks, events, mail messages, fonts
+
+Desktop & Dock:
+  position: left
+  show and hide the dock: automatically
+  show recent applications in dock: no
+  Mission Control:
+    ─ o o x x ^up ^down f10
+    ─ no hot corners
+
+Keyboard:
+  Text:
+    ─ don't use smart quotes and dashes
+  Shortcuts:
+    Spotlight: cmd + opt + space (alfred overrides) (disable finder search window)
+    App Shortcuts > Safari > Show start page: cmd + b
+    Mission Control > Show Notification Center: ^f10
+  Input sources:
+    show in menu bar: no
+
+Trackpad: tap to click
+
+Mouse:
+  ─ secondary click
+  ─ swipe between pages
+
+Sharing: set the machine name

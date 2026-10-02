@@ -1,0 +1,32 @@
+# Xcode preferences
+
+
+General:
+  File extensions: hide listed
+
+Appearance / Fonts:
+  Code: Fira Code Retina
+  Prose: Fira Sans Medium
+  Comments (Emphasized): SemiBold
+
+Navigation:
+  pin editor tabs: when document is edited
+  command-click: jumps to definition
+
+Text editing:
+  Display:
+    ─ line numbers
+    ─ folding ribbon
+  Editing:
+    ─ all completions
+    ─ auto-trim trailing whitespace, including whitespace only lines
+  Indentation:
+    tab and indent width: 4
+    tab key: indents always
+    align consecutive // comments: yes
+    auto indent: all
+
+Source Control:
+  ─  don't automatically add and remove files
+  ─  don't fetch server status automatically
+  ─  local revision on left

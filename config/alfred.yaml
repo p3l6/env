@@ -1,0 +1,12 @@
+# Alfred preferences
+
+Add Workflows:
+  ─ https://alfred.app/workflows/alfredapp/1password/
+  ─ https://alfred.app/workflows/kapeli/dash/
+  ─ https://alfred.app/workflows/alfredapp/switch-appearance/
+  ─ http://www.packal.org/workflow/toggle-hidden-files
+  ─ https://alfred.app/workflows/benziahamed/menu-bar-search/
+Hotkey: Cmd + Space
+Clipboard history: On
+Appearance > Options > Hide hat on alfred window: yes
+Sync directory: ~/var/env/apps/alfred

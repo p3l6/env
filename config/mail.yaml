@@ -1,0 +1,12 @@
+# Mail preferences
+
+Fonts:
+  - Use fixed width for plain text
+Viewing:
+  ─ Move discards to Archive
+  ─ Show most recent message at the top
+Assistant:
+  ─ Insert final newline
+  ─ Trim trailing whitespace
+Window:
+  Tabbing mode: preferred
