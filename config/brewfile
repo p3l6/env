@@ -2,6 +2,9 @@
 # Homebrew
 ######
 
+### Trusted Taps
+tap "p3l6/tap", trusted: true
+
 ### Fonts
 cask "font-fira-code"
 cask "font-fira-sans"
@@ -9,8 +12,8 @@ cask "font-latin-modern"
 cask "font-sf-mono"
 
 ### Qmk
-brew "qmk/qmk/qmk"
-brew "bskaplou/tap/vitaly"
+brew "qmk/qmk/qmk", trusted: true
+brew "bskaplou/tap/vitaly", trusted: true
 
 ### Shell
 brew "bat"
