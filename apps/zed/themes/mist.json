@@ -81,9 +81,9 @@
         "terminal.ansi.red": "#F59C8FFF",
         "terminal.ansi.bright_red": "#B96A5FFF",
         "terminal.ansi.dim_red": "#683832FF",
-        "terminal.ansi.green": "#89CA8DFF",
-        "terminal.ansi.bright_green": "#58945DFF",
-        "terminal.ansi.dim_green": "#2D5230FF",
+        "terminal.ansi.green": "#7ACC9AFF",
+        "terminal.ansi.bright_green": "#499569FF",
+        "terminal.ansi.dim_green": "#245338FF",
         "terminal.ansi.yellow": "#D8B161FF",
         "terminal.ansi.bright_yellow": "#A07D31FF",
         "terminal.ansi.dim_yellow": "#594415FF",
@@ -103,9 +103,9 @@
         "conflict": "#EDA571FF",
         "conflict.background": "#402715FF",
         "conflict.border": "#84532FFF",
-        "created": "#89CA8DFF",
-        "created.background": "#1E341FFF",
-        "created.border": "#3F6D43FF",
+        "created": "#7ACC9AFF",
+        "created.background": "#183524FF",
+        "created.border": "#346E4CFF",
         "deleted": "#F59C8FFF",
         "deleted.background": "#422420FF",
         "deleted.border": "#894D45FF",
@@ -133,9 +133,9 @@
         "renamed": "#B1ADFAFF",
         "renamed.background": "#2C2A44FF",
         "renamed.border": "#5C598DFF",
-        "success": "#89CA8DFF",
-        "success.background": "#1E341FFF",
-        "success.border": "#3F6D43FF",
+        "success": "#7ACC9AFF",
+        "success.background": "#183524FF",
+        "success.border": "#346E4CFF",
         "unreachable": null,
         "unreachable.background": null,
         "unreachable.border": null,
@@ -190,7 +190,7 @@
             "color": "#E0E5EBFF"
           },
           "function": {
-            "color": "#89CA8DFF"
+            "color": "#7ACC9AFF"
           },
           "function.builtin": {
             "color": "#B1ADFAFF"
@@ -270,7 +270,7 @@
         "panel.overlay_hover": "#292a30ff",
         "minimap.thumb.background": "#ffffff1a",
         "minimap.thumb.border": "#00000000",
-        "version_control.added": "#89CA8DFF",
+        "version_control.added": "#7ACC9AFF",
         "version_control.modified": "#D8B161FF",
         "version_control.conflict": "#EDA571FF",
         "version_control.deleted": "#F59C8FFF",
@@ -355,9 +355,9 @@
         "terminal.ansi.red": "#F59C8FFF",
         "terminal.ansi.bright_red": "#B96A5FFF",
         "terminal.ansi.dim_red": "#683832FF",
-        "terminal.ansi.green": "#89CA8DFF",
-        "terminal.ansi.bright_green": "#58945DFF",
-        "terminal.ansi.dim_green": "#2D5230FF",
+        "terminal.ansi.green": "#7ACC9AFF",
+        "terminal.ansi.bright_green": "#499569FF",
+        "terminal.ansi.dim_green": "#245338FF",
         "terminal.ansi.yellow": "#D8B161FF",
         "terminal.ansi.bright_yellow": "#A07D31FF",
         "terminal.ansi.dim_yellow": "#594415FF",
@@ -377,9 +377,9 @@
         "conflict": "#B27242FF",
         "conflict.background": "#FFF3EAFF",
         "conflict.border": "#F4C7A8FF",
-        "created": "#58945DFF",
-        "created.background": "#EEF8EEFF",
-        "created.border": "#B6DDB8FF",
+        "created": "#499569FF",
+        "created.background": "#EDF9F0FF",
+        "created.border": "#AFDFBFFF",
         "deleted": "#B96A5FFF",
         "deleted.background": "#FFF1EFFF",
         "deleted.border": "#F9C1B8FF",
@@ -407,9 +407,9 @@
         "renamed": "#7E79BEFF",
         "renamed.background": "#F4F4FFFF",
         "renamed.border": "#CDCBFBFF",
-        "success": "#58945DFF",
-        "success.background": "#EEF8EEFF",
-        "success.border": "#B6DDB8FF",
+        "success": "#499569FF",
+        "success.background": "#EDF9F0FF",
+        "success.border": "#AFDFBFFF",
         "unreachable": null,
         "unreachable.background": null,
         "unreachable.border": null,
@@ -464,7 +464,7 @@
             "color": "#2A2E33FF"
           },
           "function": {
-            "color": "#58945DFF"
+            "color": "#499569FF"
           },
           "function.builtin": {
             "color": "#7E79BEFF"
@@ -544,7 +544,7 @@
         "panel.overlay_hover": "#FFFFFFFF",
         "minimap.thumb.background": "#0000001a",
         "minimap.thumb.border": "#00000000",
-        "version_control.added": "#58945DFF",
+        "version_control.added": "#499569FF",
         "version_control.modified": "#A07D31FF",
         "version_control.conflict": "#B27242FF",
         "version_control.deleted": "#B96A5FFF",

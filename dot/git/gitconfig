@@ -12,8 +12,8 @@
 	dark = true
 	minus-emph-style = normal "#B96A5F"
 	minus-style = normal "#683832"
-	plus-emph-style = syntax bold "#58945D"
-	plus-style = syntax "#2D5230"
+	plus-emph-style = syntax bold "#499569"
+	plus-style = syntax "#245338"
 [diff]
 	algorithm = histogram
 	colorMoved = plain

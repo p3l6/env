@@ -82,14 +82,14 @@
         "diffAddition" : {
           "color" : {
             "chroma" : {
-              "exact" : 0.07065226129038714
+              "exact" : 0.06932253888312341
             },
             "gamut" : "P3",
             "hue" : {
-              "radians" : 2.546644495855506
+              "radians" : 2.7253311470170414
             },
             "lightness" : {
-              "exact" : 0.4008220452725671
+              "exact" : 0.40098153867267927
             },
             "opacity" : 1
           }
@@ -457,14 +457,14 @@
         "projectMember.function" : {
           "color" : {
             "chroma" : {
-              "exact" : 0.10841557249539403
+              "exact" : 0.10842719176774959
             },
             "gamut" : "P3",
             "hue" : {
-              "radians" : 2.546672606644452
+              "radians" : 2.7239014426161434
             },
             "lightness" : {
-              "exact" : 0.7793543417410929
+              "exact" : 0.7790918513324199
             },
             "opacity" : 1
           }
@@ -472,14 +472,14 @@
         "projectMember.variable" : {
           "color" : {
             "chroma" : {
-              "exact" : 0.10902574237172502
+              "exact" : 0.109025662166627
             },
             "gamut" : "P3",
             "hue" : {
-              "radians" : 3.2107125974703243
+              "radians" : 3.210714308831959
             },
             "lightness" : {
-              "exact" : 0.7797659109013293
+              "exact" : 0.779765827860646
             },
             "opacity" : 1
           }

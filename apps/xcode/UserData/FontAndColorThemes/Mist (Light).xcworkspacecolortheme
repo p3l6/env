@@ -67,14 +67,14 @@
         "debugger" : {
           "color" : {
             "chroma" : {
-              "exact" : 0.08348352698068007
+              "exact" : 0.010676119131809658
             },
             "gamut" : "P3",
             "hue" : {
-              "radians" : 2.5504556277348662
+              "radians" : 4.4331426471175295
             },
             "lightness" : {
-              "exact" : 0.4897956859289561
+              "exact" : 0.2992522282743997
             },
             "opacity" : 1
           }
@@ -82,14 +82,14 @@
         "diffAddition" : {
           "color" : {
             "chroma" : {
-              "exact" : 0.03990731821883134
+              "exact" : 0.04063256484668908
             },
             "gamut" : "P3",
             "hue" : {
-              "radians" : 2.5549692180023302
+              "radians" : 2.712371682400351
             },
             "lightness" : {
-              "exact" : 0.9191821696306015
+              "exact" : 0.919519882622951
             },
             "opacity" : 1
           }
@@ -367,14 +367,14 @@
         "plainText" : {
           "color" : {
             "chroma" : {
-              "exact" : 0.010675908189804262
+              "exact" : 0.010676119131809658
             },
             "gamut" : "P3",
             "hue" : {
-              "radians" : 4.433121759026389
+              "radians" : 4.4331426471175295
             },
             "lightness" : {
-              "exact" : 0.29925215129827654
+              "exact" : 0.2992522282743997
             },
             "opacity" : 1
           }
@@ -442,14 +442,14 @@
         "projectMember.constant" : {
           "color" : {
             "chroma" : {
-              "exact" : 0.10323007004887264
+              "exact" : 0.1032300413103225
             },
             "gamut" : "P3",
             "hue" : {
-              "radians" : 3.2095434087013905
+              "radians" : 3.2095439719690346
             },
             "lightness" : {
-              "exact" : 0.6101363565350584
+              "exact" : 0.6101360166631222
             },
             "opacity" : 1
           }
@@ -457,14 +457,14 @@
         "projectMember.function" : {
           "color" : {
             "chroma" : {
-              "exact" : 0.1033624493398346
+              "exact" : 0.1019095382303425
             },
             "gamut" : "P3",
             "hue" : {
-              "radians" : 2.5492520749213265
+              "radians" : 2.726392998337363
             },
             "lightness" : {
-              "exact" : 0.6108710439553229
+              "exact" : 0.6088906687506034
             },
             "opacity" : 1
           }
@@ -472,14 +472,14 @@
         "projectMember.variable" : {
           "color" : {
             "chroma" : {
-              "exact" : 0.10323007004887264
+              "exact" : 0.1032300413103225
             },
             "gamut" : "P3",
             "hue" : {
-              "radians" : 3.2095434087013905
+              "radians" : 3.2095439719690346
             },
             "lightness" : {
-              "exact" : 0.6101363565350584
+              "exact" : 0.6101360166631222
             },
             "opacity" : 1
           }
