@@ -1,5 +1,4 @@
 #! /bin/zsh
-# // :TODO: update to zsh, with `read -q "answer?Do ...`
 
 prompt_gate() {
   local exe="$1"
