@@ -1,0 +1,39 @@
+[
+  {
+    "version" : 2
+  },
+  {
+    "action" : {
+      "script" : "${git} show --no-patch --format='%b' ${sha} | pbcopy",
+      "showOutput" : false,
+      "type" : "sh",
+      "waitForExit" : true
+    },
+    "name" : "Copy commit message",
+    "target" : "revision"
+  },
+  {
+    "action" : {
+      "args" : "commit --fixup ${sha}",
+      "path" : "${git}",
+      "showOutput" : true,
+      "type" : "process",
+      "waitForExit" : true
+    },
+    "name" : "Fixup with staged changes",
+    "target" : "revision"
+  },
+  {
+    "action" : {
+      "script" : "${git} fetch origin ${ref}:${ref}",
+      "showOutput" : true,
+      "type" : "sh",
+      "waitForExit" : true
+    },
+    "name" : "Pull other",
+    "referenceTargets" : [
+      "localBranch"
+    ],
+    "target" : "reference"
+  }
+]
