@@ -92,7 +92,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>source ~/var/env/config/local/vars.zsh
+				<string>export XCODE_APP="$(xcode-select -p | grep -o 'Xcode.*.app')"
 
 REAL=$(realpath $2)
 

@@ -25,6 +25,8 @@ links:
     repo: dot/micro/bindings.json
   - home: .config/micro/settings.json
     repo: dot/micro/settings.json
+  - home: .config/micro/colorschemes/mist.micro
+    repo: dot/micro/mist.micro
   - home: .lldbinit
     repo: dot/lldb/lldbinit
   - home: .zshrc

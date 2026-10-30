@@ -1,8 +1,7 @@
 ## Visuals
 
 bold-is-bright = true
-## TEMP goldengate workaround until next release fixes 'tabs'
-macos-titlebar-style = native
+macos-titlebar-style = tabs
 window-padding-balance=true
 window-padding-x = 12
 window-padding-y = 8
